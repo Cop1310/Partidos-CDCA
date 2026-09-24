@@ -6,6 +6,7 @@
    "fecha": "2026-09-26",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:30",
+   "jornada": 3,
    "local": [
     "1546",
     "ESCUELA DE FUTBOL ARGANDA 'B'"
@@ -27,6 +28,7 @@
    "fecha": "2026-09-26",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "11:45",
+   "jornada": 1,
    "local": [
     "10652335",
     "RACING VILLAVERDE C.F. 'B'"
@@ -45,6 +47,7 @@
    "fecha": "2026-10-10",
    "grupo": "Preferente Alevín F-7 Grupo 6",
    "hora": null,
+   "jornada": 1,
    "local": [
     "10652341",
     "RACING VILLAVERDE C.F. 'A'"
@@ -63,6 +66,7 @@
    "fecha": "2026-09-26",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "15:30",
+   "jornada": 1,
    "local": [
     "1031681",
     "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
@@ -81,6 +85,7 @@
    "fecha": "2026-09-27",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "13:00",
+   "jornada": 3,
    "local": [
     "4928739",
     "UNION 2000 'B'"
@@ -102,6 +107,7 @@
    "fecha": "2026-09-27",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:00",
+   "jornada": 1,
    "local": [
     "2733",
     "C.D.E. LOS ROSALES DE VILLAVERDE"
@@ -120,6 +126,7 @@
    "fecha": "2026-09-26",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "16:00",
+   "jornada": 1,
    "local": [
     "680085",
     "C.D. ALZOLA - HALCONES 'D'"
@@ -138,6 +145,7 @@
    "fecha": "2026-09-27",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "19:00",
+   "jornada": 3,
    "local": [
     "2346",
     "A.D. UNION CARRASCAL 'A'"
@@ -159,6 +167,7 @@
    "fecha": "2026-10-10",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
+   "jornada": 1,
    "local": [
     "17130722",
     "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
@@ -177,6 +186,7 @@
    "fecha": "2026-10-10",
    "grupo": "Segunda Infantil Grupo 34",
    "hora": null,
+   "jornada": 1,
    "local": [
     "8961563",
     "C.D. CIUDAD LOS ANGELES 'B'"
