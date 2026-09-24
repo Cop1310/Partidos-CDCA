@@ -148,9 +148,14 @@
       btnWa.href = "https://wa.me/?text=" + encodeURIComponent(texto);
     }
 
+    var avisos = [];
     if (datos.sin_partido && datos.sin_partido.length) {
-      elAviso.textContent = "Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".";
+      avisos.push("Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".");
     }
+    if (datos.errores && datos.errores.length) {
+      avisos.push("No se han podido consultar: " + datos.errores.join(", ") + ". Puede faltar algún partido.");
+    }
+    elAviso.textContent = avisos.join(" ");
 
     if (datos.generado) {
       var p = datos.generado.split(" ");
