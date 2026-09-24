@@ -32,8 +32,29 @@ from bs4 import BeautifulSoup, NavigableString
 BASE = "https://www.elbalondemadrid.es"
 CLUB_ID = 4427  # C.D. Ciudad de los Ángeles
 CLUB_URL = f"{BASE}/club/{CLUB_ID}"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; partidos-CLA/1.0)"}
-PAUSA = 0.4  # segundos entre peticiones (cortesía con la web)
+HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "es-ES,es;q=0.9",
+}
+PAUSA = 0.8  # segundos entre peticiones (cortesía con la web)
+
+# Calendarios ya comprobados de la temporada 2026/27: ruta -> (nombre, ids de equipo).
+# Así no hace falta abrir la ficha de cada equipo. Los equipos que no estén aquí
+# (p. ej. Segunda Alevín F-7) se buscan solos desde la ficha del club.
+CONOCIDOS = {
+    "competicion/26737701/grupo/26737704": ("Preferente Aficionado Grupo 3", {"2856"}),
+    "competicion/26738300/grupo/26738319": ("Segunda Aficionado Grupo 20", {"6818931"}),
+    "competicion/26737718/grupo/26737723": ("Preferente Juvenil Grupo 5", {"6815292"}),
+    "competicion/26737724/grupo/26737735": ("Primera Juvenil Grupo 11", {"15328636"}),
+    "competicion/26738323/grupo/27131269": ("Segunda Juvenil Grupo 13", {"15292622"}),
+    "competicion/26737742/grupo/26737747": ("Preferente Cadete Grupo 5", {"8961562"}),
+    "competicion/26737768/grupo/26737795": ("Segunda Cadete Grupo 27", {"13538232"}),
+    "competicion/26737819/grupo/26737824": ("Preferente Infantil Grupo 5", {"13538235"}),
+    "competicion/26738324/grupo/26738357": ("Segunda Infantil Grupo 34", {"8961563"}),
+    "competicion/26738132/grupo/26738138": ("Preferente Alevín F-7 Grupo 6", {"15328645"}),
+}
 
 DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
@@ -105,35 +126,55 @@ def limpiar_titulo(t):
 # ---------------------------------------------------------------------------
 # Descarga y análisis
 # ---------------------------------------------------------------------------
-def get(url):
-    time.sleep(PAUSA)
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return BeautifulSoup(r.content, "html.parser")
+def get(url, intentos=4):
+    """Descarga una página; reintenta si la web devuelve un error temporal (5xx)."""
+    ultimo = None
+    for i in range(intentos):
+        time.sleep(PAUSA if i == 0 else 4 * i)
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            if r.status_code < 500:
+                r.raise_for_status()
+                return BeautifulSoup(r.content, "html.parser")
+            ultimo = requests.HTTPError(f"error {r.status_code} en {url}")
+        except (requests.ConnectionError, requests.Timeout) as e:
+            ultimo = e
+    raise ultimo
 
 
-def descubrir_grupos():
-    """Devuelve {url_jornadas: {ids de equipos del club en ese grupo}}."""
-    club = get(CLUB_URL)
-    ids = {}
+def grupos_a_consultar(errores):
+    """Devuelve {url_jornadas: (nombre o None, {ids de equipos del club})}."""
+    grupos, conocidos = {}, set()
+    for ruta, (nombre, ids) in CONOCIDOS.items():
+        grupos[f"{BASE}/{ruta}/jornadas"] = (nombre, set(ids))
+        conocidos |= ids
+
+    # Equipos del club que no están en la lista anterior: se buscan en la web.
+    try:
+        club = get(CLUB_URL)
+    except Exception as e:
+        errores.append("ficha del club (no se han buscado equipos nuevos)")
+        print(f"Aviso: {e}", file=sys.stderr)
+        return grupos
+    nuevos = set()
     for a in club.find_all("a", href=True):
         m = re.search(r"/equipo/(\d+)/?$", a["href"])
-        if m:
-            ids[m.group(1)] = a.get_text(" ", strip=True)
-    if not ids:
-        sys.exit("No he encontrado equipos en la ficha del club. ¿Ha cambiado la web?")
-
-    grupos = {}
-    for eid in ids:
-        pag = get(f"{BASE}/equipo/{eid}")
-        enlace = None
+        if m and m.group(1) not in conocidos:
+            nuevos.add(m.group(1))
+    for eid in sorted(nuevos):
+        try:
+            pag = get(f"{BASE}/equipo/{eid}")
+        except Exception as e:
+            errores.append(f"equipo {eid}")
+            print(f"Aviso: {e}", file=sys.stderr)
+            continue
         for a in pag.find_all("a", href=True):
             if re.search(r"/competicion/\d+/grupo/\d+/clasificacion", a["href"]):
-                enlace = a["href"]
+                url = urllib.parse.urljoin(BASE, a["href"]).replace("/clasificacion", "/jornadas")
+                nombre, ids = grupos.get(url, (None, set()))
+                ids.add(eid)
+                grupos[url] = (nombre, ids)
                 break
-        if enlace:
-            url = urllib.parse.urljoin(BASE, enlace).replace("/clasificacion", "/jornadas")
-            grupos.setdefault(url, set()).add(eid)
     return grupos
 
 
@@ -223,9 +264,16 @@ def main():
     fechas = fin_de_semana(args.sabado)
     print(f"Buscando partidos del {min(fechas):%d/%m/%Y} al {max(fechas):%d/%m/%Y}...", file=sys.stderr)
 
-    encontrados, sin_partido = [], []
-    for url, ids in descubrir_grupos().items():
-        soup = get(url)
+    encontrados, sin_partido, errores = [], [], []
+    consultados = 0
+    for url, (nombre, ids) in grupos_a_consultar(errores).items():
+        try:
+            soup = get(url)
+        except Exception as e:
+            errores.append(nombre or url)
+            print(f"Aviso: no se pudo consultar {nombre or url}: {e}", file=sys.stderr)
+            continue
+        consultados += 1
         titulo = titulo_grupo(soup)
         mios = [p for p in parsear_jornada(soup)
                 if p["fecha"] in fechas and any(e[0] in ids for e in p["equipos"])]
@@ -233,6 +281,9 @@ def main():
             sin_partido.append(titulo)
         for p in mios:
             encontrados.append((p["fecha"], p["hora"] if p["hora"] != "--:--" else "99:99", titulo, p))
+
+    if consultados == 0:
+        sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
 
     encontrados.sort(key=lambda x: (x[0], x[1], x[2]))
     texto = "\n\n".join(bloque(t, p) for _, _, t, p in encontrados)
@@ -251,6 +302,7 @@ def main():
                 "hasta": max(fechas).isoformat(),
                 "texto": texto,
                 "sin_partido": sin_partido,
+                "errores": errores,
             }, f, ensure_ascii=False, indent=2)
         print(f"Guardado en {args.json}", file=sys.stderr)
 
