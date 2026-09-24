@@ -238,7 +238,7 @@ def parsear_jornada(soup):
                 if actual is not None:
                     actual["campo"] = texto
             elif "/acta/" in h:
-                if actual is not None and len(actual["equipos"]) >= 2:
+                if actual is not None and len(actual["equipos"]) >= 2 and actual["fecha"]:
                     actual["acta"] = urllib.parse.urljoin(BASE, h)
                     partidos.append(actual)
                 actual = None
@@ -257,6 +257,29 @@ def resultado_de_acta(soup):
         if m:
             return (int(m.group(1)), int(m.group(2)))
     return None
+
+
+def posiciones_de(soup):
+    """{id_equipo: posición} leído de la tabla de clasificación.
+    Si aún no se ha jugado ningún partido, la tabla no significa nada: devuelve {}."""
+    normalizar(soup)
+    datos = {}
+    for tr in soup.find_all("tr"):
+        enlace = tr.find("a", href=re.compile(r"/equipo/\d+"))
+        if not enlace:
+            continue
+        celdas = tr.find_all(["td", "th"])
+        textos = [c.get_text(" ", strip=True) for c in celdas]
+        idx = next((i for i, c in enumerate(celdas)
+                    if c.find("a", href=re.compile(r"/equipo/\d+"))), None)
+        if idx is None or not textos or not textos[0].isdigit():
+            continue
+        pj = int(textos[idx + 1]) if idx + 1 < len(textos) and textos[idx + 1].isdigit() else 0
+        ident = re.search(r"/equipo/(\d+)", enlace["href"]).group(1)
+        datos[ident] = (int(textos[0]), pj)
+    if not datos or all(pj == 0 for _, pj in datos.values()):
+        return {}
+    return {k: v[0] for k, v in datos.items()}
 
 
 def titulo_grupo(soup):
@@ -290,9 +313,21 @@ def clave(p):
     return m.group(1) if m else f"{p['fecha']}|{p['equipos'][0][0]}|{p['equipos'][1][0]}"
 
 
-def actualizar_estado(estado, p, titulo, url):
+def actualizar_estado(estado, p, titulo, url, posiciones=None):
     k = clave(p)
     anterior = estado.get(k, {})
+    resultado = list(p["resultado"]) if p["resultado"] else anterior.get("resultado")
+
+    # Posiciones en la tabla ANTES de la jornada: se actualizan hasta que empieza
+    # el fin de semana del partido y después se congelan.
+    pos = anterior.get("pos")
+    inicio = p["fecha"] - timedelta(days=1) if p["fecha"].weekday() == 6 else p["fecha"]
+    congelado = bool(resultado) or (pos and ahora().date() >= inicio)
+    if posiciones and not congelado:
+        nuevo = [posiciones.get(p["equipos"][0][0]), posiciones.get(p["equipos"][1][0])]
+        if any(nuevo):
+            pos = nuevo
+
     estado[k] = {
         "fecha": p["fecha"].isoformat(),
         "hora": p["hora"] or anterior.get("hora"),
@@ -301,7 +336,8 @@ def actualizar_estado(estado, p, titulo, url):
         "campo": p["campo"] or anterior.get("campo", ""),
         "local": list(p["equipos"][0]),
         "visitante": list(p["equipos"][1]),
-        "resultado": list(p["resultado"]) if p["resultado"] else anterior.get("resultado"),
+        "resultado": resultado,
+        "pos": pos,
         "acta": p["acta"] or anterior.get("acta"),
     }
 
@@ -359,12 +395,25 @@ def sabado_resultados(sabado_arg=None):
     return hoy - timedelta(days=wd + 2)
 
 
-def _equipo(par):
-    ident, nombre = par
-    limpio = limpiar_equipo(nombre)
-    if "CIUDAD LOS ANGELES" in nombre.upper():
-        return f"*_{limpio}_*"  # nuestro equipo: negrita y cursiva
-    return limpio
+def _es_nuestro(par):
+    return "CIUDAD LOS ANGELES" in par[1].upper()
+
+
+def _equipo(par, pos=None):
+    limpio = limpiar_equipo(par[1])
+    if _es_nuestro(par):
+        limpio = f"*_{limpio}_*"  # nuestro equipo: negrita y cursiva
+    return f"({pos}º) {limpio}" if pos else limpio
+
+
+def _emoji_resultado(e):
+    """🟢 victoria, 🟡 empate, 🔴 derrota de nuestro equipo."""
+    gl, gv = e["resultado"]
+    local, visitante = _es_nuestro(e["local"]), _es_nuestro(e["visitante"])
+    if local == visitante:
+        return "⚽"
+    propios, ajenos = (gl, gv) if local else (gv, gl)
+    return "🟢" if propios > ajenos else ("🟡" if propios == ajenos else "🔴")
 
 
 def bloque(e, con_resultado=False):
@@ -376,13 +425,14 @@ def bloque(e, con_resultado=False):
     else:
         h = "" if con_resultado else " hora por confirmar"
     campo = limpiar_campo(e.get("campo")) or "por confirmar"
-    local, visitante = _equipo(e["local"]), _equipo(e["visitante"])
+    pos = e.get("pos") or [None, None]
+    local, visitante = _equipo(e["local"], pos[0]), _equipo(e["visitante"], pos[1])
     if con_resultado and e.get("resultado"):
         gl, gv = e["resultado"]
-        linea = f"{local} {gl} - {gv} {visitante}"
+        linea = f"{_emoji_resultado(e)} {local} {gl} - {gv} {visitante}"
     else:
-        linea = f"{local} - {visitante}"
-    return "\n".join([e["grupo"], f"*{dia} {f:%d/%m/%Y}{h}*", f"Campo: {campo}", linea])
+        linea = f"⚽ {local} - {visitante}"
+    return "\n".join([e["grupo"], f"*{dia} {f:%d/%m/%Y}{h}*", f"📍 Campo: {campo}", linea])
 
 
 def componer(estado, sabado, con_resultado):
@@ -422,9 +472,15 @@ def main():
         consultados += 1
         titulo = titulo_grupo(soup)
         vistos.append((url, titulo))
-        for p in parsear_jornada(soup):
-            if any(e[0] in ids for e in p["equipos"]):
-                actualizar_estado(estado, p, titulo, url)
+        propios = [p for p in parsear_jornada(soup) if any(e[0] in ids for e in p["equipos"])]
+        posiciones = {}
+        if any(not p["resultado"] and p["fecha"] >= ahora().date() for p in propios):
+            try:
+                posiciones = posiciones_de(get(url.replace("/jornadas", "/clasificacion")))
+            except Exception as e:
+                print(f"Aviso: no se pudo leer la clasificación de {titulo}: {e}", file=sys.stderr)
+        for p in propios:
+            actualizar_estado(estado, p, titulo, url, posiciones)
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
