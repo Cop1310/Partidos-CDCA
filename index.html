@@ -63,6 +63,7 @@
   .pestanas button[aria-selected="true"] { background: var(--tinta); color: #fff; }
   .partido.origen { background: #f6f6f3; color: var(--suave); font-size: 0.9rem; }
   .partido.origen a { color: inherit; }
+  .partido.dia { background: var(--tinta); color: #fff; padding: 10px 16px; }
   .estado { padding: 18px 16px; margin: 0; }
   .aviso { margin: 16px 0 0; color: var(--suave); font-size: 0.92rem; }
   .pie { margin: 22px 0 0; color: var(--suave); font-size: 0.85rem; }
@@ -177,8 +178,8 @@
       btnWa.href = "#";
     } else {
       elMensaje.innerHTML = texto.split(/\n\s*\n/).map(function (bloque) {
-        var origen = /^Información sacada de la web/.test(bloque) ? " origen" : "";
-        return '<div class="partido' + origen + '"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
+        var clase = /^Información sacada de la web/.test(bloque) ? " origen" : (/^📅/.test(bloque) ? " dia" : "");
+        return '<div class="partido' + clase + '"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
       }).join("");
       btnCopiar.classList.remove("desactivado");
       btnWa.classList.remove("desactivado");

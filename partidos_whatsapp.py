@@ -427,13 +427,14 @@ def _emoji_resultado(e):
 
 
 def bloque(e, con_resultado=False):
-    f = date.fromisoformat(e["fecha"])
-    dia = DIAS[f.weekday()]
+    """Un partido: hora y categoría, jornada, campo y enfrentamiento."""
     hora = e.get("hora")
     if hora:
-        h = f" {hora}h"
+        cabecera = f"⏰ {hora}h - {e['grupo']}"
+    elif con_resultado:
+        cabecera = f"🏆 {e['grupo']}"
     else:
-        h = "" if con_resultado else " hora por confirmar"
+        cabecera = f"⏰ Hora por confirmar - {e['grupo']}"
     campo = limpiar_campo(e.get("campo")) or "por confirmar"
     pos = e.get("pos") or [None, None]
     local, visitante = _equipo(e["local"], pos[0]), _equipo(e["visitante"], pos[1])
@@ -442,10 +443,10 @@ def bloque(e, con_resultado=False):
         linea = f"{_emoji_resultado(e)} {local} {gl} - {gv} {visitante}"
     else:
         linea = f"⚽ {local} - {visitante}"
-    lineas = [e["grupo"]]
+    lineas = [cabecera]
     if e.get("jornada"):
-        lineas.append(f"Jornada {e['jornada']}")
-    lineas += [f"*{dia} {f:%d/%m/%Y}{h}*", f"📍 Campo: {campo}", linea]
+        lineas.append(f"📌 Jornada {e['jornada']}")
+    lineas += [f"📍 Campo: {campo}", linea]
     return "\n".join(lineas)
 
 
@@ -456,7 +457,15 @@ def componer(estado, sabado, con_resultado):
     lista.sort(key=lambda e: (e["fecha"], e.get("hora") or "99:99", e["grupo"]))
     if not lista:
         return ""
-    return AVISO + "\n\n" + "\n\n".join(bloque(e, con_resultado) for e in lista)
+    partes = [AVISO]
+    dia_actual = None
+    for e in lista:
+        if e["fecha"] != dia_actual:  # el día aparece una sola vez, como titular
+            dia_actual = e["fecha"]
+            f = date.fromisoformat(dia_actual)
+            partes.append(f"📅 *{DIAS[f.weekday()]} {f:%d/%m/%Y}*")
+        partes.append(bloque(e, con_resultado))
+    return "\n\n".join(partes)
 
 
 def main():
