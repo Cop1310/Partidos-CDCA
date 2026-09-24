@@ -258,18 +258,27 @@ def parsear_jornada(soup):
     return partidos
 
 
-def resultado_de_acta(soup):
-    """Marcador de un acta. Solo se fía si el acta ya tiene alineaciones."""
+def datos_de_acta(soup):
+    """(marcador, hora) de un acta. El marcador solo se da si el acta ya tiene alineaciones."""
     normalizar(soup)
     textos = [t.strip() for t in soup.find_all(string=True)
               if t.parent is not None and t.parent.name not in ("script", "style")]
-    if "Titulares" not in textos:
-        return None
-    for t in textos:
-        m = RESULTADO.match(t)
-        if m:
-            return (int(m.group(1)), int(m.group(2)))
-    return None
+    marcador = None
+    if "Titulares" in textos:
+        for t in textos:
+            m = RESULTADO.match(t)
+            if m:
+                marcador = (int(m.group(1)), int(m.group(2)))
+                break
+    hora = None
+    m = re.search(r"\d{2}-\d{2}-\d{4}\s*(\d{2}:\d{2})", " ".join(textos))
+    if m:
+        hora = m.group(1)
+    return marcador, hora
+
+
+def resultado_de_acta(soup):
+    return datos_de_acta(soup)[0]
 
 
 def temporada_finalizada(soup):
@@ -322,18 +331,7 @@ def tabla_de(soup):
     PJ, G, E, P, GF, GC, DG y puntos."""
     original = BeautifulSoup(str(soup), "html.parser")  # sin unir textos, para el plan B
     normalizar(soup)
-    jornada, esperando = None, False
-    for t in soup.find_all(string=True):
-        if t.parent is not None and t.parent.name in ("script", "style"):
-            continue
-        txt = str(t).strip()
-        mj = JORNADA.match(txt)
-        if mj:
-            jornada = int(mj.group(1))
-        elif txt == "Jornada":
-            esperando = True
-        elif esperando and txt.isdigit():
-            jornada, esperando = int(txt), False
+    jornada = cabecera_jornada(soup)
     filas = []
     for tr in soup.find_all("tr"):
         enlace = tr.find("a", href=re.compile(r"/equipo/\d+"))
@@ -365,6 +363,24 @@ def tabla_de(soup):
     return jornada, filas
 
 
+def cabecera_jornada(soup):
+    """Número de la jornada que muestra la página (cabecera 'Jornada 3 ...')."""
+    normalizar(soup)
+    esperando = False
+    for t in soup.find_all(string=True):
+        if t.parent is not None and t.parent.name in ("script", "style"):
+            continue
+        txt = str(t).strip()
+        mj = JORNADA.match(txt)
+        if mj:
+            return int(mj.group(1))
+        if txt == "Jornada":
+            esperando = True
+        elif esperando and txt.isdigit():
+            return int(txt)
+    return None
+
+
 def titulo_grupo(soup):
     h1 = soup.find("h1")
     if h1 and h1.get_text(strip=True):
@@ -384,12 +400,14 @@ def cargar_estado(ruta):
             datos = json.load(f)
     except (OSError, ValueError):
         datos = {}
-    return datos.get("partidos", {}), datos.get("clasificaciones", {})
+    meta = datos.get("meta", {})
+    meta.setdefault("hechas", {})
+    return datos.get("partidos", {}), datos.get("clasificaciones", {}), meta
 
 
-def guardar_estado(ruta, partidos, clasificaciones):
+def guardar_estado(ruta, partidos, clasificaciones, meta):
     with open(ruta, "w", encoding="utf-8") as f:
-        json.dump({"partidos": partidos, "clasificaciones": clasificaciones},
+        json.dump({"partidos": partidos, "clasificaciones": clasificaciones, "meta": meta},
                   f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
@@ -441,20 +459,87 @@ def _ya_toca_mirar_acta(e, t):
 
 
 def completar_con_actas(estado, errores):
-    """Para partidos ya jugados sin marcador, intenta leerlo del acta."""
+    """Lee las actas para completar el marcador (partidos ya jugados) y la hora
+    (partidos de los que solo se conoce el marcador)."""
     t = ahora()
-    pendientes = [e for e in estado.values()
-                  if not e.get("resultado") and e.get("acta")
-                  and (t.date() - date.fromisoformat(e["fecha"])).days <= 10
-                  and _ya_toca_mirar_acta(e, t)]
-    for e in pendientes[:20]:
+    pendientes = []
+    for e in estado.values():
+        if not e.get("acta"):
+            continue
+        dias = (t.date() - date.fromisoformat(e["fecha"])).days
+        sin_marcador = not e.get("resultado") and dias <= 10 and _ya_toca_mirar_acta(e, t)
+        sin_hora = bool(e.get("resultado")) and not e.get("hora") and dias >= 0
+        if sin_marcador or sin_hora:
+            pendientes.append(e)
+    for e in pendientes[:25]:
         try:
-            r = resultado_de_acta(get(e["acta"]))
+            marcador, hora = datos_de_acta(get(e["acta"]))
         except Exception as ex:
             print(f"Aviso: no se pudo leer un acta: {ex}", file=sys.stderr)
             continue
-        if r:
-            e["resultado"] = list(r)
+        if marcador and not e.get("resultado"):
+            e["resultado"] = list(marcador)
+        if hora and not e.get("hora"):
+            e["hora"] = hora
+
+
+# ---------------------------------------------------------------------------
+# Jornadas anteriores (histórico)
+# ---------------------------------------------------------------------------
+PARAMS_JORNADA = ("jornada", "j", "jor", "numJornada", "round")
+MAX_RELLENO = 30  # peticiones de jornadas antiguas por ejecución
+
+
+def descubrir_parametro(url, objetivo):
+    """Averigua con qué parámetro de la dirección se pide otra jornada. Solo da por bueno
+    un parámetro si la página devuelve de verdad la jornada pedida."""
+    for nombre in PARAMS_JORNADA:
+        try:
+            if cabecera_jornada(get(f"{url}?{nombre}={objetivo}")) == objetivo:
+                return nombre
+        except Exception:
+            continue
+    return ""
+
+
+def rellenar_jornadas(url, ids, titulo, actual, estado, meta, cupo):
+    """Guarda los partidos de las jornadas anteriores a la que muestra la web. Devuelve
+    cuántas peticiones ha gastado."""
+    hechas = set(meta["hechas"].get(url, []))
+    pendientes = [j for j in range(1, actual) if j not in hechas]
+    if not pendientes or cupo <= 0:
+        return 0
+    param = meta.get("param")
+    gastadas = 0
+    if not param:
+        reciente = meta.get("probado") and \
+            (ahora().date() - date.fromisoformat(meta["probado"])).days < 3
+        if param == "" and reciente:
+            return 0  # ya se probó hace poco y no funcionó
+        param = descubrir_parametro(url, actual - 1)
+        gastadas += len(PARAMS_JORNADA) if not param else 1
+        meta["param"], meta["probado"] = param, ahora().date().isoformat()
+        if not param:
+            print("Aviso: no he encontrado cómo pedir otra jornada; el histórico se irá "
+                  "completando con las jornadas nuevas.", file=sys.stderr)
+            return gastadas
+    for j in pendientes:
+        if gastadas >= cupo:
+            break
+        gastadas += 1
+        try:
+            soup = get(f"{url}?{param}={j}")
+        except Exception as e:
+            print(f"Aviso: no se pudo leer la jornada {j} de {titulo}: {e}", file=sys.stderr)
+            continue
+        if cabecera_jornada(soup) != j:
+            continue  # la web no ha devuelto la jornada pedida: no se guarda nada
+        for p in parsear_jornada(soup):
+            if any(e[0] in ids for e in p["equipos"]):
+                actualizar_estado(estado, p, titulo, url, None)
+        hechas.add(j)
+    meta["hechas"][url] = sorted(hechas)
+    return gastadas
 
 
 # ---------------------------------------------------------------------------
@@ -509,7 +594,7 @@ def bloque(e, con_resultado=False):
     hora = e.get("hora")
     if hora:
         cabecera = f"⏰ *{hora}h* - {e['grupo']}"
-    elif con_resultado:
+    elif con_resultado or e.get("resultado"):
         cabecera = f"🏆 {e['grupo']}"
     else:
         cabecera = f"⏰ *Hora por confirmar* - {e['grupo']}"
@@ -528,11 +613,32 @@ def bloque(e, con_resultado=False):
     return "\n".join(lineas)
 
 
-def componer(estado, sabado, con_resultado):
-    fechas = {sabado.isoformat(), (sabado + timedelta(days=1)).isoformat()}
-    lista = [e for e in estado.values() if e["fecha"] in fechas
-             and (e.get("resultado") if con_resultado else True)]
+def sabado_de(d):
+    """Sábado de la semana (lunes a domingo) a la que pertenece la fecha d."""
+    return d - timedelta(days=1) if d.weekday() == 6 else d + timedelta(days=5 - d.weekday())
+
+
+def seleccion(estado, sabado, con_resultado):
+    """Partidos de la semana cuyo sábado es `sabado` (incluye los de entre semana)."""
+    lunes, domingo = sabado - timedelta(days=5), sabado + timedelta(days=1)
+    hoy = ahora().date()
+    lista = []
+    for e in estado.values():
+        f = date.fromisoformat(e["fecha"])
+        if not lunes <= f <= domingo:
+            continue
+        if con_resultado and not e.get("resultado"):
+            continue
+        # en la semana en curso, los partidos de entre semana ya jugados no van en "Partidos"
+        if not con_resultado and domingo >= hoy and f.weekday() < 5 and f < hoy:
+            continue
+        lista.append(e)
     lista.sort(key=lambda e: (e["fecha"], e.get("hora") or "99:99", e["grupo"]))
+    return lista
+
+
+def componer(estado, sabado, con_resultado):
+    lista = seleccion(estado, sabado, con_resultado)
     if not lista:
         return ""
     partes = [AVISO]
@@ -562,7 +668,8 @@ def main():
           f"resultados del {sab_res:%d/%m/%Y} al {sab_res + timedelta(days=1):%d/%m/%Y}...",
           file=sys.stderr)
 
-    estado, clasif = cargar_estado(args.estado)
+    estado, clasif, meta = cargar_estado(args.estado)
+    cupo = MAX_RELLENO
     errores, consultados, vistos, finalizadas = [], 0, [], set()
     grupos = grupos_a_consultar(errores)
     for url, (nombre, ids) in grupos.items():
@@ -578,6 +685,7 @@ def main():
         consultados += 1
         titulo = titulo_grupo(soup)
         vistos.append((url, titulo))
+        actual = cabecera_jornada(soup)
         propios = [p for p in parsear_jornada(soup) if any(e[0] in ids for e in p["equipos"])]
 
         filas = []
@@ -597,21 +705,21 @@ def main():
         posiciones = {f["id"]: f["pos"] for f in filas} if any(f["pj"] for f in filas) else {}
         for p in propios:
             actualizar_estado(estado, p, titulo, url, posiciones)
+        if actual and actual > 1:
+            cupo -= rellenar_jornadas(url, ids, titulo, actual, estado, meta, cupo)
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
 
     completar_con_actas(estado, errores)
 
-    # limpiar partidos antiguos
-    limite = (ahora().date() - timedelta(days=21)).isoformat()
+    # se guarda todo el histórico de la temporada (solo se descartan partidos de hace más de un año)
+    limite = (ahora().date() - timedelta(days=400)).isoformat()
     estado = {k: v for k, v in estado.items() if v["fecha"] >= limite}
-    guardar_estado(args.estado, estado, clasif)
+    guardar_estado(args.estado, estado, clasif, meta)
 
-    fechas_prox = {sab_prox.isoformat(), (sab_prox + timedelta(days=1)).isoformat()}
-    sin_partido = sorted({t for u, t in vistos
-                          if not any(e["url_grupo"] == u and e["fecha"] in fechas_prox
-                                     for e in estado.values())})
+    urls_con_partido = {e["url_grupo"] for e in seleccion(estado, sab_prox, False)}
+    sin_partido = sorted({t for u, t in vistos if u not in urls_con_partido})
     texto = componer(estado, sab_prox, con_resultado=False)
     resultados = componer(estado, sab_res, con_resultado=True)
 
@@ -630,6 +738,12 @@ def main():
                 "resultados": resultados,
                 "sin_partido": sin_partido,
                 "errores": errores,
+                "semanas": [
+                    {"sabado": sab.isoformat(),
+                     "partidos": componer(estado, sab, False),
+                     "resultados": componer(estado, sab, True)}
+                    for sab in sorted({sabado_de(date.fromisoformat(e["fecha"])) for e in estado.values()})
+                ],
                 "clasificaciones": [
                     {**clasif[u], "equipo": next((f["nombre"] for f in clasif[u]["filas"] if f["nuestro"]), "")}
                     for u in grupos if u in clasif and u not in finalizadas

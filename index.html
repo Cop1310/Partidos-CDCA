@@ -71,6 +71,14 @@
   .partido.origen { background: #f6f6f3; color: var(--suave); font-size: 0.9rem; }
   .partido.origen a { color: inherit; }
   .partido.dia { background: var(--tinta); color: #fff; padding: 10px 16px; }
+  .semanas { display: flex; gap: 8px; margin: 0 0 12px; }
+  .semanas[hidden] { display: none; }
+  .semanas button { flex: none; width: 48px; min-height: 46px; padding: 0; font-size: 1rem; background: var(--papel); color: var(--tinta); }
+  .semanas button:disabled { opacity: 0.35; cursor: default; }
+  .semanas select {
+    flex: 1; min-width: 0; min-height: 46px; font: inherit; font-weight: 700; font-size: 1rem; padding: 0 10px;
+    color: var(--tinta); background: var(--papel); border: 2px solid var(--tinta); border-radius: 4px;
+  }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
   .chips[hidden] { display: none; }
   .chip {
@@ -133,6 +141,11 @@
     <button type="button" role="tab" id="tab-resultados" aria-selected="false">Resultados</button>
     <button type="button" role="tab" id="tab-clasificacion" aria-selected="false">Clasificación</button>
   </div>
+  <div class="semanas" id="semanas" hidden>
+    <button type="button" id="sem-ant" aria-label="Fin de semana anterior">◀</button>
+    <select id="sem-sel" aria-label="Elegir fin de semana"></select>
+    <button type="button" id="sem-sig" aria-label="Fin de semana siguiente">▶</button>
+  </div>
   <div class="chips" id="chips" hidden></div>
 
   <div class="mensaje" id="mensaje" aria-live="polite">
@@ -154,6 +167,7 @@
   var datos = null;
   var activa = "partidos";
   var grupoSel = 0;
+  var sel = { partidos: null, resultados: null };   // semana elegida en cada pestaña (posición en datos.semanas)
   var elMensaje = document.getElementById("mensaje");
   var elCuando = document.getElementById("cuando");
   var elAviso = document.getElementById("aviso");
@@ -164,6 +178,10 @@
   var tabR = document.getElementById("tab-resultados");
   var tabC = document.getElementById("tab-clasificacion");
   var elChips = document.getElementById("chips");
+  var elSemanas = document.getElementById("semanas");
+  var selSemana = document.getElementById("sem-sel");
+  var btnAnt = document.getElementById("sem-ant");
+  var btnSig = document.getElementById("sem-sig");
 
   function escapar(s) {
     return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -188,6 +206,44 @@
     return "Sábado " + fecha(desde) + " y domingo " + fecha(hasta) + "/" + desde.split("-")[0];
   }
 
+  function semanas() {
+    return (datos && datos.semanas) || [];
+  }
+
+  function sumarDia(iso, n) {
+    var d = new Date(iso + "T12:00:00");
+    d.setDate(d.getDate() + n);
+    var mm = String(d.getMonth() + 1).padStart(2, "0");
+    var dd = String(d.getDate()).padStart(2, "0");
+    return d.getFullYear() + "-" + mm + "-" + dd;
+  }
+
+  function etiquetaSemana(iso) {
+    var dom = sumarDia(iso, 1);
+    var a = iso.split("-"), b = dom.split("-");
+    return a[1] === b[1] ? a[2] + "-" + b[2] + "/" + b[1] + "/" + b[0]
+                         : a[2] + "/" + a[1] + " - " + b[2] + "/" + b[1] + "/" + b[0];
+  }
+
+  function indiceSemana(iso) {
+    var s = semanas(), i;
+    for (i = 0; i < s.length; i++) if (s[i].sabado === iso) return i;
+    return s.length - 1;
+  }
+
+  function pintarSelectorSemanas() {
+    var s = semanas();
+    if (activa === "clasificacion" || s.length < 2) { elSemanas.hidden = true; return; }
+    elSemanas.hidden = false;
+    var i = sel[activa];
+    // las más recientes arriba en el desplegable
+    selSemana.innerHTML = s.map(function (x, k) { return { x: x, k: k }; }).reverse().map(function (o) {
+      return '<option value="' + o.k + '"' + (o.k === i ? " selected" : "") + ">" + etiquetaSemana(o.x.sabado) + "</option>";
+    }).join("");
+    btnAnt.disabled = i <= 0;
+    btnSig.disabled = i >= s.length - 1;
+  }
+
   function clasificaciones() {
     return (datos && datos.clasificaciones) || [];
   }
@@ -210,6 +266,11 @@
   function textoActivo() {
     if (!datos) return "";
     if (activa === "clasificacion") return textoClasificacion();
+    var s = semanas();
+    if (s.length) {
+      var w = s[Math.max(0, Math.min(sel[activa], s.length - 1))];
+      return ((activa === "partidos" ? w.partidos : w.resultados) || "").trim();
+    }
     return ((activa === "partidos" ? datos.texto : datos.resultados) || "").trim();
   }
 
@@ -248,10 +309,17 @@
     tabC.setAttribute("aria-selected", activa === "clasificacion");
     elChips.hidden = activa !== "clasificacion";
     if (activa !== "clasificacion") {
-      elCuando.textContent = activa === "partidos"
-        ? rango(datos.desde, datos.hasta)
-        : rango(datos.resultados_desde, datos.resultados_hasta);
+      var sm = semanas();
+      if (sm.length) {
+        var sab = sm[Math.max(0, Math.min(sel[activa], sm.length - 1))].sabado;
+        elCuando.textContent = rango(sab, sumarDia(sab, 1));
+      } else {
+        elCuando.textContent = activa === "partidos"
+          ? rango(datos.desde, datos.hasta)
+          : rango(datos.resultados_desde, datos.resultados_hasta);
+      }
     }
+    pintarSelectorSemanas();
 
     if (activa === "clasificacion") {
       pintarClasificacion();
@@ -266,8 +334,8 @@
       }
     } else if (!texto) {
       elMensaje.innerHTML = activa === "partidos"
-        ? '<p class="estado">Todavía no hay partidos publicados para este fin de semana. La página se actualiza cada día a primera hora.</p>'
-        : '<p class="estado">Todavía no hay resultados publicados de este fin de semana. Aparecen según los va publicando la federación.</p>';
+        ? '<p class="estado">No hay partidos guardados para este fin de semana. La página se actualiza cada día a primera hora.</p>'
+        : '<p class="estado">No hay resultados publicados de este fin de semana. Aparecen según los va publicando la federación.</p>';
       btnCopiar.classList.add("desactivado");
       btnWa.classList.add("desactivado");
       btnWa.href = "#";
@@ -332,6 +400,9 @@
   tabP.addEventListener("click", function () { elegir("partidos"); });
   tabR.addEventListener("click", function () { elegir("resultados"); });
   tabC.addEventListener("click", function () { elegir("clasificacion"); });
+  selSemana.addEventListener("change", function () { sel[activa] = parseInt(selSemana.value, 10); pintar(); });
+  btnAnt.addEventListener("click", function () { if (sel[activa] > 0) { sel[activa] -= 1; pintar(); } });
+  btnSig.addEventListener("click", function () { if (sel[activa] < semanas().length - 1) { sel[activa] += 1; pintar(); } });
   elChips.addEventListener("click", function (e) {
     var b = e.target.closest ? e.target.closest(".chip") : null;
     if (!b) return;
@@ -348,6 +419,8 @@
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (d) {
       datos = d;
+      sel.partidos = indiceSemana(d.desde);
+      sel.resultados = indiceSemana(d.resultados_desde);
       // Domingo, lunes y martes se abre directamente en Resultados si ya hay alguno
       var dia = new Date().getDay();
       if ((dia === 0 || dia === 1 || dia === 2) && (d.resultados || "").trim()) activa = "resultados";
