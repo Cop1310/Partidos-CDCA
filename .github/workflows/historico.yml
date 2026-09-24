@@ -1,0 +1,43 @@
+name: Historico con navegador
+
+on:
+  schedule:
+    # Lunes y jueves a las 04:30 UTC (06:30 o 05:30 en Madrid)
+    - cron: "30 4 * * 1,4"
+  workflow_dispatch:   # permite lanzarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-partidos
+  cancel-in-progress: false
+
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests beautifulsoup4 playwright
+
+      - name: Instalar el navegador
+        run: python -m playwright install --with-deps chromium
+
+      - name: Recorrer todas las jornadas
+        run: python partidos_whatsapp.py --navegador --json partidos.json --estado estado.json
+
+      - name: Guardar resultado
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add partidos.json estado.json
+          git diff --cached --quiet || git commit -m "Actualizar historico"
+          git pull --rebase
+          git push
