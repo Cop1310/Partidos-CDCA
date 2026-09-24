@@ -2448,13 +2448,31 @@
   }
  },
  "meta": {
+  "cursor": {
+   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": 5645994
+  },
   "hechas": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": [],
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": [],
    "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": []
   },
   "param": "",
-  "probado": "2026-09-24"
+  "probado": "2026-09-24",
+  "proximas": {
+   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": {
+    "actual": 3,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
+    "actual": 1,
+    "cursor": 5628231,
+    "fecha": "2026-09-24"
+   }
+  },
+  "terminado": {
+   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": true
+  }
  },
  "partidos": {
   "5583091": {
@@ -2596,6 +2614,50 @@
     "C.D. CIUDAD LOS ANGELES 'C'"
    ]
   },
+  "5646005": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646005?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "LA UNION - VALLECAS VILLA (HA)",
+   "fecha": "2026-09-13",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": "11:30",
+   "jornada": 1,
+   "local": [
+    "352985",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS"
+   ],
+   "pos": null,
+   "resultado": [
+    0,
+    0
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646014": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646014?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-09-20",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": "11:00",
+   "jornada": 2,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": [
+    1,
+    1
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "788",
+    "A.D. ARGANDA C.F."
+   ]
+  },
   "5646022": {
    "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
    "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
@@ -2611,6 +2673,82 @@
     8,
     12
    ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646031": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646031?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-04",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "1036",
+    "C.D. VILLACONEJOS 'A'"
+   ]
+  },
+  "5646039": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646039?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
+   "fecha": "2026-10-11",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "4928629",
+    "RIVAS FUTBOL CLUB"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646048": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646048?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-18",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "466796",
+    "C.D. COLONIA MOSCARDO 'B'"
+   ]
+  },
+  "5646056": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646056?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "CASARRUBUELOS (HA)",
+   "fecha": "2026-10-25",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "13519993",
+    "ESC.FUT.AT. CASARRUBUELOS"
+   ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
