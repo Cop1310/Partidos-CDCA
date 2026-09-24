@@ -84,7 +84,7 @@ NOMBRES_CAMPO = {
     # "IDB DAVID DIEZ DE LA CRUZ": "IDB David Diez de la Cruz",
 }
 QUITAR_PREFIJOS = {
-    "C.D.", "C.F.", "S.A.D.", "A.D.", "C.D.E.", "CDE", "CDB", "C.D.B.",
+    "C.D.", "C.F.", "S.A.D.", "A.D.", "C.D.E.", "CDE", "CDB", "C.D.B.", "ESC.MUN.FUT.",
     "U.D.", "A.D.C.", "A.J.D.C.",
 }
 SIGLAS = {"IDB", "CC", "II", "III", "IV", "PVO"}
@@ -863,6 +863,49 @@ def escanear_con_navegador(nav, grupos, finalizadas, estado, errores):
 
 
 # ---------------------------------------------------------------------------
+# Partidos escritos a mano
+#
+# Si algún partido no se consigue leer de la web, se puede añadir a mano en el fichero
+# partidos_manuales.json. Se usa solo mientras la web no lo tenga: en cuanto el script lo
+# encuentre por sí mismo, el manual se descarta.
+# ---------------------------------------------------------------------------
+def aplicar_manuales(estado, ruta, grupos_vistos):
+    """grupos_vistos: {título del grupo: (url, ids de nuestros equipos)}. Devuelve cuántos
+    partidos manuales se han aplicado."""
+    for k in [k for k in estado if k.startswith("manual|")]:
+        del estado[k]  # se recalculan en cada ejecución
+    try:
+        with open(ruta, encoding="utf-8") as f:
+            datos = json.load(f)
+    except (OSError, ValueError):
+        return 0
+    aplicados = 0
+    for m in datos:
+        titulo, jornada = m.get("grupo"), m.get("jornada")
+        if titulo not in grupos_vistos:
+            print(f"Aviso: partido manual de '{titulo}': no coincide con ninguna categoría "
+                  f"({sorted(grupos_vistos)}).", file=sys.stderr)
+            continue
+        url, ids = grupos_vistos[titulo]
+        if any(e["url_grupo"] == url and e.get("jornada") == jornada for e in estado.values()):
+            continue  # la web ya lo tiene
+        propio = sorted(ids)[0]
+        equipos = []
+        for nombre in (m["local"], m["visitante"]):
+            equipos.append([propio if _es_nuestro(("", nombre)) else f"manual-{nombre}", nombre])
+        estado[f"manual|{url}|{jornada}"] = {
+            "fecha": m["fecha"], "jornada": jornada, "hora": m.get("hora"),
+            "grupo": titulo, "url_grupo": url, "campo": m.get("campo", ""),
+            "local": equipos[0], "visitante": equipos[1],
+            "resultado": m.get("resultado"), "pos": None, "acta": None,
+        }
+        aplicados += 1
+    if aplicados:
+        print(f"Partidos manuales aplicados: {aplicados}.", file=sys.stderr)
+    return aplicados
+
+
+# ---------------------------------------------------------------------------
 # Mensajes
 # ---------------------------------------------------------------------------
 def sabado_proximo(sabado_arg=None):
@@ -980,6 +1023,8 @@ def main():
     ap.add_argument("--salida", default="partidos_whatsapp.txt", help="fichero de salida")
     ap.add_argument("--json", help="además, guarda el resultado en este fichero JSON (para la página web)")
     ap.add_argument("--estado", default="estado.json", help="fichero donde se recuerdan los partidos vistos")
+    ap.add_argument("--manuales", default="partidos_manuales.json",
+                    help="fichero con partidos escritos a mano (opcional)")
     ap.add_argument("--navegador", action="store_true",
                     help="recorrer todas las jornadas con un navegador automático (necesita Playwright)")
     args = ap.parse_args()
@@ -1070,6 +1115,8 @@ def main():
         if actual:
             cupo -= explorar_proximas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
 
+    aplicar_manuales(estado, args.manuales,
+                     {t: (u, grupos[u][1]) for u, t in vistos if u in grupos})
     completar_con_actas(estado, errores)
 
     # se guarda el histórico de la temporada en curso (lo de temporadas anteriores se descarta)

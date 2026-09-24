@@ -1,0 +1,28 @@
+[
+  {
+    "grupo": "Preferente Juvenil Grupo 5",
+    "jornada": 1,
+    "fecha": "2026-09-12",
+    "hora": "11:00",
+    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+    "local": "C.D. CIUDAD LOS ANGELES 'A'",
+    "visitante": "C.F. MADRID RIO - ARGANZUELA 'C'",
+    "resultado": [
+      2,
+      1
+    ]
+  },
+  {
+    "grupo": "Primera Juvenil Grupo 11",
+    "jornada": 2,
+    "fecha": "2026-09-19",
+    "hora": "17:00",
+    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+    "local": "C.D. CIUDAD LOS ANGELES 'B'",
+    "visitante": "ESC.MUN.FUT. ALUCHE 'C'",
+    "resultado": [
+      2,
+      1
+    ]
+  }
+]

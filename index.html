@@ -104,9 +104,13 @@
   table.clas th { font-weight: 700; font-size: 0.85rem; background: #f6f6f3; }
   table.clas th:nth-child(1), table.clas td:nth-child(1) { position: sticky; left: 0; min-width: 34px; z-index: 1; }
   table.clas th:nth-child(2), table.clas td:nth-child(2) {
-    position: sticky; left: 34px; z-index: 1; text-align: left; min-width: 150px; max-width: 190px;
-    overflow: hidden; text-overflow: ellipsis; border-right: 2px solid var(--tinta);
+    position: sticky; left: 34px; z-index: 1; text-align: left; min-width: 130px;
+    border-right: 2px solid var(--tinta);
   }
+  /* el nombre completo siempre se ve: cuanto más largo, más pequeña la letra */
+  table.clas td.eq-m { font-size: 0.86rem; }
+  table.clas td.eq-s { font-size: 0.77rem; }
+  table.clas td.eq-xs { font-size: 0.69rem; }
   table.clas td:last-child, table.clas th:last-child { font-weight: 800; }
   table.clas tr.nuestro td { font-weight: 800; background: #e8f0ea; }
   .estado { padding: 18px 16px; margin: 0; }
@@ -321,7 +325,9 @@
     var cab = ["#", "Equipo", "PJ", "G", "E", "P", "GF", "GC", "DG", "Pts"].map(function (c) { return "<th>" + c + "</th>"; }).join("");
     var filas = g.filas.map(function (f) {
       var dg = f.dg > 0 ? "+" + f.dg : f.dg;
-      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + "</td><td>" + escapar(f.nombre) + "</td><td>" + f.pj +
+      var n = f.nombre.length;
+      var tam = n > 32 ? "eq-xs" : (n > 26 ? "eq-s" : (n > 20 ? "eq-m" : ""));
+      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + '</td><td class="' + tam + '">' + escapar(f.nombre) + "</td><td>" + f.pj +
         "</td><td>" + f.g + "</td><td>" + f.e + "</td><td>" + f.p + "</td><td>" + f.gf + "</td><td>" + f.gc + "</td><td>" + dg + "</td><td>" + f.pts + "</td></tr>";
     }).join("");
     elMensaje.innerHTML = (nota ? '<p class="nota">' + escapar(nota) + "</p>" : "") +
