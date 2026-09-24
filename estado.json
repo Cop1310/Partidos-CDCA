@@ -2451,7 +2451,7 @@
   "cursor": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": 5645994,
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": 5583063,
-   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": 5614510
+   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": 5614494
   },
   "hechas": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": [],
@@ -2516,7 +2516,8 @@
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": true,
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": true,
    "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": true
-  }
+  },
+  "version_historico": 3
  },
  "partidos": {
   "5583083": {
@@ -2675,6 +2676,28 @@
    "visitante": [
     "13538235",
     "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5614503": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614503?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PUERTO RICO (HA)",
+   "fecha": "2026-09-13",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": "15:00",
+   "jornada": 1,
+   "local": [
+    "786",
+    "C.D. ALZOLA-HALCONES 'B'"
+   ],
+   "pos": null,
+   "resultado": [
+    3,
+    0
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
    ]
   },
   "5614520": {

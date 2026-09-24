@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24 12:52",
+  "generado": "2026-09-24 13:10",
   "desde": "2026-09-26",
   "hasta": "2026-09-27",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Racing de Villaverde B - *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ (11º) Escuela de Futbol Arganda B - (4º) *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola - Halcones D - *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ (17º) Unión 2000 B - (9º) *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Los Rosales de Villaverde - *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ (8º) Unión Carrascal A - (12º) *_Ciudad de los Ángeles A_*",
@@ -15,8 +15,8 @@
   "semanas": [
     {
       "sabado": "2026-09-12",
-      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 13/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 1_\n📍 Campo: La Union - Vallecas Villa\n⚽ Udmelidaolimpia - Madrid City Vallecas - *_Ciudad de los Ángeles A_*",
-      "resultados": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 13/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 1_\n📍 Campo: La Union - Vallecas Villa\n🟡 Udmelidaolimpia - Madrid City Vallecas 0 - 0 *_Ciudad de los Ángeles A_*"
+      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 13/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 1_\n📍 Campo: La Union - Vallecas Villa\n⚽ Udmelidaolimpia - Madrid City Vallecas - *_Ciudad de los Ángeles A_*\n\n⏰ *15:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola-Halcones B - *_Ciudad de los Ángeles B_*",
+      "resultados": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 13/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 1_\n📍 Campo: La Union - Vallecas Villa\n🟡 Udmelidaolimpia - Madrid City Vallecas 0 - 0 *_Ciudad de los Ángeles A_*\n\n⏰ *15:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n🔴 Alzola-Halcones B 3 - 0 *_Ciudad de los Ángeles B_*"
     },
     {
       "sabado": "2026-09-19",
@@ -2331,6 +2331,27 @@
         }
       ],
       "equipo": "Ciudad de los Ángeles A"
+    },
+    {
+      "titulo": "Segunda Alevín F-7",
+      "jornada": null,
+      "filas": [],
+      "equipo": "Ciudad de los Ángeles B",
+      "pendiente": true
+    },
+    {
+      "titulo": "Segunda Alevín F-7",
+      "jornada": null,
+      "filas": [],
+      "equipo": "Ciudad de los Ángeles C",
+      "pendiente": true
+    },
+    {
+      "titulo": "Primera Benjamín F7",
+      "jornada": null,
+      "filas": [],
+      "equipo": "Ciudad de los Ángeles",
+      "pendiente": true
     }
   ]
 }
