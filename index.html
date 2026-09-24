@@ -76,6 +76,35 @@
   .partido.origen { background: #f6f6f3; color: var(--suave); font-size: 0.9rem; }
   .partido.origen a { color: inherit; }
   .partido.dia { background: var(--tinta); color: #fff; padding: 10px 16px; }
+  .banda { display: flex; align-items: center; gap: 8px; padding: 10px 14px; font-size: 1rem; font-weight: 800; }
+  .banda.dia-c { background: var(--tinta); color: #fff; }
+  .banda.pend { background: #faeeda; color: #633806; border-top: 1px solid var(--linea); }
+  .banda svg { flex: none; }
+  .p { padding: 12px 14px; border-top: 1px solid var(--linea); }
+  .banda + .p { border-top: 0; }
+  .p .f1 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .p .hora { display: inline-flex; align-items: center; gap: 4px; font-size: 1.45rem; font-weight: 800; line-height: 1; color: #185fa5; }
+  .p .pill { display: inline-block; font-size: 0.78rem; font-weight: 700; padding: 3px 9px; border-radius: 4px; }
+  .cat-violeta { background: #eeedfe; color: #3c3489; }
+  .cat-aqua { background: #e1f5ee; color: #085041; }
+  .cat-naranja { background: #faece7; color: #712b13; }
+  .cat-magenta { background: #fbeaf0; color: #72243e; }
+  .cat-azul { background: #e6f1fb; color: #0c447c; }
+  .cat-gris { background: #f1efe8; color: #444441; }
+  .p .v { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.86rem; color: var(--suave); }
+  .p .v em { font-style: italic; }
+  .p .v svg { flex: none; }
+  .p .eq { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 1rem; }
+  .p .eq .a { flex: 1; text-align: right; }
+  .p .eq .b { flex: 1; }
+  .p .vs { font-size: 0.82rem; color: var(--suave); }
+  .p .us { background: #f7e9b0; border-radius: 4px; padding: 1px 6px; font-weight: 800; }
+  .p small.pos { font-size: 0.72rem; color: var(--suave); margin-right: 3px; }
+  .p .sc { font-size: 1.1rem; font-weight: 800; padding: 2px 10px; border-radius: 4px; white-space: nowrap; }
+  .sc.gana { background: #eaf3de; color: #27500a; }
+  .sc.empata { background: #faeeda; color: #633806; }
+  .sc.pierde { background: #fcebeb; color: #791f1f; }
+  .sc.neutro { background: #f1efe8; color: #444441; }
   .semanas { display: flex; gap: 8px; margin: 0 0 12px; }
   .semanas[hidden] { display: none; }
   .semanas button { flex: none; width: 48px; min-height: 46px; padding: 0; font-size: 1rem; background: var(--papel); color: var(--tinta); }
@@ -99,20 +128,12 @@
   .sin-barra { padding-bottom: 28px; }
   .nota { margin: 0; padding: 10px 16px; font-size: 0.9rem; color: var(--suave); border-bottom: 1px solid var(--linea); }
   .tabla-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  table.clas { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 0.95rem; }
-  table.clas th, table.clas td { padding: 9px 7px; text-align: center; white-space: nowrap; border-bottom: 1px solid var(--linea); background: var(--papel); }
-  table.clas th { font-weight: 700; font-size: 0.85rem; background: #f6f6f3; }
-  table.clas th:nth-child(1), table.clas td:nth-child(1) { position: sticky; left: 0; min-width: 34px; z-index: 1; }
-  table.clas th:nth-child(2), table.clas td:nth-child(2) {
-    position: sticky; left: 34px; z-index: 1; text-align: left; min-width: 130px;
-    border-right: 2px solid var(--tinta);
-  }
-  /* el nombre completo siempre se ve: cuanto más largo, más pequeña la letra */
-  table.clas td.eq-m { font-size: 0.86rem; }
-  table.clas td.eq-s { font-size: 0.77rem; }
-  table.clas td.eq-xs { font-size: 0.69rem; }
-  table.clas td:last-child, table.clas th:last-child { font-weight: 800; }
-  table.clas tr.nuestro td { font-weight: 800; background: #e8f0ea; }
+  table.clas { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: clamp(11px, 2.9vw, 14px); }
+  table.clas th, table.clas td { padding: 5px 1px; text-align: center; line-height: 1.2; border-bottom: 1px solid var(--linea); background: var(--papel); }
+  table.clas th { font-weight: 700; font-size: 0.95em; background: #f6f6f3; color: var(--suave); border-bottom: 1px solid var(--tinta); }
+  table.clas th.e, table.clas td.e { text-align: left; padding-left: 6px; overflow-wrap: anywhere; }
+  table.clas td.pts { font-weight: 800; }
+  table.clas tr.nuestro td { font-weight: 800; background: #f7e9b0; }
   .estado { padding: 18px 16px; margin: 0; }
   .aviso { margin: 16px 0 0; color: var(--suave); font-size: 0.92rem; }
   .pie { margin: 22px 0 0; color: var(--suave); font-size: 0.85rem; }
@@ -292,6 +313,92 @@
     return ((activa === "partidos" ? datos.texto : datos.resultados) || "").trim();
   }
 
+
+  // ---------- Vista previa con colores y tamaños (el texto que se envía no cambia) ----------
+  var SVG = 'width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+  var ICONO_RELOJ = '<svg ' + SVG + '><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>';
+  var ICONO_CAL = '<svg ' + SVG + '><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M16 3v4M8 3v4M4 11h16"/></svg>';
+  var ICONO_PIN = '<svg ' + SVG + '><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0"/></svg>';
+  var CATEGORIAS = [[/aficionado/i, "violeta"], [/juvenil/i, "aqua"], [/cadete/i, "naranja"],
+                    [/infantil/i, "magenta"], [/alev[ií]n|benjam[ií]n/i, "azul"]];
+
+  function claseCategoria(t) {
+    for (var i = 0; i < CATEGORIAS.length; i++) if (CATEGORIAS[i][0].test(t)) return CATEGORIAS[i][1];
+    return "gris";
+  }
+
+  function equipoHtml(s) {
+    s = s.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, "").trim();
+    var pos = "", m = /^\((\d+)º\)\s*(.*)$/.exec(s);
+    if (m) { pos = '<small class="pos">' + m[1] + "º</small>"; s = m[2]; }
+    var us = /^\*_(.+)_\*$/.exec(s);
+    return us ? pos + '<span class="us">' + escapar(us[1]) + "</span>" : pos + escapar(s);
+  }
+
+  function partirEquipos(linea) {
+    var m = /^(\S+)\s+(.*)$/.exec(linea);
+    if (!m) return null;
+    var icono = m[1], resto = m[2];
+    var sc = /^(.*?)\s(\d+)\s-\s(\d+)\s(.*)$/.exec(resto);
+    if (sc) return { icono: icono, local: sc[1], visitante: sc[4], marcador: [sc[2], sc[3]] };
+    var us = /(\(\d+º\)\s*)?\*_.+?_\*/.exec(resto);   // sin marcador: se separa por nuestro equipo
+    if (!us) return null;
+    if (us.index > 0) {
+      return { icono: icono, local: resto.slice(0, us.index).replace(/\s-\s*$/, "").trim(), visitante: us[0], marcador: null };
+    }
+    return { icono: icono, local: us[0], visitante: resto.slice(us[0].length).replace(/^\s*-\s*/, "").trim(), marcador: null };
+  }
+
+  function partidoHtml(bloque) {
+    var l = bloque.split("\n"), hora = null, titulo, jor = null, campo = null, eq = null;
+    var cab = /^⏰\s*\*(\d{2}:\d{2})h\*\s*-\s*(.+)$/.exec(l[0]);
+    if (cab) { hora = cab[1]; titulo = cab[2]; }
+    else {
+      var t = /^🏆\s*(.+)$/.exec(l[0]);
+      if (!t) return null;
+      titulo = t[1];
+    }
+    for (var i = 1; i < l.length; i++) {
+      var j = /^📌\s*_Jornada (\d+)_$/.exec(l[i]);
+      var c = /^📍\s*(?:Campo|Pabellón):\s*(.+)$/.exec(l[i]);
+      if (j) jor = j[1];
+      else if (c) campo = c[1];
+      else eq = partirEquipos(l[i]);
+    }
+    if (!eq) return null;
+    var clase = { "🟢": "gana", "🟡": "empata", "🔴": "pierde" }[eq.icono] || "neutro";
+    var centro = eq.marcador
+      ? '<span class="sc ' + clase + '">' + eq.marcador[0] + " - " + eq.marcador[1] + "</span>"
+      : '<span class="vs">vs</span>';
+    var etiqueta = escapar(titulo.replace(/\s+Grupo\s+(\d+)/i, " · grupo $1"));
+    var detalle = (jor ? "<em>Jornada " + jor + "</em>" : "") + (jor && campo ? " · " : "") + (campo ? ICONO_PIN + escapar(campo) : "");
+    return '<div class="p"><div class="f1">' +
+      (hora ? '<span class="hora">' + ICONO_RELOJ + hora + "</span>" : "") +
+      '<span class="pill cat-' + claseCategoria(titulo) + '">' + etiqueta + "</span></div>" +
+      (detalle ? '<div class="v">' + detalle + "</div>" : "") +
+      '<div class="eq"><span class="a">' + equipoHtml(eq.local) + "</span>" + centro +
+      '<span class="b">' + equipoHtml(eq.visitante) + "</span></div></div>";
+  }
+
+  function mensajeHtml(texto) {
+    return texto.split(/\n\s*\n/).map(function (bloque) {
+      if (/^Información sacada de la web/.test(bloque)) {
+        return '<div class="partido origen"><p>' + formato(bloque) + "</p></div>";
+      }
+      if (bloque.indexOf("📅") !== -1) {   // rótulo de día o de pendientes
+        var t = /📅\s*\*(.+?)\*/.exec(bloque);
+        if (t) {
+          var pend = /PENDIENTE/i.test(t[1]);
+          var nombre = pend ? "Pendiente de confirmar día y hora" : t[1].charAt(0) + t[1].slice(1).toLowerCase();
+          return '<div class="banda ' + (pend ? "pend" : "dia-c") + '">' + ICONO_CAL + escapar(nombre) + "</div>";
+        }
+      }
+      var p = partidoHtml(bloque);
+      if (p) return p;
+      return '<div class="partido"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
+    }).join("");
+  }
+
   function pintarClasificacion() {
     var cl = clasificaciones();
     elCuando.textContent = "Elige una categoría para ver su clasificación";
@@ -322,16 +429,20 @@
     var jugados = g.filas.some(function (f) { return f.pj > 0; });
     var nota = g.jornada ? "Tras la jornada " + g.jornada : (jugados ? "" : "Todavía no se ha jugado ninguna jornada");
     if (!g.jornada && !jugados) nota = "Todavía no se ha jugado ninguna jornada";
-    var cab = ["#", "Equipo", "PJ", "G", "E", "P", "GF", "GC", "DG", "Pts"].map(function (c) { return "<th>" + c + "</th>"; }).join("");
+    var cab = ["#", "Equipo", "PJ", "G", "E", "P", "GF", "GC", "DG", "Pts"].map(function (c, i) {
+      return "<th" + (i === 1 ? ' class="e"' : "") + ">" + c + "</th>";
+    }).join("");
+    var anchos = ["2em", "", "1.9em", "1.6em", "1.6em", "1.6em", "2em", "2em", "2.4em", "2.3em"];
+    var cols = anchos.map(function (a) { return a ? '<col style="width:' + a + '">' : "<col>"; }).join("");
     var filas = g.filas.map(function (f) {
       var dg = f.dg > 0 ? "+" + f.dg : f.dg;
-      var n = f.nombre.length;
-      var tam = n > 32 ? "eq-xs" : (n > 26 ? "eq-s" : (n > 20 ? "eq-m" : ""));
-      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + '</td><td class="' + tam + '">' + escapar(f.nombre) + "</td><td>" + f.pj +
-        "</td><td>" + f.g + "</td><td>" + f.e + "</td><td>" + f.p + "</td><td>" + f.gf + "</td><td>" + f.gc + "</td><td>" + dg + "</td><td>" + f.pts + "</td></tr>";
+      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + '</td><td class="e">' + escapar(f.nombre) + "</td><td>" + f.pj +
+        "</td><td>" + f.g + "</td><td>" + f.e + "</td><td>" + f.p + "</td><td>" + f.gf + "</td><td>" + f.gc + "</td><td>" + dg +
+        '</td><td class="pts">' + f.pts + "</td></tr>";
     }).join("");
     elMensaje.innerHTML = (nota ? '<p class="nota">' + escapar(nota) + "</p>" : "") +
-      '<div class="tabla-wrap"><table class="clas"><thead><tr>' + cab + "</tr></thead><tbody>" + filas + "</tbody></table></div>";
+      '<div class="tabla-wrap"><table class="clas"><colgroup>' + cols + "</colgroup><thead><tr>" + cab +
+      "</tr></thead><tbody>" + filas + "</tbody></table></div>";
   }
 
   function pintar() {
@@ -373,12 +484,7 @@
       btnWa.classList.add("desactivado");
       btnWa.href = "#";
     } else {
-      elMensaje.innerHTML = texto.split(/\n\s*\n/).map(function (bloque) {
-        var esDia = bloque.indexOf("📅") !== -1;
-        if (esDia) bloque = bloque.replace(/^━+$/gm, "").trim();   // las líneas ━ solo son para WhatsApp
-        var clase = /^Información sacada de la web/.test(bloque) ? " origen" : (esDia ? " dia" : "");
-        return '<div class="partido' + clase + '"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
-      }).join("");
+      elMensaje.innerHTML = mensajeHtml(texto);
       btnCopiar.classList.remove("desactivado");
       btnWa.classList.remove("desactivado");
       btnWa.href = "https://wa.me/?text=" + encodeURIComponent(texto);
