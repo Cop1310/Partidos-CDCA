@@ -881,7 +881,7 @@
      "gc": 5,
      "gf": 3,
      "id": "2269821",
-     "nombre": "Esc.Mun.Fut. Aluche C",
+     "nombre": "Aluche C",
      "nuestro": false,
      "p": 2,
      "pj": 2,
@@ -3071,6 +3071,50 @@
    "visitante": [
     "9885562",
     "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ]
+  },
+  "manual|https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas|1": {
+   "acta": null,
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-09-12",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": "11:00",
+   "jornada": 1,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": [
+    2,
+    1
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "manual-C.F. MADRID RIO - ARGANZUELA 'C'",
+    "C.F. MADRID RIO - ARGANZUELA 'C'"
+   ]
+  },
+  "manual|https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas|2": {
+   "acta": null,
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-09-19",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": "17:00",
+   "jornada": 2,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": [
+    2,
+    1
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "manual-ESC.MUN.FUT. ALUCHE 'C'",
+    "ESC.MUN.FUT. ALUCHE 'C'"
    ]
   }
  }
