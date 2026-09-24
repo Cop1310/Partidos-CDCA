@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>Partidos del fin de semana · CD Ciudad de los Ángeles</title>
+<style>
+  :root {
+    --tinta: #141414;
+    --papel: #ffffff;
+    --fondo: #efefec;
+    --linea: #d6d6d1;
+    --verde: #0f7a43;
+    --verde-oscuro: #0b6236;
+    --suave: #5b5b57;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: "Helvetica Neue", Arial, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.45;
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+  }
+  /* Franja con las rayas de la camiseta del club */
+  .rayas {
+    height: 18px;
+    background: repeating-linear-gradient(90deg, #141414 0 18px, #ffffff 18px 36px);
+    border-bottom: 2px solid var(--tinta);
+    padding-top: env(safe-area-inset-top, 0px);
+    box-sizing: content-box;
+  }
+  main { max-width: 560px; margin: 0 auto; padding: 22px 16px 8px; }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+    font-weight: 800;
+  }
+  .cuando { margin: 0 0 20px; color: var(--suave); font-size: 1rem; }
+
+  .mensaje {
+    background: var(--papel);
+    border: 2px solid var(--tinta);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .partido { padding: 14px 16px; font-size: 1.02rem; }
+  .partido + .partido { border-top: 1px solid var(--linea); }
+  .partido p { margin: 0; overflow-wrap: anywhere; }
+  .partido strong { font-weight: 800; }
+
+  .estado { padding: 18px 16px; margin: 0; }
+  .aviso { margin: 16px 0 0; color: var(--suave); font-size: 0.92rem; }
+  .pie { margin: 22px 0 0; color: var(--suave); font-size: 0.85rem; }
+
+  .barra {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: var(--papel);
+    border-top: 2px solid var(--tinta);
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+  .barra div { max-width: 560px; margin: 0 auto; display: flex; gap: 10px; }
+  button, a.boton {
+    flex: 1;
+    font: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    min-height: 52px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: 2px solid var(--tinta);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #copiar { background: var(--papel); color: var(--tinta); }
+  #whatsapp { background: var(--verde); color: #fff; border-color: var(--verde-oscuro); }
+  button:focus-visible, a.boton:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+  .desactivado { opacity: 0.4; pointer-events: none; }
+</style>
+</head>
+<body>
+<div class="rayas" aria-hidden="true"></div>
+<main>
+  <h1>Partidos del fin de semana</h1>
+  <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+
+  <div class="mensaje" id="mensaje" aria-live="polite">
+    <p class="estado">Cargando partidos…</p>
+  </div>
+  <p class="aviso" id="aviso"></p>
+  <p class="pie" id="pie"></p>
+</main>
+
+<div class="barra">
+  <div>
+    <button id="copiar" class="desactivado" type="button">Copiar mensaje</button>
+    <a id="whatsapp" class="boton desactivado" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var texto = "";
+  var elMensaje = document.getElementById("mensaje");
+  var elCuando = document.getElementById("cuando");
+  var elAviso = document.getElementById("aviso");
+  var elPie = document.getElementById("pie");
+  var btnCopiar = document.getElementById("copiar");
+  var btnWa = document.getElementById("whatsapp");
+
+  function escapar(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  // *texto* -> negrita (igual que en WhatsApp)
+  function negritas(s) {
+    return escapar(s).replace(/\*([^*\n]+)\*/g, "<strong>$1</strong>");
+  }
+
+  function fecha(iso) {
+    var p = iso.split("-");
+    return p[2] + "/" + p[1];
+  }
+
+  function pintar(datos) {
+    texto = (datos.texto || "").trim();
+    var anio = datos.desde ? datos.desde.split("-")[0] : "";
+    if (datos.desde && datos.hasta) {
+      elCuando.textContent = "Sábado " + fecha(datos.desde) + " y domingo " + fecha(datos.hasta) + "/" + anio;
+    }
+
+    if (!texto) {
+      elMensaje.innerHTML = '<p class="estado">Todavía no hay partidos publicados para este fin de semana. La página se actualiza cada día a primera hora.</p>';
+    } else {
+      elMensaje.innerHTML = texto.split(/\n\s*\n/).map(function (bloque) {
+        return '<div class="partido"><p>' + negritas(bloque).replace(/\n/g, "<br>") + "</p></div>";
+      }).join("");
+      btnCopiar.classList.remove("desactivado");
+      btnWa.classList.remove("desactivado");
+      btnWa.href = "https://wa.me/?text=" + encodeURIComponent(texto);
+    }
+
+    if (datos.sin_partido && datos.sin_partido.length) {
+      elAviso.textContent = "Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".";
+    }
+
+    if (datos.generado) {
+      var p = datos.generado.split(" ");
+      var d = p[0].split("-");
+      elPie.textContent = "Actualizado el " + d[2] + "/" + d[1] + "/" + d[0] + " a las " + p[1] +
+        ". Datos de elbalondemadrid.es (RFFM), no oficiales: antes de desplazarte, revisa el acta del partido.";
+    }
+  }
+
+  function copiar() {
+    if (!texto) return;
+    var aviso = function () {
+      btnCopiar.textContent = "Mensaje copiado";
+      setTimeout(function () { btnCopiar.textContent = "Copiar mensaje"; }, 2000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(texto).then(aviso, alternativa);
+    } else {
+      alternativa();
+    }
+    function alternativa() {
+      var t = document.createElement("textarea");
+      t.value = texto;
+      t.style.position = "fixed";
+      t.style.opacity = "0";
+      document.body.appendChild(t);
+      t.select();
+      try { document.execCommand("copy"); aviso(); } catch (e) {}
+      document.body.removeChild(t);
+    }
+  }
+
+  btnCopiar.addEventListener("click", copiar);
+
+  fetch("partidos.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(pintar)
+    .catch(function () {
+      elMensaje.innerHTML = '<p class="estado">No se han podido cargar los partidos. Comprueba que la acción "Actualizar partidos" de GitHub se ha ejecutado al menos una vez.</p>';
+    });
+})();
+</script>
+</body>
+</html>
