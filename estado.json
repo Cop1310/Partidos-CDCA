@@ -10,6 +10,10 @@
     "1546",
     "ESCUELA DE FUTBOL ARGANDA 'B'"
    ],
+   "pos": [
+    11,
+    4
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
@@ -27,6 +31,7 @@
     "10652335",
     "RACING VILLAVERDE C.F. 'B'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
    "visitante": [
@@ -44,6 +49,7 @@
     "10652341",
     "RACING VILLAVERDE C.F. 'A'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
    "visitante": [
@@ -61,6 +67,7 @@
     "1031681",
     "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
    "visitante": [
@@ -77,6 +84,10 @@
    "local": [
     "4928739",
     "UNION 2000 'B'"
+   ],
+   "pos": [
+    17,
+    9
    ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
@@ -95,6 +106,7 @@
     "2733",
     "C.D.E. LOS ROSALES DE VILLAVERDE"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
    "visitante": [
@@ -112,6 +124,7 @@
     "680085",
     "C.D. ALZOLA - HALCONES 'D'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
@@ -128,6 +141,10 @@
    "local": [
     "2346",
     "A.D. UNION CARRASCAL 'A'"
+   ],
+   "pos": [
+    8,
+    12
    ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
@@ -146,6 +163,7 @@
     "17130722",
     "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
    "visitante": [
@@ -163,6 +181,7 @@
     "8961563",
     "C.D. CIUDAD LOS ANGELES 'B'"
    ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
    "visitante": [
