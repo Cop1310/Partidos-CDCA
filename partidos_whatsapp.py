@@ -61,6 +61,10 @@ CONOCIDOS = {
 
 TZ = ZoneInfo("Europe/Madrid")
 AVISO = "Información sacada de la web El Balón de Madrid"
+# WhatsApp no permite poner el escudo real dentro del texto; se usa un emoji.
+# Cámbialo por el que prefieras, p. ej. "⚪⚫" o "🦓" (o "" para quitarlo).
+ESCUDO = ""
+LINEA = "━" * 16
 DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
 # ---------------------------------------------------------------------------
@@ -413,6 +417,8 @@ def _equipo(par, pos=None):
     limpio = limpiar_equipo(par[1])
     if _es_nuestro(par):
         limpio = f"*_{limpio}_*"  # nuestro equipo: negrita y cursiva
+        if ESCUDO:
+            limpio = f"{ESCUDO} {limpio}"
     return f"({pos}º) {limpio}" if pos else limpio
 
 
@@ -430,11 +436,11 @@ def bloque(e, con_resultado=False):
     """Un partido: hora y categoría, jornada, campo y enfrentamiento."""
     hora = e.get("hora")
     if hora:
-        cabecera = f"⏰ {hora}h - {e['grupo']}"
+        cabecera = f"⏰ *{hora}h* - {e['grupo']}"
     elif con_resultado:
         cabecera = f"🏆 {e['grupo']}"
     else:
-        cabecera = f"⏰ Hora por confirmar - {e['grupo']}"
+        cabecera = f"⏰ *Hora por confirmar* - {e['grupo']}"
     campo = limpiar_campo(e.get("campo")) or "por confirmar"
     pos = e.get("pos") or [None, None]
     local, visitante = _equipo(e["local"], pos[0]), _equipo(e["visitante"], pos[1])
@@ -445,7 +451,7 @@ def bloque(e, con_resultado=False):
         linea = f"⚽ {local} - {visitante}"
     lineas = [cabecera]
     if e.get("jornada"):
-        lineas.append(f"📌 Jornada {e['jornada']}")
+        lineas.append(f"📌 _Jornada {e['jornada']}_")
     lineas += [f"📍 Campo: {campo}", linea]
     return "\n".join(lineas)
 
@@ -463,7 +469,8 @@ def componer(estado, sabado, con_resultado):
         if e["fecha"] != dia_actual:  # el día aparece una sola vez, como titular
             dia_actual = e["fecha"]
             f = date.fromisoformat(dia_actual)
-            partes.append(f"📅 *{DIAS[f.weekday()]} {f:%d/%m/%Y}*")
+            titular = f"📅 *{DIAS[f.weekday()].upper()} {f:%d/%m/%Y}*"
+            partes.append(f"{LINEA}\n{titular}\n{LINEA}")
         partes.append(bloque(e, con_resultado))
     return "\n\n".join(partes)
 

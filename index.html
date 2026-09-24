@@ -150,7 +150,8 @@
     return escapar(s)
       .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
       .replace(/\*_([^_\n*]+)_\*/g, "<strong><em>$1</em></strong>")
-      .replace(/\*([^*\n]+)\*/g, "<strong>$1</strong>");
+      .replace(/\*([^*\n]+)\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(])_([^_\n]+)_(?=$|[\s.,;:!?)])/g, "$1<em>$2</em>");
   }
 
   function fecha(iso) {
@@ -185,7 +186,9 @@
       btnWa.href = "#";
     } else {
       elMensaje.innerHTML = texto.split(/\n\s*\n/).map(function (bloque) {
-        var clase = /^Información sacada de la web/.test(bloque) ? " origen" : (/^📅/.test(bloque) ? " dia" : "");
+        var esDia = bloque.indexOf("📅") !== -1;
+        if (esDia) bloque = bloque.replace(/^━+$/gm, "").trim();   // las líneas ━ solo son para WhatsApp
+        var clase = /^Información sacada de la web/.test(bloque) ? " origen" : (esDia ? " dia" : "");
         return '<div class="partido' + clase + '"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
       }).join("");
       btnCopiar.classList.remove("desactivado");
