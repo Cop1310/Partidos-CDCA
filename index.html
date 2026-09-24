@@ -74,9 +74,11 @@
   .semanas { display: flex; gap: 8px; margin: 0 0 12px; }
   .semanas[hidden] { display: none; }
   .semanas button { flex: none; width: 48px; min-height: 46px; padding: 0; font-size: 1rem; background: var(--papel); color: var(--tinta); }
+  .semanas select option { text-align: center; }
   .semanas button:disabled { opacity: 0.35; cursor: default; }
   .semanas select {
-    flex: 1; min-width: 0; min-height: 46px; font: inherit; font-weight: 700; font-size: 1rem; padding: 0 10px;
+    flex: 1; min-width: 0; min-height: 46px; font: inherit; font-weight: 700; font-size: 1rem; padding: 0 30px;
+    text-align: center; text-align-last: center; -moz-text-align-last: center;
     color: var(--tinta); background: var(--papel); border: 2px solid var(--tinta); border-radius: 4px;
   }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }

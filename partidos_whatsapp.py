@@ -502,7 +502,7 @@ def completar_con_actas(estado, errores):
 # tener números correlativos. Se leen hacia atrás las actas anteriores a la jornada actual
 # y solo se guardan las que confirman ser de una jornada anterior y de equipos del grupo.
 # ---------------------------------------------------------------------------
-MAX_RELLENO = 60  # actas (pasadas y futuras) que se leen por ejecución
+MAX_RELLENO = 150  # actas (pasadas y futuras) que se leen por ejecución
 
 
 def _sin_acentos(texto):
@@ -562,6 +562,8 @@ def rellenar_jornadas(url, ids, titulo, actual, actas_actuales, equipos_grupo, e
         return 0
     comp, grupo = m.groups()
     numero = cursor.get(url, base - 1)
+    print(f"Histórico de {titulo}: jornada actual {actual}, actas {base}-{base + n - 1}; "
+          f"se sigue desde el acta {numero}.", file=sys.stderr)
     encontrados, gastadas, seguidos_mal = {}, 0, 0
     while numero > 0 and gastadas < cupo:
         gastadas += 1
@@ -799,7 +801,7 @@ def main():
 
     estado, clasif, meta = cargar_estado(args.estado)
     cupo = MAX_RELLENO
-    errores, consultados, vistos, finalizadas = [], 0, [], set()
+    errores, consultados, vistos, finalizadas, trabajos = [], 0, [], set(), []
     grupos = grupos_a_consultar(errores)
     for url, (nombre, ids) in grupos.items():
         try:
@@ -835,17 +837,21 @@ def main():
         posiciones = {f["id"]: f["pos"] for f in filas} if any(f["pj"] for f in filas) else {}
         for p in propios:
             actualizar_estado(estado, p, titulo, url, posiciones)
-        if actual and actual > 1:
-            actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
-            equipos_grupo = {e[0] for p in todos for e in p["equipos"]} | {f["id"] for f in filas}
-            cupo -= rellenar_jornadas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
-        if actual:
-            actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
-            equipos_grupo = {e[0] for p in todos for e in p["equipos"]} | {f["id"] for f in filas}
-            cupo -= explorar_proximas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
+        actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
+        equipos_grupo = {e[0] for p in todos for e in p["equipos"]} | {f["id"] for f in filas}
+        trabajos.append((url, ids, titulo, actual, actas, equipos_grupo))
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
+
+    # Histórico: primero las jornadas pasadas de TODAS las categorías (los resultados son lo
+    # más importante) y con lo que sobre, las próximas jornadas.
+    for url, ids, titulo, actual, actas, equipos_grupo in trabajos:
+        if actual and actual > 1:
+            cupo -= rellenar_jornadas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
+    for url, ids, titulo, actual, actas, equipos_grupo in trabajos:
+        if actual:
+            cupo -= explorar_proximas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
 
     completar_con_actas(estado, errores)
 
