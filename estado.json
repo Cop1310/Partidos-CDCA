@@ -553,7 +553,7 @@
      "gc": 4,
      "gf": 4,
      "id": "8972472",
-     "nombre": "Torrejon D",
+     "nombre": "Torrejón D",
      "nuestro": false,
      "p": 1,
      "pj": 2,
@@ -2563,7 +2563,7 @@
   },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
    "fecha": "2026-09-26",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:30",
@@ -3158,7 +3158,7 @@
   },
   "5594869": {
    "acta": "https://www.elbalondemadrid.es/acta/5594869?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-09-26",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "11:45",
@@ -4184,7 +4184,7 @@
   },
   "5606348": {
    "acta": "https://www.elbalondemadrid.es/acta/5606348?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-09-26",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "15:30",
@@ -5447,7 +5447,7 @@
   },
   "5628228": {
    "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-09-27",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:00",
@@ -6017,7 +6017,7 @@
   },
   "5642638": {
    "acta": "https://www.elbalondemadrid.es/acta/5642638?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "campo": "PUERTO RICO (HA)",
    "fecha": "2026-09-26",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "16:00",
@@ -6593,7 +6593,7 @@
   },
   "5646022": {
    "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
    "fecha": "2026-09-27",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "19:00",
@@ -7204,7 +7204,7 @@
   },
   "5659178": {
    "acta": "https://www.elbalondemadrid.es/acta/5659178?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-10-10",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
@@ -7698,7 +7698,7 @@
   },
   "5663194": {
    "acta": "https://www.elbalondemadrid.es/acta/5663194?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-10",
    "grupo": "Segunda Infantil Grupo 34",
    "hora": null,
@@ -8226,6 +8226,25 @@
    "visitante": [
     "-27786794",
     "Descansa"
+   ]
+  },
+  "manual|https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas|5": {
+   "acta": null,
+   "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)",
+   "fecha": "2026-10-11",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "manual-A.D. TORREJON C.F. 'D'",
+    "A.D. TORREJON C.F. 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   }
  }
