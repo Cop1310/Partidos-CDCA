@@ -2449,7 +2449,9 @@
  },
  "meta": {
   "cursor": {
-   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": 5645994
+   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": 5645994,
+   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": 5583063,
+   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": 5614510
   },
   "hechas": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": [],
@@ -2464,17 +2466,81 @@
     "cursor": null,
     "fecha": "2026-09-24"
    },
+   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
+    "actual": 3,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": {
+    "actual": 3,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": {
+    "actual": 1,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas": {
+    "actual": 1,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
+    "actual": 1,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
+    "actual": 1,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
    "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
     "actual": 1,
-    "cursor": 5628231,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
+    "actual": 1,
+    "cursor": null,
+    "fecha": "2026-09-24"
+   },
+   "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas": {
+    "actual": 1,
+    "cursor": null,
     "fecha": "2026-09-24"
    }
   },
   "terminado": {
-   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": true
+   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": true,
+   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": true,
+   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": true
   }
  },
  "partidos": {
+  "5583083": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583083?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-09-19",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": "19:05",
+   "jornada": 2,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": [
+    1,
+    0
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "680068",
+    "C.D. SPORT VILLA DE VALLECAS"
+   ]
+  },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
    "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
@@ -2490,6 +2556,63 @@
     11,
     4
    ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583100": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583100?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-04",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "1495",
+    "A.D. ESCUELA DE FUTBOL DE CARABANCHEL 'B'"
+   ]
+  },
+  "5583117": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583117?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-18",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "680074",
+    "C.D. VICALVARO 'C'"
+   ]
+  },
+  "5583125": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583125?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. VALDEBERNARDO (HA)",
+   "fecha": "2026-10-25",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": "15:00",
+   "jornada": 7,
+   "local": [
+    "6817156",
+    "C.D. UNION VALDEBERNARDO 'B'"
+   ],
+   "pos": null,
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
@@ -2576,6 +2699,44 @@
     "C.D. CIUDAD LOS ANGELES 'B'"
    ]
   },
+  "5614529": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614529?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-04",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "13526197",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
+   ]
+  },
+  "5614537": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614537?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)",
+   "fecha": "2026-10-11",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "3359622",
+    "S.A.D. FUNDACION RAYO VALLECANO 'F'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
   "5628228": {
    "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
    "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
@@ -2586,6 +2747,82 @@
    "local": [
     "2733",
     "C.D.E. LOS ROSALES DE VILLAVERDE"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628236": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628236?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-04",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "21429671",
+    "SAD VILLAVERDE BOETTICHER"
+   ]
+  },
+  "5628243": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628243?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "LA PERLA (HA)",
+   "fecha": "2026-10-11",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "12858097",
+    "CDE INTER PROMESAS"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628251": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628251?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-18",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6785429",
+    "RACING VILLAVERDE C.F. 'B'"
+   ]
+  },
+  "5628258": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628258?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)",
+   "fecha": "2026-10-25",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "946",
+    "A.D. ORCASITAS 'B'"
    ],
    "pos": null,
    "resultado": null,
@@ -2773,6 +3010,25 @@
    "visitante": [
     "13538232",
     "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659185": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659185?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-17",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "15315841",
+    "A.D. VILLAVERDE BAJO 'C'"
    ]
   },
   "5663194": {
