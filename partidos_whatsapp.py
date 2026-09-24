@@ -769,14 +769,29 @@ class NavegadorPlaywright:
         self._pw.stop()
 
 
-def _esperar_jornada(nav, jornada, intentos=40):
-    """Espera (hasta ~16 s) a que la página muestre la jornada pedida y devuelve su HTML."""
+def _firma(soup):
+    """Huella de los partidos que muestra la página (para saber si ya han cambiado)."""
+    return tuple((tuple(e[0] for e in p["equipos"]), p["hora"], p["resultado"])
+                 for p in parsear_jornada(BeautifulSoup(str(soup), "html.parser")))
+
+
+def _esperar_jornada(nav, jornada, firma_previa=None, intentos=60):
+    """Espera a que la página muestre la jornada pedida CON sus partidos ya cargados: la
+    cabecera cambia antes que la lista, así que se espera a que la lista sea distinta de la
+    jornada anterior y deje de cambiar. Devuelve el HTML, o None si no llega a mostrarse."""
+    ultima, estables, soup = None, 0, None
     for _ in range(intentos):
         soup = BeautifulSoup(nav.html(), "html.parser")
         if cabecera(soup)[0] == jornada:
-            nav.pausa(0.8)  # deja terminar de pintar los partidos
-            return BeautifulSoup(nav.html(), "html.parser")
-        nav.pausa(0.4)
+            firma = _firma(soup)
+            estables = estables + 1 if (firma and firma == ultima) else 0
+            ultima = firma
+            if estables >= 2 and firma != firma_previa:
+                return soup
+        nav.pausa(0.5)
+    # se acabó el tiempo: se acepta lo último visto si al menos la cabecera es la pedida
+    if soup is not None and cabecera(soup)[0] == jornada and ultima:
+        return soup
     return None
 
 
@@ -788,37 +803,48 @@ def escanear_con_navegador(nav, grupos, finalizadas, estado, errores):
             continue
         try:
             nav.abrir(url)
-            soup = _esperar_jornada(nav, cabecera(BeautifulSoup(nav.html(), "html.parser"))[0] or 1, intentos=40)
+            inicial = None
+            for _ in range(60):  # esperar a que la página muestre alguna jornada
+                inicial = BeautifulSoup(nav.html(), "html.parser")
+                if cabecera(inicial)[0]:
+                    break
+                nav.pausa(0.5)
+            if not cabecera(inicial)[0]:
+                print(f"Aviso: navegador: {nombre or url}: la página no llegó a mostrar ninguna jornada.",
+                      file=sys.stderr)
+                continue
+            soup = _esperar_jornada(nav, cabecera(inicial)[0])
         except Exception as e:
             errores.append(nombre or url)
             print(f"Aviso: navegador: no se pudo abrir {nombre or url}: {e}", file=sys.stderr)
             continue
-        if soup is None:
-            print(f"Aviso: navegador: {nombre or url}: la página no llegó a mostrar ninguna jornada.",
-                  file=sys.stderr)
-            continue
-        if temporada_finalizada(soup):
+        if soup is None or temporada_finalizada(soup):
             continue
         titulo = titulo_grupo(soup)
         total = nav.total_jornadas()
         if total < 2:
             print(f"Aviso: navegador: no encuentro el selector de jornadas de {titulo}.", file=sys.stderr)
             continue
-        guardados, vistas = 0, []
+        guardados, vistas, sin_nuestro, por_jornada = 0, [], [], {}
+        firma_previa = _firma(soup)
         for j in range(1, total + 1):
             try:
                 if not nav.ir_a(j):
                     continue
-                pagina_j = _esperar_jornada(nav, j)
+                pagina_j = _esperar_jornada(nav, j, firma_previa)
             except Exception as e:
                 print(f"Aviso: navegador: {titulo}, jornada {j}: {e}", file=sys.stderr)
                 continue
             if pagina_j is None:
                 print(f"Aviso: navegador: {titulo}: no se pudo mostrar la jornada {j}.", file=sys.stderr)
                 continue
+            firma_previa = _firma(pagina_j)
             _, fecha_j = cabecera(pagina_j)
             vistas.append(j)
-            for q in parsear_jornada(pagina_j):
+            partidos_j = parsear_jornada(pagina_j)
+            por_jornada[j] = len(partidos_j)
+            hubo_nuestro = False
+            for q in partidos_j:
                 p = _con_fecha(q, fecha_j)
                 if not p["fecha"] or p["fecha"] < inicio_temporada():
                     continue
@@ -826,8 +852,14 @@ def escanear_con_navegador(nav, grupos, finalizadas, estado, errores):
                     p["jornada"] = j
                     actualizar_estado(estado, p, titulo, url, None)
                     guardados += 1
+                    hubo_nuestro = True
+            if not hubo_nuestro:
+                sin_nuestro.append(j)
+        cuentas = sorted(set(por_jornada.values()))
         print(f"Navegador: {titulo}: jornadas leídas {len(vistas)} de {total}; "
-              f"partidos nuestros guardados: {guardados}.", file=sys.stderr)
+              f"partidos por jornada {cuentas[0] if cuentas else 0}-{cuentas[-1] if cuentas else 0}; "
+              f"partidos nuestros guardados: {guardados}; jornadas sin partido nuestro: {sin_nuestro}.",
+              file=sys.stderr)
 
 
 # ---------------------------------------------------------------------------
