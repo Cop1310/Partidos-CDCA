@@ -382,6 +382,9 @@
     if (activa === "partidos" && datos.sin_partido && datos.sin_partido.length) {
       avisos.push("Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".");
     }
+    if (activa === "partidos" && datos.sin_calendario && datos.sin_calendario.length) {
+      avisos.push("Calendario todavía sin publicar por la federación: " + datos.sin_calendario.join(", ") + ".");
+    }
     if (datos.errores && datos.errores.length) {
       avisos.push("No se han podido consultar: " + datos.errores.join(", ") + ". Puede faltar algún dato.");
     }

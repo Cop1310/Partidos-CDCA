@@ -251,16 +251,21 @@ def parsear_jornada(soup):
             texto = nodo.get_text(" ", strip=True)
             m = re.search(r"/equipo/(-?\d+)", h)
             if m:
+                if actual is not None and len(actual["equipos"]) >= 2:
+                    partidos.append(actual)  # el partido anterior no tenía enlace al acta
+                    actual = None
                 actual = actual or nuevo()
                 actual["equipos"].append((m.group(1), texto))
             elif "/campo/" in h and "google" not in h:
                 if actual is not None:
                     actual["campo"] = texto
             elif "/acta/" in h:
-                if actual is not None and len(actual["equipos"]) >= 2 and actual["fecha"]:
+                if actual is not None and len(actual["equipos"]) >= 2:
                     actual["acta"] = urllib.parse.urljoin(BASE, h)
                     partidos.append(actual)
                 actual = None
+    if actual is not None and len(actual["equipos"]) >= 2:
+        partidos.append(actual)
     return partidos
 
 
@@ -389,6 +394,13 @@ def cabecera(soup):
 
 def cabecera_jornada(soup):
     return cabecera(soup)[0]
+
+
+def _con_fecha(p, fecha_jornada):
+    """Los partidos sin día asignado se colocan provisionalmente en la fecha de su jornada."""
+    if p["fecha"] is None and fecha_jornada is not None:
+        p = dict(p, fecha=fecha_jornada)
+    return p
 
 
 def inicio_temporada():
@@ -697,6 +709,128 @@ def explorar_proximas(url, ids, titulo, actual, actas_actuales, equipos_grupo, e
 
 
 # ---------------------------------------------------------------------------
+# Recorrido con navegador (Playwright)
+#
+# La web carga las demás jornadas con JavaScript al pulsar sus números, sin cambiar la
+# dirección. Un navegador automático puede pulsarlos como una persona, y así se leen todas
+# las jornadas de cada categoría: las pasadas con su marcador y las futuras con lo que haya
+# (aunque el día o la hora aún no estén confirmados).
+# ---------------------------------------------------------------------------
+JS_SELECTOR = """
+(n) => {
+  const esNum = e => e.children.length === 0 && /^\\d{1,2}$/.test(e.textContent.trim());
+  const hojas = [...document.querySelectorAll('body *')].filter(esNum);
+  const vistos = new Set();
+  for (const h of hojas) {
+    let a = h.parentElement;
+    for (let i = 0; i < 5 && a; i++, a = a.parentElement) {
+      if (vistos.has(a)) continue;
+      vistos.add(a);
+      const lista = [...a.querySelectorAll('*')].filter(esNum);
+      const nums = lista.map(e => parseInt(e.textContent.trim(), 10));
+      if (nums.length >= 5 && nums.every((x, k) => x === k + 1)) {
+        if (n > 0) { const el = lista[n - 1]; if (el) { el.click(); return nums.length; } return -1; }
+        return nums.length;
+      }
+    }
+  }
+  return 0;
+}
+"""
+
+
+class NavegadorPlaywright:
+    """Envoltorio mínimo sobre Playwright (así se puede probar con uno falso)."""
+
+    def __init__(self):
+        from playwright.sync_api import sync_playwright  # solo se necesita con --navegador
+        self._pw = sync_playwright().start()
+        self._nav = self._pw.chromium.launch()
+        self._pag = self._nav.new_page(locale="es-ES")
+        self._pag.set_default_timeout(45000)
+
+    def abrir(self, url):
+        self._pag.goto(url, wait_until="domcontentloaded")
+
+    def html(self):
+        return self._pag.content()
+
+    def total_jornadas(self):
+        return int(self._pag.evaluate(JS_SELECTOR, 0))
+
+    def ir_a(self, jornada):
+        return int(self._pag.evaluate(JS_SELECTOR, jornada)) > 0
+
+    def pausa(self, segundos):
+        self._pag.wait_for_timeout(int(segundos * 1000))
+
+    def cerrar(self):
+        self._nav.close()
+        self._pw.stop()
+
+
+def _esperar_jornada(nav, jornada, intentos=40):
+    """Espera (hasta ~16 s) a que la página muestre la jornada pedida y devuelve su HTML."""
+    for _ in range(intentos):
+        soup = BeautifulSoup(nav.html(), "html.parser")
+        if cabecera(soup)[0] == jornada:
+            nav.pausa(0.8)  # deja terminar de pintar los partidos
+            return BeautifulSoup(nav.html(), "html.parser")
+        nav.pausa(0.4)
+    return None
+
+
+def escanear_con_navegador(nav, grupos, finalizadas, estado, errores):
+    """Recorre todas las jornadas de cada grupo con el navegador y guarda los partidos de
+    nuestros equipos."""
+    for url, (nombre, ids) in grupos.items():
+        if url in finalizadas:
+            continue
+        try:
+            nav.abrir(url)
+            soup = _esperar_jornada(nav, cabecera(BeautifulSoup(nav.html(), "html.parser"))[0] or 1, intentos=40)
+        except Exception as e:
+            errores.append(nombre or url)
+            print(f"Aviso: navegador: no se pudo abrir {nombre or url}: {e}", file=sys.stderr)
+            continue
+        if soup is None:
+            print(f"Aviso: navegador: {nombre or url}: la página no llegó a mostrar ninguna jornada.",
+                  file=sys.stderr)
+            continue
+        if temporada_finalizada(soup):
+            continue
+        titulo = titulo_grupo(soup)
+        total = nav.total_jornadas()
+        if total < 2:
+            print(f"Aviso: navegador: no encuentro el selector de jornadas de {titulo}.", file=sys.stderr)
+            continue
+        guardados, vistas = 0, []
+        for j in range(1, total + 1):
+            try:
+                if not nav.ir_a(j):
+                    continue
+                pagina_j = _esperar_jornada(nav, j)
+            except Exception as e:
+                print(f"Aviso: navegador: {titulo}, jornada {j}: {e}", file=sys.stderr)
+                continue
+            if pagina_j is None:
+                print(f"Aviso: navegador: {titulo}: no se pudo mostrar la jornada {j}.", file=sys.stderr)
+                continue
+            _, fecha_j = cabecera(pagina_j)
+            vistas.append(j)
+            for q in parsear_jornada(pagina_j):
+                p = _con_fecha(q, fecha_j)
+                if not p["fecha"] or p["fecha"] < inicio_temporada():
+                    continue
+                if any(e[0] in ids for e in p["equipos"]):
+                    p["jornada"] = j
+                    actualizar_estado(estado, p, titulo, url, None)
+                    guardados += 1
+        print(f"Navegador: {titulo}: jornadas leídas {len(vistas)} de {total}; "
+              f"partidos nuestros guardados: {guardados}.", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------------
 # Mensajes
 # ---------------------------------------------------------------------------
 def sabado_proximo(sabado_arg=None):
@@ -814,6 +948,8 @@ def main():
     ap.add_argument("--salida", default="partidos_whatsapp.txt", help="fichero de salida")
     ap.add_argument("--json", help="además, guarda el resultado en este fichero JSON (para la página web)")
     ap.add_argument("--estado", default="estado.json", help="fichero donde se recuerdan los partidos vistos")
+    ap.add_argument("--navegador", action="store_true",
+                    help="recorrer todas las jornadas con un navegador automático (necesita Playwright)")
     args = ap.parse_args()
 
     sab_prox = sabado_proximo(args.sabado)
@@ -840,7 +976,8 @@ def main():
         consultados += 1
         titulo = titulo_grupo(soup)
         vistos.append((url, titulo))
-        todos = [p for p in parsear_jornada(soup) if p["fecha"] >= inicio_temporada()]
+        todos = [p for p in (_con_fecha(q, fecha_cab) for q in parsear_jornada(soup))
+                 if p["fecha"] and p["fecha"] >= inicio_temporada()]
         propios = [p for p in todos if any(e[0] in ids for e in p["equipos"])]
 
         filas = []
@@ -866,6 +1003,17 @@ def main():
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
+
+    if args.navegador:
+        nav = None
+        try:
+            nav = NavegadorPlaywright()
+            escanear_con_navegador(nav, grupos, finalizadas, estado, errores)
+        except Exception as e:
+            print(f"Aviso: no se ha podido usar el navegador: {e}", file=sys.stderr)
+        finally:
+            if nav is not None:
+                nav.cerrar()
 
     # Al cambiar la versión del histórico se reintentan los recorridos que acabaron sin resultados
     if meta.get("version_historico") != VERSION_HISTORICO:
@@ -926,6 +1074,9 @@ def main():
                 "resultados_hasta": (sab_res + timedelta(days=1)).isoformat(),
                 "resultados": resultados,
                 "sin_partido": sin_partido,
+                "sin_calendario": [f"{c['titulo']} ({c['equipo'].split()[-1]})"
+                                   if re.search(r"\s[A-Z]$", c["equipo"]) else c["titulo"]
+                                   for c in pendientes],
                 "errores": errores,
                 "semanas": [
                     {"sabado": sab.isoformat(),
