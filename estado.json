@@ -2520,9 +2520,28 @@
   "version_historico": 3
  },
  "partidos": {
+  "5583074": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583074?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "COTORRUELO I (HA)VIA LUSITANA 5 · Madrid",
+   "fecha": "2027-02-07",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "19245961",
+    "C.F. MADRID RIO - ARGANZUELA 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
   "5583083": {
    "acta": "https://www.elbalondemadrid.es/acta/5583083?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-09-19",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "19:05",
@@ -2544,7 +2563,7 @@
   },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
    "fecha": "2026-09-26",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:30",
@@ -2566,7 +2585,7 @@
   },
   "5583100": {
    "acta": "https://www.elbalondemadrid.es/acta/5583100?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": null,
@@ -2585,7 +2604,7 @@
   },
   "5583117": {
    "acta": "https://www.elbalondemadrid.es/acta/5583117?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-18",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": null,
@@ -2604,7 +2623,7 @@
   },
   "5583125": {
    "acta": "https://www.elbalondemadrid.es/acta/5583125?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. VALDEBERNARDO (HA)",
+   "campo": "PVO. VALDEBERNARDO (HA)CALLE DE LADERA DE LOS ALMENDROS 2 · Madrid",
    "fecha": "2026-10-25",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "15:00",
@@ -2621,9 +2640,525 @@
     "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   },
+  "5583134": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583134?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-01",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "657",
+    "C.D. DOSA 'A'"
+   ]
+  },
+  "5583142": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583142?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "fecha": "2026-11-08",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "2158",
+    "A.D.C. SAN FERMIN 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583151": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583151?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-15",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "466569",
+    "C.D. MAR ABIERTO 'A'"
+   ]
+  },
+  "5583159": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583159?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "fecha": "2026-11-22",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "8953841",
+    "CDE INTER PROMESAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583168": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583168?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-29",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6818907",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ]
+  },
+  "5583176": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583176?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "COLEGIO TAJAMAR (HA)CALLE DE PÍO FELIPE 12 · Madrid",
+   "fecha": "2026-12-13",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "1555",
+    "C.D. TAJAMAR"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583185": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583185?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-20",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "10816181",
+    "CLUB DE ATLETISMO LOS OLMOS"
+   ]
+  },
+  "5583193": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583193?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "DEHESA MORATALAZ (HA)AVDA. DOCTOR GARCIA TAPIA 117 · Madrid",
+   "fecha": "2027-01-17",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "625",
+    "E.D. MORATALAZ 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583202": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583202?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-24",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "1759",
+    "E.D.M. SAN BLAS 'A'"
+   ]
+  },
+  "5583210": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583210?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "C.D.M. LA CONCEPCIÓN (HA)CALLE DE JOSÉ DEL HIERRO 5 · Madrid",
+   "fecha": "2027-01-31",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "371",
+    "CLUB ESCUELA DE FUTBOL CONCEPCION 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583227": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583227?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-09-12",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": "11:00",
+   "jornada": 1,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": [
+    2,
+    1
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "19245961",
+    "C.F. MADRID RIO - ARGANZUELA 'C'"
+   ]
+  },
+  "5583236": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583236?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "fecha": "2027-02-14",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "680068",
+    "C.D. SPORT VILLA DE VALLECAS"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583244": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583244?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-21",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "1546",
+    "ESCUELA DE FUTBOL ARGANDA 'B'"
+   ]
+  },
+  "5583253": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583253?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "ESC. FUT. CARABANCHEL 1 (HA) VIA LUSITANA 19 · Madrid",
+   "fecha": "2027-02-28",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "1495",
+    "A.D. ESCUELA DE FUTBOL DE CARABANCHEL 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583261": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583261?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-07",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "8972472",
+    "A.D. TORREJON C.F. 'D'"
+   ]
+  },
+  "5583270": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583270?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "CAMPO VALDEBERNARDO 1 (HA) AVDA. DE LA AURORA BOREAL, 4 · Madrid",
+   "fecha": "2027-03-14",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "680074",
+    "C.D. VICALVARO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583278": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583278?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-21",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6817156",
+    "C.D. UNION VALDEBERNARDO 'B'"
+   ]
+  },
+  "5583287": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583287?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "COLEGIO SANTO DOMINGO SAVIO (HA)CALLE SANTO DOMINGO SAVIO 2 · Madrid",
+   "fecha": "2027-04-04",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "657",
+    "C.D. DOSA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583295": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583295?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-11",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "2158",
+    "A.D.C. SAN FERMIN 'A'"
+   ]
+  },
+  "5583304": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583304?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "IDB CAMINO DE LA SUERTE - ANTIGUO MAR ABIERTO (HA)CAMINO DE LA SUERTE S/N · Madrid",
+   "fecha": "2027-04-18",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "466569",
+    "C.D. MAR ABIERTO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583312": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583312?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-25",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "8953841",
+    "CDE INTER PROMESAS 'B'"
+   ]
+  },
+  "5583321": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583321?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "fecha": "2027-05-02",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "6818907",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583329": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583329?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-09",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "1555",
+    "C.D. TAJAMAR"
+   ]
+  },
+  "5583338": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583338?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "SAN LAMBERTO - Bº. LA ELIPA (HA)CALLE SAN LAMBERTO S/N · Madrid",
+   "fecha": "2027-05-16",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 31,
+   "local": [
+    "10816181",
+    "CLUB DE ATLETISMO LOS OLMOS"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583346": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583346?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-23",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 32,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "625",
+    "E.D. MORATALAZ 'A'"
+   ]
+  },
+  "5583355": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583355?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "MUNICIPAL SAN BLAS 1 (HA)AVDA. DE GUADALAJARA 16 · Madrid",
+   "fecha": "2027-05-30",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 33,
+   "local": [
+    "1759",
+    "E.D.M. SAN BLAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5583363": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583363?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-06-06",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 34,
+   "local": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "371",
+    "CLUB ESCUELA DE FUTBOL CONCEPCION 'A'"
+   ]
+  },
   "5594869": {
    "acta": "https://www.elbalondemadrid.es/acta/5594869?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "11:45",
@@ -2638,6 +3173,557 @@
    "visitante": [
     "8961562",
     "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594877": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594877?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-03",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "2785",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS 'A'"
+   ]
+  },
+  "5594884": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594884?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "NUEVO BAZTÁN (HA)CALLE FÁBRICA 3 · Nuevo Baztán",
+   "fecha": "2026-10-10",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "1964",
+    "A.D. NUEVO BAZTAN 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594892": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594892?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-17",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "301080",
+    "UNION DEPORTIVA LA POVEDA 'A'"
+   ]
+  },
+  "5594899": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594899?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "MUNICIPAL SAN BLAS 1 (HA)AVDA. DE GUADALAJARA 16 · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "1764",
+    "E.D.M. SAN BLAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594907": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594907?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-31",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "2274952",
+    "E.D. MORATALAZ 'C'"
+   ]
+  },
+  "5594914": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594914?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)PASEO IMPERIAL 20 · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "24235806",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594922": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594922?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-14",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "526134",
+    "ESC. MUN. FUT. VILLAREJO 'A'"
+   ]
+  },
+  "5594929": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594929?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "fecha": "2026-11-21",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "1689",
+    "ADEPO PALOMERAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594937": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594937?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "4920195",
+    "A.D. ARGANDA C.F. 'A'"
+   ]
+  },
+  "5594944": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594944?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "IDB CAMINO DE LA SUERTE - ANTIGUO MAR ABIERTO (HA)CAMINO DE LA SUERTE S/N · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "877423",
+    "C.D. SPORT VILLA DE VALLECAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594952": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594952?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "761461",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ]
+  },
+  "5594959": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594959?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
+   "fecha": "2027-01-16",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "4928637",
+    "RIVAS FUTBOL CLUB 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594967": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594967?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "2806",
+    "S.A.D. A.D.C. PARQUE SURESTE 'A'"
+   ]
+  },
+  "5594974": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594974?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "COSLADA - ESTADIO EL OLIVO (HA)CALLE DEL MAR CANTÁBRICO S/N · Coslada",
+   "fecha": "2027-01-30",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "690",
+    "C.D.B. COSLADA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594989": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594989?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-06",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "10652335",
+    "RACING VILLAVERDE C.F. 'B'"
+   ]
+  },
+  "5594997": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594997?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "LA UNION - VALLECAS VILLA (HA)CALLE DE ENRIQUE GARCÍA ÁLVAREZ 65 · Madrid",
+   "fecha": "2027-02-14",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": "13:30",
+   "jornada": 17,
+   "local": [
+    "2785",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595004": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595004?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-20",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "1964",
+    "A.D. NUEVO BAZTAN 'A'"
+   ]
+  },
+  "5595012": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595012?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "ARGANDA - LA POVEDA (HA)CALLE MALLORCA S/N · Arganda Del Rey",
+   "fecha": "2027-02-27",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "301080",
+    "UNION DEPORTIVA LA POVEDA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595019": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595019?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-06",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "1764",
+    "E.D.M. SAN BLAS 'B'"
+   ]
+  },
+  "5595027": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595027?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "DEHESA MORATALAZ (HA)AVDA. DOCTOR GARCIA TAPIA 117 · Madrid",
+   "fecha": "2027-03-13",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "2274952",
+    "E.D. MORATALAZ 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595034": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595034?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-20",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "24235806",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ]
+  },
+  "5595042": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595042?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)AVDA. MARIANO DÍAZ S/N · Villarejo De Salvanés",
+   "fecha": "2027-04-03",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "526134",
+    "ESC. MUN. FUT. VILLAREJO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595049": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595049?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-10",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "1689",
+    "ADEPO PALOMERAS 'A'"
+   ]
+  },
+  "5595057": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595057?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "ARGANDA - CIUDAD DPTVA. PRINCIPE FELIPE (HA)CALLE SAN SEBASTIÁN 6 · Arganda Del Rey",
+   "fecha": "2027-04-17",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "4920195",
+    "A.D. ARGANDA C.F. 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595064": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595064?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-24",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "877423",
+    "C.D. SPORT VILLA DE VALLECAS 'A'"
+   ]
+  },
+  "5595072": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595072?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "fecha": "2027-05-01",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "761461",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595079": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595079?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-08",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "4928637",
+    "RIVAS FUTBOL CLUB 'C'"
+   ]
+  },
+  "5595087": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595087?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "RIVAS - CASA GRANDE (HA)AVDA. DE FRANCIA S/N · Rivas-Vaciamadrid",
+   "fecha": "2027-05-15",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "2806",
+    "S.A.D. A.D.C. PARQUE SURESTE 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5595094": {
+   "acta": "https://www.elbalondemadrid.es/acta/5595094?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-22",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "690",
+    "C.D.B. COSLADA 'B'"
    ]
   },
   "5599650": {
@@ -2659,9 +3745,446 @@
     "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   },
+  "5599657": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599657?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-10-17",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "13610731",
+    "A.D. UNION CARRASCAL 'B'"
+   ]
+  },
+  "5599670": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599670?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-10-31",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15287967",
+    "C.D. SPORT VILLA DE VALLECAS 'A'"
+   ]
+  },
+  "5599676": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599676?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "PRADOLONGO - DAVID GLEZ. RUBIO (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": "12:00",
+   "jornada": 5,
+   "local": [
+    "680374",
+    "A.J.D.C. LA MANCHA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599683": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599683?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-11-14",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "857833",
+    "C.F. MADRID RIO - ARGANZUELA 'A'"
+   ]
+  },
+  "5599689": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599689?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-11-21",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "12233116",
+    "C.D. ASOC RETIRO SUR 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599696": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599696?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-11-28",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15290321",
+    "ADEPO PALOMERAS 'A'"
+   ]
+  },
+  "5599702": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599702?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "BARRIO GOYA (HA)CALLE DE PABLO SARASATE 1 · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "15292320",
+    "C.D. GOYA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599709": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599709?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-12-19",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "12294719",
+    "S.A.D. FUNDACION C.D. LEGANES 'B'"
+   ]
+  },
+  "5599715": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599715?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "fecha": "2027-01-16",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "846698",
+    "C.D. ALZOLA-HALCONES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599722": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599722?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-01-23",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "90",
+    "C.D. COLONIA MOSCARDO 'A'"
+   ]
+  },
+  "5599728": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599728?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-01-30",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "24235773",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599741": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599741?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-02-06",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "10652341",
+    "RACING VILLAVERDE C.F. 'A'"
+   ]
+  },
+  "5599748": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599748?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-02-13",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "13610731",
+    "A.D. UNION CARRASCAL 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599761": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599761?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIACALLE DE FUENTIDUEÑA 6 · Madrid",
+   "fecha": "2027-02-27",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "15287967",
+    "C.D. SPORT VILLA DE VALLECAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599767": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599767?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-03-06",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "680374",
+    "A.J.D.C. LA MANCHA 'A'"
+   ]
+  },
+  "5599774": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599774?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "fecha": "2027-03-13",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "857833",
+    "C.F. MADRID RIO - ARGANZUELA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599780": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599780?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-03-20",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "12233116",
+    "C.D. ASOC RETIRO SUR 'B'"
+   ]
+  },
+  "5599787": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599787?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "fecha": "2027-04-03",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "15290321",
+    "ADEPO PALOMERAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599793": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599793?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-04-10",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15292320",
+    "C.D. GOYA 'B'"
+   ]
+  },
+  "5599800": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599800?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "LEGANES - CANTERA F7 - 1CALLE ARQUITECTURA 4 · Leganés",
+   "fecha": "2027-04-17",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "12294719",
+    "S.A.D. FUNDACION C.D. LEGANES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599806": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599806?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-04-24",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "846698",
+    "C.D. ALZOLA-HALCONES 'A'"
+   ]
+  },
+  "5599813": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599813?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "fecha": "2027-05-01",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "90",
+    "C.D. COLONIA MOSCARDO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599819": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599819?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-05-08",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "24235773",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ]
+  },
   "5606348": {
    "acta": "https://www.elbalondemadrid.es/acta/5606348?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "15:30",
@@ -2678,9 +4201,560 @@
     "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   },
+  "5606356": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606356?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-03",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "1692",
+    "ADEPO PALOMERAS 'A'"
+   ]
+  },
+  "5606363": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606363?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
+   "fecha": "2026-10-10",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "2739614",
+    "RIVAS FUTBOL CLUB 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606371": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606371?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-17",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "15704127",
+    "S.A.D. STELLA MARIS LA GAVIA 'A'"
+   ]
+  },
+  "5606378": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606378?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "LA UNION - VALLECAS VILLA (HA)CALLE DE ENRIQUE GARCÍA ÁLVAREZ 65 · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": "13:30",
+   "jornada": 5,
+   "local": [
+    "2786",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606386": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606386?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-31",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "526135",
+    "ESC. MUN. FUT. VILLAREJO 'A'"
+   ]
+  },
+  "5606393": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606393?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "6238195",
+    "CDE INTER PROMESAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606401": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606401?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-14",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "1094",
+    "AD A.TOLEDO OLIVOS C.F. 'A'"
+   ]
+  },
+  "5606408": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606408?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "LEGANES - PTE. DETERMINAR POR AYUNTAMIENTOLEGANÉS · Leganés",
+   "fecha": "2026-11-21",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "13613759",
+    "S.A.D. FUNDACION C.D. LEGANES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606416": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606416?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "1549",
+    "ESCUELA DE FUTBOL ARGANDA 'A'"
+   ]
+  },
+  "5606423": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606423?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "VELILLA DE SAN ANTONIO - PVO. MUNICIPAL (HA)CALLE OLIVAR 2 · Velilla De San Antonio",
+   "fecha": "2026-12-12",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "17202267",
+    "U.D. VELILLA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606431": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606431?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "1031993",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ]
+  },
+  "5606438": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606438?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "ARGANDA - LA POVEDA (HA)CALLE MALLORCA S/N · Arganda Del Rey",
+   "fecha": "2027-01-16",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "2730",
+    "UNION DEPORTIVA LA POVEDA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606446": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606446?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "846631",
+    "CLUB SECCION DEPORTIVA DEL POZO 'A'"
+   ]
+  },
+  "5606453": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606453?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-01-30",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "886326",
+    "RACING VILLAVERDE C.F. 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606468": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606468?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-06",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "1031681",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
+   ]
+  },
+  "5606476": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606476?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "fecha": "2027-02-13",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "1692",
+    "ADEPO PALOMERAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606483": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606483?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-20",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "2739614",
+    "RIVAS FUTBOL CLUB 'B'"
+   ]
+  },
+  "5606491": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606491?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "JOSE DURAN (HA)AVENIDA DEL PARQUE DE PALOMERAS BAJAS 10 · Madrid",
+   "fecha": "2027-02-27",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "15704127",
+    "S.A.D. STELLA MARIS LA GAVIA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606498": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606498?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-06",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "2786",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS 'A'"
+   ]
+  },
+  "5606506": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606506?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)AVDA. MARIANO DÍAZ S/N · Villarejo De Salvanés",
+   "fecha": "2027-03-13",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "526135",
+    "ESC. MUN. FUT. VILLAREJO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606513": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606513?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-20",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "6238195",
+    "CDE INTER PROMESAS 'B'"
+   ]
+  },
+  "5606521": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606521?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "MEJORADA - PVO. MPAL. LA DEHESA (HA)CALLE DE JOAN MIRÓ 22 · Mejorada Del Campo",
+   "fecha": "2027-04-03",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "1094",
+    "AD A.TOLEDO OLIVOS C.F. 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606528": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606528?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-10",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13613759",
+    "S.A.D. FUNDACION C.D. LEGANES 'C'"
+   ]
+  },
+  "5606536": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606536?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
+   "fecha": "2027-04-17",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "1549",
+    "ESCUELA DE FUTBOL ARGANDA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606543": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606543?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-24",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "17202267",
+    "U.D. VELILLA 'A'"
+   ]
+  },
+  "5606551": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606551?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "fecha": "2027-05-01",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "1031993",
+    "S.A.D. FUNDACION RAYO VALLECANO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606558": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606558?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-08",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "2730",
+    "UNION DEPORTIVA LA POVEDA 'A'"
+   ]
+  },
+  "5606566": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606566?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "ASOC. VEC. DEL POZO (HA)CALLE REGUERA DE TOMATEROS S/N · Madrid",
+   "fecha": "2027-05-15",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "846631",
+    "CLUB SECCION DEPORTIVA DEL POZO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606573": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606573?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-22",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "886326",
+    "RACING VILLAVERDE C.F. 'A'"
+   ]
+  },
   "5614503": {
    "acta": "https://www.elbalondemadrid.es/acta/5614503?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PUERTO RICO (HA)",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
    "fecha": "2026-09-13",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "15:00",
@@ -2698,6 +4772,28 @@
    "visitante": [
     "15328636",
     "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614512": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614512?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-09-19",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": [
+    2,
+    1
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "2269821",
+    "ESC.MUN.FUT. ALUCHE 'C'"
    ]
   },
   "5614520": {
@@ -2724,7 +4820,7 @@
   },
   "5614529": {
    "acta": "https://www.elbalondemadrid.es/acta/5614529?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": null,
@@ -2743,7 +4839,7 @@
   },
   "5614537": {
    "acta": "https://www.elbalondemadrid.es/acta/5614537?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
    "fecha": "2026-10-11",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": null,
@@ -2760,9 +4856,598 @@
     "C.D. CIUDAD LOS ANGELES 'B'"
    ]
   },
+  "5614546": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614546?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-18",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "8931590",
+    "C.D. NUEVO BOADILLA 'F'"
+   ]
+  },
+  "5614554": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614554?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "COTORRUELO I (HA)VIA LUSITANA 5 · Madrid",
+   "fecha": "2026-10-25",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "24235804",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614563": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614563?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-01",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "948",
+    "A.D. ORCASITAS 'A'"
+   ]
+  },
+  "5614571": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614571?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-08",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "2712737",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614580": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614580?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-15",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "22461402",
+    "CDE INTER PROMESAS 'C'"
+   ]
+  },
+  "5614588": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614588?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "FUENLABRADA - LORANCA (HA)AVDA. DE NUEVO VERSALLES S/N · Fuenlabrada",
+   "fecha": "2026-11-22",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "10656336",
+    "A.D. NUEVO VERSALLES-LORANCA 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614597": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614597?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-29",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "8935617",
+    "RACING VILLAVERDE C.F. 'B'"
+   ]
+  },
+  "5614605": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614605?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PRADOLONGO - DAVID GLEZ. RUBIO (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": "14:15",
+   "jornada": 13,
+   "local": [
+    "1140",
+    "A.J.D.C. LA MANCHA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614614": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614614?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-20",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15283750",
+    "C.D. COLONIA MOSCARDO 'C'"
+   ]
+  },
+  "5614622": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614622?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "COLONIA ZOFIO (HA)CALLE RICARDO BELTRAN Y ROZPIDE 12 · Madrid",
+   "fecha": "2027-01-17",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "466548",
+    "A.D. ESCUELA DE FUTBOL USERA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614631": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614631?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-24",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "1272",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ]
+  },
+  "5614639": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614639?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. ENTREVIAS 1 (HA)RONDA DEL SUR 4 · Madrid",
+   "fecha": "2027-01-31",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "300220",
+    "ESC.F. JUVENTUD MADRID 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614656": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614656?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-07",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "786",
+    "C.D. ALZOLA-HALCONES 'B'"
+   ]
+  },
+  "5614665": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614665?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. DE ALUCHE (HA)AVDA. DE LAS AGUILAS 14 · Madrid",
+   "fecha": "2027-02-14",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "2269821",
+    "ESC.MUN.FUT. ALUCHE 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614673": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614673?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-21",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "4928739",
+    "UNION 2000 'B'"
+   ]
+  },
+  "5614682": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614682?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-02-28",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "13526197",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614690": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614690?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-07",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "3359622",
+    "S.A.D. FUNDACION RAYO VALLECANO 'F'"
+   ]
+  },
+  "5614699": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614699?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "BOADILLA - PVO. MUNICIPAL ANGEL NIETO 2 (HA) CTRA. DE BOADILLA A POZUELO KM. 1,400 · Boadilla Del Monte",
+   "fecha": "2027-03-14",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "8931590",
+    "C.D. NUEVO BOADILLA 'F'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614707": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614707?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-21",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "24235804",
+    "CDB UNION DEPORTIVA ARGANZUELA 'B'"
+   ]
+  },
+  "5614716": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614716?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "fecha": "2027-04-04",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "948",
+    "A.D. ORCASITAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614724": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614724?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-11",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "2712737",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ]
+  },
+  "5614733": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614733?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "fecha": "2027-04-18",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "22461402",
+    "CDE INTER PROMESAS 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614741": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614741?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-25",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "10656336",
+    "A.D. NUEVO VERSALLES-LORANCA 'C'"
+   ]
+  },
+  "5614750": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614750?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-05-02",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "8935617",
+    "RACING VILLAVERDE C.F. 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614758": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614758?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-09",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "1140",
+    "A.J.D.C. LA MANCHA 'A'"
+   ]
+  },
+  "5614767": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614767?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "fecha": "2027-05-16",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 31,
+   "local": [
+    "15283750",
+    "C.D. COLONIA MOSCARDO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614775": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614775?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-23",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 32,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "466548",
+    "A.D. ESCUELA DE FUTBOL USERA 'A'"
+   ]
+  },
+  "5614784": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614784?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-05-30",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 33,
+   "local": [
+    "1272",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5614792": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614792?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-06-06",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": null,
+   "jornada": 34,
+   "local": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "300220",
+    "ESC.F. JUVENTUD MADRID 'B'"
+   ]
+  },
+  "5624771": {
+   "acta": "https://www.elbalondemadrid.es/acta/5624771?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-10-24",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "15294340",
+    "A.D. VILLA ROSA 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5624791": {
+   "acta": "https://www.elbalondemadrid.es/acta/5624791?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2027-02-20",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15294340",
+    "A.D. VILLA ROSA 'A'"
+   ]
+  },
   "5628228": {
    "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-27",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:00",
@@ -2781,7 +5466,7 @@
   },
   "5628236": {
    "acta": "https://www.elbalondemadrid.es/acta/5628236?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -2800,7 +5485,7 @@
   },
   "5628243": {
    "acta": "https://www.elbalondemadrid.es/acta/5628243?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "LA PERLA (HA)",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
    "fecha": "2026-10-11",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -2819,7 +5504,7 @@
   },
   "5628251": {
    "acta": "https://www.elbalondemadrid.es/acta/5628251?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-18",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -2838,7 +5523,7 @@
   },
   "5628258": {
    "acta": "https://www.elbalondemadrid.es/acta/5628258?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "ASOC. VEC. ORCASITAS (H.A.)",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
    "fecha": "2026-10-25",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -2855,9 +5540,484 @@
     "C.D. CIUDAD LOS ANGELES 'B'"
    ]
   },
+  "5628266": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628266?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-01",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6796354",
+    "C.D. COLONIA MOSCARDO 'C'"
+   ]
+  },
+  "5628273": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628273?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "LEGANES - PTE. DETERMINAR POR AYUNTAMIENTOLEGANÉS · Leganés",
+   "fecha": "2026-11-08",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "15273163",
+    "A.D. ROCIO LEGANES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628281": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628281?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-15",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "13626589",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ]
+  },
+  "5628288": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628288?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-22",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "24319270",
+    "SAD SPAIN FOOTBALL ACADEMY FC"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628296": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628296?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-29",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "21430705",
+    "C.D.E. LEGASUR-RAYO 'B'"
+   ]
+  },
+  "5628303": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628303?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2026-12-13",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "24026726",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628311": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628311?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-20",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "1139",
+    "A.J.D.C. LA MANCHA"
+   ]
+  },
+  "5628318": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628318?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "fecha": "2027-01-17",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "2157",
+    "A.D.C. SAN FERMIN 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628326": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628326?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-24",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "1098",
+    "ESC. FUT. A.V. LA CHIMENEA"
+   ]
+  },
+  "5628333": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628333?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "fecha": "2027-01-31",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "300590",
+    "C.D. ALZOLA-HALCONES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628348": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628348?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-07",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "2733",
+    "C.D.E. LOS ROSALES DE VILLAVERDE"
+   ]
+  },
+  "5628356": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628356?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "fecha": "2027-02-14",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "21429671",
+    "SAD VILLAVERDE BOETTICHER"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628363": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628363?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-21",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "12858097",
+    "CDE INTER PROMESAS"
+   ]
+  },
+  "5628371": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628371?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-02-28",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "6785429",
+    "RACING VILLAVERDE C.F. 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628378": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628378?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-07",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "946",
+    "A.D. ORCASITAS 'B'"
+   ]
+  },
+  "5628386": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628386?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "fecha": "2027-03-14",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "6796354",
+    "C.D. COLONIA MOSCARDO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628393": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628393?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-21",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "15273163",
+    "A.D. ROCIO LEGANES 'B'"
+   ]
+  },
+  "5628401": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628401?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-04",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "13626589",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628408": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628408?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-11",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "24319270",
+    "SAD SPAIN FOOTBALL ACADEMY FC"
+   ]
+  },
+  "5628416": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628416?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "LEGANES - PTE. DETERMINAR POR AYUNTAMIENTOLEGANÉS · Leganés",
+   "fecha": "2027-04-18",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "21430705",
+    "C.D.E. LEGASUR-RAYO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628423": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628423?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-25",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "24026726",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE"
+   ]
+  },
+  "5628431": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628431?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PRADOLONGO - DAVID GLEZ. RUBIO (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "fecha": "2027-05-02",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": "12:45",
+   "jornada": 27,
+   "local": [
+    "1139",
+    "A.J.D.C. LA MANCHA"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628438": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628438?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-09",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "2157",
+    "A.D.C. SAN FERMIN 'A'"
+   ]
+  },
+  "5628446": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628446?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "MUNICIPAL LA CHIMENEA (HA)",
+   "fecha": "2027-05-16",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "1098",
+    "ESC. FUT. A.V. LA CHIMENEA"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628453": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628453?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-23",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "300590",
+    "C.D. ALZOLA-HALCONES 'B'"
+   ]
+  },
   "5642638": {
    "acta": "https://www.elbalondemadrid.es/acta/5642638?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PUERTO RICO (HA)",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "16:00",
@@ -2874,9 +6034,522 @@
     "C.D. CIUDAD LOS ANGELES 'C'"
    ]
   },
+  "5642646": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642646?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-04",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "25049794",
+    "CDE INTER PROMESAS 'D'"
+   ]
+  },
+  "5642653": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642653?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-10-11",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "26719936",
+    "SAD SPAIN FOOTBALL ACADEMY FC"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642661": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642661?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-18",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "1031556",
+    "C.D. COLONIA MOSCARDO 'D'"
+   ]
+  },
+  "5642668": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642668?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PENDIENTE ASIGNACION CAMPO",
+   "fecha": "2026-10-24",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "24009831",
+    "A.J.D.C. LA MANCHA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642683": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642683?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "COLONIA ZOFIO (HA)CALLE RICARDO BELTRAN Y ROZPIDE 12 · Madrid",
+   "fecha": "2026-11-08",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "334248",
+    "A.D. ESCUELA DE FUTBOL USERA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642691": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642691?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-15",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "10634320",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ]
+  },
+  "5642698": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642698?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2026-11-22",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "17130686",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642706": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642706?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-29",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15277458",
+    "A.D.C. SAN FERMIN 'B'"
+   ]
+  },
+  "5642713": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642713?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2026-12-13",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "24026704",
+    "RACING VILLAVERDE C.F. 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642721": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642721?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-20",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15282934",
+    "A.D. ORCASITAS 'B'"
+   ]
+  },
+  "5642728": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642728?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "MARIS STELLA (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "fecha": "2027-01-17",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "15280413",
+    "C.D. ORCASUR SIN FRONTERAS"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642736": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642736?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-24",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "1032245",
+    "ESC. FUT. A.V. LA CHIMENEA 'B'"
+   ]
+  },
+  "5642743": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642743?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "fecha": "2027-01-31",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "6826484",
+    "S.A.D. VILLAVERDE SAN ANDRES"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642758": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642758?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-07",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "680085",
+    "C.D. ALZOLA - HALCONES 'D'"
+   ]
+  },
+  "5642766": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642766?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "fecha": "2027-02-14",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "25049794",
+    "CDE INTER PROMESAS 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642773": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642773?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-21",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "26719936",
+    "SAD SPAIN FOOTBALL ACADEMY FC"
+   ]
+  },
+  "5642781": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642781?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "fecha": "2027-02-28",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "1031556",
+    "C.D. COLONIA MOSCARDO 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642788": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642788?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-07",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "24009831",
+    "A.J.D.C. LA MANCHA 'B'"
+   ]
+  },
+  "5642803": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642803?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-21",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "334248",
+    "A.D. ESCUELA DE FUTBOL USERA 'B'"
+   ]
+  },
+  "5642811": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642811?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-04",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "10634320",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642818": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642818?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-11",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "17130686",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ]
+  },
+  "5642826": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642826?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "fecha": "2027-04-18",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "15277458",
+    "A.D.C. SAN FERMIN 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642833": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642833?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-25",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "24026704",
+    "RACING VILLAVERDE C.F. 'D'"
+   ]
+  },
+  "5642841": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642841?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "fecha": "2027-05-02",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "15282934",
+    "A.D. ORCASITAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642848": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642848?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-09",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15280413",
+    "C.D. ORCASUR SIN FRONTERAS"
+   ]
+  },
+  "5642856": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642856?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "MUNICIPAL LA CHIMENEA (HA)",
+   "fecha": "2027-05-16",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "1032245",
+    "ESC. FUT. A.V. LA CHIMENEA 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5642863": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642863?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-23",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "6826484",
+    "S.A.D. VILLAVERDE SAN ANDRES"
+   ]
+  },
   "5646005": {
    "acta": "https://www.elbalondemadrid.es/acta/5646005?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "LA UNION - VALLECAS VILLA (HA)",
+   "campo": "LA UNION - VALLECAS VILLA (HA)CALLE DE ENRIQUE GARCÍA ÁLVAREZ 65 · Madrid",
    "fecha": "2026-09-13",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:30",
@@ -2898,7 +6571,7 @@
   },
   "5646014": {
    "acta": "https://www.elbalondemadrid.es/acta/5646014?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-09-20",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:00",
@@ -2920,7 +6593,7 @@
   },
   "5646022": {
    "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
    "fecha": "2026-09-27",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "19:00",
@@ -2942,7 +6615,7 @@
   },
   "5646031": {
    "acta": "https://www.elbalondemadrid.es/acta/5646031?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -2961,7 +6634,7 @@
   },
   "5646039": {
    "acta": "https://www.elbalondemadrid.es/acta/5646039?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
    "fecha": "2026-10-11",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -2980,7 +6653,7 @@
   },
   "5646048": {
    "acta": "https://www.elbalondemadrid.es/acta/5646048?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-18",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -2999,7 +6672,7 @@
   },
   "5646056": {
    "acta": "https://www.elbalondemadrid.es/acta/5646056?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "CASARRUBUELOS (HA)",
+   "campo": "CASARRUBUELOS (HA)CAMINO A TORREJÓN DE VELASCO 14 · Casarrubuelos",
    "fecha": "2026-10-25",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -3016,9 +6689,522 @@
     "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   },
+  "5646065": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646065?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-01",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "8944219",
+    "C.D.E. CIUDAD DE PINTO 'A'"
+   ]
+  },
+  "5646073": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646073?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-08",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "680159",
+    "A.D. VILLAVERDE BAJO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646082": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646082?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-15",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "475",
+    "RACING VILLAVERDE C.F. 'A'"
+   ]
+  },
+  "5646090": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646090?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "fecha": "2026-11-22",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "947",
+    "A.D. ORCASITAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646099": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646099?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-29",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2022",
+    "E.F. CIUDAD DE GETAFE 'A'"
+   ]
+  },
+  "5646107": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646107?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "ASOC. VEC. DEL POZO (HA)CALLE REGUERA DE TOMATEROS S/N · Madrid",
+   "fecha": "2026-12-13",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "1041",
+    "CLUB SECCION DEPORTIVA DEL POZO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646116": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646116?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-20",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "623",
+    "E.D. MORATALAZ 'B'"
+   ]
+  },
+  "5646124": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646124?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. MORATALAZ (HA)CALLE VALDEBERNARDO 2 · Madrid",
+   "fecha": "2027-01-17",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": "11:15",
+   "jornada": 15,
+   "local": [
+    "523",
+    "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646133": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646133?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-24",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "732",
+    "NUEVO PINTO C.F. 'A'"
+   ]
+  },
+  "5646141": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646141?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "GETAFE - ARCAS DEL AGUA (HA)SENDA DE MAFALDA 2 · Getafe",
+   "fecha": "2027-01-31",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "1006",
+    "FEPE GETAFE III 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646158": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646158?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-07",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "352985",
+    "UDMELIDAOLIMPIA - MADRID CITY VALLECAS"
+   ]
+  },
+  "5646167": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646167?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "ARGANDA - ESTADIO MUNICIPAL.(HB)AVDA. DE VALDEARGANDA 12 · Arganda Del Rey",
+   "fecha": "2027-02-14",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "788",
+    "A.D. ARGANDA C.F."
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646175": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646175?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-21",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2346",
+    "A.D. UNION CARRASCAL 'A'"
+   ]
+  },
+  "5646184": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646184?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "VILLACONEJOS (HA)CARRETERA A VILLARRUBIA S/N · Villaconejos",
+   "fecha": "2027-02-28",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "1036",
+    "C.D. VILLACONEJOS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646192": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646192?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-07",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "4928629",
+    "RIVAS FUTBOL CLUB"
+   ]
+  },
+  "5646201": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646201?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "fecha": "2027-03-14",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "466796",
+    "C.D. COLONIA MOSCARDO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646209": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646209?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-21",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "13519993",
+    "ESC.FUT.AT. CASARRUBUELOS"
+   ]
+  },
+  "5646218": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646218?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PINTO - ESTADIO AMELIA DEL CASTILLO (HA)CALLE DOÑA MANOLITA S/N · Pinto",
+   "fecha": "2027-04-04",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "8944219",
+    "C.D.E. CIUDAD DE PINTO 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646226": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646226?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-11",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "680159",
+    "A.D. VILLAVERDE BAJO 'A'"
+   ]
+  },
+  "5646235": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646235?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-04-18",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 27,
+   "local": [
+    "475",
+    "RACING VILLAVERDE C.F. 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646243": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646243?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-25",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 28,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "947",
+    "A.D. ORCASITAS 'A'"
+   ]
+  },
+  "5646252": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646252?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "GETAFE - JUAN DE LA CIERVA 2 (HA)AVDA. JUAN DE BORBON S/N · Getafe",
+   "fecha": "2027-05-02",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 29,
+   "local": [
+    "2022",
+    "E.F. CIUDAD DE GETAFE 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646260": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646260?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-09",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 30,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "1041",
+    "CLUB SECCION DEPORTIVA DEL POZO 'A'"
+   ]
+  },
+  "5646269": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646269?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "DEHESA MORATALAZ (HA)AVDA. DOCTOR GARCIA TAPIA 117 · Madrid",
+   "fecha": "2027-05-16",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 31,
+   "local": [
+    "623",
+    "E.D. MORATALAZ 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646277": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646277?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-23",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 32,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "523",
+    "ESC. MPAL. DE FUT. AGUILAS DE MORATALAZ 'A'"
+   ]
+  },
+  "5646286": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646286?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PINTO - ESTADIO AMELIA DEL CASTILLO (HA)CALLE DOÑA MANOLITA S/N · Pinto",
+   "fecha": "2027-05-30",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 33,
+   "local": [
+    "732",
+    "NUEVO PINTO C.F. 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5646294": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646294?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-06-06",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": null,
+   "jornada": 34,
+   "local": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "1006",
+    "FEPE GETAFE III 'A'"
+   ]
+  },
   "5659178": {
    "acta": "https://www.elbalondemadrid.es/acta/5659178?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-10-10",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
@@ -3037,7 +7223,7 @@
   },
   "5659185": {
    "acta": "https://www.elbalondemadrid.es/acta/5659185?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-17",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
@@ -3054,9 +7240,465 @@
     "A.D. VILLAVERDE BAJO 'C'"
    ]
   },
+  "5659191": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659191?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "24791952",
+    "CDE INTER PROMESAS 'F'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659198": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659198?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-31",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "15520618",
+    "C.D.E. DRAGONES DE LAVAPIES 'A'"
+   ]
+  },
+  "5659205": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659205?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "10655688",
+    "C.F. MADRID RIO - ARGANZUELA 'C'"
+   ]
+  },
+  "5659213": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659213?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "fecha": "2026-11-14",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "22634708",
+    "A.D. ORCASITAS 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659220": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659220?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-21",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "15292008",
+    "RACING VILLAVERDE C.F. 'D'"
+   ]
+  },
+  "5659228": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659228?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "2161",
+    "A.D.C. SAN FERMIN 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659235": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659235?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "6826485",
+    "S.A.D. VILLAVERDE SAN ANDRES 'B'"
+   ]
+  },
+  "5659243": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659243?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "MARIS STELLA (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "3161",
+    "C.D. ORCASUR SIN FRONTERAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659250": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659250?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-16",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "24235768",
+    "CDB UNION DEPORTIVA ARGANZUELA 'F'"
+   ]
+  },
+  "5659258": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659258?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "15283110",
+    "C.D. ALZOLA-HALCONES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659265": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659265?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-30",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "466651",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ]
+  },
+  "5659269": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659269?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-06",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "17130722",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ]
+  },
+  "5659276": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659276?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-13",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "15315841",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659282": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659282?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-20",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "24791952",
+    "CDE INTER PROMESAS 'F'"
+   ]
+  },
+  "5659289": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659289?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "CENTRO DEPORTIVO MUNICIPAL ORCASURCalle de Moreja 11 · Madrid",
+   "fecha": "2027-02-27",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "15520618",
+    "C.D.E. DRAGONES DE LAVAPIES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659296": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659296?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "fecha": "2027-03-06",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "10655688",
+    "C.F. MADRID RIO - ARGANZUELA 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659304": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659304?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-13",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "22634708",
+    "A.D. ORCASITAS 'C'"
+   ]
+  },
+  "5659311": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659311?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2027-03-20",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "15292008",
+    "RACING VILLAVERDE C.F. 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659319": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659319?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-03",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "2161",
+    "A.D.C. SAN FERMIN 'B'"
+   ]
+  },
+  "5659326": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659326?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "fecha": "2027-04-10",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "6826485",
+    "S.A.D. VILLAVERDE SAN ANDRES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659334": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659334?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-17",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "3161",
+    "C.D. ORCASUR SIN FRONTERAS 'A'"
+   ]
+  },
+  "5659341": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659341?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)PASEO IMPERIAL 20 · Madrid",
+   "fecha": "2027-04-24",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "24235768",
+    "CDB UNION DEPORTIVA ARGANZUELA 'F'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5659349": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659349?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-01",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "15283110",
+    "C.D. ALZOLA-HALCONES 'C'"
+   ]
+  },
+  "5659356": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659356?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-05-08",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "466651",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
   "5663194": {
    "acta": "https://www.elbalondemadrid.es/acta/5663194?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-10",
    "grupo": "Segunda Infantil Grupo 34",
    "hora": null,
@@ -3073,48 +7715,517 @@
     "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
    ]
   },
-  "manual|https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas|1": {
-   "acta": null,
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
-   "fecha": "2026-09-12",
-   "grupo": "Preferente Juvenil Grupo 5",
-   "hora": "11:00",
-   "jornada": 1,
-   "local": [
-    "6815292",
-    "C.D. CIUDAD LOS ANGELES 'A'"
-   ],
-   "pos": null,
-   "resultado": [
-    2,
-    1
-   ],
-   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
-   "visitante": [
-    "manual-C.F. MADRID RIO - ARGANZUELA 'C'",
-    "C.F. MADRID RIO - ARGANZUELA 'C'"
-   ]
-  },
-  "manual|https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas|2": {
-   "acta": null,
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
-   "fecha": "2026-09-19",
-   "grupo": "Primera Juvenil Grupo 11",
-   "hora": "17:00",
+  "5663202": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663202?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-17",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
    "jornada": 2,
    "local": [
-    "15328636",
+    "15315850",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663209": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663209?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "8961563",
     "C.D. CIUDAD LOS ANGELES 'B'"
    ],
    "pos": null,
-   "resultado": [
-    2,
-    1
-   ],
-   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
    "visitante": [
-    "manual-ESC.MUN.FUT. ALUCHE 'C'",
-    "ESC.MUN.FUT. ALUCHE 'C'"
+    "15344438",
+    "A.D. ORCASITAS 'C'"
+   ]
+  },
+  "5663217": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663217?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "ASOC. VEC. DEL POZO (HA)CALLE REGUERA DE TOMATEROS S/N · Madrid",
+   "fecha": "2026-10-31",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "21430711",
+    "CLUB SECCION DEPORTIVA DEL POZO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663224": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663224?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "26741105",
+    "A.D. PIQUEÑAS 'D'"
+   ]
+  },
+  "5663232": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663232?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PARLA - ESTADIO DE LOS PRADOS (HA))AVDA. JUAN CARLOS I S/N · Parla",
+   "fecha": "2026-11-14",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "15288427",
+    "A.D. PARLA 'E'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663239": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663239?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-21",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "1031212",
+    "A.D. ALHONDIGA 'D'"
+   ]
+  },
+  "5663247": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663247?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "12232635",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663254": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663254?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "GETAFE - PTE. DETERMINAR POR AYUNTAMIENTOGETAFE · Getafe",
+   "fecha": "2026-12-12",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "2277356",
+    "RECREATIVO CULTURAL NUEVO BERCIAL 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663261": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663261?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "21425698",
+    "S.A.D. A.V. CASERIO PERALES 'B'"
+   ]
+  },
+  "5663267": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663267?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "fecha": "2027-01-16",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "6826488",
+    "S.A.D. VILLAVERDE SAN ANDRES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663274": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663274?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 12,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "-28007976",
+    "Descansa"
+   ]
+  },
+  "5663280": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663280?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
+   "fecha": "2027-01-30",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 13,
+   "local": [
+    "8950341",
+    "C.D. CANDIL LEGANES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663285": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663285?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-02-06",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 14,
+   "local": [
+    "9885562",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663293": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663293?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-13",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 15,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "15315850",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ]
+  },
+  "5663300": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663300?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "fecha": "2027-02-20",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 16,
+   "local": [
+    "15344438",
+    "A.D. ORCASITAS 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663308": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663308?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-02-27",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 17,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "21430711",
+    "CLUB SECCION DEPORTIVA DEL POZO 'C'"
+   ]
+  },
+  "5663315": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663315?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PIQUEÑAS (HA)CALLE PINAR DE SAN JOSE 72 · Madrid",
+   "fecha": "2027-03-06",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 18,
+   "local": [
+    "26741105",
+    "A.D. PIQUEÑAS 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663323": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663323?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-03-13",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 19,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "15288427",
+    "A.D. PARLA 'E'"
+   ]
+  },
+  "5663330": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663330?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "GETAFE - PVO. GINER DE LOS RIOS (HA)CTRA. DE GETAFE A LEGANÉS S/N · Getafe",
+   "fecha": "2027-03-20",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 20,
+   "local": [
+    "1031212",
+    "A.D. ALHONDIGA 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663338": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663338?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-03",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "12232635",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ]
+  },
+  "5663345": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663345?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-10",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 22,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "2277356",
+    "RECREATIVO CULTURAL NUEVO BERCIAL 'B'"
+   ]
+  },
+  "5663352": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663352?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "GETAFE - JAVIER CORREDOR (PERALES DEL RIO HA)CALLE SIERRA DE GREDOS 1 · Getafe",
+   "fecha": "2027-04-17",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 23,
+   "local": [
+    "21425698",
+    "S.A.D. A.V. CASERIO PERALES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663358": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663358?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-04-24",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 24,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "6826488",
+    "S.A.D. VILLAVERDE SAN ANDRES 'B'"
+   ]
+  },
+  "5663365": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663365?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "fecha": "2027-05-01",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 25,
+   "local": [
+    "-28007976",
+    "Descansa"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663371": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663371?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2027-05-08",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "jornada": 26,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "8950341",
+    "C.D. CANDIL LEGANES 'B'"
+   ]
+  },
+  "5667693": {
+   "acta": "https://www.elbalondemadrid.es/acta/5667693?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "",
+   "fecha": "2027-03-14",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 21,
+   "local": [
+    "-27786794",
+    "Descansa"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5667701": {
+   "acta": "https://www.elbalondemadrid.es/acta/5667701?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "fecha": "2026-11-01",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "-27786794",
+    "Descansa"
    ]
   }
  }
