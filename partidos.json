@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24 11:50",
+  "generado": "2026-09-24 12:02",
   "desde": "2026-09-26",
   "hasta": "2026-09-27",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Racing de Villaverde B - *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ (11º) Escuela de Futbol Arganda B - (4º) *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola - Halcones D - *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ (17º) Unión 2000 B - (9º) *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Los Rosales de Villaverde - *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ (8º) Unión Carrascal A - (12º) *_Ciudad de los Ángeles A_*",
@@ -7,18 +7,12 @@
   "resultados_hasta": "2026-09-20",
   "resultados": "",
   "sin_partido": [
-    "Jornadas Grupo 29",
     "Preferente Alevín F-7 Grupo 6",
     "Segunda Cadete Grupo 27",
     "Segunda Infantil Grupo 34"
   ],
   "errores": [],
   "semanas": [
-    {
-      "sabado": "2026-05-23",
-      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 23/05/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n⚽ Racing de Villaverde C - *_Ciudad de los Ángeles B_*\n\n⏰ *12:30h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n⚽ *_Ciudad de los Ángeles C_* - San Fermin E",
-      "resultados": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 23/05/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n🟢 Racing de Villaverde C 0 - 12 *_Ciudad de los Ángeles B_*\n\n⏰ *12:30h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n🟢 *_Ciudad de los Ángeles C_* 7 - 2 San Fermin E"
-    },
     {
       "sabado": "2026-09-26",
       "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Racing de Villaverde B - *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ (11º) Escuela de Futbol Arganda B - (4º) *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola - Halcones D - *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ (17º) Unión 2000 B - (9º) *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Los Rosales de Villaverde - *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ (8º) Unión Carrascal A - (12º) *_Ciudad de los Ángeles A_*",
@@ -2312,181 +2306,6 @@
         }
       ],
       "equipo": "Ciudad de los Ángeles A"
-    },
-    {
-      "titulo": "Jornadas Grupo 29",
-      "jornada": 22,
-      "filas": [
-        {
-          "pos": 1,
-          "id": "21430395",
-          "nombre": "San Fermin D",
-          "nuestro": false,
-          "pj": 22,
-          "g": 19,
-          "e": 1,
-          "p": 2,
-          "gf": 170,
-          "gc": 32,
-          "dg": 138,
-          "pts": 58
-        },
-        {
-          "pos": 2,
-          "id": "4076431",
-          "nombre": "Oroquieta Villaverde Butarque C",
-          "nuestro": false,
-          "pj": 22,
-          "g": 16,
-          "e": 2,
-          "p": 4,
-          "gf": 144,
-          "gc": 69,
-          "dg": 75,
-          "pts": 50
-        },
-        {
-          "pos": 3,
-          "id": "3365882",
-          "nombre": "Oroquieta Villaverde Butarque B",
-          "nuestro": false,
-          "pj": 22,
-          "g": 16,
-          "e": 2,
-          "p": 4,
-          "gf": 125,
-          "gc": 50,
-          "dg": 75,
-          "pts": 50
-        },
-        {
-          "pos": 4,
-          "id": "13570998",
-          "nombre": "Alzola-Halcones C",
-          "nuestro": false,
-          "pj": 22,
-          "g": 16,
-          "e": 1,
-          "p": 5,
-          "gf": 115,
-          "gc": 65,
-          "dg": 50,
-          "pts": 49
-        },
-        {
-          "pos": 5,
-          "id": "15328637",
-          "nombre": "Ciudad de los Ángeles B",
-          "nuestro": true,
-          "pj": 22,
-          "g": 16,
-          "e": 0,
-          "p": 6,
-          "gf": 142,
-          "gc": 47,
-          "dg": 95,
-          "pts": 48
-        },
-        {
-          "pos": 6,
-          "id": "21430134",
-          "nombre": "Ciudad de los Ángeles C",
-          "nuestro": true,
-          "pj": 22,
-          "g": 12,
-          "e": 2,
-          "p": 8,
-          "gf": 83,
-          "gc": 75,
-          "dg": 8,
-          "pts": 38
-        },
-        {
-          "pos": 7,
-          "id": "15292010",
-          "nombre": "Racing de Villaverde C",
-          "nuestro": false,
-          "pj": 22,
-          "g": 11,
-          "e": 0,
-          "p": 11,
-          "gf": 71,
-          "gc": 92,
-          "dg": -21,
-          "pts": 33
-        },
-        {
-          "pos": 8,
-          "id": "20086393",
-          "nombre": "La Mancha C",
-          "nuestro": false,
-          "pj": 22,
-          "g": 6,
-          "e": 1,
-          "p": 15,
-          "gf": 80,
-          "gc": 104,
-          "dg": -24,
-          "pts": 19
-        },
-        {
-          "pos": 9,
-          "id": "15954882",
-          "nombre": "Inter Promesas B",
-          "nuestro": false,
-          "pj": 22,
-          "g": 6,
-          "e": 1,
-          "p": 15,
-          "gf": 94,
-          "gc": 125,
-          "dg": -31,
-          "pts": 19
-        },
-        {
-          "pos": 10,
-          "id": "22749386",
-          "nombre": "San Fermin E",
-          "nuestro": false,
-          "pj": 22,
-          "g": 6,
-          "e": 0,
-          "p": 16,
-          "gf": 59,
-          "gc": 100,
-          "dg": -41,
-          "pts": 18
-        },
-        {
-          "pos": 11,
-          "id": "21417751",
-          "nombre": "La Mancha D",
-          "nuestro": false,
-          "pj": 22,
-          "g": 2,
-          "e": 1,
-          "p": 19,
-          "gf": 44,
-          "gc": 154,
-          "dg": -110,
-          "pts": 7
-        },
-        {
-          "pos": 12,
-          "id": "13571467",
-          "nombre": "Fundacion Rayo Vallecano G",
-          "nuestro": false,
-          "pj": 22,
-          "g": 0,
-          "e": 1,
-          "p": 21,
-          "gf": 38,
-          "gc": 252,
-          "dg": -214,
-          "pts": 1
-        }
-      ],
-      "equipo": "Ciudad de los Ángeles B"
     }
   ]
 }
