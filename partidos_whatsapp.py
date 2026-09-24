@@ -60,7 +60,7 @@ CONOCIDOS = {
 }
 
 TZ = ZoneInfo("Europe/Madrid")
-AVISO = "Información sacada de la web https://www.elbalondemadrid.es/"
+AVISO = "Información sacada de la web El Balón de Madrid"
 DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
 # ---------------------------------------------------------------------------
@@ -186,6 +186,7 @@ def grupos_a_consultar(errores):
 FECHA = re.compile(r"^\d{2}/\d{2}/\d{4}$")
 HORA = re.compile(r"^(\d{2}:\d{2}|--:--)$")
 RESULTADO = re.compile(r"^(\d{1,2})\s*[·–\-]\s*(\d{1,2})$")
+JORNADA = re.compile(r"^Jornada\s*(\d{1,2})\s*(?:Actual)?\s*\d{2}-\d{2}-\d{4}$")
 
 
 def ahora():
@@ -208,9 +209,10 @@ def parsear_jornada(soup):
     fecha -> local -> hora (o marcador) -> visitante -> campo -> 'Ver acta' (fin)."""
     normalizar(soup)
     partidos, fecha, actual = [], None, None
+    jornada, esperando_numero = None, False
 
     def nuevo():
-        return {"fecha": fecha, "hora": None, "resultado": None,
+        return {"fecha": fecha, "jornada": jornada, "hora": None, "resultado": None,
                 "equipos": [], "campo": "", "acta": None}
 
     for nodo in soup.descendants:
@@ -218,7 +220,14 @@ def parsear_jornada(soup):
             if nodo.parent is not None and nodo.parent.name in ("script", "style"):
                 continue
             t = str(nodo).strip()
-            if FECHA.match(t):
+            mj = JORNADA.match(t)
+            if mj:  # cabecera de la jornada mostrada, p. ej. "Jornada3 27-09-2026"
+                jornada = int(mj.group(1))
+            elif t == "Jornada":
+                esperando_numero = True
+            elif esperando_numero and t.isdigit():
+                jornada, esperando_numero = int(t), False
+            elif FECHA.match(t):
                 fecha = datetime.strptime(t, "%d/%m/%Y").date()
             elif HORA.match(t):
                 actual = actual or nuevo()
@@ -330,6 +339,7 @@ def actualizar_estado(estado, p, titulo, url, posiciones=None):
 
     estado[k] = {
         "fecha": p["fecha"].isoformat(),
+        "jornada": p.get("jornada") or anterior.get("jornada"),
         "hora": p["hora"] or anterior.get("hora"),
         "grupo": titulo,
         "url_grupo": url,
@@ -432,7 +442,11 @@ def bloque(e, con_resultado=False):
         linea = f"{_emoji_resultado(e)} {local} {gl} - {gv} {visitante}"
     else:
         linea = f"⚽ {local} - {visitante}"
-    return "\n".join([e["grupo"], f"*{dia} {f:%d/%m/%Y}{h}*", f"📍 Campo: {campo}", linea])
+    lineas = [e["grupo"]]
+    if e.get("jornada"):
+        lineas.append(f"Jornada {e['jornada']}")
+    lineas += [f"*{dia} {f:%d/%m/%Y}{h}*", f"📍 Campo: {campo}", linea]
+    return "\n".join(lineas)
 
 
 def componer(estado, sabado, con_resultado):
