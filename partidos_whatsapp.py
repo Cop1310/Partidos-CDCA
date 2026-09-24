@@ -498,11 +498,11 @@ def completar_con_actas(estado, errores):
 # Jornadas anteriores (histórico)
 #
 # La web no cambia de dirección al elegir otra jornada, así que no se puede pedir
-# directamente. Lo que sí tiene cada partido es su acta, y las actas de una misma
-# jornada suelen tener números correlativos. Se leen las actas de la jornada anterior
-# y solo se guardan si cada una confirma que es del grupo y la jornada esperados.
+# directamente. Lo que sí tiene cada partido es su acta, y las actas de un grupo suelen
+# tener números correlativos. Se leen hacia atrás las actas anteriores a la jornada actual
+# y solo se guardan las que confirman ser de una jornada anterior y de equipos del grupo.
 # ---------------------------------------------------------------------------
-MAX_RELLENO = 40  # actas antiguas que se leen por ejecución
+MAX_RELLENO = 60  # actas (pasadas y futuras) que se leen por ejecución
 
 
 def _sin_acentos(texto):
@@ -517,7 +517,7 @@ def leer_acta(soup, url_acta):
     plano = " ".join(textos)
     cab = re.search(r"([A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9 \-\.]*?)\s*·\s*Grupo\s+(\d+)\s*·\s*Jornada\s+(\d+)",
                     plano, re.I)
-    fecha_hora = re.search(r"(\d{2}-\d{2}-\d{4})\s*(\d{2}:\d{2})", plano)
+    fecha_hora = re.search(r"(\d{2}-\d{2}-\d{4})\s*(\d{2}:\d{2})?", plano)
     equipos = []
     for a in soup.find_all("a", href=re.compile(r"/equipo/\d+")):
         ident = re.search(r"/equipo/(\d+)", a["href"]).group(1)
@@ -529,7 +529,8 @@ def leer_acta(soup, url_acta):
     campo = soup.find("a", href=re.compile(r"/campo/\d+"))
     return {
         "categoria": cab.group(1).strip(), "grupo_n": int(cab.group(2)), "jornada": int(cab.group(3)),
-        "fecha": datetime.strptime(fecha_hora.group(1), "%d-%m-%Y").date(), "hora": fecha_hora.group(2),
+        "fecha": datetime.strptime(fecha_hora.group(1), "%d-%m-%Y").date(),
+        "hora": None if fecha_hora.group(2) in (None, "00:00") else fecha_hora.group(2),
         "equipos": equipos[:2], "resultado": marcador,
         "campo": campo.get_text(" ", strip=True) if campo else "", "acta": url_acta,
     }
@@ -548,49 +549,125 @@ def _bloque_correlativo(numeros):
     return mejor
 
 
-def rellenar_jornadas(url, ids, titulo, actual, actas_actuales, estado, meta, cupo):
-    """Guarda los partidos de las jornadas anteriores leyendo sus actas. Devuelve cuántas
-    actas ha leído."""
-    hechas = set(meta["hechas"].get(url, []))
-    pendientes = [j for j in range(actual - 1, 0, -1) if j not in hechas]
+def rellenar_jornadas(url, ids, titulo, actual, actas_actuales, equipos_grupo, estado, meta, cupo):
+    """Recorre hacia atrás las actas anteriores a las de la jornada actual y guarda los
+    partidos de nuestros equipos. Cada acta se acepta solo si es de una jornada anterior y
+    sus dos equipos pertenecen al grupo. Recuerda por dónde iba para continuar en la
+    siguiente ejecución. Devuelve cuántas actas ha leído."""
+    terminado = meta.setdefault("terminado", {})
+    cursor = meta.setdefault("cursor", {})
     base, n = _bloque_correlativo(actas_actuales)
     m = re.search(r"/competicion/(\d+)/grupo/(\d+)", url)
-    if not pendientes or cupo <= 0 or n < 2 or not m:
+    if terminado.get(url) or actual <= 1 or n < 2 or not m or cupo <= 0:
         return 0
     comp, grupo = m.groups()
-    gastadas = 0
-    for j in pendientes:  # de la más reciente hacia atrás
-        primero = base - (actual - j) * n
-        if primero <= 0 or gastadas + n > cupo:
-            break
-        actas = []
-        for numero in range(primero, primero + n):
-            gastadas += 1
-            url_acta = f"{BASE}/acta/{numero}?temporada=22&competicion={comp}&grupo={grupo}"
-            try:
-                info = leer_acta(get(url_acta), url_acta)
-            except Exception as e:
-                print(f"Aviso: no se pudo leer el acta {numero}: {e}", file=sys.stderr)
-                info = None
-            valida = (info and info["jornada"] == j
-                      and _sin_acentos(titulo).endswith(f"GRUPO {info['grupo_n']}")
-                      and _sin_acentos(titulo).startswith(_sin_acentos(info["categoria"])))
-            if not valida:
-                print(f"Aviso: las actas anteriores de {titulo} no siguen el orden esperado; "
-                      f"no se guarda la jornada {j}.", file=sys.stderr)
-                actas = None
+    numero = cursor.get(url, base - 1)
+    encontrados, gastadas, seguidos_mal = {}, 0, 0
+    while numero > 0 and gastadas < cupo:
+        gastadas += 1
+        url_acta = f"{BASE}/acta/{numero}?temporada=22&competicion={comp}&grupo={grupo}"
+        try:
+            info = leer_acta(get(url_acta), url_acta)
+            motivo = "estructura no reconocida" if info is None else ""
+        except Exception as e:
+            info, motivo = None, f"no se pudo descargar ({e})"
+        if info:
+            if info["jornada"] >= actual:
+                motivo = f"es de la jornada {info['jornada']}"
+            elif not all(e[0] in equipos_grupo for e in info["equipos"]):
+                motivo = "sus equipos no son de este grupo"
+        if motivo:
+            seguidos_mal += 1
+            print(f"Aviso: histórico de {titulo}: acta {numero}: {motivo}.", file=sys.stderr)
+            if seguidos_mal >= 3:
+                terminado[url] = True  # las actas dejan de ser correlativas: no se sigue
                 break
-            actas.append(info)
-        if actas is None:
-            break
-        for info in actas:
+        else:
+            seguidos_mal = 0
+            encontrados.setdefault(info["jornada"], []).append(info)
+            if info["jornada"] == 1 and len(encontrados[1]) >= n:
+                numero -= 1
+                terminado[url] = True  # ya se ha llegado al principio de la temporada
+                break
+        numero -= 1
+    cursor[url] = numero
+    if numero <= 0:
+        terminado[url] = True
+    for infos in encontrados.values():
+        for info in infos:
             if any(e[0] in ids for e in info["equipos"]):
                 actualizar_estado(estado, {
                     "fecha": info["fecha"], "jornada": info["jornada"], "hora": info["hora"],
                     "resultado": info["resultado"], "equipos": info["equipos"],
                     "campo": info["campo"], "acta": info["acta"]}, titulo, url, None)
-        hechas.add(j)
-    meta["hechas"][url] = sorted(hechas)
+    if gastadas:
+        print(f"Histórico de {titulo}: leídas {gastadas} actas, jornadas encontradas: "
+              f"{sorted(encontrados)}.", file=sys.stderr)
+    return gastadas
+
+
+VENTANA = 4  # cuántas jornadas por delante de la actual se miran
+
+
+def explorar_proximas(url, ids, titulo, actual, actas_actuales, equipos_grupo, estado, meta, cupo):
+    """Lee las actas de las jornadas siguientes a la actual para conocer cuándo juega cada
+    equipo, aunque el día y la hora aún no estén confirmados. Se repite cada 6 días para
+    recoger cambios. Devuelve cuántas actas ha leído."""
+    seguimiento = meta.setdefault("proximas", {})
+    est = seguimiento.get(url)
+    hoy = ahora().date()
+    base, n = _bloque_correlativo(actas_actuales)
+    m = re.search(r"/competicion/(\d+)/grupo/(\d+)", url)
+    if n < 2 or not m or cupo <= 0:
+        return 0
+    if est and est["actual"] == actual and est.get("cursor") is None \
+            and (hoy - date.fromisoformat(est["fecha"])).days < 6:
+        return 0  # ya explorado hace poco
+    if est and est["actual"] == actual and est.get("cursor"):
+        numero = est["cursor"]  # continuar donde se dejó
+    else:
+        numero = base + n       # empezar justo después de la jornada actual
+    comp, grupo = m.groups()
+    tope = base + n * (VENTANA + 1) + 3
+    gastadas, seguidos_mal, jornadas, terminado = 0, 0, set(), False
+    while numero < tope and gastadas < cupo:
+        gastadas += 1
+        url_acta = f"{BASE}/acta/{numero}?temporada=22&competicion={comp}&grupo={grupo}"
+        try:
+            info = leer_acta(get(url_acta), url_acta)
+            motivo = "estructura no reconocida" if info is None else ""
+        except Exception as e:
+            info, motivo = None, f"no se pudo descargar ({e})"
+        if info:
+            if info["jornada"] <= actual:
+                motivo = f"es de la jornada {info['jornada']}"
+            elif not all(e[0] in equipos_grupo for e in info["equipos"]):
+                motivo = "sus equipos no son de este grupo"
+            elif info["jornada"] > actual + VENTANA:
+                terminado = True
+                break
+        if motivo:
+            seguidos_mal += 1
+            print(f"Aviso: próximas jornadas de {titulo}: acta {numero}: {motivo}.", file=sys.stderr)
+            if seguidos_mal >= 3:
+                terminado = True
+                break
+        else:
+            seguidos_mal = 0
+            jornadas.add(info["jornada"])
+            if any(e[0] in ids for e in info["equipos"]):
+                actualizar_estado(estado, {
+                    "fecha": info["fecha"], "jornada": info["jornada"], "hora": info["hora"],
+                    "resultado": None, "equipos": info["equipos"],
+                    "campo": info["campo"], "acta": info["acta"]}, titulo, url, None)
+        numero += 1
+    if numero >= tope:
+        terminado = True
+    seguimiento[url] = {"actual": actual, "fecha": hoy.isoformat(),
+                        "cursor": None if terminado else numero}
+    if gastadas:
+        print(f"Próximas jornadas de {titulo}: leídas {gastadas} actas, jornadas vistas: "
+              f"{sorted(jornadas)}.", file=sys.stderr)
     return gastadas
 
 
@@ -649,7 +726,7 @@ def bloque(e, con_resultado=False):
     elif con_resultado or e.get("resultado"):
         cabecera = f"🏆 {e['grupo']}"
     else:
-        cabecera = f"⏰ *Hora por confirmar* - {e['grupo']}"
+        cabecera = f"⏰ *Pendiente de confirmar día y hora* - {e['grupo']}"
     campo = limpiar_campo(e.get("campo")) or "por confirmar"
     pos = e.get("pos") or [None, None]
     local, visitante = _equipo(e["local"], pos[0]), _equipo(e["visitante"], pos[1])
@@ -760,7 +837,12 @@ def main():
             actualizar_estado(estado, p, titulo, url, posiciones)
         if actual and actual > 1:
             actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
-            cupo -= rellenar_jornadas(url, ids, titulo, actual, actas, estado, meta, cupo)
+            equipos_grupo = {e[0] for p in todos for e in p["equipos"]} | {f["id"] for f in filas}
+            cupo -= rellenar_jornadas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
+        if actual:
+            actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
+            equipos_grupo = {e[0] for p in todos for e in p["equipos"]} | {f["id"] for f in filas}
+            cupo -= explorar_proximas(url, ids, titulo, actual, actas, equipos_grupo, estado, meta, cupo)
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
