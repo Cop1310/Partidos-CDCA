@@ -1,0 +1,174 @@
+{
+ "partidos": {
+  "5583091": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
+   "fecha": "2026-09-26",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": "14:30",
+   "local": [
+    "1546",
+    "ESCUELA DE FUTBOL ARGANDA 'B'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5594869": {
+   "acta": "https://www.elbalondemadrid.es/acta/5594869?temporada=22&competicion=26737742&grupo=26737747",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "fecha": "2026-09-26",
+   "grupo": "Preferente Cadete Grupo 5",
+   "hora": "11:45",
+   "local": [
+    "10652335",
+    "RACING VILLAVERDE C.F. 'B'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
+   "visitante": [
+    "8961562",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5599650": {
+   "acta": "https://www.elbalondemadrid.es/acta/5599650?temporada=22&competicion=26738132&grupo=26738138",
+   "campo": "",
+   "fecha": "2026-10-10",
+   "grupo": "Preferente Alevín F-7 Grupo 6",
+   "hora": null,
+   "local": [
+    "10652341",
+    "RACING VILLAVERDE C.F. 'A'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas",
+   "visitante": [
+    "15328645",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5606348": {
+   "acta": "https://www.elbalondemadrid.es/acta/5606348?temporada=22&competicion=26737819&grupo=26737824",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "fecha": "2026-09-26",
+   "grupo": "Preferente Infantil Grupo 5",
+   "hora": "15:30",
+   "local": [
+    "1031681",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
+   "visitante": [
+    "13538235",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5614520": {
+   "acta": "https://www.elbalondemadrid.es/acta/5614520?temporada=22&competicion=26737724&grupo=26737735",
+   "campo": "PARLA - ALFREDO DI STEFANO MARIANO ARRIBAS (HA)",
+   "fecha": "2026-09-27",
+   "grupo": "Primera Juvenil Grupo 11",
+   "hora": "13:00",
+   "local": [
+    "4928739",
+    "UNION 2000 'B'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
+   "visitante": [
+    "15328636",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5628228": {
+   "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "fecha": "2026-09-27",
+   "grupo": "Segunda Aficionado Grupo 20",
+   "hora": "13:00",
+   "local": [
+    "2733",
+    "C.D.E. LOS ROSALES DE VILLAVERDE"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
+   "visitante": [
+    "6818931",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5642638": {
+   "acta": "https://www.elbalondemadrid.es/acta/5642638?temporada=22&competicion=26738323&grupo=27131269",
+   "campo": "PUERTO RICO (HA)",
+   "fecha": "2026-09-26",
+   "grupo": "Segunda Juvenil Grupo 13",
+   "hora": "16:00",
+   "local": [
+    "680085",
+    "C.D. ALZOLA - HALCONES 'D'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
+   "visitante": [
+    "15292622",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5646022": {
+   "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
+   "fecha": "2026-09-27",
+   "grupo": "Preferente Aficionado Grupo 3",
+   "hora": "19:00",
+   "local": [
+    "2346",
+    "A.D. UNION CARRASCAL 'A'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
+   "visitante": [
+    "2856",
+    "C.D. CIUDAD LOS ANGELES 'A'"
+   ]
+  },
+  "5659178": {
+   "acta": "https://www.elbalondemadrid.es/acta/5659178?temporada=22&competicion=26737768&grupo=26737795",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "fecha": "2026-10-10",
+   "grupo": "Segunda Cadete Grupo 27",
+   "hora": null,
+   "local": [
+    "17130722",
+    "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
+   "visitante": [
+    "13538232",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5663194": {
+   "acta": "https://www.elbalondemadrid.es/acta/5663194?temporada=22&competicion=26738324&grupo=26738357",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "fecha": "2026-10-10",
+   "grupo": "Segunda Infantil Grupo 34",
+   "hora": null,
+   "local": [
+    "8961563",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
+   "visitante": [
+    "9885562",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ]
+  }
+ }
+}
