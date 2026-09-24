@@ -79,6 +79,7 @@ NOMBRES_EQUIPO = {
     "UNION 2000": "Unión 2000",
     "UNION CARRASCAL": "Unión Carrascal",
     "SANTIAGO APOSTOL VILLAVERDE": "Santiago Apóstol Villaverde",
+    "TORREJON": "Torrejón",
 }
 NOMBRES_CAMPO = {
     # "IDB DAVID DIEZ DE LA CRUZ": "IDB David Diez de la Cruz",
@@ -957,10 +958,8 @@ def bloque(e, con_resultado=False):
     hora = e.get("hora")
     if hora:
         cabecera = f"⏰ *{hora}h* - {e['grupo']}"
-    elif con_resultado or e.get("resultado"):
-        cabecera = f"🏆 {e['grupo']}"
     else:
-        cabecera = f"⏰ *Pendiente de confirmar día y hora* - {e['grupo']}"
+        cabecera = f"🏆 {e['grupo']}"
     campo = limpiar_campo(e.get("campo")) or "por confirmar"
     pos = e.get("pos") or [None, None]
     local, visitante = _equipo(e["local"], pos[0]), _equipo(e["visitante"], pos[1])
@@ -1000,19 +999,30 @@ def seleccion(estado, sabado, con_resultado):
     return lista
 
 
+def _pendiente(e):
+    """Partido sin hora confirmada y sin jugar: no se sabe ni el día ni la hora."""
+    return not e.get("hora") and not e.get("resultado")
+
+
 def componer(estado, sabado, con_resultado):
     lista = seleccion(estado, sabado, con_resultado)
     if not lista:
         return ""
     partes = [AVISO]
     dia_actual = None
-    for e in lista:
+    for e in [e for e in lista if not _pendiente(e)]:
         if e["fecha"] != dia_actual:  # el día aparece una sola vez, como titular
             dia_actual = e["fecha"]
             f = date.fromisoformat(dia_actual)
             titular = f"📅 *{DIAS[f.weekday()].upper()} {f:%d/%m/%Y}*"
             partes.append(f"{LINEA}\n{titular}\n{LINEA}")
         partes.append(bloque(e, con_resultado))
+    pendientes = [e for e in lista if _pendiente(e)]
+    if pendientes:  # sin sábado ni domingo: aún no hay día y hora asignados
+        orden = {f"{BASE}/{ruta}/jornadas": i for i, ruta in enumerate(CONOCIDOS)}
+        pendientes.sort(key=lambda e: (orden.get(e["url_grupo"], 99), e.get("jornada") or 0))
+        partes.append(f"{LINEA}\n📅 *PENDIENTE DE CONFIRMAR DÍA Y HORA*\n{LINEA}")
+        partes.extend(bloque(e, con_resultado) for e in pendientes)
     return "\n\n".join(partes)
 
 

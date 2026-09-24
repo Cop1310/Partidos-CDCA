@@ -24,5 +24,15 @@
       2,
       1
     ]
+  },
+  {
+    "grupo": "Preferente Juvenil Grupo 5",
+    "jornada": 5,
+    "fecha": "2026-10-11",
+    "hora": null,
+    "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)",
+    "local": "A.D. TORREJON C.F. 'D'",
+    "visitante": "C.D. CIUDAD LOS ANGELES 'A'",
+    "resultado": null
   }
 ]
