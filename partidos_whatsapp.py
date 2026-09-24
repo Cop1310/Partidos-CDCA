@@ -24,6 +24,7 @@ import json
 import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 import webbrowser
 from datetime import date, datetime, timedelta
@@ -190,7 +191,7 @@ def grupos_a_consultar(errores):
 FECHA = re.compile(r"^\d{2}/\d{2}/\d{4}$")
 HORA = re.compile(r"^(\d{2}:\d{2}|--:--)$")
 RESULTADO = re.compile(r"^(\d{1,2})\s*[·–\-]\s*(\d{1,2})$")
-JORNADA = re.compile(r"^Jornada\s*(\d{1,2})\s*(?:Actual)?\s*\|?\s*\d{2}-\d{2}-\d{4}$")
+JORNADA = re.compile(r"^Jornada\s*(\d{1,2})\s*(?:Actual)?\s*\|?\s*(\d{2}-\d{2}-\d{4})$")
 
 
 def ahora():
@@ -363,8 +364,8 @@ def tabla_de(soup):
     return jornada, filas
 
 
-def cabecera_jornada(soup):
-    """Número de la jornada que muestra la página (cabecera 'Jornada 3 ...')."""
+def cabecera(soup):
+    """(número, fecha) de la jornada que muestra la página; la fecha puede faltar."""
     normalizar(soup)
     esperando = False
     for t in soup.find_all(string=True):
@@ -373,12 +374,22 @@ def cabecera_jornada(soup):
         txt = str(t).strip()
         mj = JORNADA.match(txt)
         if mj:
-            return int(mj.group(1))
+            return int(mj.group(1)), datetime.strptime(mj.group(2), "%d-%m-%Y").date()
         if txt == "Jornada":
             esperando = True
         elif esperando and txt.isdigit():
-            return int(txt)
-    return None
+            return int(txt), None
+    return None, None
+
+
+def cabecera_jornada(soup):
+    return cabecera(soup)[0]
+
+
+def inicio_temporada():
+    """1 de julio de la temporada en curso: todo lo anterior es de la temporada pasada."""
+    hoy = ahora().date()
+    return date(hoy.year if hoy.month >= 7 else hoy.year - 1, 7, 1)
 
 
 def titulo_grupo(soup):
@@ -485,58 +496,99 @@ def completar_con_actas(estado, errores):
 
 # ---------------------------------------------------------------------------
 # Jornadas anteriores (histórico)
+#
+# La web no cambia de dirección al elegir otra jornada, así que no se puede pedir
+# directamente. Lo que sí tiene cada partido es su acta, y las actas de una misma
+# jornada suelen tener números correlativos. Se leen las actas de la jornada anterior
+# y solo se guardan si cada una confirma que es del grupo y la jornada esperados.
 # ---------------------------------------------------------------------------
-PARAMS_JORNADA = ("jornada", "j", "jor", "numJornada", "round")
-MAX_RELLENO = 30  # peticiones de jornadas antiguas por ejecución
+MAX_RELLENO = 40  # actas antiguas que se leen por ejecución
 
 
-def descubrir_parametro(url, objetivo):
-    """Averigua con qué parámetro de la dirección se pide otra jornada. Solo da por bueno
-    un parámetro si la página devuelve de verdad la jornada pedida."""
-    for nombre in PARAMS_JORNADA:
-        try:
-            if cabecera_jornada(get(f"{url}?{nombre}={objetivo}")) == objetivo:
-                return nombre
-        except Exception:
-            continue
-    return ""
+def _sin_acentos(texto):
+    return unicodedata.normalize("NFD", texto).encode("ascii", "ignore").decode().upper()
 
 
-def rellenar_jornadas(url, ids, titulo, actual, estado, meta, cupo):
-    """Guarda los partidos de las jornadas anteriores a la que muestra la web. Devuelve
-    cuántas peticiones ha gastado."""
+def leer_acta(soup, url_acta):
+    """Datos de un acta o None si no se reconoce su estructura."""
+    normalizar(soup)
+    textos = [t.strip() for t in soup.find_all(string=True)
+              if t.parent is not None and t.parent.name not in ("script", "style") and t.strip()]
+    plano = " ".join(textos)
+    cab = re.search(r"([A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9 \-\.]*?)\s*·\s*Grupo\s+(\d+)\s*·\s*Jornada\s+(\d+)",
+                    plano, re.I)
+    fecha_hora = re.search(r"(\d{2}-\d{2}-\d{4})\s*(\d{2}:\d{2})", plano)
+    equipos = []
+    for a in soup.find_all("a", href=re.compile(r"/equipo/\d+")):
+        ident = re.search(r"/equipo/(\d+)", a["href"]).group(1)
+        if ident not in [e[0] for e in equipos]:
+            equipos.append((ident, a.get_text(" ", strip=True)))
+    if not cab or not fecha_hora or len(equipos) < 2:
+        return None
+    marcador, _ = datos_de_acta(soup)
+    campo = soup.find("a", href=re.compile(r"/campo/\d+"))
+    return {
+        "categoria": cab.group(1).strip(), "grupo_n": int(cab.group(2)), "jornada": int(cab.group(3)),
+        "fecha": datetime.strptime(fecha_hora.group(1), "%d-%m-%Y").date(), "hora": fecha_hora.group(2),
+        "equipos": equipos[:2], "resultado": marcador,
+        "campo": campo.get_text(" ", strip=True) if campo else "", "acta": url_acta,
+    }
+
+
+def _bloque_correlativo(numeros):
+    """(primero, cuántos) del tramo de números consecutivos más largo."""
+    mejor, actual = (0, 0), None
+    for n in sorted(set(numeros)):
+        if actual and n == actual[0] + actual[1]:
+            actual = (actual[0], actual[1] + 1)
+        else:
+            actual = (n, 1)
+        if actual[1] > mejor[1]:
+            mejor = actual
+    return mejor
+
+
+def rellenar_jornadas(url, ids, titulo, actual, actas_actuales, estado, meta, cupo):
+    """Guarda los partidos de las jornadas anteriores leyendo sus actas. Devuelve cuántas
+    actas ha leído."""
     hechas = set(meta["hechas"].get(url, []))
-    pendientes = [j for j in range(1, actual) if j not in hechas]
-    if not pendientes or cupo <= 0:
+    pendientes = [j for j in range(actual - 1, 0, -1) if j not in hechas]
+    base, n = _bloque_correlativo(actas_actuales)
+    m = re.search(r"/competicion/(\d+)/grupo/(\d+)", url)
+    if not pendientes or cupo <= 0 or n < 2 or not m:
         return 0
-    param = meta.get("param")
+    comp, grupo = m.groups()
     gastadas = 0
-    if not param:
-        reciente = meta.get("probado") and \
-            (ahora().date() - date.fromisoformat(meta["probado"])).days < 3
-        if param == "" and reciente:
-            return 0  # ya se probó hace poco y no funcionó
-        param = descubrir_parametro(url, actual - 1)
-        gastadas += len(PARAMS_JORNADA) if not param else 1
-        meta["param"], meta["probado"] = param, ahora().date().isoformat()
-        if not param:
-            print("Aviso: no he encontrado cómo pedir otra jornada; el histórico se irá "
-                  "completando con las jornadas nuevas.", file=sys.stderr)
-            return gastadas
-    for j in pendientes:
-        if gastadas >= cupo:
+    for j in pendientes:  # de la más reciente hacia atrás
+        primero = base - (actual - j) * n
+        if primero <= 0 or gastadas + n > cupo:
             break
-        gastadas += 1
-        try:
-            soup = get(f"{url}?{param}={j}")
-        except Exception as e:
-            print(f"Aviso: no se pudo leer la jornada {j} de {titulo}: {e}", file=sys.stderr)
-            continue
-        if cabecera_jornada(soup) != j:
-            continue  # la web no ha devuelto la jornada pedida: no se guarda nada
-        for p in parsear_jornada(soup):
-            if any(e[0] in ids for e in p["equipos"]):
-                actualizar_estado(estado, p, titulo, url, None)
+        actas = []
+        for numero in range(primero, primero + n):
+            gastadas += 1
+            url_acta = f"{BASE}/acta/{numero}?temporada=22&competicion={comp}&grupo={grupo}"
+            try:
+                info = leer_acta(get(url_acta), url_acta)
+            except Exception as e:
+                print(f"Aviso: no se pudo leer el acta {numero}: {e}", file=sys.stderr)
+                info = None
+            valida = (info and info["jornada"] == j
+                      and _sin_acentos(titulo).endswith(f"GRUPO {info['grupo_n']}")
+                      and _sin_acentos(titulo).startswith(_sin_acentos(info["categoria"])))
+            if not valida:
+                print(f"Aviso: las actas anteriores de {titulo} no siguen el orden esperado; "
+                      f"no se guarda la jornada {j}.", file=sys.stderr)
+                actas = None
+                break
+            actas.append(info)
+        if actas is None:
+            break
+        for info in actas:
+            if any(e[0] in ids for e in info["equipos"]):
+                actualizar_estado(estado, {
+                    "fecha": info["fecha"], "jornada": info["jornada"], "hora": info["hora"],
+                    "resultado": info["resultado"], "equipos": info["equipos"],
+                    "campo": info["campo"], "acta": info["acta"]}, titulo, url, None)
         hechas.add(j)
     meta["hechas"][url] = sorted(hechas)
     return gastadas
@@ -679,14 +731,15 @@ def main():
             errores.append(nombre or url)
             print(f"Aviso: no se pudo consultar {nombre or url}: {e}", file=sys.stderr)
             continue
-        if temporada_finalizada(soup):  # calendario de una temporada antigua: se ignora
-            finalizadas.add(url)
+        actual, fecha_cab = cabecera(soup)
+        if temporada_finalizada(soup) or (fecha_cab and fecha_cab < inicio_temporada()):
+            finalizadas.add(url)  # calendario de una temporada antigua: se ignora
             continue
         consultados += 1
         titulo = titulo_grupo(soup)
         vistos.append((url, titulo))
-        actual = cabecera_jornada(soup)
-        propios = [p for p in parsear_jornada(soup) if any(e[0] in ids for e in p["equipos"])]
+        todos = [p for p in parsear_jornada(soup) if p["fecha"] >= inicio_temporada()]
+        propios = [p for p in todos if any(e[0] in ids for e in p["equipos"])]
 
         filas = []
         try:
@@ -706,15 +759,16 @@ def main():
         for p in propios:
             actualizar_estado(estado, p, titulo, url, posiciones)
         if actual and actual > 1:
-            cupo -= rellenar_jornadas(url, ids, titulo, actual, estado, meta, cupo)
+            actas = [int(a.group(1)) for a in (re.search(r"/acta/(\d+)", p["acta"] or "") for p in todos) if a]
+            cupo -= rellenar_jornadas(url, ids, titulo, actual, actas, estado, meta, cupo)
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
 
     completar_con_actas(estado, errores)
 
-    # se guarda todo el histórico de la temporada (solo se descartan partidos de hace más de un año)
-    limite = (ahora().date() - timedelta(days=400)).isoformat()
+    # se guarda el histórico de la temporada en curso (lo de temporadas anteriores se descarta)
+    limite = inicio_temporada().isoformat()
     estado = {k: v for k, v in estado.items() if v["fecha"] >= limite}
     guardar_estado(args.estado, estado, clasif, meta)
 
