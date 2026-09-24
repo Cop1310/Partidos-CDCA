@@ -41,14 +41,19 @@
     box-sizing: content-box;
   }
   main { max-width: 560px; margin: 0 auto; padding: 22px 16px 8px; }
+  .cabecera { text-align: center; margin: 0 0 22px; }
+  .escudo { display: block; height: 108px; width: auto; margin: 0 auto 12px; filter: drop-shadow(0 3px 4px rgba(0,0,0,0.28)); }
   h1 {
     font-size: 1.75rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    margin: 0 0 6px;
+    margin: 0 0 12px;
     font-weight: 800;
   }
-  .cuando { margin: 0 0 20px; color: var(--suave); font-size: 1rem; }
+  .cuando {
+    display: inline-block; margin: 0; padding: 6px 16px; border-radius: 4px;
+    background: var(--tinta); color: #fff; font-weight: 700; font-size: 0.98rem;
+  }
 
   .mensaje {
     background: var(--papel);
@@ -81,13 +86,17 @@
     text-align: center; text-align-last: center; -moz-text-align-last: center;
     color: var(--tinta); background: var(--papel); border: 2px solid var(--tinta); border-radius: 4px;
   }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 0 12px; }
   .chips[hidden] { display: none; }
   .chip {
     flex: none; min-height: 42px; padding: 0 12px; font-size: 0.92rem; font-weight: 600;
     background: var(--papel); color: var(--tinta); border: 2px solid var(--tinta);
   }
   .chip[aria-pressed="true"] { background: var(--tinta); color: #fff; }
+  .chip.pendiente { border-style: dashed; color: var(--suave); background: transparent; }
+  .chip.pendiente[aria-pressed="true"] { background: var(--suave); color: #fff; border-color: var(--suave); }
+  .sin-barra .barra { display: none; }
+  .sin-barra { padding-bottom: 28px; }
   .nota { margin: 0; padding: 10px 16px; font-size: 0.9rem; color: var(--suave); border-bottom: 1px solid var(--linea); }
   .tabla-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   table.clas { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 0.95rem; }
@@ -135,8 +144,11 @@
 <body>
 <div class="rayas" aria-hidden="true"></div>
 <main>
-  <h1>Partidos del fin de semana</h1>
-  <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+  <header class="cabecera">
+    <img class="escudo" src="escudo.png" alt="Escudo del C.D. Ciudad de los Ángeles" width="76" height="108">
+    <h1>Partidos del fin de semana</h1>
+    <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+  </header>
 
   <div class="pestanas" role="tablist">
     <button type="button" role="tab" id="tab-partidos" aria-selected="true">Partidos</button>
@@ -287,10 +299,22 @@
     if (grupoSel >= cl.length) grupoSel = 0;
     elChips.hidden = false;
     elChips.innerHTML = cl.map(function (g, i) {
-      return '<button type="button" class="chip" data-i="' + i + '" aria-pressed="' + (i === grupoSel) + '">' + escapar(g.titulo) + "</button>";
+      var etiqueta = g.titulo;
+      if (g.pendiente) {   // varios equipos de la misma categoría: se distinguen por su letra
+        var letra = /\s([A-Z])$/.exec(g.equipo || "");
+        if (letra) etiqueta += " (" + letra[1] + ")";
+      }
+      return '<button type="button" class="chip' + (g.pendiente ? " pendiente" : "") + '" data-i="' + i +
+        '" aria-pressed="' + (i === grupoSel) + '">' + escapar(etiqueta) + "</button>";
     }).join("");
 
     var g = cl[grupoSel];
+    if (g.pendiente) {
+      elMensaje.innerHTML = '<p class="estado"><strong>' + escapar(g.equipo || g.titulo) + "</strong><br>" +
+        "La federación todavía no ha publicado esta competición para la temporada 2026/27. " +
+        "Aparecerá aquí en cuanto la publique.</p>";
+      return;
+    }
     var jugados = g.filas.some(function (f) { return f.pj > 0; });
     var nota = g.jornada ? "Tras la jornada " + g.jornada : (jugados ? "" : "Todavía no se ha jugado ninguna jornada");
     if (!g.jornada && !jugados) nota = "Todavía no se ha jugado ninguna jornada";
@@ -309,6 +333,7 @@
     tabP.setAttribute("aria-selected", activa === "partidos");
     tabR.setAttribute("aria-selected", activa === "resultados");
     tabC.setAttribute("aria-selected", activa === "clasificacion");
+    document.body.classList.toggle("sin-barra", activa === "clasificacion");   // la clasificación no se envía
     elChips.hidden = activa !== "clasificacion";
     if (activa !== "clasificacion") {
       var sm = semanas();
