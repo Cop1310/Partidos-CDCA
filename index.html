@@ -54,6 +54,15 @@
   .partido p { margin: 0; overflow-wrap: anywhere; }
   .partido strong { font-weight: 800; }
 
+  .pestanas { display: flex; margin: 0 0 14px; border: 2px solid var(--tinta); border-radius: 4px; overflow: hidden; }
+  .pestanas button {
+    flex: 1; min-height: 46px; border: 0; border-radius: 0; background: var(--papel); color: var(--tinta);
+    font-weight: 700; font-size: 1rem;
+  }
+  .pestanas button + button { border-left: 2px solid var(--tinta); }
+  .pestanas button[aria-selected="true"] { background: var(--tinta); color: #fff; }
+  .partido.origen { background: #f6f6f3; color: var(--suave); font-size: 0.9rem; }
+  .partido.origen a { color: inherit; }
   .estado { padding: 18px 16px; margin: 0; }
   .aviso { margin: 16px 0 0; color: var(--suave); font-size: 0.92rem; }
   .pie { margin: 22px 0 0; color: var(--suave); font-size: 0.85rem; }
@@ -92,6 +101,11 @@
   <h1>Partidos del fin de semana</h1>
   <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
 
+  <div class="pestanas" role="tablist">
+    <button type="button" role="tab" id="tab-partidos" aria-selected="true">Partidos</button>
+    <button type="button" role="tab" id="tab-resultados" aria-selected="false">Resultados</button>
+  </div>
+
   <div class="mensaje" id="mensaje" aria-live="polite">
     <p class="estado">Cargando partidos…</p>
   </div>
@@ -108,21 +122,27 @@
 
 <script>
 (function () {
-  var texto = "";
+  var datos = null;
+  var activa = "partidos";
   var elMensaje = document.getElementById("mensaje");
   var elCuando = document.getElementById("cuando");
   var elAviso = document.getElementById("aviso");
   var elPie = document.getElementById("pie");
   var btnCopiar = document.getElementById("copiar");
   var btnWa = document.getElementById("whatsapp");
+  var tabP = document.getElementById("tab-partidos");
+  var tabR = document.getElementById("tab-resultados");
 
   function escapar(s) {
     return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
-  // *texto* -> negrita (igual que en WhatsApp)
-  function negritas(s) {
-    return escapar(s).replace(/\*([^*\n]+)\*/g, "<strong>$1</strong>");
+  // Igual que WhatsApp: *_texto_* negrita y cursiva, *texto* negrita; los enlaces se ven como enlaces
+  function formato(s) {
+    return escapar(s)
+      .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>')
+      .replace(/\*_([^_\n*]+)_\*/g, "<strong><em>$1</em></strong>")
+      .replace(/\*([^*\n]+)\*/g, "<strong>$1</strong>");
   }
 
   function fecha(iso) {
@@ -130,18 +150,35 @@
     return p[2] + "/" + p[1];
   }
 
-  function pintar(datos) {
-    texto = (datos.texto || "").trim();
-    var anio = datos.desde ? datos.desde.split("-")[0] : "";
-    if (datos.desde && datos.hasta) {
-      elCuando.textContent = "Sábado " + fecha(datos.desde) + " y domingo " + fecha(datos.hasta) + "/" + anio;
-    }
+  function rango(desde, hasta) {
+    if (!desde || !hasta) return "C.D. Ciudad de los Ángeles";
+    return "Sábado " + fecha(desde) + " y domingo " + fecha(hasta) + "/" + desde.split("-")[0];
+  }
+
+  function textoActivo() {
+    if (!datos) return "";
+    return ((activa === "partidos" ? datos.texto : datos.resultados) || "").trim();
+  }
+
+  function pintar() {
+    var texto = textoActivo();
+    tabP.setAttribute("aria-selected", activa === "partidos");
+    tabR.setAttribute("aria-selected", activa === "resultados");
+    elCuando.textContent = activa === "partidos"
+      ? rango(datos.desde, datos.hasta)
+      : rango(datos.resultados_desde, datos.resultados_hasta);
 
     if (!texto) {
-      elMensaje.innerHTML = '<p class="estado">Todavía no hay partidos publicados para este fin de semana. La página se actualiza cada día a primera hora.</p>';
+      elMensaje.innerHTML = activa === "partidos"
+        ? '<p class="estado">Todavía no hay partidos publicados para este fin de semana. La página se actualiza cada día a primera hora.</p>'
+        : '<p class="estado">Todavía no hay resultados publicados de este fin de semana. Aparecen según los va publicando la federación.</p>';
+      btnCopiar.classList.add("desactivado");
+      btnWa.classList.add("desactivado");
+      btnWa.href = "#";
     } else {
       elMensaje.innerHTML = texto.split(/\n\s*\n/).map(function (bloque) {
-        return '<div class="partido"><p>' + negritas(bloque).replace(/\n/g, "<br>") + "</p></div>";
+        var origen = /^Información sacada de la web/.test(bloque) ? " origen" : "";
+        return '<div class="partido' + origen + '"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
       }).join("");
       btnCopiar.classList.remove("desactivado");
       btnWa.classList.remove("desactivado");
@@ -149,11 +186,11 @@
     }
 
     var avisos = [];
-    if (datos.sin_partido && datos.sin_partido.length) {
+    if (activa === "partidos" && datos.sin_partido && datos.sin_partido.length) {
       avisos.push("Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".");
     }
     if (datos.errores && datos.errores.length) {
-      avisos.push("No se han podido consultar: " + datos.errores.join(", ") + ". Puede faltar algún partido.");
+      avisos.push("No se han podido consultar: " + datos.errores.join(", ") + ". Puede faltar algún dato.");
     }
     elAviso.textContent = avisos.join(" ");
 
@@ -165,7 +202,13 @@
     }
   }
 
+  function elegir(nombre) {
+    activa = nombre;
+    if (datos) pintar();
+  }
+
   function copiar() {
+    var texto = textoActivo();
     if (!texto) return;
     var aviso = function () {
       btnCopiar.textContent = "Mensaje copiado";
@@ -188,11 +231,19 @@
     }
   }
 
+  tabP.addEventListener("click", function () { elegir("partidos"); });
+  tabR.addEventListener("click", function () { elegir("resultados"); });
   btnCopiar.addEventListener("click", copiar);
 
   fetch("partidos.json?t=" + Date.now(), { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(pintar)
+    .then(function (d) {
+      datos = d;
+      // Domingo, lunes y martes se abre directamente en Resultados si ya hay alguno
+      var dia = new Date().getDay();
+      if ((dia === 0 || dia === 1 || dia === 2) && (d.resultados || "").trim()) activa = "resultados";
+      pintar();
+    })
     .catch(function () {
       elMensaje.innerHTML = '<p class="estado">No se han podido cargar los partidos. Comprueba que la acción "Actualizar partidos" de GitHub se ha ejecutado al menos una vez.</p>';
     });

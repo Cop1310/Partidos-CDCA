@@ -6,6 +6,9 @@ Partidos del fin de semana del C.D. Ciudad de los Ángeles, listos para WhatsApp
 Lee elbalondemadrid.es (datos públicos de la RFFM), localiza automáticamente
 todos los equipos del club, busca sus partidos del fin de semana y genera el
 mensaje con el formato de WhatsApp (negrita con *asteriscos*).
+Además genera el mensaje de RESULTADOS: guarda en estado.json los partidos que
+va viendo y, cuando la web publica el marcador (en el calendario o en el acta),
+lo añade.
 
 Uso:
     pip install requests beautifulsoup4
@@ -27,7 +30,7 @@ from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import requests
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 BASE = "https://www.elbalondemadrid.es"
 CLUB_ID = 4427  # C.D. Ciudad de los Ángeles
@@ -56,6 +59,8 @@ CONOCIDOS = {
     "competicion/26738132/grupo/26738138": ("Preferente Alevín F-7 Grupo 6", {"15328645"}),
 }
 
+TZ = ZoneInfo("Europe/Madrid")
+AVISO = "Información sacada de la web https://www.elbalondemadrid.es/"
 DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
 # ---------------------------------------------------------------------------
@@ -180,15 +185,33 @@ def grupos_a_consultar(errores):
 
 FECHA = re.compile(r"^\d{2}/\d{2}/\d{4}$")
 HORA = re.compile(r"^(\d{2}:\d{2}|--:--)$")
+RESULTADO = re.compile(r"^(\d{1,2})\s*[·–\-]\s*(\d{1,2})$")
+
+
+def ahora():
+    return datetime.now(TZ)
+
+
+def normalizar(soup):
+    """La web (React) puede partir '4·1' en trozos y comentarios: los unimos."""
+    for c in soup.find_all(string=lambda t: isinstance(t, Comment)):
+        c.extract()
+    for tag in soup.find_all(["span", "b", "strong", "i", "em", "small", "time"]):
+        tag.unwrap()
+    if hasattr(soup, "smooth"):
+        soup.smooth()
+    return soup
 
 
 def parsear_jornada(soup):
     """Recorre la página en orden y reconstruye los partidos:
-    fecha -> local -> hora -> visitante -> campo -> enlace 'Ver acta' (fin)."""
+    fecha -> local -> hora (o marcador) -> visitante -> campo -> 'Ver acta' (fin)."""
+    normalizar(soup)
     partidos, fecha, actual = [], None, None
 
     def nuevo():
-        return {"fecha": fecha, "hora": None, "equipos": [], "campo": ""}
+        return {"fecha": fecha, "hora": None, "resultado": None,
+                "equipos": [], "campo": "", "acta": None}
 
     for nodo in soup.descendants:
         if isinstance(nodo, NavigableString):
@@ -199,7 +222,11 @@ def parsear_jornada(soup):
                 fecha = datetime.strptime(t, "%d/%m/%Y").date()
             elif HORA.match(t):
                 actual = actual or nuevo()
-                actual["hora"] = t
+                actual["hora"] = None if t == "--:--" else t
+            else:
+                m = RESULTADO.match(t)
+                if m and actual is not None and len(actual["equipos"]) == 1:
+                    actual["resultado"] = (int(m.group(1)), int(m.group(2)))
         elif getattr(nodo, "name", None) == "a" and nodo.get("href"):
             h = nodo["href"]
             texto = nodo.get_text(" ", strip=True)
@@ -212,9 +239,24 @@ def parsear_jornada(soup):
                     actual["campo"] = texto
             elif "/acta/" in h:
                 if actual is not None and len(actual["equipos"]) >= 2:
+                    actual["acta"] = urllib.parse.urljoin(BASE, h)
                     partidos.append(actual)
                 actual = None
     return partidos
+
+
+def resultado_de_acta(soup):
+    """Marcador de un acta. Solo se fía si el acta ya tiene alineaciones."""
+    normalizar(soup)
+    textos = [t.strip() for t in soup.find_all(string=True)
+              if t.parent is not None and t.parent.name not in ("script", "style")]
+    if "Titulares" not in textos:
+        return None
+    for t in textos:
+        m = RESULTADO.match(t)
+        if m:
+            return (int(m.group(1)), int(m.group(2)))
+    return None
 
 
 def titulo_grupo(soup):
@@ -227,30 +269,130 @@ def titulo_grupo(soup):
 
 
 # ---------------------------------------------------------------------------
-# Mensaje
+# Estado: partidos vistos (para poder dar el resultado aunque la web ya haya
+# pasado a la jornada siguiente)
 # ---------------------------------------------------------------------------
-def fin_de_semana(sabado_arg=None):
+def cargar_estado(ruta):
+    try:
+        with open(ruta, encoding="utf-8") as f:
+            return json.load(f).get("partidos", {})
+    except (OSError, ValueError):
+        return {}
+
+
+def guardar_estado(ruta, partidos):
+    with open(ruta, "w", encoding="utf-8") as f:
+        json.dump({"partidos": partidos}, f, ensure_ascii=False, indent=1, sort_keys=True)
+
+
+def clave(p):
+    m = re.search(r"/acta/(\d+)", p["acta"] or "")
+    return m.group(1) if m else f"{p['fecha']}|{p['equipos'][0][0]}|{p['equipos'][1][0]}"
+
+
+def actualizar_estado(estado, p, titulo, url):
+    k = clave(p)
+    anterior = estado.get(k, {})
+    estado[k] = {
+        "fecha": p["fecha"].isoformat(),
+        "hora": p["hora"] or anterior.get("hora"),
+        "grupo": titulo,
+        "url_grupo": url,
+        "campo": p["campo"] or anterior.get("campo", ""),
+        "local": list(p["equipos"][0]),
+        "visitante": list(p["equipos"][1]),
+        "resultado": list(p["resultado"]) if p["resultado"] else anterior.get("resultado"),
+        "acta": p["acta"] or anterior.get("acta"),
+    }
+
+
+def _ya_toca_mirar_acta(e, t):
+    f = date.fromisoformat(e["fecha"])
+    if f < t.date():
+        return True
+    if f > t.date():
+        return False
+    if e.get("hora"):
+        h, m = map(int, e["hora"].split(":"))
+        return t >= datetime(f.year, f.month, f.day, h, m, tzinfo=TZ) + timedelta(hours=2)
+    return t.hour >= 21
+
+
+def completar_con_actas(estado, errores):
+    """Para partidos ya jugados sin marcador, intenta leerlo del acta."""
+    t = ahora()
+    pendientes = [e for e in estado.values()
+                  if not e.get("resultado") and e.get("acta")
+                  and (t.date() - date.fromisoformat(e["fecha"])).days <= 10
+                  and _ya_toca_mirar_acta(e, t)]
+    for e in pendientes[:20]:
+        try:
+            r = resultado_de_acta(get(e["acta"]))
+        except Exception as ex:
+            print(f"Aviso: no se pudo leer un acta: {ex}", file=sys.stderr)
+            continue
+        if r:
+            e["resultado"] = list(r)
+
+
+# ---------------------------------------------------------------------------
+# Mensajes
+# ---------------------------------------------------------------------------
+def sabado_proximo(sabado_arg=None):
     if sabado_arg:
-        sab = datetime.strptime(sabado_arg, "%Y-%m-%d").date()
+        return datetime.strptime(sabado_arg, "%Y-%m-%d").date()
+    hoy = ahora().date()
+    wd = hoy.weekday()  # lunes=0 ... domingo=6
+    return hoy - timedelta(days=1) if wd == 6 else hoy + timedelta(days=5 - wd)
+
+
+def sabado_resultados(sabado_arg=None):
+    """Sábado del fin de semana más reciente ya empezado."""
+    if sabado_arg:
+        return datetime.strptime(sabado_arg, "%Y-%m-%d").date()
+    hoy = ahora().date()
+    wd = hoy.weekday()
+    if wd == 5:
+        return hoy
+    if wd == 6:
+        return hoy - timedelta(days=1)
+    return hoy - timedelta(days=wd + 2)
+
+
+def _equipo(par):
+    ident, nombre = par
+    limpio = limpiar_equipo(nombre)
+    if "CIUDAD LOS ANGELES" in nombre.upper():
+        return f"*_{limpio}_*"  # nuestro equipo: negrita y cursiva
+    return limpio
+
+
+def bloque(e, con_resultado=False):
+    f = date.fromisoformat(e["fecha"])
+    dia = DIAS[f.weekday()]
+    hora = e.get("hora")
+    if hora:
+        h = f" {hora}h"
     else:
-        hoy = datetime.now(ZoneInfo("Europe/Madrid")).date()
-        wd = hoy.weekday()  # lunes=0 ... domingo=6
-        sab = hoy - timedelta(days=1) if wd == 6 else hoy + timedelta(days=5 - wd)
-    return {sab, sab + timedelta(days=1)}
+        h = "" if con_resultado else " hora por confirmar"
+    campo = limpiar_campo(e.get("campo")) or "por confirmar"
+    local, visitante = _equipo(e["local"]), _equipo(e["visitante"])
+    if con_resultado and e.get("resultado"):
+        gl, gv = e["resultado"]
+        linea = f"{local} {gl} - {gv} {visitante}"
+    else:
+        linea = f"{local} - {visitante}"
+    return "\n".join([e["grupo"], f"*{dia} {f:%d/%m/%Y}{h}*", f"Campo: {campo}", linea])
 
 
-def bloque(titulo, p):
-    dia = DIAS[p["fecha"].weekday()]
-    hora = p["hora"]
-    h = f"{hora}h" if hora and hora != "--:--" else "hora por confirmar"
-    campo = limpiar_campo(p["campo"]) or "por confirmar"
-    local, visitante = p["equipos"][0][1], p["equipos"][1][1]
-    return "\n".join([
-        titulo,
-        f"*{dia} {p['fecha']:%d/%m/%Y} {h}*",
-        f"Campo: {campo}",
-        f"{limpiar_equipo(local)} - {limpiar_equipo(visitante)}",
-    ])
+def componer(estado, sabado, con_resultado):
+    fechas = {sabado.isoformat(), (sabado + timedelta(days=1)).isoformat()}
+    lista = [e for e in estado.values() if e["fecha"] in fechas
+             and (e.get("resultado") if con_resultado else True)]
+    lista.sort(key=lambda e: (e["fecha"], e.get("hora") or "99:99", e["grupo"]))
+    if not lista:
+        return ""
+    return AVISO + "\n\n" + "\n\n".join(bloque(e, con_resultado) for e in lista)
 
 
 def main():
@@ -259,13 +401,17 @@ def main():
     ap.add_argument("--abrir", action="store_true", help="abrir WhatsApp con el texto ya escrito")
     ap.add_argument("--salida", default="partidos_whatsapp.txt", help="fichero de salida")
     ap.add_argument("--json", help="además, guarda el resultado en este fichero JSON (para la página web)")
+    ap.add_argument("--estado", default="estado.json", help="fichero donde se recuerdan los partidos vistos")
     args = ap.parse_args()
 
-    fechas = fin_de_semana(args.sabado)
-    print(f"Buscando partidos del {min(fechas):%d/%m/%Y} al {max(fechas):%d/%m/%Y}...", file=sys.stderr)
+    sab_prox = sabado_proximo(args.sabado)
+    sab_res = sabado_resultados(args.sabado)
+    print(f"Partidos del {sab_prox:%d/%m/%Y} al {sab_prox + timedelta(days=1):%d/%m/%Y}; "
+          f"resultados del {sab_res:%d/%m/%Y} al {sab_res + timedelta(days=1):%d/%m/%Y}...",
+          file=sys.stderr)
 
-    encontrados, sin_partido, errores = [], [], []
-    consultados = 0
+    estado = cargar_estado(args.estado)
+    errores, consultados, vistos = [], 0, []
     for url, (nombre, ids) in grupos_a_consultar(errores).items():
         try:
             soup = get(url)
@@ -275,49 +421,61 @@ def main():
             continue
         consultados += 1
         titulo = titulo_grupo(soup)
-        mios = [p for p in parsear_jornada(soup)
-                if p["fecha"] in fechas and any(e[0] in ids for e in p["equipos"])]
-        if not mios:
-            sin_partido.append(titulo)
-        for p in mios:
-            encontrados.append((p["fecha"], p["hora"] if p["hora"] != "--:--" else "99:99", titulo, p))
+        vistos.append((url, titulo))
+        for p in parsear_jornada(soup):
+            if any(e[0] in ids for e in p["equipos"]):
+                actualizar_estado(estado, p, titulo, url)
 
     if consultados == 0:
         sys.exit("No se ha podido consultar ningún calendario; se mantiene el resultado anterior.")
 
-    encontrados.sort(key=lambda x: (x[0], x[1], x[2]))
-    texto = "\n\n".join(bloque(t, p) for _, _, t, p in encontrados)
-    sin_partido = sorted(set(sin_partido))
+    completar_con_actas(estado, errores)
+
+    # limpiar partidos antiguos
+    limite = (ahora().date() - timedelta(days=21)).isoformat()
+    estado = {k: v for k, v in estado.items() if v["fecha"] >= limite}
+    guardar_estado(args.estado, estado)
+
+    fechas_prox = {sab_prox.isoformat(), (sab_prox + timedelta(days=1)).isoformat()}
+    sin_partido = sorted({t for u, t in vistos
+                          if not any(e["url_grupo"] == u and e["fecha"] in fechas_prox
+                                     for e in estado.values())})
+    texto = componer(estado, sab_prox, con_resultado=False)
+    resultados = componer(estado, sab_res, con_resultado=True)
 
     if sin_partido:
-        print("Sin partido en el calendario mostrado para: " + "; ".join(sin_partido),
-              file=sys.stderr)
+        print("Sin partido en el calendario mostrado para: " + "; ".join(sin_partido), file=sys.stderr)
 
     if args.json:
-        ahora = datetime.now(ZoneInfo("Europe/Madrid"))
         with open(args.json, "w", encoding="utf-8") as f:
             json.dump({
-                "generado": ahora.strftime("%Y-%m-%d %H:%M"),
-                "desde": min(fechas).isoformat(),
-                "hasta": max(fechas).isoformat(),
+                "generado": ahora().strftime("%Y-%m-%d %H:%M"),
+                "desde": sab_prox.isoformat(),
+                "hasta": (sab_prox + timedelta(days=1)).isoformat(),
                 "texto": texto,
+                "resultados_desde": sab_res.isoformat(),
+                "resultados_hasta": (sab_res + timedelta(days=1)).isoformat(),
+                "resultados": resultados,
                 "sin_partido": sin_partido,
                 "errores": errores,
             }, f, ensure_ascii=False, indent=2)
         print(f"Guardado en {args.json}", file=sys.stderr)
 
-    if not texto:
+    if not texto and not resultados:
         if args.json:
-            print("No se ha encontrado ningún partido para ese fin de semana.", file=sys.stderr)
+            print("No hay partidos ni resultados para esos fines de semana.", file=sys.stderr)
             return
-        sys.exit("No se ha encontrado ningún partido para ese fin de semana.")
+        sys.exit("No hay partidos ni resultados para esos fines de semana.")
 
-    print("\n" + texto + "\n")
-    with open(args.salida, "w", encoding="utf-8") as f:
-        f.write(texto + "\n")
-    print(f"Guardado en {args.salida}", file=sys.stderr)
+    if texto:
+        print("\n" + texto + "\n")
+        with open(args.salida, "w", encoding="utf-8") as f:
+            f.write(texto + "\n")
+        print(f"Guardado en {args.salida}", file=sys.stderr)
+    if resultados:
+        print("\n----- RESULTADOS -----\n\n" + resultados + "\n")
 
-    if args.abrir:
+    if args.abrir and texto:
         webbrowser.open("https://wa.me/?text=" + urllib.parse.quote(texto))
 
 
