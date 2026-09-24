@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24 11:31",
+  "generado": "2026-09-24 11:50",
   "desde": "2026-09-26",
   "hasta": "2026-09-27",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Racing de Villaverde B - *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ (11º) Escuela de Futbol Arganda B - (4º) *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola - Halcones D - *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ (17º) Unión 2000 B - (9º) *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Los Rosales de Villaverde - *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ (8º) Unión Carrascal A - (12º) *_Ciudad de los Ángeles A_*",
@@ -13,6 +13,23 @@
     "Segunda Infantil Grupo 34"
   ],
   "errores": [],
+  "semanas": [
+    {
+      "sabado": "2026-05-23",
+      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 23/05/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n⚽ Racing de Villaverde C - *_Ciudad de los Ángeles B_*\n\n⏰ *12:30h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n⚽ *_Ciudad de los Ángeles C_* - San Fermin E",
+      "resultados": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 23/05/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n🟢 Racing de Villaverde C 0 - 12 *_Ciudad de los Ángeles B_*\n\n⏰ *12:30h* - Jornadas Grupo 29\n📌 _Jornada 22_\n📍 Campo: Polideportivo Maria de Villota\n🟢 *_Ciudad de los Ángeles C_* 7 - 2 San Fermin E"
+    },
+    {
+      "sabado": "2026-09-26",
+      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Racing de Villaverde B - *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ (11º) Escuela de Futbol Arganda B - (4º) *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ Alzola - Halcones D - *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ (17º) Unión 2000 B - (9º) *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Los Rosales de Villaverde - *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ (8º) Unión Carrascal A - (12º) *_Ciudad de los Ángeles A_*",
+      "resultados": ""
+    },
+    {
+      "sabado": "2026-10-10",
+      "partidos": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 10/10/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *Hora por confirmar* - Preferente Alevín F-7 Grupo 6\n📌 _Jornada 1_\n📍 Campo: por confirmar\n⚽ Racing de Villaverde A - *_Ciudad de los Ángeles A_*\n\n⏰ *Hora por confirmar* - Segunda Cadete Grupo 27\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ Santiago Apóstol Villaverde B - *_Ciudad de los Ángeles B_*\n\n⏰ *Hora por confirmar* - Segunda Infantil Grupo 34\n📌 _Jornada 1_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *_Ciudad de los Ángeles B_* - San Cristobal de los Angeles B",
+      "resultados": ""
+    }
+  ],
   "clasificaciones": [
     {
       "titulo": "Preferente Aficionado Grupo 3",

@@ -2447,7 +2447,56 @@
    "titulo": "Segunda Infantil Grupo 34"
   }
  },
+ "meta": {
+  "hechas": {},
+  "param": "",
+  "probado": "2026-09-24"
+ },
  "partidos": {
+  "5502185": {
+   "acta": "https://www.elbalondemadrid.es/acta/5502185?temporada=22&competicion=24037935&grupo=24037957",
+   "campo": "POLIDEPORTIVO MARIA DE VILLOTA (HA)",
+   "fecha": "2026-05-23",
+   "grupo": "Jornadas Grupo 29",
+   "hora": "09:00",
+   "jornada": 22,
+   "local": [
+    "15292010",
+    "RACING VILLAVERDE C.F. 'C'"
+   ],
+   "pos": null,
+   "resultado": [
+    0,
+    12
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/24037935/grupo/24037957/jornadas",
+   "visitante": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5502187": {
+   "acta": "https://www.elbalondemadrid.es/acta/5502187?temporada=22&competicion=24037935&grupo=24037957",
+   "campo": "POLIDEPORTIVO MARIA DE VILLOTA (HA)",
+   "fecha": "2026-05-23",
+   "grupo": "Jornadas Grupo 29",
+   "hora": "12:30",
+   "jornada": 22,
+   "local": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": [
+    7,
+    2
+   ],
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/24037935/grupo/24037957/jornadas",
+   "visitante": [
+    "22749386",
+    "A.D.C. SAN FERMIN 'E'"
+   ]
+  },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
    "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
