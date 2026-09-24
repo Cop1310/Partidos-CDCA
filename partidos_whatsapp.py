@@ -190,7 +190,7 @@ def grupos_a_consultar(errores):
 FECHA = re.compile(r"^\d{2}/\d{2}/\d{4}$")
 HORA = re.compile(r"^(\d{2}:\d{2}|--:--)$")
 RESULTADO = re.compile(r"^(\d{1,2})\s*[·–\-]\s*(\d{1,2})$")
-JORNADA = re.compile(r"^Jornada\s*(\d{1,2})\s*(?:Actual)?\s*\d{2}-\d{2}-\d{4}$")
+JORNADA = re.compile(r"^Jornada\s*(\d{1,2})\s*(?:Actual)?\s*\|?\s*\d{2}-\d{2}-\d{4}$")
 
 
 def ahora():
@@ -272,11 +272,35 @@ def resultado_de_acta(soup):
     return None
 
 
-def posiciones_de(soup):
-    """{id_equipo: posición} leído de la tabla de clasificación.
-    Si aún no se ha jugado ningún partido, la tabla no significa nada: devuelve {}."""
+def temporada_finalizada(soup):
+    """La web avisa cuando se está viendo una temporada antigua ('ya finalizada')."""
+    return any("ya finalizada" in str(t) for t in soup.find_all(string=True))
+
+
+def _entero(texto):
+    try:
+        return int(texto.replace("+", "").replace("\u2212", "-").strip())
+    except ValueError:
+        return 0
+
+
+def tabla_de(soup):
+    """Tabla de clasificación: (jornada, [filas]). Cada fila lleva posición, equipo,
+    PJ, G, E, P, GF, GC, DG y puntos."""
     normalizar(soup)
-    datos = {}
+    jornada, esperando = None, False
+    for t in soup.find_all(string=True):
+        if t.parent is not None and t.parent.name in ("script", "style"):
+            continue
+        txt = str(t).strip()
+        mj = JORNADA.match(txt)
+        if mj:
+            jornada = int(mj.group(1))
+        elif txt == "Jornada":
+            esperando = True
+        elif esperando and txt.isdigit():
+            jornada, esperando = int(txt), False
+    filas = []
     for tr in soup.find_all("tr"):
         enlace = tr.find("a", href=re.compile(r"/equipo/\d+"))
         if not enlace:
@@ -285,14 +309,19 @@ def posiciones_de(soup):
         textos = [c.get_text(" ", strip=True) for c in celdas]
         idx = next((i for i, c in enumerate(celdas)
                     if c.find("a", href=re.compile(r"/equipo/\d+"))), None)
-        if idx is None or not textos or not textos[0].isdigit():
+        if idx is None or not textos or not textos[0].isdigit() or idx + 7 >= len(textos):
             continue
-        pj = int(textos[idx + 1]) if idx + 1 < len(textos) and textos[idx + 1].isdigit() else 0
         ident = re.search(r"/equipo/(\d+)", enlace["href"]).group(1)
-        datos[ident] = (int(textos[0]), pj)
-    if not datos or all(pj == 0 for _, pj in datos.values()):
-        return {}
-    return {k: v[0] for k, v in datos.items()}
+        bruto = enlace.get_text(" ", strip=True)
+        filas.append({
+            "pos": int(textos[0]), "id": ident,
+            "nombre": limpiar_equipo(bruto), "nuestro": _es_nuestro((ident, bruto)),
+            "pj": _entero(textos[idx + 1]), "g": _entero(textos[idx + 2]),
+            "e": _entero(textos[idx + 3]), "p": _entero(textos[idx + 4]),
+            "gf": _entero(textos[idx + 5]), "gc": _entero(textos[idx + 6]),
+            "dg": _entero(textos[idx + 7]), "pts": _entero(textos[-1]),
+        })
+    return jornada, filas
 
 
 def titulo_grupo(soup):
@@ -311,14 +340,16 @@ def titulo_grupo(soup):
 def cargar_estado(ruta):
     try:
         with open(ruta, encoding="utf-8") as f:
-            return json.load(f).get("partidos", {})
+            datos = json.load(f)
     except (OSError, ValueError):
-        return {}
+        datos = {}
+    return datos.get("partidos", {}), datos.get("clasificaciones", {})
 
 
-def guardar_estado(ruta, partidos):
+def guardar_estado(ruta, partidos, clasificaciones):
     with open(ruta, "w", encoding="utf-8") as f:
-        json.dump({"partidos": partidos}, f, ensure_ascii=False, indent=1, sort_keys=True)
+        json.dump({"partidos": partidos, "clasificaciones": clasificaciones},
+                  f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
 def clave(p):
@@ -490,25 +521,33 @@ def main():
           f"resultados del {sab_res:%d/%m/%Y} al {sab_res + timedelta(days=1):%d/%m/%Y}...",
           file=sys.stderr)
 
-    estado = cargar_estado(args.estado)
-    errores, consultados, vistos = [], 0, []
-    for url, (nombre, ids) in grupos_a_consultar(errores).items():
+    estado, clasif = cargar_estado(args.estado)
+    errores, consultados, vistos, finalizadas = [], 0, [], set()
+    grupos = grupos_a_consultar(errores)
+    for url, (nombre, ids) in grupos.items():
         try:
             soup = get(url)
         except Exception as e:
             errores.append(nombre or url)
             print(f"Aviso: no se pudo consultar {nombre or url}: {e}", file=sys.stderr)
             continue
+        if temporada_finalizada(soup):  # calendario de una temporada antigua: se ignora
+            finalizadas.add(url)
+            continue
         consultados += 1
         titulo = titulo_grupo(soup)
         vistos.append((url, titulo))
         propios = [p for p in parsear_jornada(soup) if any(e[0] in ids for e in p["equipos"])]
-        posiciones = {}
-        if any(not p["resultado"] and p["fecha"] >= ahora().date() for p in propios):
-            try:
-                posiciones = posiciones_de(get(url.replace("/jornadas", "/clasificacion")))
-            except Exception as e:
-                print(f"Aviso: no se pudo leer la clasificación de {titulo}: {e}", file=sys.stderr)
+
+        filas = []
+        try:
+            jornada_tabla, filas = tabla_de(get(url.replace("/jornadas", "/clasificacion")))
+            if filas:
+                clasif[url] = {"titulo": titulo, "jornada": jornada_tabla, "filas": filas}
+        except Exception as e:
+            print(f"Aviso: no se pudo leer la clasificación de {titulo}: {e}", file=sys.stderr)
+        # con todos los equipos a 0 partidos la tabla no significa nada
+        posiciones = {f["id"]: f["pos"] for f in filas} if any(f["pj"] for f in filas) else {}
         for p in propios:
             actualizar_estado(estado, p, titulo, url, posiciones)
 
@@ -520,7 +559,7 @@ def main():
     # limpiar partidos antiguos
     limite = (ahora().date() - timedelta(days=21)).isoformat()
     estado = {k: v for k, v in estado.items() if v["fecha"] >= limite}
-    guardar_estado(args.estado, estado)
+    guardar_estado(args.estado, estado, clasif)
 
     fechas_prox = {sab_prox.isoformat(), (sab_prox + timedelta(days=1)).isoformat()}
     sin_partido = sorted({t for u, t in vistos
@@ -544,6 +583,10 @@ def main():
                 "resultados": resultados,
                 "sin_partido": sin_partido,
                 "errores": errores,
+                "clasificaciones": [
+                    {**clasif[u], "equipo": next((f["nombre"] for f in clasif[u]["filas"] if f["nuestro"]), "")}
+                    for u in grupos if u in clasif and u not in finalizadas
+                ],
             }, f, ensure_ascii=False, indent=2)
         print(f"Guardado en {args.json}", file=sys.stderr)
 
