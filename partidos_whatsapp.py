@@ -284,9 +284,43 @@ def _entero(texto):
         return 0
 
 
+NUMERO = re.compile(r"^[+\-\u2212]?\d+$")
+
+
+def _fila_generica(enlace):
+    """Lee una fila aunque no sea una <tr>: sube desde el enlace del equipo hasta el
+    contenedor más grande que solo tenga ese equipo y lee sus textos en orden."""
+    patron = re.compile(r"/equipo/\d+")
+    fila, nodo = None, enlace
+    for _ in range(7):
+        nodo = nodo.parent
+        if nodo is None or len(nodo.find_all("a", href=patron)) != 1:
+            break
+        fila = nodo
+    if fila is None:
+        return None
+    textos = [t.strip() for t in fila.stripped_strings if t.strip()]
+    nombre = enlace.get_text(" ", strip=True)
+    try:
+        i = next(k for k, t in enumerate(textos) if t and t in nombre)
+    except StopIteration:
+        return None
+    if not i or not textos[0].isdigit():
+        return None
+    nums = [t for t in textos[i + 1:] if NUMERO.match(t)]
+    if len(nums) < 8:
+        return None
+    ident = re.search(r"/equipo/(\d+)", enlace["href"]).group(1)
+    v = [_entero(x) for x in nums[:8]]
+    return {"pos": int(textos[0]), "id": ident, "nombre": limpiar_equipo(nombre),
+            "nuestro": _es_nuestro((ident, nombre)),
+            "pj": v[0], "g": v[1], "e": v[2], "p": v[3], "gf": v[4], "gc": v[5], "dg": v[6], "pts": v[7]}
+
+
 def tabla_de(soup):
     """Tabla de clasificación: (jornada, [filas]). Cada fila lleva posición, equipo,
     PJ, G, E, P, GF, GC, DG y puntos."""
+    original = BeautifulSoup(str(soup), "html.parser")  # sin unir textos, para el plan B
     normalizar(soup)
     jornada, esperando = None, False
     for t in soup.find_all(string=True):
@@ -321,6 +355,13 @@ def tabla_de(soup):
             "gf": _entero(textos[idx + 5]), "gc": _entero(textos[idx + 6]),
             "dg": _entero(textos[idx + 7]), "pts": _entero(textos[-1]),
         })
+    if not filas:  # plan B: la tabla no es una <table> normal
+        vistos = set()
+        for enlace in original.find_all("a", href=re.compile(r"/equipo/\d+")):
+            f = _fila_generica(enlace)
+            if f and f["id"] not in vistos:
+                vistos.add(f["id"])
+                filas.append(f)
     return jornada, filas
 
 
@@ -541,9 +582,15 @@ def main():
 
         filas = []
         try:
-            jornada_tabla, filas = tabla_de(get(url.replace("/jornadas", "/clasificacion")))
+            soup_c = get(url.replace("/jornadas", "/clasificacion"))
+            jornada_tabla, filas = tabla_de(soup_c)
             if filas:
                 clasif[url] = {"titulo": titulo, "jornada": jornada_tabla, "filas": filas}
+            else:
+                print(f"Aviso: sin filas en la clasificación de {titulo} "
+                      f"(tablas: {len(soup_c.find_all('table'))}, "
+                      f"enlaces a equipos: {len(soup_c.find_all('a', href=re.compile(r'/equipo/')))})",
+                      file=sys.stderr)
         except Exception as e:
             print(f"Aviso: no se pudo leer la clasificación de {titulo}: {e}", file=sys.stderr)
         # con todos los equipos a 0 partidos la tabla no significa nada
