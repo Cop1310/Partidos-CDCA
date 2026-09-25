@@ -124,13 +124,19 @@
   .chip[aria-pressed="true"] { background: var(--tinta); color: #fff; }
   .chip.pendiente { border-style: dashed; color: var(--suave); background: transparent; }
   .chip.pendiente[aria-pressed="true"] { background: var(--suave); color: #fff; border-color: var(--suave); }
-  /* Franja de color por categoría, igual que en las tarjetas de partido */
-  .chip.cat-violeta { border-top: 4px solid #3c3489; }
-  .chip.cat-aqua { border-top: 4px solid #085041; }
-  .chip.cat-naranja { border-top: 4px solid #712b13; }
-  .chip.cat-magenta { border-top: 4px solid #72243e; }
-  .chip.cat-azul { border-top: 4px solid #0c447c; }
-  .chip.cat-gris { border-top: 4px solid #444441; }
+  /* Color de categoría (todo el cuadro), igual que en las tarjetas de partido */
+  .chip.cat-violeta { background: #eeedfe; color: #3c3489; border-color: #3c3489; }
+  .chip.cat-aqua { background: #e1f5ee; color: #085041; border-color: #085041; }
+  .chip.cat-naranja { background: #faece7; color: #712b13; border-color: #712b13; }
+  .chip.cat-magenta { background: #fbeaf0; color: #72243e; border-color: #72243e; }
+  .chip.cat-azul { background: #e6f1fb; color: #0c447c; border-color: #0c447c; }
+  .chip.cat-gris { background: #f1efe8; color: #444441; border-color: #444441; }
+  .chip.cat-violeta[aria-pressed="true"] { background: #3c3489; color: #fff; }
+  .chip.cat-aqua[aria-pressed="true"] { background: #085041; color: #fff; }
+  .chip.cat-naranja[aria-pressed="true"] { background: #712b13; color: #fff; }
+  .chip.cat-magenta[aria-pressed="true"] { background: #72243e; color: #fff; }
+  .chip.cat-azul[aria-pressed="true"] { background: #0c447c; color: #fff; }
+  .chip.cat-gris[aria-pressed="true"] { background: #444441; color: #fff; }
   .sin-barra .barra { display: none; }
   .sin-barra { padding-bottom: 28px; }
   .nota { margin: 0; padding: 10px 16px; font-size: 0.9rem; color: var(--suave); border-bottom: 1px solid var(--linea); }
@@ -362,7 +368,7 @@
     var icono = m[1], resto = m[2];
     var sc = /^(.*?)\s(\d+)\s-\s(\d+)\s(.*)$/.exec(resto);
     if (sc) return { icono: icono, local: sc[1], visitante: sc[4], marcador: [sc[2], sc[3]] };
-    var us = /(\(\d+º\)\s*)?\*_.+?_\*/.exec(resto);   // sin marcador: se separa por nuestro equipo
+    var us = /(\*\(\d+º\)\*\s*)?\*_.+?_\*/.exec(resto);   // sin marcador: se separa por nuestro equipo
     if (!us) return null;
     if (us.index > 0) {
       return { icono: icono, local: resto.slice(0, us.index).replace(/\s-\s*$/, "").trim(), visitante: us[0], marcador: null };
@@ -436,7 +442,7 @@
         var letra = /\s([A-Z])$/.exec(g.equipo || "");
         if (letra) etiqueta += " (" + letra[1] + ")";
       }
-      var clase = "chip cat-" + claseCategoria(g.titulo) + (g.pendiente ? " pendiente" : "");
+      var clase = "chip" + (g.pendiente ? " pendiente" : " cat-" + claseCategoria(g.titulo));
       return '<button type="button" class="' + clase + '" data-i="' + i +
         '" aria-pressed="' + (i === grupoSel) + '">' + escapar(etiqueta) + "</button>";
     }).join("");

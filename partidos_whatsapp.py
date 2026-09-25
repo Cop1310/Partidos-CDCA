@@ -918,8 +918,25 @@ def aplicar_manuales(estado, ruta, grupos_vistos):
                   f"({sorted(grupos_vistos)}).", file=sys.stderr)
             continue
         url, ids = grupos_vistos[titulo]
-        if any(e["url_grupo"] == url and e.get("jornada") == jornada for e in estado.values()):
-            continue  # la web ya lo tiene
+        existente = next((e for e in estado.values()
+                          if e["url_grupo"] == url and e.get("jornada") == jornada), None)
+        if existente is not None:
+            # la web ya tiene el partido, pero puede faltarle algún dato (p. ej. la hora,
+            # que a veces no publica aunque el partido ya se haya jugado): se completa sin
+            # pisar lo que la web sí tiene.
+            cambiado = False
+            for campo_dato in ("hora", "campo"):
+                if m.get(campo_dato) and not existente.get(campo_dato):
+                    existente[campo_dato] = m[campo_dato]
+                    cambiado = True
+            if m.get("resultado") and not existente.get("resultado"):
+                existente["resultado"] = m["resultado"]
+                cambiado = True
+            if cambiado:
+                aplicados += 1
+                print(f"Partido manual de '{titulo}' (jornada {jornada}): completados datos "
+                      f"que faltaban en la web.", file=sys.stderr)
+            continue
         propio = sorted(ids)[0]
         equipos = []
         for nombre in (m["local"], m["visitante"]):
