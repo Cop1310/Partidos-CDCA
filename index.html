@@ -94,13 +94,14 @@
   .p .v { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.86rem; color: var(--suave); }
   .p .v em { font-style: italic; }
   .p .v svg { flex: none; }
-  .p .eq { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 1rem; }
-  .p .eq .a { flex: 1; text-align: right; }
-  .p .eq .b { flex: 1; }
-  .p .vs { font-size: 0.82rem; color: var(--suave); }
+  /* Cada equipo en su propia fila a todo el ancho: nada de repartir la tarjeta a
+     medias, así el nombre (con posición o sin ella) siempre tiene sitio de sobra. */
+  .p .eq { margin-top: 10px; font-size: 1rem; }
+  .p .eq .fila { display: flex; align-items: baseline; flex-wrap: wrap; }
+  .p .vs { font-size: 0.82rem; color: var(--suave); margin: 3px 0; }
   .p .us { background: #f7e9b0; border-radius: 4px; padding: 1px 6px; font-weight: 800; }
-  .p .pos { font-size: 0.72rem; font-weight: 800; color: var(--suave); margin-right: 3px; }
-  .p .sc { font-size: 1.1rem; font-weight: 800; padding: 2px 10px; border-radius: 4px; white-space: nowrap; }
+  .p .pos { font-size: 0.72rem; font-weight: 800; color: var(--suave); margin-right: 4px; }
+  .p .sc { display: inline-block; margin: 3px 0; font-size: 1.1rem; font-weight: 800; padding: 2px 10px; border-radius: 4px; white-space: nowrap; }
   .sc.gana { background: #eaf3de; color: #27500a; }
   .sc.empata { background: #faeeda; color: #633806; }
   .sc.pierde { background: #fcebeb; color: #791f1f; }
@@ -357,7 +358,7 @@
   function equipoHtml(s) {
     s = s.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, "").trim();
     var pos = "", m = /^\*\((\d+)º\)\*\s*(.*)$/.exec(s);
-    if (m) { pos = '<strong class="pos">' + m[1] + "º</strong>"; s = m[2]; }
+    if (m) { pos = '<span class="pos">' + m[1] + "º</span> "; s = m[2]; }
     var us = /^\*_(.+)_\*$/.exec(s);
     return us ? pos + '<span class="us">' + escapar(us[1]) + "</span>" : pos + escapar(s);
   }
@@ -395,16 +396,16 @@
     if (!eq) return null;
     var clase = { "🟢": "gana", "🟡": "empata", "🔴": "pierde" }[eq.icono] || "neutro";
     var centro = eq.marcador
-      ? '<span class="sc ' + clase + '">' + eq.marcador[0] + " - " + eq.marcador[1] + "</span>"
-      : '<span class="vs">vs</span>';
+      ? '<div class="sc ' + clase + '">' + eq.marcador[0] + " - " + eq.marcador[1] + "</div>"
+      : '<div class="vs">vs</div>';
     var etiqueta = escapar(titulo.replace(/\s+Grupo\s+(\d+)/i, " · grupo $1"));
     var detalle = (jor ? "<em>Jornada " + jor + "</em>" : "") + (jor && campo ? " · " : "") + (campo ? ICONO_PIN + escapar(campo) : "");
     return '<div class="p"><div class="f1">' +
       (hora ? '<span class="hora">' + ICONO_RELOJ + hora + "</span>" : "") +
       '<span class="pill cat-' + claseCategoria(titulo) + '">' + etiqueta + "</span></div>" +
       (detalle ? '<div class="v">' + detalle + "</div>" : "") +
-      '<div class="eq"><span class="a">' + equipoHtml(eq.local) + "</span>" + centro +
-      '<span class="b">' + equipoHtml(eq.visitante) + "</span></div></div>";
+      '<div class="eq"><div class="fila">' + equipoHtml(eq.local) + "</div>" + centro +
+      '<div class="fila">' + equipoHtml(eq.visitante) + "</div></div></div>";
   }
 
   function mensajeHtml(texto) {
