@@ -118,7 +118,8 @@ def limpiar_equipo(nombre):
     tokens = [t for t in n.split() if t.upper() not in QUITAR_PREFIJOS]
     base = " ".join(tokens).upper()
     base = NOMBRES_EQUIPO.get(base) or capitalizar(base)
-    return f"{base} {letra}".strip()
+    # espacio irrompible: que la letra final (A/B/C) no salte de línea suelta
+    return f"{base} {letra}" if letra else base
 
 
 def limpiar_campo(campo):
