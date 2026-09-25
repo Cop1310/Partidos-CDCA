@@ -99,7 +99,7 @@
   .p .eq .b { flex: 1; }
   .p .vs { font-size: 0.82rem; color: var(--suave); }
   .p .us { background: #f7e9b0; border-radius: 4px; padding: 1px 6px; font-weight: 800; }
-  .p small.pos { font-size: 0.72rem; color: var(--suave); margin-right: 3px; }
+  .p .pos { font-size: 0.72rem; font-weight: 800; color: var(--suave); margin-right: 3px; }
   .p .sc { font-size: 1.1rem; font-weight: 800; padding: 2px 10px; border-radius: 4px; white-space: nowrap; }
   .sc.gana { background: #eaf3de; color: #27500a; }
   .sc.empata { background: #faeeda; color: #633806; }
@@ -124,6 +124,13 @@
   .chip[aria-pressed="true"] { background: var(--tinta); color: #fff; }
   .chip.pendiente { border-style: dashed; color: var(--suave); background: transparent; }
   .chip.pendiente[aria-pressed="true"] { background: var(--suave); color: #fff; border-color: var(--suave); }
+  /* Franja de color por categoría, igual que en las tarjetas de partido */
+  .chip.cat-violeta { border-top: 4px solid #3c3489; }
+  .chip.cat-aqua { border-top: 4px solid #085041; }
+  .chip.cat-naranja { border-top: 4px solid #712b13; }
+  .chip.cat-magenta { border-top: 4px solid #72243e; }
+  .chip.cat-azul { border-top: 4px solid #0c447c; }
+  .chip.cat-gris { border-top: 4px solid #444441; }
   .sin-barra .barra { display: none; }
   .sin-barra { padding-bottom: 28px; }
   .nota { margin: 0; padding: 10px 16px; font-size: 0.9rem; color: var(--suave); border-bottom: 1px solid var(--linea); }
@@ -164,6 +171,16 @@
   #whatsapp { background: var(--verde); color: #fff; border-color: var(--verde-oscuro); }
   button:focus-visible, a.boton:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
   .desactivado { opacity: 0.4; pointer-events: none; }
+  .fila-cuando { display: flex; align-items: center; justify-content: center; gap: 8px; }
+  #actualizar {
+    flex: none; width: 36px; height: 36px; min-height: 0; padding: 0;
+    border-radius: 50%; background: var(--papel); color: var(--tinta);
+    font-size: 1.05rem; line-height: 1;
+  }
+  #actualizar.cargando { animation: girar 0.8s linear infinite; }
+  @keyframes girar { to { transform: rotate(360deg); } }
+  .aviso p { margin: 0 0 4px; }
+  .aviso p:last-child { margin-bottom: 0; }
 </style>
 </head>
 <body>
@@ -172,7 +189,10 @@
   <header class="cabecera">
     <img class="escudo" src="escudo.png" alt="Escudo del C.D. Ciudad de los Ángeles" width="76" height="108">
     <h1>Partidos del fin de semana</h1>
-    <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+    <div class="fila-cuando">
+      <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+      <button type="button" id="actualizar" aria-label="Actualizar partidos" title="Actualizar">⟳</button>
+    </div>
   </header>
 
   <div class="pestanas" role="tablist">
@@ -190,7 +210,7 @@
   <div class="mensaje" id="mensaje" aria-live="polite">
     <p class="estado">Cargando partidos…</p>
   </div>
-  <p class="aviso" id="aviso"></p>
+  <div class="aviso" id="aviso"></div>
   <p class="pie" id="pie"></p>
 </main>
 
@@ -221,6 +241,7 @@
   var selSemana = document.getElementById("sem-sel");
   var btnAnt = document.getElementById("sem-ant");
   var btnSig = document.getElementById("sem-sig");
+  var btnActualizar = document.getElementById("actualizar");
 
   function escapar(s) {
     return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -329,8 +350,8 @@
 
   function equipoHtml(s) {
     s = s.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, "").trim();
-    var pos = "", m = /^\((\d+)º\)\s*(.*)$/.exec(s);
-    if (m) { pos = '<small class="pos">' + m[1] + "º</small>"; s = m[2]; }
+    var pos = "", m = /^\*\((\d+)º\)\*\s*(.*)$/.exec(s);
+    if (m) { pos = '<strong class="pos">' + m[1] + "º</strong>"; s = m[2]; }
     var us = /^\*_(.+)_\*$/.exec(s);
     return us ? pos + '<span class="us">' + escapar(us[1]) + "</span>" : pos + escapar(s);
   }
@@ -415,7 +436,8 @@
         var letra = /\s([A-Z])$/.exec(g.equipo || "");
         if (letra) etiqueta += " (" + letra[1] + ")";
       }
-      return '<button type="button" class="chip' + (g.pendiente ? " pendiente" : "") + '" data-i="' + i +
+      var clase = "chip cat-" + claseCategoria(g.titulo) + (g.pendiente ? " pendiente" : "");
+      return '<button type="button" class="' + clase + '" data-i="' + i +
         '" aria-pressed="' + (i === grupoSel) + '">' + escapar(etiqueta) + "</button>";
     }).join("");
 
@@ -426,9 +448,8 @@
         "Aparecerá aquí en cuanto la publique.</p>";
       return;
     }
-    var jugados = g.filas.some(function (f) { return f.pj > 0; });
-    var nota = g.jornada ? "Tras la jornada " + g.jornada : (jugados ? "" : "Todavía no se ha jugado ninguna jornada");
-    if (!g.jornada && !jugados) nota = "Todavía no se ha jugado ninguna jornada";
+    // "Categoría - Grupo X" en vez de "Tras la jornada X"
+    var nota = g.titulo.replace(/\s+Grupo\s+(\d+)/i, " - Grupo $1");
     var cab = ["#", "Equipo", "PJ", "G", "E", "P", "GF", "GC", "DG", "Pts"].map(function (c, i) {
       return "<th" + (i === 1 ? ' class="e"' : "") + ">" + c + "</th>";
     }).join("");
@@ -492,15 +513,17 @@
 
     var avisos = [];
     if (activa === "partidos" && datos.sin_partido && datos.sin_partido.length) {
-      avisos.push("Sin partido este fin de semana: " + datos.sin_partido.join(", ") + ".");
+      avisos.push("<p>Sin partido este fin de semana:<br>" +
+        datos.sin_partido.map(escapar).join("<br>") + "</p>");
     }
     if (activa === "partidos" && datos.sin_calendario && datos.sin_calendario.length) {
-      avisos.push("Calendario todavía sin publicar por la federación: " + datos.sin_calendario.join(", ") + ".");
+      avisos.push("<p>Calendario todavía sin publicar por la federación: " +
+        escapar(datos.sin_calendario.join(", ")) + ".</p>");
     }
     if (datos.errores && datos.errores.length) {
-      avisos.push("No se han podido consultar: " + datos.errores.join(", ") + ". Puede faltar algún dato.");
+      avisos.push("<p>No se han podido consultar: " + escapar(datos.errores.join(", ")) + ". Puede faltar algún dato.</p>");
     }
-    elAviso.textContent = avisos.join(" ");
+    elAviso.innerHTML = avisos.join("");
 
     if (datos.generado) {
       var p = datos.generado.split(" ");
@@ -557,20 +580,35 @@
     navigator.serviceWorker.register("sw.js").catch(function () {});
   }
 
-  fetch("partidos.json?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (d) {
-      datos = d;
-      sel.partidos = indiceSemana(d.desde);
-      sel.resultados = indiceSemana(d.resultados_desde);
-      // Domingo, lunes y martes se abre directamente en Resultados si ya hay alguno
-      var dia = new Date().getDay();
-      if ((dia === 0 || dia === 1 || dia === 2) && (d.resultados || "").trim()) activa = "resultados";
-      pintar();
-    })
-    .catch(function () {
-      elMensaje.innerHTML = '<p class="estado">No se han podido cargar los partidos. Comprueba que la acción "Actualizar partidos" de GitHub se ha ejecutado al menos una vez.</p>';
-    });
+  function cargarDatos(esPrimeraVez) {
+    btnActualizar.classList.add("cargando");
+    btnActualizar.disabled = true;
+    return fetch("partidos.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        datos = d;
+        sel.partidos = indiceSemana(d.desde);
+        sel.resultados = indiceSemana(d.resultados_desde);
+        if (esPrimeraVez) {
+          // Domingo, lunes y martes se abre directamente en Resultados si ya hay alguno
+          var dia = new Date().getDay();
+          if ((dia === 0 || dia === 1 || dia === 2) && (d.resultados || "").trim()) activa = "resultados";
+        }
+        pintar();
+      })
+      .catch(function () {
+        if (!datos) {
+          elMensaje.innerHTML = '<p class="estado">No se han podido cargar los partidos. Comprueba que la acción "Actualizar partidos" de GitHub se ha ejecutado al menos una vez.</p>';
+        }
+      })
+      .then(function () {
+        btnActualizar.classList.remove("cargando");
+        btnActualizar.disabled = false;
+      });
+  }
+
+  btnActualizar.addEventListener("click", function () { cargarDatos(false); });
+  cargarDatos(true);
 })();
 </script>
 </body>

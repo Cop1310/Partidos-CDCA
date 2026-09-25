@@ -125,13 +125,43 @@ def limpiar_campo(campo):
     c = re.sub(r"\s*\([^)]*\)", "", campo or "").strip()
     if not c:
         return ""
-    return NOMBRES_CAMPO.get(c.upper()) or capitalizar(c)
+    if c.upper() in NOMBRES_CAMPO:
+        return NOMBRES_CAMPO[c.upper()]
+    return capitalizar(_separar_via(c))
 
 
 def limpiar_titulo(t):
     for k, v in ACENTOS_TITULO.items():
         t = t.replace(k, v)
     return re.sub(r"\s+", " ", t).strip()
+
+
+# ---------------------------------------------------------------------------
+# Nombre del campo: separación entre el nombre corto y la vía/ubicación
+#
+# El nombre que da la web a veces trae el nombre corto del campo y la vía
+# pegados sin ningún separador claro (p. ej. "STA ANAAVDA DE LOS ROSALES"),
+# lo que al capitalizar queda ilegible ("Santa Anaavenida..."). Como no hace
+# falta la dirección postal exacta, basta con detectar dónde empieza la vía
+# (por palabras típicas: Avda, Calle, Plaza...) e insertar ". " delante,
+# aunque en el original no hubiera ni un espacio.
+# ---------------------------------------------------------------------------
+_RE_VIA = re.compile(
+    r"(AV(?:D)?A?\.?|AVENIDA|CALLE|C/|CTRA\.?|CARRETERA|PASEO|PSEO|PZA\.?|PLAZA|"
+    r"POL(?:IGONO|ÍGONO)?\.?|GTA\.?|GLORIETA|CAMINO|CMNO\.?|RONDA|TRAVES[IÍ]A|"
+    r"PASAJE|URB(?:ANIZACION|ANIZACIÓN)?\.?)(?=\s)",
+    re.IGNORECASE)
+
+
+def _separar_via(c):
+    """Inserta ". " entre el nombre del campo y la vía cuando ambos vienen
+    pegados o solo separados por un guión."""
+    m = _RE_VIA.search(c)
+    if not m or m.start() == 0:
+        return c
+    antes = c[:m.start()].rstrip(" -,")
+    despues = c[m.start():]
+    return f"{antes}. {despues}" if antes else c
 
 
 # ---------------------------------------------------------------------------
@@ -940,7 +970,7 @@ def _equipo(par, pos=None):
         limpio = f"*_{limpio}_*"  # nuestro equipo: negrita y cursiva
         if ESCUDO:
             limpio = f"{ESCUDO} {limpio}"
-    return f"({pos}º) {limpio}" if pos else limpio
+    return f"*({pos}º)* {limpio}" if pos else limpio  # posición en negrita
 
 
 def _emoji_resultado(e):
@@ -1008,7 +1038,7 @@ def componer(estado, sabado, con_resultado):
     lista = seleccion(estado, sabado, con_resultado)
     if not lista:
         return ""
-    partes = [AVISO]
+    partes = [] if con_resultado else [AVISO]  # la coletilla no va en los resultados
     dia_actual = None
     for e in [e for e in lista if not _pendiente(e)]:
         if e["fecha"] != dia_actual:  # el día aparece una sola vez, como titular
