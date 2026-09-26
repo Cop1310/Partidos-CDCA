@@ -965,6 +965,34 @@
      "pts": 3
     },
     {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
+     "gc": 2,
+     "gf": 3,
+     "id": "10652335",
+     "nombre": "Racing de Villaverde B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 2,
+     "id": "761461",
+     "nombre": "Fundacion Rayo Vallecano C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 3,
+     "pts": 3
+    },
+    {
      "dg": 0,
      "e": 0,
      "g": 0,
@@ -975,7 +1003,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 2,
+     "pos": 4,
      "pts": 0
     },
     {
@@ -989,21 +1017,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 3,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "8961562",
-     "nombre": "Ciudad de los Ángeles A",
-     "nuestro": true,
-     "p": 0,
-     "pj": 0,
-     "pos": 4,
+     "pos": 5,
      "pts": 0
     },
     {
@@ -1017,7 +1031,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 5,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -1031,7 +1045,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 6,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -1045,7 +1059,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 7,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -1056,20 +1070,6 @@
      "gf": 0,
      "id": "2274952",
      "nombre": "E.D. Moratalaz C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 8,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1764",
-     "nombre": "E.D.M. San Blas B",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -1096,40 +1096,12 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "10652335",
-     "nombre": "Racing de Villaverde B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 11,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
      "id": "4928637",
      "nombre": "Rivas Futbol Club C",
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "761461",
-     "nombre": "Fundacion Rayo Vallecano C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 13,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1143,7 +1115,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 14,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1157,7 +1129,21 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 15,
+     "pos": 13,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 3,
+     "gf": 2,
+     "id": "8961562",
+     "nombre": "Ciudad de los Ángeles A",
+     "nuestro": true,
+     "p": 1,
+     "pj": 1,
+     "pos": 14,
      "pts": 0
     },
     {
@@ -1168,6 +1154,20 @@
      "gf": 2,
      "id": "2806",
      "nombre": "Parque Sureste A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
+     "pos": 15,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 2,
+     "gf": 1,
+     "id": "1764",
+     "nombre": "E.D.M. San Blas B",
      "nuestro": false,
      "p": 1,
      "pj": 1,
@@ -1400,6 +1400,20 @@
      "dg": 1,
      "e": 0,
      "g": 1,
+     "gc": 1,
+     "gf": 2,
+     "id": "846631",
+     "nombre": "Club Seccion Deportiva del Pozo A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
      "gc": 0,
      "gf": 1,
      "id": "17202267",
@@ -1407,7 +1421,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 2,
+     "pos": 3,
      "pts": 3
     },
     {
@@ -1421,7 +1435,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 3,
+     "pos": 4,
      "pts": 0
     },
     {
@@ -1435,7 +1449,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 4,
+     "pos": 5,
      "pts": 0
     },
     {
@@ -1449,7 +1463,7 @@
      "nuestro": true,
      "p": 0,
      "pj": 0,
-     "pos": 5,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -1463,7 +1477,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 6,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -1474,20 +1488,6 @@
      "gf": 0,
      "id": "6238195",
      "nombre": "Inter Promesas B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 7,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "846631",
-     "nombre": "Club Seccion Deportiva del Pozo A",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -1528,26 +1528,12 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "2739614",
-     "nombre": "Rivas Futbol Club B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 11,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
      "id": "13613759",
      "nombre": "Fundacion Leganes C",
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1561,7 +1547,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 13,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1575,6 +1561,20 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 13,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 2,
+     "gf": 1,
+     "id": "2739614",
+     "nombre": "Rivas Futbol Club B",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 14,
      "pts": 0
     },
@@ -3171,7 +3171,10 @@
     11,
     4
    ],
-   "resultado": null,
+   "resultado": [
+    3,
+    2
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
    "visitante": [
     "8961562",
