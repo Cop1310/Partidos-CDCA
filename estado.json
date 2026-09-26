@@ -437,6 +437,20 @@
     {
      "dg": 5,
      "e": 0,
+     "g": 3,
+     "gc": 1,
+     "gf": 6,
+     "id": "6815292",
+     "nombre": "Ciudad de los Ángeles A",
+     "nuestro": true,
+     "p": 0,
+     "pj": 3,
+     "pos": 1,
+     "pts": 9
+    },
+    {
+     "dg": 5,
+     "e": 0,
      "g": 2,
      "gc": 2,
      "gf": 7,
@@ -445,7 +459,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 1,
+     "pos": 2,
      "pts": 6
     },
     {
@@ -459,7 +473,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 2,
+     "pos": 3,
      "pts": 6
     },
     {
@@ -471,20 +485,6 @@
      "id": "8953841",
      "nombre": "Inter Promesas B",
      "nuestro": false,
-     "p": 0,
-     "pj": 2,
-     "pos": 3,
-     "pts": 6
-    },
-    {
-     "dg": 2,
-     "e": 0,
-     "g": 2,
-     "gc": 1,
-     "gf": 3,
-     "id": "6815292",
-     "nombre": "Ciudad de los Ángeles A",
-     "nuestro": true,
      "p": 0,
      "pj": 2,
      "pos": 4,
@@ -589,16 +589,16 @@
      "pts": 3
     },
     {
-     "dg": -1,
+     "dg": -4,
      "e": 1,
      "g": 0,
-     "gc": 3,
+     "gc": 6,
      "gf": 2,
      "id": "1546",
      "nombre": "Escuela de Futbol Arganda B",
      "nuestro": false,
-     "p": 1,
-     "pj": 2,
+     "p": 2,
+     "pj": 3,
      "pos": 12,
      "pts": 1
     },
@@ -687,7 +687,7 @@
      "pts": -3
     }
    ],
-   "jornada": 2,
+   "jornada": 3,
    "titulo": "Preferente Juvenil Grupo 5"
   },
   "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": {
@@ -750,6 +750,20 @@
     },
     {
      "dg": 5,
+     "e": 2,
+     "g": 1,
+     "gc": 9,
+     "gf": 14,
+     "id": "22461402",
+     "nombre": "Inter Promesas C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 5,
+     "pts": 5
+    },
+    {
+     "dg": 5,
      "e": 1,
      "g": 1,
      "gc": 4,
@@ -759,7 +773,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 5,
+     "pos": 6,
      "pts": 4
     },
     {
@@ -773,7 +787,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 6,
+     "pos": 7,
      "pts": 4
     },
     {
@@ -787,7 +801,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 7,
+     "pos": 8,
      "pts": 4
     },
     {
@@ -801,7 +815,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 8,
+     "pos": 9,
      "pts": 4
     },
     {
@@ -815,36 +829,22 @@
      "nuestro": true,
      "p": 1,
      "pj": 2,
-     "pos": 9,
-     "pts": 3
-    },
-    {
-     "dg": -4,
-     "e": 0,
-     "g": 1,
-     "gc": 9,
-     "gf": 5,
-     "id": "10656336",
-     "nombre": "Nuevo Versalles-Loranca C",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
      "pos": 10,
      "pts": 3
     },
     {
-     "dg": 0,
-     "e": 2,
-     "g": 0,
-     "gc": 6,
-     "gf": 6,
-     "id": "22461402",
-     "nombre": "Inter Promesas C",
+     "dg": -9,
+     "e": 0,
+     "g": 1,
+     "gc": 17,
+     "gf": 8,
+     "id": "10656336",
+     "nombre": "Nuevo Versalles-Loranca C",
      "nuestro": false,
-     "p": 0,
-     "pj": 2,
+     "p": 2,
+     "pj": 3,
      "pos": 11,
-     "pts": 2
+     "pts": 3
     },
     {
      "dg": -1,
@@ -945,7 +945,7 @@
      "pts": 0
     }
    ],
-   "jornada": 2,
+   "jornada": 3,
    "titulo": "Primera Juvenil Grupo 11"
   },
   "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": {
@@ -984,12 +984,26 @@
      "g": 1,
      "gc": 1,
      "gf": 2,
+     "id": "526134",
+     "nombre": "Esc. Mun. Fut. Villarejo A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 3,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 2,
      "id": "761461",
      "nombre": "Fundacion Rayo Vallecano C",
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 3,
+     "pos": 4,
      "pts": 3
     },
     {
@@ -1000,20 +1014,6 @@
      "gf": 0,
      "id": "4920195",
      "nombre": "Arganda A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 4,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1689",
-     "nombre": "Adepo Palomeras A",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -1082,26 +1082,12 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "526134",
-     "nombre": "Esc. Mun. Fut. Villarejo A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 10,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
      "id": "4928637",
      "nombre": "Rivas Futbol Club C",
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 11,
+     "pos": 10,
      "pts": 0
     },
     {
@@ -1115,7 +1101,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1129,7 +1115,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 13,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1143,7 +1129,7 @@
      "nuestro": true,
      "p": 1,
      "pj": 1,
-     "pos": 14,
+     "pos": 13,
      "pts": 0
     },
     {
@@ -1154,6 +1140,20 @@
      "gf": 2,
      "id": "2806",
      "nombre": "Parque Sureste A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
+     "pos": 14,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 2,
+     "gf": 1,
+     "id": "1689",
+     "nombre": "Adepo Palomeras A",
      "nuestro": false,
      "p": 1,
      "pj": 1,
@@ -1383,6 +1383,20 @@
   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
    "filas": [
     {
+     "dg": 5,
+     "e": 0,
+     "g": 1,
+     "gc": 2,
+     "gf": 7,
+     "id": "1031681",
+     "nombre": "Santiago Apóstol Villaverde A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 1,
+     "pts": 3
+    },
+    {
      "dg": 3,
      "e": 0,
      "g": 1,
@@ -1393,7 +1407,21 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
+     "dg": 3,
+     "e": 0,
+     "g": 1,
+     "gc": 0,
+     "gf": 3,
+     "id": "13613759",
+     "nombre": "Fundacion Leganes C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 3,
      "pts": 3
     },
     {
@@ -1407,7 +1435,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 2,
+     "pos": 4,
      "pts": 3
     },
     {
@@ -1421,22 +1449,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 3,
+     "pos": 5,
      "pts": 3
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1094",
-     "nombre": "Ad A.Toledo Olivos A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 4,
-     "pts": 0
     },
     {
      "dg": 0,
@@ -1449,35 +1463,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 5,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "13538235",
-     "nombre": "Ciudad de los Ángeles A",
-     "nuestro": true,
-     "p": 0,
-     "pj": 0,
      "pos": 6,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1031681",
-     "nombre": "Santiago Apóstol Villaverde A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 7,
      "pts": 0
     },
     {
@@ -1491,7 +1477,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 8,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -1505,7 +1491,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 9,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -1519,21 +1505,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 10,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "13613759",
-     "nombre": "Fundacion Leganes C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 11,
+     "pos": 9,
      "pts": 0
     },
     {
@@ -1547,7 +1519,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
+     "pos": 10,
      "pts": 0
     },
     {
@@ -1561,7 +1533,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 13,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1575,7 +1547,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 14,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1589,7 +1561,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 15,
+     "pos": 13,
      "pts": 0
     },
     {
@@ -1603,12 +1575,360 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
+     "pos": 14,
+     "pts": 0
+    },
+    {
+     "dg": -3,
+     "e": 0,
+     "g": 0,
+     "gc": 3,
+     "gf": 0,
+     "id": "1094",
+     "nombre": "Ad A.Toledo Olivos A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
+     "pos": 15,
+     "pts": 0
+    },
+    {
+     "dg": -5,
+     "e": 0,
+     "g": 0,
+     "gc": 7,
+     "gf": 2,
+     "id": "13538235",
+     "nombre": "Ciudad de los Ángeles A",
+     "nuestro": true,
+     "p": 1,
+     "pj": 1,
      "pos": 16,
      "pts": 0
     }
    ],
    "jornada": 1,
    "titulo": "Preferente Infantil Grupo 5"
+  },
+  "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas": {
+   "filas": [
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "956",
+     "nombre": "Orcasitas B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 1,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15951607",
+     "nombre": "Orcasitas C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 2,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "1847",
+     "nombre": "Villaverde Bajo C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 3,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "21428585",
+     "nombre": "Villaverde Bajo D",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 4,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "334110",
+     "nombre": "San Fermin C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 5,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "23056721",
+     "nombre": "San Fermin D",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 6,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "17146707",
+     "nombre": "Ciudad de los Ángeles",
+     "nuestro": true,
+     "p": 0,
+     "pj": 0,
+     "pos": 7,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "1276",
+     "nombre": "San Cristobal de los Angeles A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 8,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "334113",
+     "nombre": "San Cristobal de los Angeles B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 9,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "9471615",
+     "nombre": "San Cristobal de los Angeles C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 10,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "24025636",
+     "nombre": "San Cristobal de los Angeles D",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 11,
+     "pts": 0
+    }
+   ],
+   "jornada": 1,
+   "titulo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL"
+  },
+  "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas": {
+   "filas": [
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15315875",
+     "nombre": "Villaverde Bajo B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 1,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "24040157",
+     "nombre": "Villaverde Bajo C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 2,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "20086393",
+     "nombre": "La Mancha C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 3,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15328637",
+     "nombre": "Ciudad de los Ángeles B",
+     "nuestro": true,
+     "p": 0,
+     "pj": 0,
+     "pos": 4,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "21430134",
+     "nombre": "Ciudad de los Ángeles C",
+     "nuestro": true,
+     "p": 0,
+     "pj": 0,
+     "pos": 5,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "8969307",
+     "nombre": "San Cristobal de los Angeles A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 6,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15842097",
+     "nombre": "San Cristobal de los Angeles B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 7,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15842105",
+     "nombre": "San Cristobal de los Angeles C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 8,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "24235825",
+     "nombre": "Union Deportiva Arganzuela F",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 9,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "6964114",
+     "nombre": "Inter Promesas A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 10,
+     "pts": 0
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "g": 0,
+     "gc": 0,
+     "gf": 0,
+     "id": "15954882",
+     "nombre": "Inter Promesas B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 0,
+     "pos": 11,
+     "pts": 0
+    }
+   ],
+   "jornada": 1,
+   "titulo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL"
   },
   "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
    "filas": [
@@ -2045,18 +2365,32 @@
   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
    "filas": [
     {
-     "dg": 0,
+     "dg": 3,
      "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "334248",
-     "nombre": "Escuela de Futbol Usera B",
+     "g": 1,
+     "gc": 3,
+     "gf": 6,
+     "id": "15277458",
+     "nombre": "San Fermin B",
      "nuestro": false,
      "p": 0,
-     "pj": 0,
+     "pj": 1,
      "pos": 1,
-     "pts": 0
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 2,
+     "id": "680085",
+     "nombre": "Alzola - Halcones D",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
     },
     {
      "dg": 0,
@@ -2069,7 +2403,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 2,
+     "pos": 3,
      "pts": 0
     },
     {
@@ -2080,20 +2414,6 @@
      "gf": 0,
      "id": "10634320",
      "nombre": "Villaverde Bajo C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 3,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "15277458",
-     "nombre": "San Fermin B",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -2120,40 +2440,12 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "680085",
-     "nombre": "Alzola - Halcones D",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 6,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "15292622",
-     "nombre": "Ciudad de los Ángeles C",
-     "nuestro": true,
-     "p": 0,
-     "pj": 0,
-     "pos": 7,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
      "id": "1031556",
      "nombre": "Colonia Moscardo D",
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 8,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -2167,7 +2459,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 9,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -2181,7 +2473,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 10,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -2195,7 +2487,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 11,
+     "pos": 9,
      "pts": 0
     },
     {
@@ -2209,7 +2501,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
+     "pos": 10,
      "pts": 0
     },
     {
@@ -2223,7 +2515,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 13,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -2237,7 +2529,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 14,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -2251,6 +2543,34 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 13,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 2,
+     "gf": 1,
+     "id": "15292622",
+     "nombre": "Ciudad de los Ángeles C",
+     "nuestro": true,
+     "p": 1,
+     "pj": 1,
+     "pos": 14,
+     "pts": 0
+    },
+    {
+     "dg": -3,
+     "e": 0,
+     "g": 0,
+     "gc": 6,
+     "gf": 3,
+     "id": "334248",
+     "nombre": "Escuela de Futbol Usera B",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 15,
      "pts": 0
     }
@@ -4203,7 +4523,10 @@
     6,
     5
    ],
-   "resultado": null,
+   "resultado": [
+    7,
+    2
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
    "visitante": [
     "13538235",
@@ -6035,7 +6358,10 @@
     "680085",
     "C.D. ALZOLA - HALCONES 'D'"
    ],
-   "pos": null,
+   "pos": [
+    2,
+    14
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
