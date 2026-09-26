@@ -533,6 +533,20 @@
      "pts": 4
     },
     {
+     "dg": 2,
+     "e": 0,
+     "g": 1,
+     "gc": 2,
+     "gf": 4,
+     "id": "19245961",
+     "nombre": "Madrid Rio - Arganzuela C",
+     "nuestro": false,
+     "p": 1,
+     "pj": 2,
+     "pos": 8,
+     "pts": 3
+    },
+    {
      "dg": 0,
      "e": 0,
      "g": 1,
@@ -543,7 +557,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 8,
+     "pos": 9,
      "pts": 3
     },
     {
@@ -557,7 +571,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 9,
+     "pos": 10,
      "pts": 3
     },
     {
@@ -571,7 +585,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 10,
+     "pos": 11,
      "pts": 3
     },
     {
@@ -585,7 +599,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 11,
+     "pos": 12,
      "pts": 1
     },
     {
@@ -599,7 +613,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 12,
+     "pos": 13,
      "pts": 1
     },
     {
@@ -613,22 +627,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 13,
-     "pts": 1
-    },
-    {
-     "dg": -1,
-     "e": 0,
-     "g": 0,
-     "gc": 2,
-     "gf": 1,
-     "id": "19245961",
-     "nombre": "Madrid Rio - Arganzuela C",
-     "nuestro": false,
-     "p": 1,
-     "pj": 1,
      "pos": 14,
-     "pts": 0
+     "pts": 1
     },
     {
      "dg": -2,
@@ -673,16 +673,16 @@
      "pts": 0
     },
     {
-     "dg": -3,
+     "dg": -6,
      "e": 0,
      "g": 0,
-     "gc": 3,
+     "gc": 6,
      "gf": 0,
      "id": "466569",
      "nombre": "Mar Abierto A",
      "nuestro": false,
-     "p": 1,
-     "pj": 1,
+     "p": 2,
+     "pj": 2,
      "pos": 18,
      "pts": -3
     }
@@ -951,18 +951,18 @@
   "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": {
    "filas": [
     {
-     "dg": 0,
+     "dg": 1,
      "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "4920195",
-     "nombre": "Arganda A",
+     "g": 1,
+     "gc": 2,
+     "gf": 3,
+     "id": "1964",
+     "nombre": "Nuevo Baztan A",
      "nuestro": false,
      "p": 0,
-     "pj": 0,
+     "pj": 1,
      "pos": 1,
-     "pts": 0
+     "pts": 3
     },
     {
      "dg": 0,
@@ -970,8 +970,8 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "1964",
-     "nombre": "Nuevo Baztan A",
+     "id": "4920195",
+     "nombre": "Arganda A",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -1124,26 +1124,12 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "2806",
-     "nombre": "Parque Sureste A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 13,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
      "id": "761461",
      "nombre": "Fundacion Rayo Vallecano C",
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 14,
+     "pos": 13,
      "pts": 0
     },
     {
@@ -1157,7 +1143,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 15,
+     "pos": 14,
      "pts": 0
     },
     {
@@ -1171,6 +1157,20 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 15,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 3,
+     "gf": 2,
+     "id": "2806",
+     "nombre": "Parque Sureste A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 16,
      "pts": 0
     }
@@ -1383,6 +1383,34 @@
   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
    "filas": [
     {
+     "dg": 3,
+     "e": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 4,
+     "id": "2730",
+     "nombre": "Union Deportiva la Poveda A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 1,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "g": 1,
+     "gc": 0,
+     "gf": 1,
+     "id": "17202267",
+     "nombre": "Velilla A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
      "dg": 0,
      "e": 0,
      "g": 0,
@@ -1393,7 +1421,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 1,
+     "pos": 3,
      "pts": 0
     },
     {
@@ -1407,7 +1435,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 2,
+     "pos": 4,
      "pts": 0
     },
     {
@@ -1421,7 +1449,7 @@
      "nuestro": true,
      "p": 0,
      "pj": 0,
-     "pos": 3,
+     "pos": 5,
      "pts": 0
     },
     {
@@ -1435,7 +1463,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 4,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -1449,7 +1477,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 5,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -1463,21 +1491,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 6,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "526135",
-     "nombre": "Esc. Mun. Fut. Villarejo A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 7,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -1491,7 +1505,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 8,
+     "pos": 9,
      "pts": 0
     },
     {
@@ -1505,7 +1519,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 9,
+     "pos": 10,
      "pts": 0
     },
     {
@@ -1519,7 +1533,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 10,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1533,7 +1547,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 11,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1547,35 +1561,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 12,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "15704127",
-     "nombre": "Stella Maris la Gavia A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
      "pos": 13,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "17202267",
-     "nombre": "Velilla A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 14,
      "pts": 0
     },
     {
@@ -1589,20 +1575,34 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 14,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "g": 0,
+     "gc": 1,
+     "gf": 0,
+     "id": "526135",
+     "nombre": "Esc. Mun. Fut. Villarejo A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 15,
      "pts": 0
     },
     {
-     "dg": 0,
+     "dg": -3,
      "e": 0,
      "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "2730",
-     "nombre": "Union Deportiva la Poveda A",
+     "gc": 4,
+     "gf": 1,
+     "id": "15704127",
+     "nombre": "Stella Maris la Gavia A",
      "nuestro": false,
-     "p": 0,
-     "pj": 0,
+     "p": 1,
+     "pj": 1,
      "pos": 16,
      "pts": 0
     }
@@ -3167,7 +3167,10 @@
     "10652335",
     "RACING VILLAVERDE C.F. 'B'"
    ],
-   "pos": null,
+   "pos": [
+    11,
+    4
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
    "visitante": [
@@ -4193,7 +4196,10 @@
     "1031681",
     "C.D. SANTIAGO APOSTOL VILLAVERDE 'A'"
    ],
-   "pos": null,
+   "pos": [
+    6,
+    5
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
    "visitante": [
