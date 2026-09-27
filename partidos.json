@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-27 16:34",
+  "generado": "2026-09-27 20:54",
   "desde": "2026-09-26",
   "hasta": "2026-09-27",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 26/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:45h* - Preferente Cadete Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ *(11º)* Racing de Villaverde B - *(4º)* *_Ciudad de los Ángeles A_*\n\n⏰ *14:30h* - Preferente Juvenil Grupo 5\n📌 _Jornada 3_\n📍 Campo: Arganda - Ciudad del Futbol 1\n⚽ *(11º)* Escuela de Futbol Arganda B - *(4º)* *_Ciudad de los Ángeles A_*\n\n⏰ *15:30h* - Preferente Infantil Grupo 5\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ *(6º)* Santiago Apóstol Villaverde A - *(5º)* *_Ciudad de los Ángeles A_*\n\n⏰ *16:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 1_\n📍 Campo: Puerto Rico\n⚽ *(2º)* Alzola - Halcones D - *(14º)* *_Ciudad de los Ángeles C_*\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 27/09/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *13:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 3_\n📍 Campo: Parla - Alfredo Di Stefano Mariano Arribas\n⚽ *(17º)* Unión 2000 B - *(9º)* *_Ciudad de los Ángeles B_*\n\n⏰ *13:00h* - Segunda Aficionado Grupo 20\n📌 _Jornada 1_\n📍 Campo: IDB David Diez de la Cruz\n⚽ *(11º)* Los Rosales de Villaverde - *(7º)* *_Ciudad de los Ángeles B_*\n\n⏰ *19:00h* - Preferente Aficionado Grupo 3\n📌 _Jornada 3_\n📍 Campo: Leganes - Mercacentro PVO. Julian Montero 2\n⚽ *(8º)* Unión Carrascal A - *(12º)* *_Ciudad de los Ángeles A_*",
@@ -222,6 +222,20 @@
         },
         {
           "pos": 3,
+          "id": "8944219",
+          "nombre": "Ciudad de Pinto A",
+          "nuestro": false,
+          "pj": 3,
+          "g": 2,
+          "e": 0,
+          "p": 1,
+          "gf": 11,
+          "gc": 3,
+          "dg": 8,
+          "pts": 6
+        },
+        {
+          "pos": 4,
           "id": "13519993",
           "nombre": "Esc.Fut.At. Casarrubuelos",
           "nuestro": false,
@@ -235,7 +249,7 @@
           "pts": 6
         },
         {
-          "pos": 4,
+          "pos": 5,
           "id": "788",
           "nombre": "Arganda",
           "nuestro": false,
@@ -249,7 +263,7 @@
           "pts": 4
         },
         {
-          "pos": 5,
+          "pos": 6,
           "id": "947",
           "nombre": "Orcasitas A",
           "nuestro": false,
@@ -263,7 +277,7 @@
           "pts": 4
         },
         {
-          "pos": 6,
+          "pos": 7,
           "id": "680159",
           "nombre": "Villaverde Bajo A",
           "nuestro": false,
@@ -277,7 +291,7 @@
           "pts": 4
         },
         {
-          "pos": 7,
+          "pos": 8,
           "id": "352985",
           "nombre": "Udmelidaolimpia - Madrid City Vallecas",
           "nuestro": false,
@@ -291,7 +305,7 @@
           "pts": 4
         },
         {
-          "pos": 8,
+          "pos": 9,
           "id": "1006",
           "nombre": "Fepe Getafe III A",
           "nuestro": false,
@@ -303,20 +317,6 @@
           "gc": 7,
           "dg": -1,
           "pts": 4
-        },
-        {
-          "pos": 9,
-          "id": "8944219",
-          "nombre": "Ciudad de Pinto A",
-          "nuestro": false,
-          "pj": 2,
-          "g": 1,
-          "e": 0,
-          "p": 1,
-          "gf": 4,
-          "gc": 3,
-          "dg": 1,
-          "pts": 3
         },
         {
           "pos": 10,
@@ -435,13 +435,13 @@
           "id": "1041",
           "nombre": "Club Seccion Deportiva del Pozo A",
           "nuestro": false,
-          "pj": 2,
+          "pj": 3,
           "g": 0,
           "e": 0,
-          "p": 2,
+          "p": 3,
           "gf": 3,
-          "gc": 8,
-          "dg": -5,
+          "gc": 15,
+          "dg": -12,
           "pts": 0
         }
       ],

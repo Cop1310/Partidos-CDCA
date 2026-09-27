@@ -205,6 +205,20 @@
      "pts": 7
     },
     {
+     "dg": 8,
+     "e": 0,
+     "g": 2,
+     "gc": 3,
+     "gf": 11,
+     "id": "8944219",
+     "nombre": "Ciudad de Pinto A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 3,
+     "pos": 3,
+     "pts": 6
+    },
+    {
      "dg": 5,
      "e": 0,
      "g": 2,
@@ -215,7 +229,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 3,
+     "pos": 4,
      "pts": 6
     },
     {
@@ -229,7 +243,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 4,
+     "pos": 5,
      "pts": 4
     },
     {
@@ -243,7 +257,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 5,
+     "pos": 6,
      "pts": 4
     },
     {
@@ -257,7 +271,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 6,
+     "pos": 7,
      "pts": 4
     },
     {
@@ -271,7 +285,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 7,
+     "pos": 8,
      "pts": 4
     },
     {
@@ -285,22 +299,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 8,
-     "pts": 4
-    },
-    {
-     "dg": 1,
-     "e": 0,
-     "g": 1,
-     "gc": 3,
-     "gf": 4,
-     "id": "8944219",
-     "nombre": "Ciudad de Pinto A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
      "pos": 9,
-     "pts": 3
+     "pts": 4
     },
     {
      "dg": -1,
@@ -415,16 +415,16 @@
      "pts": 1
     },
     {
-     "dg": -5,
+     "dg": -12,
      "e": 0,
      "g": 0,
-     "gc": 8,
+     "gc": 15,
      "gf": 3,
      "id": "1041",
      "nombre": "Club Seccion Deportiva del Pozo A",
      "nuestro": false,
-     "p": 2,
-     "pj": 2,
+     "p": 3,
+     "pj": 3,
      "pos": 18,
      "pts": 0
     }
