@@ -178,7 +178,7 @@
    "filas": [
     {
      "dg": 6,
-     "e": 0,
+     "e": 1,
      "g": 2,
      "gc": 1,
      "gf": 7,
@@ -186,9 +186,9 @@
      "nombre": "Rivas Futbol Club",
      "nuestro": false,
      "p": 0,
-     "pj": 2,
+     "pj": 3,
      "pos": 1,
-     "pts": 6
+     "pts": 7
     },
     {
      "dg": 5,
@@ -346,7 +346,7 @@
     },
     {
      "dg": -1,
-     "e": 1,
+     "e": 2,
      "g": 0,
      "gc": 6,
      "gf": 5,
@@ -354,9 +354,9 @@
      "nombre": "Nuevo Pinto A",
      "nuestro": false,
      "p": 1,
-     "pj": 2,
+     "pj": 3,
      "pos": 13,
-     "pts": 1
+     "pts": 2
     },
     {
      "dg": -1,
@@ -429,7 +429,7 @@
      "pts": 0
     }
    ],
-   "jornada": 2,
+   "jornada": 3,
    "titulo": "Preferente Aficionado Grupo 3"
   },
   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
@@ -1397,6 +1397,20 @@
      "pts": 3
     },
     {
+     "dg": 5,
+     "e": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 6,
+     "id": "1549",
+     "nombre": "Escuela de Futbol Arganda A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
      "dg": 3,
      "e": 0,
      "g": 1,
@@ -1407,7 +1421,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 2,
+     "pos": 3,
      "pts": 3
     },
     {
@@ -1421,7 +1435,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 3,
+     "pos": 4,
      "pts": 3
     },
     {
@@ -1435,7 +1449,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 4,
+     "pos": 5,
      "pts": 3
     },
     {
@@ -1449,7 +1463,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 5,
+     "pos": 6,
      "pts": 3
     },
     {
@@ -1463,36 +1477,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 6,
-     "pts": 3
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "6238195",
-     "nombre": "Inter Promesas B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
      "pos": 7,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1549",
-     "nombre": "Escuela de Futbol Arganda A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 8,
-     "pts": 0
+     "pts": 3
     },
     {
      "dg": 0,
@@ -1505,7 +1491,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 9,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -1519,7 +1505,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 10,
+     "pos": 9,
      "pts": 0
     },
     {
@@ -1533,7 +1519,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 11,
+     "pos": 10,
      "pts": 0
     },
     {
@@ -1547,7 +1533,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 12,
+     "pos": 11,
      "pts": 0
     },
     {
@@ -1561,7 +1547,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 13,
+     "pos": 12,
      "pts": 0
     },
     {
@@ -1575,7 +1561,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 14,
+     "pos": 13,
      "pts": 0
     },
     {
@@ -1589,7 +1575,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 1,
-     "pos": 15,
+     "pos": 14,
      "pts": 0
     },
     {
@@ -1601,6 +1587,20 @@
      "id": "13538235",
      "nombre": "Ciudad de los Ángeles A",
      "nuestro": true,
+     "p": 1,
+     "pj": 1,
+     "pos": 15,
+     "pts": 0
+    },
+    {
+     "dg": -5,
+     "e": 0,
+     "g": 0,
+     "gc": 6,
+     "gf": 1,
+     "id": "6238195",
+     "nombre": "Inter Promesas B",
+     "nuestro": false,
      "p": 1,
      "pj": 1,
      "pos": 16,
@@ -2135,18 +2135,18 @@
   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
    "filas": [
     {
-     "dg": 0,
+     "dg": 1,
      "e": 0,
-     "g": 0,
+     "g": 1,
      "gc": 0,
-     "gf": 0,
-     "id": "946",
-     "nombre": "Orcasitas B",
+     "gf": 1,
+     "id": "24319270",
+     "nombre": "Sad Spain Football Academy Fc",
      "nuestro": false,
      "p": 0,
-     "pj": 0,
+     "pj": 1,
      "pos": 1,
-     "pts": 0
+     "pts": 3
     },
     {
      "dg": 0,
@@ -2154,8 +2154,8 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "15273163",
-     "nombre": "Rocio Leganes B",
+     "id": "946",
+     "nombre": "Orcasitas B",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -2168,8 +2168,8 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "13626589",
-     "nombre": "Villaverde Bajo B",
+     "id": "15273163",
+     "nombre": "Rocio Leganes B",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -2336,8 +2336,8 @@
      "g": 0,
      "gc": 0,
      "gf": 0,
-     "id": "24319270",
-     "nombre": "Sad Spain Football Academy Fc",
+     "id": "21429671",
+     "nombre": "Sad Villaverde Boetticher",
      "nuestro": false,
      "p": 0,
      "pj": 0,
@@ -2345,16 +2345,16 @@
      "pts": 0
     },
     {
-     "dg": 0,
+     "dg": -1,
      "e": 0,
      "g": 0,
-     "gc": 0,
+     "gc": 1,
      "gf": 0,
-     "id": "21429671",
-     "nombre": "Sad Villaverde Boetticher",
+     "id": "13626589",
+     "nombre": "Villaverde Bajo B",
      "nuestro": false,
-     "p": 0,
-     "pj": 0,
+     "p": 1,
+     "pj": 1,
      "pos": 16,
      "pts": 0
     }
@@ -5801,7 +5801,10 @@
     "2733",
     "C.D.E. LOS ROSALES DE VILLAVERDE"
    ],
-   "pos": null,
+   "pos": [
+    11,
+    7
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
    "visitante": [
@@ -6375,7 +6378,10 @@
     2,
     14
    ],
-   "resultado": null,
+   "resultado": [
+    2,
+    1
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
     "15292622",
