@@ -2897,7 +2897,7 @@
   },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
    "fecha": "2026-09-26",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:30",
@@ -3539,7 +3539,7 @@
   },
   "5594877": {
    "acta": "https://www.elbalondemadrid.es/acta/5594877?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-03",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "09:00",
@@ -4574,7 +4574,7 @@
   },
   "5606356": {
    "acta": "https://www.elbalondemadrid.es/acta/5606356?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-03",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "11:00",
@@ -5172,7 +5172,7 @@
   },
   "5614520": {
    "acta": "https://www.elbalondemadrid.es/acta/5614520?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PARLA - ALFREDO DI STEFANO MARIANO ARRIBAS (HA)AVDA. DE AMÉRICA S/N · Parla",
+   "campo": "PARLA - ALFREDO DI STEFANO MARIANO ARRIBAS (HA)",
    "fecha": "2026-09-27",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "13:00",
@@ -5824,7 +5824,7 @@
   },
   "5628228": {
    "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-09-27",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:00",
@@ -6400,7 +6400,7 @@
   },
   "5642638": {
    "acta": "https://www.elbalondemadrid.es/acta/5642638?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "campo": "PUERTO RICO (HA)",
    "fecha": "2026-09-26",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "16:00",
@@ -6982,7 +6982,7 @@
   },
   "5646022": {
    "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
    "fecha": "2026-09-27",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "19:00",
@@ -7596,7 +7596,7 @@
   },
   "5659178": {
    "acta": "https://www.elbalondemadrid.es/acta/5659178?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "fecha": "2026-10-10",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
@@ -8090,7 +8090,7 @@
   },
   "5663194": {
    "acta": "https://www.elbalondemadrid.es/acta/5663194?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-10",
    "grupo": "Segunda Infantil Grupo 34",
    "hora": null,
@@ -8831,7 +8831,7 @@
   },
   "5695038": {
    "acta": "https://www.elbalondemadrid.es/acta/5695038?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "fecha": "2026-10-17",
    "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
    "hora": "12:00",
