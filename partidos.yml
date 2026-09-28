@@ -30,7 +30,21 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependencias
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 "playwright==1.55.0"
+
+      # El navegador solo hace falta cuando algún partido ya jugado no tiene resultado y el
+      # acta todavía no lo da (ver completar_pendientes_con_navegador en el script). Se deja
+      # en caché para no volver a descargar Chromium (~100 MB) en cada ejecución.
+      - name: Caché del navegador de Playwright
+        id: cache-playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-1.55.0-${{ runner.os }}
+
+      - name: Instalar Chromium para Playwright
+        if: steps.cache-playwright.outputs.cache-hit != 'true'
+        run: python -m playwright install --with-deps chromium
 
       - name: Generar partidos
         run: python partidos_whatsapp.py --json partidos.json --estado estado.json

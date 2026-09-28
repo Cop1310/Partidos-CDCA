@@ -302,12 +302,14 @@ def parsear_jornada(soup):
 
 
 def datos_de_acta(soup):
-    """(marcador, hora) de un acta. El marcador solo se da si el acta ya tiene alineaciones."""
+    """(marcador, hora) de un acta. El marcador se da en cuanto la web deja de marcar el
+    partido como "POR JUGAR", aunque el acta todavía no tenga las alineaciones completas: el
+    árbitro puede tardar más en firmar el acta entera que en quedar reflejado el resultado."""
     normalizar(soup)
     textos = [t.strip() for t in soup.find_all(string=True)
               if t.parent is not None and t.parent.name not in ("script", "style")]
     marcador = None
-    if "Titulares" in textos:
+    if not any(t and "POR JUGAR" in t.upper() for t in textos):
         for t in textos:
             m = RESULTADO.match(t)
             if m:
@@ -541,6 +543,94 @@ def completar_con_actas(estado, errores):
             e["resultado"] = list(marcador)
         if hora and not e.get("hora"):
             e["hora"] = hora
+
+
+def completar_pendientes_con_navegador(estado, errores):
+    """Último recurso para partidos que ya deberían tener resultado según su hora, pero el
+    acta todavía no lo da: la web puede marcar el partido como acabado y dar el marcador en
+    la propia jornada bastante antes de que el árbitro firme el acta completa (con las
+    alineaciones). Se abre un navegador automático, se hace clic en la jornada exacta de cada
+    partido pendiente -tal y como haría una persona- y se lee el resultado de ahí. Solo se usa
+    cuando de verdad hace falta (partidos realmente pendientes), para no abrir el navegador sin
+    necesidad; si Playwright no está instalado, se avisa y se sigue sin él."""
+    t = ahora()
+    pendientes_por_grupo = {}
+    for e in estado.values():
+        if e.get("resultado") or not e.get("jornada") or not e.get("url_grupo"):
+            continue
+        if not _ya_toca_mirar_acta(e, t):
+            continue
+        pendientes_por_grupo.setdefault(e["url_grupo"], set()).add(e["jornada"])
+    if not pendientes_por_grupo:
+        return
+
+    try:
+        nav = NavegadorPlaywright()
+    except Exception as ex:
+        print(f"Aviso: no se ha podido abrir el navegador para completar resultados "
+              f"pendientes: {ex}", file=sys.stderr)
+        return
+    try:
+        for url, jornadas in pendientes_por_grupo.items():
+            titulo = next((e["grupo"] for e in estado.values() if e.get("url_grupo") == url), url)
+            try:
+                nav.abrir(url)
+                inicial = None
+                for _ in range(60):
+                    inicial = BeautifulSoup(nav.html(), "html.parser")
+                    if cabecera(inicial)[0]:
+                        break
+                    nav.pausa(0.5)
+                if not cabecera(inicial)[0]:
+                    print(f"Aviso: navegador (pendientes): {titulo}: la página no llegó a "
+                          f"mostrar ninguna jornada.", file=sys.stderr)
+                    continue
+            except Exception as ex:
+                errores.append(titulo)
+                print(f"Aviso: navegador (pendientes): no se pudo abrir {titulo}: {ex}", file=sys.stderr)
+                continue
+            firma_previa = _firma(inicial)
+            encontrados = 0
+            for j in sorted(jornadas):
+                try:
+                    if not nav.ir_a(j):
+                        continue
+                    pagina_j = _esperar_jornada(nav, j, firma_previa)
+                except Exception as ex:
+                    print(f"Aviso: navegador (pendientes): {titulo}, jornada {j}: {ex}", file=sys.stderr)
+                    continue
+                if pagina_j is None:
+                    continue
+                firma_previa = _firma(pagina_j)
+                _, fecha_j = cabecera(pagina_j)
+                for p in parsear_jornada(pagina_j):
+                    p = _con_fecha(p, fecha_j)
+                    if not p.get("resultado"):
+                        continue
+                    # Se busca la entrada pendiente que YA existía (por grupo + jornada +
+                    # equipos) y se actualiza esa misma, en vez de dejar que actualizar_estado()
+                    # calcule su propia clave: si esta vez la página trae un dato que la primera
+                    # vez no tenía (p. ej. el enlace al acta), la clave saldría distinta y se
+                    # crearía un duplicado en lugar de completar el partido pendiente.
+                    ids_partido = {p["equipos"][0][0], p["equipos"][1][0]}
+                    objetivo = next((e for e in estado.values()
+                                     if e.get("url_grupo") == url and e.get("jornada") == j
+                                     and {e["local"][0], e["visitante"][0]} == ids_partido), None)
+                    if objetivo is None:
+                        continue
+                    objetivo["resultado"] = list(p["resultado"])
+                    if p.get("hora") and not objetivo.get("hora"):
+                        objetivo["hora"] = p["hora"]
+                    if p.get("campo") and not objetivo.get("campo"):
+                        objetivo["campo"] = p["campo"]
+                    if p.get("acta") and not objetivo.get("acta"):
+                        objetivo["acta"] = p["acta"]
+                    encontrados += 1
+            if encontrados:
+                print(f"Navegador (pendientes): {titulo}: {encontrados} resultado(s) recogidos "
+                      f"que el acta todavía no daba.", file=sys.stderr)
+    finally:
+        nav.cerrar()
 
 
 # ---------------------------------------------------------------------------
@@ -1085,6 +1175,9 @@ def main():
                     help="fichero con partidos escritos a mano (opcional)")
     ap.add_argument("--navegador", action="store_true",
                     help="recorrer todas las jornadas con un navegador automático (necesita Playwright)")
+    ap.add_argument("--sin-navegador-pendientes", action="store_true",
+                    help="no usar el navegador automático para completar resultados que el acta "
+                         "todavía no da (por si Playwright no está disponible)")
     args = ap.parse_args()
 
     sab_prox = sabado_proximo(args.sabado)
@@ -1176,6 +1269,8 @@ def main():
     aplicar_manuales(estado, args.manuales,
                      {t: (u, grupos[u][1]) for u, t in vistos if u in grupos})
     completar_con_actas(estado, errores)
+    if not args.sin_navegador_pendientes:
+        completar_pendientes_con_navegador(estado, errores)
 
     # se guarda el histórico de la temporada en curso (lo de temporadas anteriores se descarta)
     limite = inicio_temporada().isoformat()
