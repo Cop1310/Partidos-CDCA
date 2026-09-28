@@ -539,10 +539,9 @@
     elAviso.innerHTML = avisos.join("");
 
     if (datos.generado) {
-      var p = datos.generado.split(" ");
-      var d = p[0].split("-");
-      elPie.textContent = "Actualizado el " + d[2] + "/" + d[1] + "/" + d[0] + " a las " + p[1] +
-        ". Datos de elbalondemadrid.es (RFFM), no oficiales: antes de desplazarte, revisa el acta del partido.";
+      elPie.textContent = "Actualizado el " + formatoGenerado(datos.generado) +
+        ". Datos de elbalondemadrid.es (RFFM), no oficiales" +
+        (activa === "partidos" ? ": antes de desplazarte, revisa el acta del partido." : ".");
     }
   }
 
@@ -593,9 +592,26 @@
     navigator.serviceWorker.register("sw.js").catch(function () {});
   }
 
+  var elToast = document.getElementById("toast");
+  var toastTimer = null;
+
+  function formatoGenerado(generado) {
+    var p = generado.split(" ");
+    var d = p[0].split("-");
+    return d[2] + "/" + d[1] + "/" + d[0] + " a las " + p[1];
+  }
+
+  function mostrarToast(texto) {
+    elToast.textContent = texto;
+    elToast.classList.add("visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { elToast.classList.remove("visible"); }, 4000);
+  }
+
   function cargarDatos(esPrimeraVez) {
     btnActualizar.classList.add("cargando");
     btnActualizar.disabled = true;
+    var generadoAntes = datos && datos.generado;
     return fetch("partidos.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
@@ -608,10 +624,17 @@
           if ((dia === 0 || dia === 1 || dia === 2) && (d.resultados || "").trim()) activa = "resultados";
         }
         pintar();
+        if (!esPrimeraVez) {
+          mostrarToast(generadoAntes && generadoAntes === d.generado
+            ? "Ya tenías la última versión (actualizado el " + formatoGenerado(d.generado) + ")"
+            : "Actualizado ahora mismo");
+        }
       })
       .catch(function () {
         if (!datos) {
           elMensaje.innerHTML = '<p class="estado">No se han podido cargar los partidos. Comprueba que la acción "Actualizar partidos" de GitHub se ha ejecutado al menos una vez.</p>';
+        } else {
+          mostrarToast("No se ha podido comprobar: revisa tu conexión.");
         }
       })
       .then(function () {
