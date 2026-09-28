@@ -179,6 +179,11 @@
   button:focus-visible, a.boton:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
   .desactivado { opacity: 0.4; pointer-events: none; }
   .fila-cuando { display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .toast {
+    margin: 8px 0 0; font-size: 0.85rem; color: var(--suave); text-align: center;
+    opacity: 0; transition: opacity 0.25s ease;
+  }
+  .toast.visible { opacity: 1; }
   #actualizar {
     flex: none; width: 36px; height: 36px; min-height: 0; padding: 0;
     border-radius: 50%; background: var(--papel); color: var(--tinta);
@@ -200,6 +205,7 @@
       <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
       <button type="button" id="actualizar" aria-label="Actualizar partidos" title="Actualizar">⟳</button>
     </div>
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
   </header>
 
   <div class="pestanas" role="tablist">
