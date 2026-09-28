@@ -2897,7 +2897,7 @@
   },
   "5583091": {
    "acta": "https://www.elbalondemadrid.es/acta/5583091?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
    "fecha": "2026-09-26",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:30",
@@ -2923,9 +2923,9 @@
   "5583100": {
    "acta": "https://www.elbalondemadrid.es/acta/5583100?temporada=22&competicion=26737718&grupo=26737723",
    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
-   "fecha": "2026-10-04",
+   "fecha": "2026-10-03",
    "grupo": "Preferente Juvenil Grupo 5",
-   "hora": null,
+   "hora": "19:00",
    "jornada": 4,
    "local": [
     "6815292",
@@ -2937,6 +2937,25 @@
    "visitante": [
     "1495",
     "A.D. ESCUELA DE FUTBOL DE CARABANCHEL 'B'"
+   ]
+  },
+  "5583108": {
+   "acta": "https://www.elbalondemadrid.es/acta/5583108?temporada=22&competicion=26737718&grupo=26737723",
+   "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)CALLE TURÍN 12 · Torrejón De Ardoz",
+   "fecha": "2026-10-11",
+   "grupo": "Preferente Juvenil Grupo 5",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "8972472",
+    "A.D. TORREJON C.F. 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "visitante": [
+    "6815292",
+    "C.D. CIUDAD LOS ANGELES 'A'"
    ]
   },
   "5583117": {
@@ -3074,7 +3093,7 @@
   },
   "5583176": {
    "acta": "https://www.elbalondemadrid.es/acta/5583176?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "COLEGIO TAJAMAR (HA)CALLE DE PÍO FELIPE 12 · Madrid",
+   "campo": "COLEGIO TAJAMAR (HA)",
    "fecha": "2026-12-13",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": null,
@@ -3495,7 +3514,7 @@
   },
   "5594869": {
    "acta": "https://www.elbalondemadrid.es/acta/5594869?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "11:45",
@@ -3520,7 +3539,7 @@
   },
   "5594877": {
    "acta": "https://www.elbalondemadrid.es/acta/5594877?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-03",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "09:00",
@@ -3542,7 +3561,7 @@
   },
   "5594884": {
    "acta": "https://www.elbalondemadrid.es/acta/5594884?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "NUEVO BAZTÁN (HA)",
+   "campo": "NUEVO BAZTÁN (HA)CALLE FÁBRICA 3 · Nuevo Baztán",
    "fecha": "2026-10-10",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": null,
@@ -3561,7 +3580,7 @@
   },
   "5594892": {
    "acta": "https://www.elbalondemadrid.es/acta/5594892?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-17",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": null,
@@ -3580,7 +3599,7 @@
   },
   "5594899": {
    "acta": "https://www.elbalondemadrid.es/acta/5594899?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "MUNICIPAL SAN BLAS 1 (HA)",
+   "campo": "MUNICIPAL SAN BLAS 1 (HA)AVDA. DE GUADALAJARA 16 · Madrid",
    "fecha": "2026-10-24",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": null,
@@ -3599,7 +3618,7 @@
   },
   "5594907": {
    "acta": "https://www.elbalondemadrid.es/acta/5594907?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-31",
    "grupo": "Preferente Cadete Grupo 5",
    "hora": null,
@@ -4340,7 +4359,7 @@
   },
   "5599761": {
    "acta": "https://www.elbalondemadrid.es/acta/5599761?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIACALLE DE FUENTIDUEÑA 6 · Madrid",
+   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIA",
    "fecha": "2027-02-27",
    "grupo": "Preferente Alevín F-7 Grupo 6",
    "hora": null,
@@ -4530,7 +4549,7 @@
   },
   "5606348": {
    "acta": "https://www.elbalondemadrid.es/acta/5606348?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "15:30",
@@ -4555,7 +4574,7 @@
   },
   "5606356": {
    "acta": "https://www.elbalondemadrid.es/acta/5606356?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-03",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "11:00",
@@ -4577,7 +4596,7 @@
   },
   "5606363": {
    "acta": "https://www.elbalondemadrid.es/acta/5606363?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
    "fecha": "2026-10-10",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": null,
@@ -4596,7 +4615,7 @@
   },
   "5606371": {
    "acta": "https://www.elbalondemadrid.es/acta/5606371?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-17",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": null,
@@ -4615,7 +4634,7 @@
   },
   "5606378": {
    "acta": "https://www.elbalondemadrid.es/acta/5606378?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "LA UNION - VALLECAS VILLA (HA)",
+   "campo": "LA UNION - VALLECAS VILLA (HA)CALLE DE ENRIQUE GARCÍA ÁLVAREZ 65 · Madrid",
    "fecha": "2026-10-24",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "13:30",
@@ -4634,7 +4653,7 @@
   },
   "5606386": {
    "acta": "https://www.elbalondemadrid.es/acta/5606386?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-31",
    "grupo": "Preferente Infantil Grupo 5",
    "hora": null,
@@ -5153,7 +5172,7 @@
   },
   "5614520": {
    "acta": "https://www.elbalondemadrid.es/acta/5614520?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PARLA - ALFREDO DI STEFANO MARIANO ARRIBAS (HA)",
+   "campo": "PARLA - ALFREDO DI STEFANO MARIANO ARRIBAS (HA)AVDA. DE AMÉRICA S/N · Parla",
    "fecha": "2026-09-27",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "13:00",
@@ -5181,7 +5200,7 @@
    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Primera Juvenil Grupo 11",
-   "hora": null,
+   "hora": "09:00",
    "jornada": 4,
    "local": [
     "15328636",
@@ -5805,7 +5824,7 @@
   },
   "5628228": {
    "acta": "https://www.elbalondemadrid.es/acta/5628228?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-09-27",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:00",
@@ -5833,7 +5852,7 @@
    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Segunda Aficionado Grupo 20",
-   "hora": null,
+   "hora": "13:30",
    "jornada": 2,
    "local": [
     "6818931",
@@ -6343,7 +6362,7 @@
   },
   "5628446": {
    "acta": "https://www.elbalondemadrid.es/acta/5628446?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "MUNICIPAL LA CHIMENEA (HA)",
+   "campo": "MUNICIPAL LA CHIMENEA (HA)CALLE DE HERMENEGILDO BIELSA S/N · Madrid",
    "fecha": "2027-05-16",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -6381,7 +6400,7 @@
   },
   "5642638": {
    "acta": "https://www.elbalondemadrid.es/acta/5642638?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PUERTO RICO (HA)",
+   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
    "fecha": "2026-09-26",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "16:00",
@@ -6407,9 +6426,9 @@
   "5642646": {
    "acta": "https://www.elbalondemadrid.es/acta/5642646?temporada=22&competicion=26738323&grupo=27131269",
    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
-   "fecha": "2026-10-04",
+   "fecha": "2026-10-03",
    "grupo": "Segunda Juvenil Grupo 13",
-   "hora": null,
+   "hora": "17:00",
    "jornada": 2,
    "local": [
     "15292622",
@@ -6881,7 +6900,7 @@
   },
   "5642856": {
    "acta": "https://www.elbalondemadrid.es/acta/5642856?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "MUNICIPAL LA CHIMENEA (HA)",
+   "campo": "MUNICIPAL LA CHIMENEA (HA)CALLE DE HERMENEGILDO BIELSA S/N · Madrid",
    "fecha": "2027-05-16",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": null,
@@ -6963,7 +6982,7 @@
   },
   "5646022": {
    "acta": "https://www.elbalondemadrid.es/acta/5646022?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA)",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
    "fecha": "2026-09-27",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "19:00",
@@ -6991,7 +7010,7 @@
    "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-04",
    "grupo": "Preferente Aficionado Grupo 3",
-   "hora": null,
+   "hora": "11:30",
    "jornada": 4,
    "local": [
     "2856",
@@ -7577,7 +7596,7 @@
   },
   "5659178": {
    "acta": "https://www.elbalondemadrid.es/acta/5659178?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
    "fecha": "2026-10-10",
    "grupo": "Segunda Cadete Grupo 27",
    "hora": null,
@@ -8071,7 +8090,7 @@
   },
   "5663194": {
    "acta": "https://www.elbalondemadrid.es/acta/5663194?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
    "fecha": "2026-10-10",
    "grupo": "Segunda Infantil Grupo 34",
    "hora": null,
@@ -8620,9 +8639,199 @@
     "C.D. SAN CRISTOBAL DE LOS ANGELES 'D'"
    ]
   },
+  "5680134": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680134?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-10-24",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 2,
+   "local": [
+    "21428585",
+    "A.D. VILLAVERDE BAJO 'D'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
+  "5680140": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680140?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-11-07",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 3,
+   "local": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "23056721",
+    "A.D.C. SAN FERMIN 'D'"
+   ]
+  },
+  "5680147": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680147?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-11-14",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 4,
+   "local": [
+    "15951607",
+    "A.D. ORCASITAS 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
+  "5680153": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680153?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-11-21",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "334110",
+    "A.D.C. SAN FERMIN 'C'"
+   ]
+  },
+  "5680160": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680160?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-11-28",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 6,
+   "local": [
+    "1847",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
+  "5680166": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680166?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-12-12",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 7,
+   "local": [
+    "956",
+    "A.D. ORCASITAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
+  "5680172": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680172?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2026-12-19",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 8,
+   "local": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "-27823862",
+    "Descansa"
+   ]
+  },
+  "5680177": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680177?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2027-01-16",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 9,
+   "local": [
+    "1276",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
+  "5680183": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680183?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2027-01-23",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 10,
+   "local": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "334113",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ]
+  },
+  "5680188": {
+   "acta": "https://www.elbalondemadrid.es/acta/5680188?temporada=22&competicion=26737943&grupo=27601481",
+   "campo": "",
+   "fecha": "2027-01-30",
+   "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "9471615",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
+   "visitante": [
+    "17146707",
+    "C.D. CIUDAD LOS ANGELES"
+   ]
+  },
   "5695038": {
    "acta": "https://www.elbalondemadrid.es/acta/5695038?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
    "fecha": "2026-10-17",
    "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
    "hora": "12:00",
@@ -8639,23 +8848,384 @@
     "C.D. CIUDAD LOS ANGELES 'B'"
    ]
   },
-  "manual|https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas|5": {
-   "acta": null,
-   "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)",
-   "fecha": "2026-10-11",
-   "grupo": "Preferente Juvenil Grupo 5",
-   "hora": null,
-   "jornada": 5,
+  "5695044": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695044?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 2,
    "local": [
-    "manual-A.D. TORREJON C.F. 'D'",
-    "A.D. TORREJON C.F. 'D'"
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
    ],
    "pos": null,
    "resultado": null,
-   "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
    "visitante": [
-    "6815292",
-    "C.D. CIUDAD LOS ANGELES 'A'"
+    "20086393",
+    "A.J.D.C. LA MANCHA 'C'"
+   ]
+  },
+  "5695045": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695045?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-10-24",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "14:00",
+   "jornada": 2,
+   "local": [
+    "15954882",
+    "CDE INTER PROMESAS 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5695049": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695049?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "14:00",
+   "jornada": 3,
+   "local": [
+    "15315875",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5695051": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695051?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-07",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 3,
+   "local": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "24235825",
+    "CDB UNION DEPORTIVA ARGANZUELA 'F'"
+   ]
+  },
+  "5695055": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695055?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-14",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 4,
+   "local": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "24040157",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ]
+  },
+  "5695058": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695058?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-14",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 4,
+   "local": [
+    "8969307",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5695064": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695064?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-21",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 5,
+   "local": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15842097",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ]
+  },
+  "5695066": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695066?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 6,
+   "local": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15842105",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'C'"
+   ]
+  },
+  "5695071": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695071?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-11-28",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 6,
+   "local": [
+    "6964114",
+    "CDE INTER PROMESAS 'A'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5695072": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695072?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 7,
+   "local": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15954882",
+    "CDE INTER PROMESAS 'B'"
+   ]
+  },
+  "5695077": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695077?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-12-12",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 7,
+   "local": [
+    "15842105",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5695079": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695079?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 8,
+   "local": [
+    "24235825",
+    "CDB UNION DEPORTIVA ARGANZUELA 'F'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5695083": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695083?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2026-12-19",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 8,
+   "local": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "20086393",
+    "A.J.D.C. LA MANCHA 'C'"
+   ]
+  },
+  "5695085": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695085?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-01-16",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "13:00",
+   "jornada": 9,
+   "local": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "8969307",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'A'"
+   ]
+  },
+  "5695088": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695088?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-01-16",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 9,
+   "local": [
+    "15315875",
+    "A.D. VILLAVERDE BAJO 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ]
+  },
+  "5695092": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695092?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "14:00",
+   "jornada": 10,
+   "local": [
+    "15842097",
+    "C.D. SAN CRISTOBAL DE LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5695094": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695094?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-01-23",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "12:00",
+   "jornada": 10,
+   "local": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "24040157",
+    "A.D. VILLAVERDE BAJO 'C'"
+   ]
+  },
+  "5695098": {
+   "acta": "https://www.elbalondemadrid.es/acta/5695098?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "fecha": "2027-01-30",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": "14:00",
+   "jornada": 11,
+   "local": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "6964114",
+    "CDE INTER PROMESAS 'A'"
+   ]
+  },
+  "5701866": {
+   "acta": "https://www.elbalondemadrid.es/acta/5701866?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "",
+   "fecha": "2026-11-21",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 5,
+   "local": [
+    "-28153500",
+    "Descansa"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "15328637",
+    "C.D. CIUDAD LOS ANGELES 'B'"
+   ]
+  },
+  "5701869": {
+   "acta": "https://www.elbalondemadrid.es/acta/5701869?temporada=22&competicion=26738071&grupo=26738095",
+   "campo": "",
+   "fecha": "2027-01-30",
+   "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
+   "hora": null,
+   "jornada": 11,
+   "local": [
+    "-28153500",
+    "Descansa"
+   ],
+   "pos": null,
+   "resultado": null,
+   "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
+   "visitante": [
+    "21430134",
+    "C.D. CIUDAD LOS ANGELES 'C'"
    ]
   }
  }
