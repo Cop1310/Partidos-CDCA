@@ -7,8 +7,9 @@ on:
     # programadas justo en el minuto en punto de cada hora, que es cuando más carga
     # tienen sus servidores (lo advierten en su propia documentación).
     - cron: "7 6 * * *"
-    # Sábados y domingos, cada 2 horas (de 11:07 a 23:07 en Madrid) para recoger resultados
-    - cron: "7 9-22/2 * * 6,0"
+    # Sábados y domingos, cada 10 minutos (de 11:03 a 23:53 en Madrid) para recoger resultados
+    # lo antes posible en cuanto la federación los publique
+    - cron: "3/10 9-22 * * 6,0"
   workflow_dispatch:   # permite lanzarlo a mano desde la pestaña Actions
 
 permissions:
