@@ -2773,7 +2773,9 @@
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": 5583063,
    "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": 5614494,
    "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": 5594861,
-   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": 5606340
+   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": 5606340,
+   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": 5628220,
+   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": 5642634
   },
   "hechas": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": [],
@@ -2784,14 +2786,14 @@
   "probado": "2026-09-24",
   "proximas": {
    "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": {
-    "actual": 3,
+    "actual": 4,
     "cursor": null,
-    "fecha": "2026-09-24"
+    "fecha": "2026-09-29"
    },
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
-    "actual": 3,
-    "cursor": null,
-    "fecha": "2026-09-24"
+    "actual": 4,
+    "cursor": 5583116,
+    "fecha": "2026-09-29"
    },
    "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": {
     "actual": 3,
@@ -2829,9 +2831,9 @@
     "fecha": "2026-09-24"
    },
    "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
-    "actual": 1,
+    "actual": 2,
     "cursor": null,
-    "fecha": "2026-09-24"
+    "fecha": "2026-09-29"
    },
    "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
     "actual": 1,
@@ -2849,7 +2851,9 @@
    "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": true,
    "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas": true,
    "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": true,
-   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": true
+   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": true,
+   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": true,
+   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": true
   },
   "version_historico": 3
  },
@@ -2922,7 +2926,7 @@
   },
   "5583100": {
    "acta": "https://www.elbalondemadrid.es/acta/5583100?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-03",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "19:00",
@@ -2931,7 +2935,10 @@
     "6815292",
     "C.D. CIUDAD LOS ANGELES 'A'"
    ],
-   "pos": null,
+   "pos": [
+    2,
+    17
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
@@ -2941,7 +2948,7 @@
   },
   "5583108": {
    "acta": "https://www.elbalondemadrid.es/acta/5583108?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)CALLE TURÍN 12 · Torrejón De Ardoz",
+   "campo": "TORREJÓN DE ARDOZ - EST. MPAL. LAS VEREDILLAS (HA)",
    "fecha": "2026-10-11",
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": null,
@@ -5197,7 +5204,7 @@
   },
   "5614529": {
    "acta": "https://www.elbalondemadrid.es/acta/5614529?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-04",
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "09:00",
@@ -5206,7 +5213,10 @@
     "15328636",
     "C.D. CIUDAD LOS ANGELES 'B'"
    ],
-   "pos": null,
+   "pos": [
+    7,
+    16
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
    "visitante": [
@@ -5849,7 +5859,7 @@
   },
   "5628236": {
    "acta": "https://www.elbalondemadrid.es/acta/5628236?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-04",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "13:30",
@@ -5858,7 +5868,10 @@
     "6818931",
     "C.D. CIUDAD LOS ANGELES 'B'"
    ],
-   "pos": null,
+   "pos": [
+    7,
+    14
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
    "visitante": [
@@ -5868,7 +5881,7 @@
   },
   "5628243": {
    "acta": "https://www.elbalondemadrid.es/acta/5628243?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "campo": "LA PERLA (HA)",
    "fecha": "2026-10-11",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -5887,7 +5900,7 @@
   },
   "5628251": {
    "acta": "https://www.elbalondemadrid.es/acta/5628251?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-18",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -5906,7 +5919,7 @@
   },
   "5628258": {
    "acta": "https://www.elbalondemadrid.es/acta/5628258?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)",
    "fecha": "2026-10-25",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -5925,7 +5938,7 @@
   },
   "5628266": {
    "acta": "https://www.elbalondemadrid.es/acta/5628266?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-11-01",
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": null,
@@ -6425,7 +6438,7 @@
   },
   "5642646": {
    "acta": "https://www.elbalondemadrid.es/acta/5642646?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-03",
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "17:00",
@@ -6434,7 +6447,10 @@
     "15292622",
     "C.D. CIUDAD LOS ANGELES 'C'"
    ],
-   "pos": null,
+   "pos": [
+    11,
+    2
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
@@ -7007,7 +7023,7 @@
   },
   "5646031": {
    "acta": "https://www.elbalondemadrid.es/acta/5646031?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-04",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:30",
@@ -7016,7 +7032,10 @@
     "2856",
     "C.D. CIUDAD LOS ANGELES 'A'"
    ],
-   "pos": null,
+   "pos": [
+    15,
+    14
+   ],
    "resultado": null,
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
@@ -7026,7 +7045,7 @@
   },
   "5646039": {
    "acta": "https://www.elbalondemadrid.es/acta/5646039?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
    "fecha": "2026-10-11",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -7045,7 +7064,7 @@
   },
   "5646048": {
    "acta": "https://www.elbalondemadrid.es/acta/5646048?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-10-18",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -7064,7 +7083,7 @@
   },
   "5646056": {
    "acta": "https://www.elbalondemadrid.es/acta/5646056?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "CASARRUBUELOS (HA)CAMINO A TORREJÓN DE VELASCO 14 · Casarrubuelos",
+   "campo": "CASARRUBUELOS (HA)",
    "fecha": "2026-10-25",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -7083,7 +7102,7 @@
   },
   "5646065": {
    "acta": "https://www.elbalondemadrid.es/acta/5646065?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "fecha": "2026-11-01",
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": null,
@@ -8622,10 +8641,10 @@
   },
   "5680127": {
    "acta": "https://www.elbalondemadrid.es/acta/5680127?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "",
+   "campo": "SAN CRISTOBAL (HA)",
    "fecha": "2026-10-17",
    "grupo": "Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL",
-   "hora": null,
+   "hora": "09:00",
    "jornada": 1,
    "local": [
     "17146707",
