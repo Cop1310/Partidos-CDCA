@@ -719,8 +719,13 @@ def completar_con_actas(estado, errores):
         sin_goles = bool(e.get("resultado")) and not e.get("goles") and dias <= 10 and _ya_toca_mirar_acta(e, t)
         # el escudo va en la cabecera del marcador de cualquier acta, se haya jugado ya el
         # partido o no ("POR JUGAR"), así que no hace falta esperar a que toque mirarla como
-        # con el marcador/goles: así ya sale en la pestaña "Partidos", antes de jugarse.
-        sin_escudo = not e.get("escudo_local") and not e.get("escudo_visitante") and dias <= 10
+        # con el marcador/goles: así ya sale en la pestaña "Partidos", antes de jugarse. Y, a
+        # diferencia del marcador o los goles, el escudo no caduca con el tiempo (el equipo es
+        # el mismo se mire cuando se mire la acta), así que tampoco tiene sentido limitarlo a
+        # partidos de los últimos 10 días: si se hiciera, cualquier partido que ya llevara más
+        # de 10 días en estado.json antes de que este código se desplegara (como ha pasado con
+        # el CDCA, que arrastraba partidos desde el 12/09) se quedaría sin escudo para siempre.
+        sin_escudo = not e.get("escudo_local") and not e.get("escudo_visitante")
         if sin_marcador or sin_hora or sin_goles or sin_escudo:
             pendientes.append(e)
     for e in pendientes[:25]:
