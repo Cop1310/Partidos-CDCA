@@ -20,6 +20,7 @@ Resultado: se imprime por pantalla y se guarda en partidos_whatsapp.txt
 (con --json también se guarda en JSON para la página web de GitHub Pages)
 """
 import argparse
+import copy
 import json
 import re
 import sys
@@ -118,6 +119,7 @@ def limpiar_equipo(nombre):
     tokens = [t for t in n.split() if t.upper() not in QUITAR_PREFIJOS]
     base = " ".join(tokens).upper()
     base = NOMBRES_EQUIPO.get(base) or capitalizar(base)
+    base = base.replace(" - ", "-")  # los patrocinadores llevan " - " y se confundirían con el guion entre equipos
     # espacio irrompible: que la letra final (A/B/C) no salte de línea suelta
     return f"{base} {letra}" if letra else base
 
@@ -301,6 +303,180 @@ def parsear_jornada(soup):
     return partidos
 
 
+# ---------------------------------------------------------------------------
+# Goleadores y tarjetas de un acta ya jugada.
+#
+# Esto ya NO se basa en adivinar patrones de texto: se ha inspeccionado el HTML real que
+# guarda el navegador de una acta ya jugada (partido Club Arganda Futsal A 4-5 Futsala
+# Villaverde A, Juvenil J2, comprobado a mano por César el 28/09/2026) y la estructura es
+# siempre esta:
+#
+#   - El nombre de cada equipo (enlace <a href="/equipo/ID">) NO se repite junto a cada gol
+#     o tarjeta: en toda la página solo aparece 2 veces, en la cabecera del marcador (el
+#     primer enlace es el equipo LOCAL, el segundo el VISITANTE).
+#   - Las secciones "Goles" y "Tarjetas" son, cada una, un <h2> seguido de un <div> de DOS
+#     columnas (una rejilla de 2 columnas): la primera es la del equipo local y la segunda
+#     la del visitante (mismo orden que la cabecera). Cada columna es un <ul> con un <li>
+#     por gol/tarjeta, o un simple "—" cuando ese equipo no tiene ninguno en esa sección.
+#   - Cada <li> de gol trae el minuto y, en un enlace, el nombre del jugador.
+#   - Cada <li> de tarjeta trae el minuto, uno o dos iconos (con aria-label indicando si es
+#     amarilla, roja o "segunda amarilla y expulsión") y el nombre del jugador.
+#
+# El método anterior (ir guardando el último nombre de equipo visto en el texto, según se
+# iba leyendo la página de arriba a abajo) es el que causaba que TODOS los goles y tarjetas
+# del partido salieran atribuidos a un único equipo: como el nombre de equipo solo aparece
+# una vez cada uno y muy lejos (al principio de la página) de las listas de goles/tarjetas,
+# ese "último equipo visto" se quedaba fijo en el segundo (visitante) durante toda la
+# lectura. Ahora se usa directamente la columna a la que pertenece cada <li>, así que no
+# hace falta adivinar nada.
+#
+# IMPORTANTE: `normalizar()` (más abajo) deshace los <span> de toda la página para poder
+# leerla como texto plano, y eso destruye justo la estructura que se necesita aquí (los
+# <span> del minuto y de los iconos de tarjeta). Por eso esta función NO debe recibir un
+# soup que ya haya pasado por `normalizar()` (por ejemplo, el que ya haya usado
+# `datos_de_acta`): quien la llame debe pasarle una copia del soup tal cual se descargó.
+# ---------------------------------------------------------------------------
+_RE_PENALTI = re.compile(r"penalt", re.IGNORECASE)
+# gol en propia puerta: el acta lo apunta bajo el jugador que lo marca (columna de SU equipo),
+# pero el gol cuenta para el equipo CONTRARIO -si no se tiene esto en cuenta, el marcador que
+# sale de sumar los goles de cada columna no cuadra con el resultado real del partido.
+_RE_PROPIA = re.compile(r"en\s+propia", re.IGNORECASE)
+# una tarjeta cuenta como "roja" tanto si es roja directa como si es una segunda amarilla con
+# expulsión (el icono de "segunda amarilla y expulsión" incluye un cuadro rojo y la palabra
+# "expulsión" en su título, aunque el texto visible del jugador solo diga "amarilla").
+_RE_TARJETA_ROJA = re.compile(r"roja|expulsi[oó]n", re.IGNORECASE)
+
+
+def _texto_o_vacio(nodo):
+    return nodo.get_text(" ", strip=True) if nodo is not None else ""
+
+
+def _columnas_de_seccion(soup, titulo):
+    """Busca la sección <h2>titulo</h2> (Goles o Tarjetas) y devuelve (columna_local,
+    columna_visitante), cada una la lista de <li> de esa columna. Si la página no tiene la
+    forma esperada (dos columnas justo después del título), devuelve ([], []) para no
+    arriesgarse a leer mal los datos."""
+    h2 = soup.find("h2", string=lambda s: bool(s) and s.strip().lower() == titulo)
+    if h2 is None:
+        return [], []
+    contenedor = h2.find_next_sibling()
+    if contenedor is None:
+        return [], []
+    columnas = contenedor.find_all(recursive=False)
+    if len(columnas) != 2:
+        return [], []
+
+    def items(col):
+        return col.find_all("li", recursive=False) if col.name == "ul" else []
+
+    return items(columnas[0]), items(columnas[1])
+
+
+def goles_y_tarjetas_de_acta(soup, marcador=None):
+    """(goles, tarjetas) de un acta ya jugada. Cada gol: {minuto, jugador, equipo,
+    penalti, propia}; cada tarjeta: {minuto, jugador, equipo, tipo}. `equipo` es el
+    nombre de equipo tal como aparece en el acta (sin limpiar todavía) AL QUE SE LE
+    CUENTA el gol -en uno en propia puerta, es el contrario del equipo de `jugador`,
+    para que sumar los goles por equipo cuadre con el resultado real.
+
+    `soup` debe ser una copia del acta SIN pasar por `normalizar()` (ver aviso arriba)."""
+    nombres_equipo, vistos = [], set()
+    for a in soup.find_all("a", href=re.compile(r"/equipo/\d+")):
+        nombre = a.get_text(" ", strip=True)
+        if nombre and nombre not in vistos:
+            vistos.add(nombre)
+            nombres_equipo.append(nombre)
+    if len(nombres_equipo) < 2:
+        return [], []
+    equipo_local, equipo_visitante = nombres_equipo[0], nombres_equipo[1]
+
+    goles, tarjetas = [], []
+
+    col_local, col_visitante = _columnas_de_seccion(soup, "goles")
+    for equipo_col, equipo_rival, columna in (
+            (equipo_local, equipo_visitante, col_local),
+            (equipo_visitante, equipo_local, col_visitante)):
+        for li in columna:
+            m = re.search(r"\d+", _texto_o_vacio(li.find("span")))
+            a = li.find("a")
+            jugador = _texto_o_vacio(a)
+            if not m or not jugador:
+                continue
+            texto_li = _texto_o_vacio(li)
+            propia = bool(_RE_PROPIA.search(texto_li))
+            goles.append({"minuto": int(m.group()), "jugador": jugador,
+                          "equipo": equipo_rival if propia else equipo_col,
+                          "penalti": bool(_RE_PENALTI.search(texto_li)), "propia": propia})
+
+    col_local, col_visitante = _columnas_de_seccion(soup, "tarjetas")
+    for equipo, columna in ((equipo_local, col_local), (equipo_visitante, col_visitante)):
+        for li in columna:
+            m = re.search(r"\d+", _texto_o_vacio(li.find("span")))
+            a = li.find("a")
+            jugador = _texto_o_vacio(a)
+            if not m or not jugador:
+                continue
+            # el icono de "segunda amarilla y expulsión" pinta un cuadro amarillo y otro rojo,
+            # pero el rojo va sin aria-label (aria-hidden="true"); por eso se mira también la
+            # clase CSS (bg-tarjeta-roja) y el título ("expulsión"), no solo el aria-label.
+            pistas = []
+            for s in li.find_all("span"):
+                if s.get("title"):
+                    pistas.append(s.get("title"))
+                if s.get("aria-label"):
+                    pistas.append(s.get("aria-label"))
+                pistas.append(" ".join(s.get("class", [])))
+            tipo = "roja" if _RE_TARJETA_ROJA.search(" ".join(pistas)) else "amarilla"
+            tarjetas.append({"minuto": int(m.group()), "jugador": jugador, "equipo": equipo, "tipo": tipo})
+
+    if marcador is not None:
+        esperados = sum(marcador)
+        if esperados and len(goles) != esperados:
+            print(f"Aviso: acta con marcador {marcador[0]}-{marcador[1]} pero se han "
+                  f"reconocido {len(goles)} goles en la web — revisar el patrón de lectura.",
+                  file=sys.stderr)
+    return goles, tarjetas
+
+
+def escudos_de_acta(soup):
+    """(escudo_local, escudo_visitante): URL de la imagen del escudo de cada equipo, tal como
+    viene en la cabecera del marcador del acta: el mismo <a href="/equipo/ID"> que ya se usa
+    para leer el nombre de cada equipo trae también, dentro, su escudo en un <img> -no hace
+    falta ninguna petición extra. Se usa el mismo criterio que en goles_y_tarjetas_de_acta
+    (los dos primeros equipos distintos que aparecen en la página) para que el orden (local,
+    visitante) sea siempre el mismo que el de los goles/tarjetas. Si el acta no trae imagen
+    para alguno de los dos, se deja en None (la web ya cae entonces al círculo genérico)."""
+    urls, vistos = [], set()
+    for a in soup.find_all("a", href=re.compile(r"/equipo/\d+")):
+        nombre = a.get_text(" ", strip=True)
+        if not nombre or nombre in vistos:
+            continue
+        vistos.add(nombre)
+        img = a.find("img")
+        src = (img.get("src") or img.get("data-src")) if img else None
+        urls.append(urllib.parse.urljoin(BASE, src) if src else None)
+        if len(urls) == 2:
+            break
+    while len(urls) < 2:
+        urls.append(None)
+    return urls[0], urls[1]
+
+
+def _lado(nombre_acta, e):
+    """'local' o 'visitante' según a qué equipo del partido corresponde `nombre_acta` (tal
+    como viene escrito en el acta), comparando cuántas palabras tiene en común con el nombre
+    de cada equipo guardado en el estado (los nombres pueden venir escritos de forma algo
+    distinta entre el acta y el calendario)."""
+    def puntos(nombre_partido):
+        a, b = set(_sin_acentos(nombre_acta).split()), set(_sin_acentos(nombre_partido).split())
+        return len(a & b)
+    return "local" if puntos(e["local"][1]) >= puntos(e["visitante"][1]) else "visitante"
+
+
+def _con_lado(eventos, e):
+    return [{**ev, "lado": _lado(ev["equipo"], e)} for ev in eventos]
+
+
 def datos_de_acta(soup):
     """(marcador, hora) de un acta. El marcador se da en cuanto la web deja de marcar el
     partido como "POR JUGAR", aunque el acta todavía no tenga las alineaciones completas: el
@@ -341,6 +517,14 @@ def _entero(texto):
 NUMERO = re.compile(r"^[+\-\u2212]?\d+$")
 
 
+def _escudo_de(enlace):
+    """URL del escudo dentro de un <a href="/equipo/ID"> (fila de la clasificación o del
+    marcador de un acta), o None si esa fila no trae imagen."""
+    img = enlace.find("img")
+    src = (img.get("src") or img.get("data-src")) if img else None
+    return urllib.parse.urljoin(BASE, src) if src else None
+
+
 def _fila_generica(enlace):
     """Lee una fila aunque no sea una <tr>: sube desde el enlace del equipo hasta el
     contenedor más grande que solo tenga ese equipo y lee sus textos en orden."""
@@ -367,7 +551,7 @@ def _fila_generica(enlace):
     ident = re.search(r"/equipo/(\d+)", enlace["href"]).group(1)
     v = [_entero(x) for x in nums[:8]]
     return {"pos": int(textos[0]), "id": ident, "nombre": limpiar_equipo(nombre),
-            "nuestro": _es_nuestro((ident, nombre)),
+            "nuestro": _es_nuestro((ident, nombre)), "escudo": _escudo_de(enlace),
             "pj": v[0], "g": v[1], "e": v[2], "p": v[3], "gf": v[4], "gc": v[5], "dg": v[6], "pts": v[7]}
 
 
@@ -393,6 +577,7 @@ def tabla_de(soup):
         filas.append({
             "pos": int(textos[0]), "id": ident,
             "nombre": limpiar_equipo(bruto), "nuestro": _es_nuestro((ident, bruto)),
+            "escudo": _escudo_de(enlace),
             "pj": _entero(textos[idx + 1]), "g": _entero(textos[idx + 2]),
             "e": _entero(textos[idx + 3]), "p": _entero(textos[idx + 4]),
             "gf": _entero(textos[idx + 5]), "gc": _entero(textos[idx + 6]),
@@ -521,8 +706,8 @@ def _ya_toca_mirar_acta(e, t):
 
 
 def completar_con_actas(estado, errores):
-    """Lee las actas para completar el marcador (partidos ya jugados) y la hora
-    (partidos de los que solo se conoce el marcador)."""
+    """Lee las actas para completar el marcador (partidos ya jugados), la hora (partidos de
+    los que solo se conoce el marcador) y, cuando ya hay marcador, los goleadores y tarjetas."""
     t = ahora()
     pendientes = []
     for e in estado.values():
@@ -531,11 +716,21 @@ def completar_con_actas(estado, errores):
         dias = (t.date() - date.fromisoformat(e["fecha"])).days
         sin_marcador = not e.get("resultado") and dias <= 10 and _ya_toca_mirar_acta(e, t)
         sin_hora = bool(e.get("resultado")) and not e.get("hora") and dias >= 0
-        if sin_marcador or sin_hora:
+        sin_goles = bool(e.get("resultado")) and not e.get("goles") and dias <= 10 and _ya_toca_mirar_acta(e, t)
+        # el escudo va en la cabecera del marcador de cualquier acta, se haya jugado ya el
+        # partido o no ("POR JUGAR"), así que no hace falta esperar a que toque mirarla como
+        # con el marcador/goles: así ya sale en la pestaña "Partidos", antes de jugarse.
+        sin_escudo = not e.get("escudo_local") and not e.get("escudo_visitante") and dias <= 10
+        if sin_marcador or sin_hora or sin_goles or sin_escudo:
             pendientes.append(e)
     for e in pendientes[:25]:
         try:
-            marcador, hora = datos_de_acta(get(e["acta"]))
+            soup = get(e["acta"])
+            # goles_y_tarjetas_de_acta necesita el soup tal cual, sin pasar por normalizar()
+            # (que deshace los <span> del minuto y de los iconos de tarjeta), así que se
+            # guarda una copia intacta ANTES de que datos_de_acta lo normalice.
+            soup_crudo = copy.deepcopy(soup)
+            marcador, hora = datos_de_acta(soup)
         except Exception as ex:
             print(f"Aviso: no se pudo leer un acta: {ex}", file=sys.stderr)
             continue
@@ -543,6 +738,25 @@ def completar_con_actas(estado, errores):
             e["resultado"] = list(marcador)
         if hora and not e.get("hora"):
             e["hora"] = hora
+        if not e.get("escudo_local") and not e.get("escudo_visitante"):
+            try:
+                esc_local, esc_visitante = escudos_de_acta(soup_crudo)
+                if esc_local or esc_visitante:
+                    e["escudo_local"], e["escudo_visitante"] = esc_local, esc_visitante
+            except Exception as ex:
+                print(f"Aviso: no se pudieron leer los escudos de un acta: {ex}", file=sys.stderr)
+        if e.get("resultado") and not e.get("goles"):
+            try:
+                goles, tarjetas = goles_y_tarjetas_de_acta(soup_crudo, tuple(e["resultado"]))
+                # solo se guarda si de verdad se ha encontrado algo: el acta puede tener ya el
+                # marcador pero todavía no la sección de goles/tarjetas (el árbitro puede
+                # rellenar el acta por partes), así que si sale vacío se reintenta en la
+                # siguiente ejecución en vez de darlo por hecho para siempre
+                if goles or tarjetas:
+                    e["goles"] = _con_lado(goles, e)
+                    e["tarjetas"] = _con_lado(tarjetas, e)
+            except Exception as ex:
+                print(f"Aviso: no se pudieron leer goleadores/tarjetas de un acta: {ex}", file=sys.stderr)
 
 
 def completar_pendientes_con_navegador(estado, errores):
@@ -1142,25 +1356,41 @@ def _pendiente(e):
     return not e.get("hora") and not e.get("resultado")
 
 
+def orden_bloques(estado, sabado, con_resultado):
+    """Los partidos de la semana en el MISMO orden en que aparecen sus bloques en el texto que
+    genera componer(): primero los que ya tienen día asignado (orden de seleccion(), por fecha/
+    hora/grupo), luego los pendientes de confirmar día y hora, con su propio orden (por
+    categoría). Se usa tanto para el texto como para el detalle en JSON (escudos, goleadores,
+    tarjetas...), para que el partido nº `i` del texto sea siempre el partido nº `i` del
+    detalle -si cada uno se ordenara por su cuenta, en una semana con partidos pendientes de
+    hora los índices no coincidirían y la web mostraría el escudo o los goles de otro partido."""
+    lista = seleccion(estado, sabado, con_resultado)
+    no_pendientes = [e for e in lista if not _pendiente(e)]
+    pendientes = [e for e in lista if _pendiente(e)]
+    if pendientes:
+        orden = {f"{BASE}/{ruta}/jornadas": i for i, ruta in enumerate(CONOCIDOS)}
+        pendientes = sorted(pendientes, key=lambda e: (orden.get(e["url_grupo"], 99), e.get("jornada") or 0))
+    return no_pendientes + pendientes
+
+
 def componer(estado, sabado, con_resultado):
     lista = seleccion(estado, sabado, con_resultado)
     if not lista:
         return ""
     partes = [] if con_resultado else [AVISO]  # la coletilla no va en los resultados
     dia_actual = None
-    for e in [e for e in lista if not _pendiente(e)]:
+    no_pendientes = [e for e in lista if not _pendiente(e)]
+    pendientes = [e for e in lista if _pendiente(e)]
+    for e in no_pendientes:
         if e["fecha"] != dia_actual:  # el día aparece una sola vez, como titular
             dia_actual = e["fecha"]
             f = date.fromisoformat(dia_actual)
             titular = f"📅 *{DIAS[f.weekday()].upper()} {f:%d/%m/%Y}*"
             partes.append(f"{LINEA}\n{titular}\n{LINEA}")
         partes.append(bloque(e, con_resultado))
-    pendientes = [e for e in lista if _pendiente(e)]
     if pendientes:  # sin sábado ni domingo: aún no hay día y hora asignados
-        orden = {f"{BASE}/{ruta}/jornadas": i for i, ruta in enumerate(CONOCIDOS)}
-        pendientes.sort(key=lambda e: (orden.get(e["url_grupo"], 99), e.get("jornada") or 0))
         partes.append(f"{LINEA}\n📅 *PENDIENTE DE CONFIRMAR DÍA Y HORA*\n{LINEA}")
-        partes.extend(bloque(e, con_resultado) for e in pendientes)
+        partes.extend(bloque(e, con_resultado) for e in orden_bloques(estado, sabado, con_resultado) if _pendiente(e))
     return "\n\n".join(partes)
 
 
@@ -1314,6 +1544,35 @@ def main():
                     {"sabado": sab.isoformat(),
                      "partidos": componer(estado, sab, False),
                      "resultados": componer(estado, sab, True)}
+                    for sab in sorted({sabado_de(date.fromisoformat(e["fecha"])) for e in estado.values()})
+                ],
+                # Goleadores y tarjetas de cada partido ya jugado, en el mismo orden que el
+                # texto de "resultados" de cada semana (así la web puede emparejar cada
+                # partido del texto con sus goles/tarjetas por posición).
+                "detalle_resultados": [
+                    {"sabado": sab.isoformat(),
+                     "partidos": [
+                         {"fecha": e["fecha"], "grupo": e["grupo"], "jornada": e.get("jornada"),
+                          "local": limpiar_equipo(e["local"][1]), "visitante": limpiar_equipo(e["visitante"][1]),
+                          "escudo_local": e.get("escudo_local"), "escudo_visitante": e.get("escudo_visitante"),
+                          "resultado": e.get("resultado"),
+                          "goles": e.get("goles") or [], "tarjetas": e.get("tarjetas") or []}
+                         for e in orden_bloques(estado, sab, True)
+                     ]}
+                    for sab in sorted({sabado_de(date.fromisoformat(e["fecha"])) for e in estado.values()})
+                ],
+                # Lo mismo que "detalle_resultados" pero para los partidos TODAVÍA SIN JUGAR
+                # (pestaña "Partidos"): de momento solo lleva el escudo de cada equipo -el
+                # nombre y la posición en la clasificación ya van dentro del propio texto del
+                # bloque ("*(3º)* Equipo"), así que la web no necesita más que esto de aquí.
+                "detalle_partidos": [
+                    {"sabado": sab.isoformat(),
+                     "partidos": [
+                         {"fecha": e["fecha"], "grupo": e["grupo"], "jornada": e.get("jornada"),
+                          "local": limpiar_equipo(e["local"][1]), "visitante": limpiar_equipo(e["visitante"][1]),
+                          "escudo_local": e.get("escudo_local"), "escudo_visitante": e.get("escudo_visitante")}
+                         for e in orden_bloques(estado, sab, False)
+                     ]}
                     for sab in sorted({sabado_de(date.fromisoformat(e["fecha"])) for e in estado.values()})
                 ],
                 "clasificaciones": [

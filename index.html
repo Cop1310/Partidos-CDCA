@@ -21,6 +21,7 @@
     --verde: #0f7a43;
     --verde-oscuro: #0b6236;
     --suave: #5b5b57;
+    --roja: #b3261e;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
@@ -100,19 +101,44 @@
   .p .eq .fila { display: flex; align-items: baseline; flex-wrap: wrap; }
   .p .vs { font-size: 0.82rem; color: var(--suave); margin: 3px 0; }
   .p .us { background: #f7e9b0; border-radius: 4px; padding: 1px 6px; font-weight: 800; }
+
+  /* Cabecera de resultado: escudo + nombre + marcador grande a la derecha */
+  .marcador { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+  .marcador .fila-mc { display: flex; align-items: center; gap: 10px; }
+  .marcador .escudo-eq {
+    width: 32px; height: 32px; border-radius: 50%; flex: none; overflow: hidden;
+    background: #f2f2ee; border: 1px solid var(--linea);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .marcador .escudo-eq img { width: 100%; height: 100%; object-fit: contain; }
+  .marcador .nombre-mc { flex: 1; min-width: 0; font-size: 1rem; overflow-wrap: anywhere; }
+  .marcador .fila-mc.nuestro .nombre-mc { font-weight: 800; }
+  .marcador .gol-num { font-size: 1.6rem; font-weight: 800; min-width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Goleadores y tarjetas bajo cada resultado */
+  .goles-caja { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--linea); font-size: 0.86rem; }
+  .goles-lado { margin: 3px 0; }
+  .goles-lado b { font-weight: 800; }
+  .gol-linea, .tarjeta-linea { display: block; color: var(--suave); font-weight: 400; }
+  .gol-linea.nuestro, .tarjeta-linea.nuestro { color: var(--tinta); font-weight: 800; }
+  .gol-linea.propia { color: var(--roja); }
+  .tarjeta-icono { display: inline-block; width: 9px; height: 12px; border-radius: 1px; margin-right: 4px; vertical-align: -1px; }
+  .tarjeta-icono.amarilla { background: #f4c430; }
+  .tarjeta-icono.roja { background: var(--roja); }
   .p .pos { font-size: 0.72rem; font-weight: 800; color: var(--suave); margin-right: 4px; }
   .p .sc { display: inline-block; margin: 3px 0; font-size: 1.1rem; font-weight: 800; padding: 2px 10px; border-radius: 4px; white-space: nowrap; }
   .sc.gana { background: #eaf3de; color: #27500a; }
   .sc.empata { background: #faeeda; color: #633806; }
   .sc.pierde { background: #fcebeb; color: #791f1f; }
   .sc.neutro { background: #f1efe8; color: #444441; }
-  .semanas { display: flex; gap: 8px; margin: 0 0 12px; }
+  .semanas { display: flex; gap: 6px; margin: 0 0 12px; }
   .semanas[hidden] { display: none; }
-  .semanas button { flex: none; width: 48px; min-height: 46px; padding: 0; font-size: 1rem; background: var(--papel); color: var(--tinta); }
+  .semanas button { flex: none; width: 38px; min-height: 46px; padding: 0; font-size: 1rem; background: var(--papel); color: var(--tinta); }
   .semanas select option { text-align: center; }
   .semanas button:disabled { opacity: 0.35; cursor: default; }
   .semanas select {
-    flex: 1; min-width: 0; min-height: 46px; font: inherit; font-weight: 700; font-size: 1rem; padding: 0 30px;
+    flex: 1; min-width: 0; min-height: 46px; font: inherit; font-weight: 700;
+    font-size: clamp(0.66rem, 3.6vw, 0.9rem); padding: 0 6px;
     text-align: center; text-align-last: center; -moz-text-align-last: center;
     color: var(--tinta); background: var(--papel); border: 2px solid var(--tinta); border-radius: 4px;
   }
@@ -146,6 +172,12 @@
   table.clas th, table.clas td { padding: 5px 1px; text-align: center; line-height: 1.2; border-bottom: 1px solid var(--linea); background: var(--papel); }
   table.clas th { font-weight: 700; font-size: 0.95em; background: #f6f6f3; color: var(--suave); border-bottom: 1px solid var(--tinta); }
   table.clas th.e, table.clas td.e { text-align: left; padding-left: 6px; overflow-wrap: anywhere; }
+  .escudo-clas {
+    display: inline-flex; align-items: center; justify-content: center; vertical-align: -0.35em;
+    width: 1.5em; height: 1.5em; margin-right: 0.3em; border-radius: 50%; flex: none;
+    background: #f2f2ee; border: 1px solid var(--linea); overflow: hidden;
+  }
+  .escudo-clas img { width: 100%; height: 100%; object-fit: contain; }
   table.clas td.pts { font-weight: 800; }
   table.clas tr.nuestro td { font-weight: 800; background: #f7e9b0; }
   .estado { padding: 18px 16px; margin: 0; }
@@ -202,7 +234,7 @@
     <img class="escudo" src="escudo.png" alt="Escudo del C.D. Ciudad de los Ángeles" width="76" height="108">
     <h1>Partidos del fin de semana</h1>
     <div class="fila-cuando">
-      <p class="cuando" id="cuando">C.D. Ciudad de los Ángeles</p>
+      <p class="cuando" id="cuando">Ciudad de los Ángeles</p>
       <button type="button" id="actualizar" aria-label="Actualizar partidos" title="Actualizar">⟳</button>
     </div>
     <p class="toast" id="toast" role="status" aria-live="polite"></p>
@@ -269,16 +301,6 @@
       .replace(/(^|[\s(])_([^_\n]+)_(?=$|[\s.,;:!?)])/g, "$1<em>$2</em>");
   }
 
-  function fecha(iso) {
-    var p = iso.split("-");
-    return p[2] + "/" + p[1];
-  }
-
-  function rango(desde, hasta) {
-    if (!desde || !hasta) return "C.D. Ciudad de los Ángeles";
-    return "Sábado " + fecha(desde) + " y domingo " + fecha(hasta) + "/" + desde.split("-")[0];
-  }
-
   function semanas() {
     return (datos && datos.semanas) || [];
   }
@@ -294,8 +316,7 @@
   function etiquetaSemana(iso) {
     var dom = sumarDia(iso, 1);
     var a = iso.split("-"), b = dom.split("-");
-    return a[1] === b[1] ? a[2] + "-" + b[2] + "/" + b[1] + "/" + b[0]
-                         : a[2] + "/" + a[1] + " - " + b[2] + "/" + b[1] + "/" + b[0];
+    return "Sábado " + a[2] + "/" + a[1] + " y Domingo " + b[2] + "/" + b[1] + "/" + b[0];
   }
 
   function indiceSemana(iso) {
@@ -369,6 +390,61 @@
     return us ? pos + '<span class="us">' + escapar(us[1]) + "</span>" : pos + escapar(s);
   }
 
+  // Datos extra (escudos y, en Resultados, goleadores/tarjetas) del partido de esta semana
+  // que le corresponde al bloque nº `indice` (mismo orden que el texto: ver detalle_resultados
+  // / detalle_partidos en el backend).
+  function detalleTipo(indice, campo, selKey) {
+    var s = semanas();
+    if (!s.length) return null;
+    var w = s[Math.max(0, Math.min(sel[selKey], s.length - 1))];
+    var det = (datos[campo] || []).filter(function (d) { return d.sabado === w.sabado; })[0];
+    if (!det || !det.partidos || !det.partidos[indice]) return null;
+    return det.partidos[indice];
+  }
+  function detalleDe(indice) { return detalleTipo(indice, "detalle_resultados", "resultados"); }
+  function detallePartidoDe(indice) { return detalleTipo(indice, "detalle_partidos", "partidos"); }
+
+  // Sin una plantilla propia que consultar (de momento no se lleva en esta app), el único
+  // dato disponible para saber de quién es un gol o una tarjeta es el nombre de equipo que da
+  // el acta: puede venir mal repartido entre los dos equipos en algún partido concreto (se ha
+  // visto en otras apps de este mismo proyecto), así que este resaltado es orientativo.
+  function esNuestro(nombre) {
+    return /ciudad.*[aá]ngeles/i.test(nombre || "");
+  }
+
+  function golesHtml(detalle) {
+    if (!detalle || (!detalle.goles.length && !detalle.tarjetas.length)) return "";
+    // Goles y tarjetas se muestran cada uno en su propio bloque, ordenados por minuto de
+    // partido (no agrupados primero-local-luego-visitante), con el nombre del equipo en cada
+    // línea para saber de quién es cada evento -igual que se ve en la app oficial (matchapp).
+    function golesOrdenados() {
+      if (!detalle.goles.length) return "";
+      var lineas = detalle.goles.slice().sort(function (a, b) { return a.minuto - b.minuto; }).map(function (x) {
+        // el gol en propia puerta ya viene acreditado al equipo que se beneficia (ver backend),
+        // así que "nuestro" sigue reflejando quién suma el gol; el rojo + "(p.p.)" es solo para
+        // que se note a simple vista que el marcador no es "3 goles + 1 en propia = 4", que si
+        // no parece un error de conteo.
+        var clase = "gol-linea" + (esNuestro(x.equipo) ? " nuestro" : "") + (x.propia ? " propia" : "");
+        var sufijo = x.penalti ? " (penalti)" : (x.propia ? " (p.p.)" : "");
+        return '<span class="' + clase + '">⚽ ' + x.minuto + "' " + escapar(x.jugador) +
+          sufijo + "</span>";
+      }).join("");
+      return '<div class="goles-lado">' + lineas + "</div>";
+    }
+    function tarjetasHtml() {
+      if (!detalle.tarjetas.length) return "";
+      var lineas = detalle.tarjetas.slice().sort(function (a, b) { return a.minuto - b.minuto; }).map(function (x) {
+        var equipoLimpio = x.equipo.replace(/^C\.D\.\s*/, "");
+        var clase = "tarjeta-linea" + (esNuestro(equipoLimpio) ? " nuestro" : "");
+        return '<span class="' + clase + '"><span class="tarjeta-icono ' + x.tipo + '"></span>' +
+          x.minuto + "' " + escapar(x.jugador) + "</span>";
+      }).join("");
+      return '<div class="goles-lado">' + lineas + "</div>";
+    }
+    var cont = golesOrdenados() + tarjetasHtml();
+    return cont ? '<div class="goles-caja">' + cont + "</div>" : "";
+  }
+
   function partirEquipos(linea) {
     var m = /^(\S+)\s+(.*)$/.exec(linea);
     if (!m) return null;
@@ -383,7 +459,27 @@
     return { icono: icono, local: us[0], visitante: resto.slice(us[0].length).replace(/^\s*-\s*/, "").trim(), marcador: null };
   }
 
-  function partidoHtml(bloque) {
+  // Una fila del marcador: escudo real del equipo (sacado de la propia acta por el backend, ya
+  // esté jugado el partido o "POR JUGAR"; si el acta todavía no lo trae, o falla al cargar, se
+  // deja el círculo vacío de fondo, sin imagen rota), su posición en la clasificación (si se
+  // conoce), el nombre (en negrita si es nuestro, igual que en equipoHtml) y, cuando ya hay
+  // resultado, el gol en grande a la derecha. En Partidos (`gol` null: partido sin jugar
+  // todavía) no se muestra ninguna cifra a la derecha.
+  function filaMarcadorHtml(s, escudoUrl, gol) {
+    s = s.replace(/^[\p{Extended_Pictographic}️\s]+/u, "").trim();
+    var pos = "", m = /^\*\((\d+)º\)\*\s*(.*)$/.exec(s);
+    if (m) { pos = '<span class="pos">' + m[1] + "º</span> "; s = m[2]; }
+    var us = /^\*_(.+)_\*$/.exec(s);
+    var nombre = pos + escapar(us ? us[1] : s);
+    var esc = '<span class="escudo-eq" aria-hidden="true">' +
+      (escudoUrl ? '<img src="' + escapar(escudoUrl) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : "") +
+      "</span>";
+    var golNum = gol != null ? '<div class="gol-num">' + escapar(String(gol)) + "</div>" : "";
+    return '<div class="fila-mc' + (us ? " nuestro" : "") + '">' + esc +
+      '<div class="nombre-mc">' + nombre + '</div>' + golNum + '</div>';
+  }
+
+  function partidoHtml(bloque, indice) {
     var l = bloque.split("\n"), hora = null, titulo, jor = null, campo = null, eq = null;
     var cab = /^⏰\s*\*(\d{2}:\d{2})h\*\s*-\s*(.+)$/.exec(l[0]);
     if (cab) { hora = cab[1]; titulo = cab[2]; }
@@ -401,20 +497,35 @@
     }
     if (!eq) return null;
     var clase = { "🟢": "gana", "🟡": "empata", "🔴": "pierde" }[eq.icono] || "neutro";
-    var centro = eq.marcador
-      ? '<div class="sc ' + clase + '">' + eq.marcador[0] + " - " + eq.marcador[1] + "</div>"
-      : '<div class="vs">vs</div>';
     var etiqueta = escapar(titulo.replace(/\s+Grupo\s+(\d+)/i, " · grupo $1"));
     var detalle = (jor ? "<em>Jornada " + jor + "</em>" : "") + (jor && campo ? " · " : "") + (campo ? ICONO_PIN + escapar(campo) : "");
+    // En Resultados, con marcador ya conocido, se usa la cabecera con escudos y el gol en
+    // grande (como el acta oficial); en Partidos (todavía sin jugar) la misma cabecera con
+    // escudos pero sin cifra de gol, sin "vs". Solo se cae al "vs" antiguo si, por lo que sea,
+    // se está en Resultados pero el bloque no trae marcador (no debería pasar).
+    var enResultados = activa === "resultados" && !!eq.marcador;
+    var enPartidos = activa === "partidos";
+    var partidoDetalle = enResultados ? detalleDe(indice) : (enPartidos ? detallePartidoDe(indice) : null);
+    var goles = enResultados && partidoDetalle ? golesHtml(partidoDetalle) : "";
+    var cuerpoEquipos = (enResultados || enPartidos)
+      ? '<div class="marcador">' +
+          filaMarcadorHtml(eq.local, partidoDetalle && partidoDetalle.escudo_local, enResultados ? eq.marcador[0] : null) +
+          filaMarcadorHtml(eq.visitante, partidoDetalle && partidoDetalle.escudo_visitante, enResultados ? eq.marcador[1] : null) +
+        "</div>"
+      : '<div class="eq"><div class="fila">' + equipoHtml(eq.local) + "</div>" +
+          (eq.marcador
+            ? '<div class="sc ' + clase + '">' + eq.marcador[0] + " - " + eq.marcador[1] + "</div>"
+            : '<div class="vs">vs</div>') +
+          '<div class="fila">' + equipoHtml(eq.visitante) + "</div></div>";
     return '<div class="p"><div class="f1">' +
       (hora ? '<span class="hora">' + ICONO_RELOJ + hora + "</span>" : "") +
       '<span class="pill cat-' + claseCategoria(titulo) + '">' + etiqueta + "</span></div>" +
       (detalle ? '<div class="v">' + detalle + "</div>" : "") +
-      '<div class="eq"><div class="fila">' + equipoHtml(eq.local) + "</div>" + centro +
-      '<div class="fila">' + equipoHtml(eq.visitante) + "</div></div></div>";
+      cuerpoEquipos + goles + "</div>";
   }
 
   function mensajeHtml(texto) {
+    var indicePartido = 0;
     return texto.split(/\n\s*\n/).map(function (bloque) {
       if (/^Información sacada de la web/.test(bloque)) {
         return '<div class="partido origen"><p>' + formato(bloque) + "</p></div>";
@@ -427,8 +538,8 @@
           return '<div class="banda ' + (pend ? "pend" : "dia-c") + '">' + ICONO_CAL + escapar(nombre) + "</div>";
         }
       }
-      var p = partidoHtml(bloque);
-      if (p) return p;
+      var p = partidoHtml(bloque, indicePartido);
+      if (p) { indicePartido++; return p; }
       return '<div class="partido"><p>' + formato(bloque).replace(/\n/g, "<br>") + "</p></div>";
     }).join("");
   }
@@ -470,7 +581,12 @@
     var cols = anchos.map(function (a) { return a ? '<col style="width:' + a + '">' : "<col>"; }).join("");
     var filas = g.filas.map(function (f) {
       var dg = f.dg > 0 ? "+" + f.dg : f.dg;
-      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + '</td><td class="e">' + escapar(f.nombre) + "</td><td>" + f.pj +
+      // el escudo se saca de la propia clasificación (misma fuente que ya se usa para el
+      // nombre); si el equipo no lo trae, o la imagen falla al cargar, se queda el hueco vacío.
+      var escudo = '<span class="escudo-clas" aria-hidden="true">' +
+        (f.escudo ? '<img src="' + escapar(f.escudo) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : "") +
+        "</span>";
+      return '<tr' + (f.nuestro ? ' class="nuestro"' : "") + "><td>" + f.pos + '</td><td class="e">' + escudo + escapar(f.nombre) + "</td><td>" + f.pj +
         "</td><td>" + f.g + "</td><td>" + f.e + "</td><td>" + f.p + "</td><td>" + f.gf + "</td><td>" + f.gc + "</td><td>" + dg +
         '</td><td class="pts">' + f.pts + "</td></tr>";
     }).join("");
@@ -484,18 +600,12 @@
     tabP.setAttribute("aria-selected", activa === "partidos");
     tabR.setAttribute("aria-selected", activa === "resultados");
     tabC.setAttribute("aria-selected", activa === "clasificacion");
-    document.body.classList.toggle("sin-barra", activa === "clasificacion");   // la clasificación no se envía
+    document.body.classList.toggle("sin-barra", activa !== "partidos");   // solo el partido en sí es lo que interesa enviar
     elChips.hidden = activa !== "clasificacion";
+    // El día concreto ya se ve en el selector de semana de abajo: aquí, debajo del título, va
+    // solo un rótulo fijo (antes salía la misma fecha dos veces).
     if (activa !== "clasificacion") {
-      var sm = semanas();
-      if (sm.length) {
-        var sab = sm[Math.max(0, Math.min(sel[activa], sm.length - 1))].sabado;
-        elCuando.textContent = rango(sab, sumarDia(sab, 1));
-      } else {
-        elCuando.textContent = activa === "partidos"
-          ? rango(datos.desde, datos.hasta)
-          : rango(datos.resultados_desde, datos.resultados_hasta);
-      }
+      elCuando.textContent = "Partidos Ciudad de los Ángeles";
     }
     pintarSelectorSemanas();
 
