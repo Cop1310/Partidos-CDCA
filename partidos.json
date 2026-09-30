@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-30 09:11",
+  "generado": "2026-09-30 13:45",
   "desde": "2026-10-03",
   "hasta": "2026-10-04",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 03/10/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Preferente Cadete Grupo 5\n📌 _Jornada 2_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(9º)* *_Ciudad de los Ángeles A_* - *(1º)* Udmelidaolimpia-Madrid City Vallecas A\n\n⏰ *11:00h* - Preferente Infantil Grupo 5\n📌 _Jornada 2_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(15º)* *_Ciudad de los Ángeles A_* - *(5º)* Adepo Palomeras A\n\n⏰ *17:00h* - Segunda Juvenil Grupo 13\n📌 _Jornada 2_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(11º)* *_Ciudad de los Ángeles C_* - *(2º)* Inter Promesas D\n\n⏰ *19:00h* - Preferente Juvenil Grupo 5\n📌 _Jornada 4_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(2º)* *_Ciudad de los Ángeles A_* - *(17º)* Escuela de Futbol de Carabanchel B\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 04/10/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Primera Juvenil Grupo 11\n📌 _Jornada 4_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(7º)* *_Ciudad de los Ángeles B_* - *(16º)* Santiago Apóstol Villaverde A\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 4_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(15º)* *_Ciudad de los Ángeles A_* - *(14º)* Villaconejos A\n\n⏰ *13:30h* - Segunda Aficionado Grupo 20\n📌 _Jornada 2_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(7º)* *_Ciudad de los Ángeles B_* - *(14º)* Sad Villaverde Boetticher",
@@ -205,65 +205,65 @@
           ],
           "goles": [
             {
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+              "jugador": "ANDRES MARQUEZ MONTERO",
+              "lado": "local",
               "minuto": 72,
-              "jugador": "ANDRES MARQUEZ MONTERO",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             },
             {
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+              "jugador": "ANDRES MARQUEZ MONTERO",
+              "lado": "local",
               "minuto": 79,
-              "jugador": "ANDRES MARQUEZ MONTERO",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             },
             {
-              "minuto": 20,
-              "jugador": "DANIEL TORRES SOTO",
               "equipo": "C.F. MADRID RIO - ARGANZUELA 'C'",
+              "jugador": "DANIEL TORRES SOTO",
+              "lado": "visitante",
+              "minuto": 20,
               "penalti": false,
-              "propia": false,
-              "lado": "visitante"
+              "propia": false
             }
           ],
           "tarjetas": [
             {
-              "minuto": 28,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "KARIM HADID CHTIBA",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 28,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 57,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "JORGE TENA GARCÍA",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 57,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 87,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "ANDRES MARQUEZ MONTERO",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 87,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 44,
+              "equipo": "C.F. MADRID RIO - ARGANZUELA 'C'",
               "jugador": "MATEO IGLESIAS GRANDE",
-              "equipo": "C.F. MADRID RIO - ARGANZUELA 'C'",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "lado": "visitante",
+              "minuto": 44,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 68,
-              "jugador": "SERGIO GOMEZ GONZALEZ",
               "equipo": "C.F. MADRID RIO - ARGANZUELA 'C'",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "jugador": "SERGIO GOMEZ GONZALEZ",
+              "lado": "visitante",
+              "minuto": 68,
+              "tipo": "amarilla"
             }
           ]
         },
@@ -331,42 +331,42 @@
           ],
           "goles": [
             {
-              "minuto": 80,
-              "jugador": "LUIS ANDRES ESPINOZA LOOR",
               "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+              "jugador": "LUIS ANDRES ESPINOZA LOOR",
+              "lado": "local",
+              "minuto": 80,
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             }
           ],
           "tarjetas": [
             {
-              "minuto": 6,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "JORGE TENA GARCÍA",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 6,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 38,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "FELIX CONSTANTIN ARCANU",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 38,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 15,
+              "equipo": "C.D. SPORT VILLA DE VALLECAS",
               "jugador": "JAVIER CIVICO ESCRIBANO",
-              "equipo": "C.D. SPORT VILLA DE VALLECAS",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "lado": "visitante",
+              "minuto": 15,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 86,
-              "jugador": "ANGEL JUNIOR CAVERO LARA",
               "equipo": "C.D. SPORT VILLA DE VALLECAS",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "jugador": "ANGEL JUNIOR CAVERO LARA",
+              "lado": "visitante",
+              "minuto": 86,
+              "tipo": "amarilla"
             }
           ]
         },
@@ -404,88 +404,88 @@
           ],
           "goles": [
             {
-              "minuto": 35,
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "jugador": "MARCOS LOPEZ DEL RIO",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
+              "lado": "local",
+              "minuto": 35,
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             },
             {
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
+              "jugador": "IKER GARCIA PEÑUELAS",
+              "lado": "local",
               "minuto": 76,
-              "jugador": "IKER GARCIA PEÑUELAS",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             },
             {
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
+              "jugador": "IKER GARCIA PEÑUELAS",
+              "lado": "local",
               "minuto": 77,
-              "jugador": "IKER GARCIA PEÑUELAS",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "penalti": false,
-              "propia": false,
-              "lado": "local"
+              "propia": false
             },
             {
-              "minuto": 50,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "NICOLAS SANCHEZ DOMINGUEZ",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+              "lado": "visitante",
+              "minuto": 50,
               "penalti": false,
-              "propia": false,
-              "lado": "visitante"
+              "propia": false
             },
             {
-              "minuto": 61,
-              "jugador": "JOAQUIN CARMONA FERRERAS",
               "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+              "jugador": "JOAQUIN CARMONA FERRERAS",
+              "lado": "visitante",
+              "minuto": 61,
               "penalti": false,
-              "propia": false,
-              "lado": "visitante"
+              "propia": false
             }
           ],
           "tarjetas": [
             {
-              "minuto": 46,
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "jugador": "SANTIAGO BENITO BAQUERO",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 46,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 63,
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "jugador": "ENZO LOPEZ SANTOS",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 63,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 70,
+              "equipo": "RACING VILLAVERDE C.F. 'B'",
               "jugador": "IZAN HERRERO PARDO",
-              "equipo": "RACING VILLAVERDE C.F. 'B'",
-              "tipo": "amarilla",
-              "lado": "local"
+              "lado": "local",
+              "minuto": 70,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 52,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "NICOLAS SANCHEZ DOMINGUEZ",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "lado": "visitante",
+              "minuto": 52,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 55,
+              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
               "jugador": "JESÚS CORDOBA RAIGON",
-              "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "lado": "visitante",
+              "minuto": 55,
+              "tipo": "amarilla"
             },
             {
-              "minuto": 80,
-              "jugador": "ALVARO MARQUEZ MONTERO",
               "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
-              "tipo": "amarilla",
-              "lado": "visitante"
+              "jugador": "ALVARO MARQUEZ MONTERO",
+              "lado": "visitante",
+              "minuto": 80,
+              "tipo": "amarilla"
             }
           ]
         },
@@ -1072,8 +1072,8 @@
           "jornada": 1,
           "local": "Racing de Villaverde A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         }
       ]
     },
@@ -1185,8 +1185,8 @@
           "jornada": 2,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Unión Carrascal B",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012211011_Escudo_A.D.U._Carrascal__2_.png?nova=1"
         }
       ]
     },
@@ -1402,8 +1402,8 @@
           "jornada": 4,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Sport Villa de Vallecas A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png?nova=1"
         }
       ]
     },
@@ -1416,8 +1416,8 @@
           "jornada": 5,
           "local": "La Mancha A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2026-11-07",
@@ -1637,8 +1637,8 @@
           "jornada": 6,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Madrid Rio-Arganzuela A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011006860_nuevo_logo_CF_MR.jpg?nova=1"
         },
         {
           "fecha": "2026-11-14",
@@ -1750,8 +1750,8 @@
           "jornada": 7,
           "local": "Asoc Retiro Sur B",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010963772_5146_asoc.retiro_sur.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2026-11-21",
@@ -1881,8 +1881,8 @@
           "jornada": 8,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Adepo Palomeras A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011125642_PNG_6X6cm_300_dpi.png?nova=1"
         },
         {
           "fecha": "2026-11-28",
@@ -2003,8 +2003,8 @@
           "jornada": 9,
           "local": "Goya B",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011183737_ESCUDO_GOYA_CON_1954.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2026-12-12",
@@ -2559,8 +2559,8 @@
           "jornada": 16,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Racing de Villaverde B",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg?nova=1"
         },
         {
           "fecha": "2027-02-06",
@@ -2609,8 +2609,8 @@
           "jornada": 17,
           "local": "Udmelidaolimpia-Madrid City Vallecas A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012219483_navbarApp.png",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-02-14",
@@ -2749,8 +2749,8 @@
           "jornada": 18,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Nuevo Baztan A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000039452_Nuevo_Baztan.jpg?nova=1"
         },
         {
           "fecha": "2027-02-20",
@@ -2844,8 +2844,8 @@
           "jornada": 19,
           "local": "Union Deportiva la Poveda A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010913564_logo_poveda.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-02-27",
@@ -2939,8 +2939,8 @@
           "jornada": 20,
           "local": "Ciudad de los Ángeles A",
           "visitante": "E.D.M. San Blas B",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg?nova=1"
         },
         {
           "fecha": "2027-03-06",
@@ -3034,8 +3034,8 @@
           "jornada": 21,
           "local": "E.D. Moratalaz C",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011212516_Escudo_ED_Moratalaz_jpg.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-03-13",
@@ -3129,8 +3129,8 @@
           "jornada": 22,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Union Deportiva Arganzuela B",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012072488_Logo_transparente.jpeg?nova=1"
         },
         {
           "fecha": "2027-03-20",
@@ -3224,8 +3224,8 @@
           "jornada": 23,
           "local": "Esc. Mun. Fut. Villarejo A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000038321_GetAttachment.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-04-03",
@@ -3319,8 +3319,8 @@
           "jornada": 24,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Adepo Palomeras A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011125642_PNG_6X6cm_300_dpi.png?nova=1"
         },
         {
           "fecha": "2027-04-10",
@@ -3414,8 +3414,8 @@
           "jornada": 25,
           "local": "Arganda A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010849385_arganda66px.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-04-17",
@@ -3509,8 +3509,8 @@
           "jornada": 26,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Sport Villa de Vallecas A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png?nova=1"
         },
         {
           "fecha": "2027-04-24",
@@ -3604,8 +3604,8 @@
           "jornada": 27,
           "local": "Fundacion Rayo Vallecano C",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-05-01",
@@ -3699,8 +3699,8 @@
           "jornada": 28,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Rivas Futbol Club C",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000098133_escudo-rivas-fc.png?nova=1"
         },
         {
           "fecha": "2027-05-08",
@@ -3794,8 +3794,8 @@
           "jornada": 29,
           "local": "Parque Sureste A",
           "visitante": "Ciudad de los Ángeles A",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1"
         },
         {
           "fecha": "2027-05-15",
@@ -3862,8 +3862,8 @@
           "jornada": 30,
           "local": "Ciudad de los Ángeles A",
           "visitante": "Coslada B",
-          "escudo_local": null,
-          "escudo_visitante": null
+          "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010888615_4427.-CD_CIUDAD_LOS_ANGELES.png?nova=1",
+          "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg?nova=1"
         },
         {
           "fecha": "2027-05-22",
