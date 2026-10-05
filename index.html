@@ -635,7 +635,13 @@
     }
 
     var avisos = [];
-    if (activa === "partidos" && datos.sin_partido && datos.sin_partido.length) {
+    // "sin_partido" lo calcula el backend solo para el fin de semana más próximo en el
+    // momento de generar el JSON (datos.desde): si se ha navegado a otra semana con el
+    // selector, ese aviso ya no tiene por qué seguir siendo cierto, así que solo se muestra
+    // cuando la semana que se está viendo es justo esa.
+    var semanaVista = semanas()[Math.max(0, Math.min(sel.partidos, semanas().length - 1))];
+    var esSemanaDelAviso = semanaVista && datos.desde && semanaVista.sabado === datos.desde;
+    if (activa === "partidos" && esSemanaDelAviso && datos.sin_partido && datos.sin_partido.length) {
       avisos.push("<p>Sin partido este fin de semana:<br>" +
         datos.sin_partido.map(escapar).join("<br>") + "</p>");
     }
