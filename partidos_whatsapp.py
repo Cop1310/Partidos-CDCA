@@ -186,6 +186,66 @@ def get(url, intentos=4):
     raise ultimo
 
 
+def get_json(url, referer=None, intentos=4):
+    """Descarga y decodifica una respuesta JSON de la API interna de la web (la misma que usa
+    el propio sitio para pintar el selector de jornadas); reintenta si da un error temporal
+    (5xx). A diferencia de get(), pide "Accept: */*" (no HTML) y puede llevar el Referer de la
+    página que normalmente hace esta llamada, por si el servidor lo comprueba."""
+    cabeceras = dict(HEADERS, **{"Accept": "*/*"})
+    if referer:
+        cabeceras["Referer"] = referer
+    ultimo = None
+    for i in range(intentos):
+        time.sleep(PAUSA if i == 0 else 4 * i)
+        try:
+            r = requests.get(url, headers=cabeceras, timeout=30)
+            if r.status_code < 500:
+                r.raise_for_status()
+                return r.json()
+            ultimo = requests.HTTPError(f"error {r.status_code} en {url}")
+        except (requests.ConnectionError, requests.Timeout) as e:
+            ultimo = e
+    raise ultimo
+
+
+def leer_resultados_api(comp, grupo, jornada):
+    """Partidos de una jornada concreta de un grupo, leídos directamente de la API interna de
+    resultados de la RFFM (https://www.elbalondemadrid.es/api/rffm/results?idGroup=...&round=...
+    -- la misma que usa la propia web al cambiar de jornada en el selector). A diferencia de
+    adivinar por número de acta correlativo, esto es exacto: se puede pedir cualquier jornada
+    de la temporada, por lejana que esté, y la API responde igual (con hora/resultado vacíos
+    si aún no se conocen) en vez de fallar o devolver algo sin relación. También trae ya el
+    escudo de cada equipo, así que de paso ahorra tener que sacarlo del acta.
+    Devuelve {"jornada", "total_jornadas", "partidos": [...]} con cada partido en el mismo
+    formato que devuelve leer_acta() (fecha como date, hora "HH:MM" o None, equipos como
+    [(id, nombre), (id, nombre)], resultado (goles_local, goles_visitante) o None)."""
+    url = f"{BASE}/api/rffm/results?idGroup={grupo}&round={jornada}"
+    referer = f"{BASE}/competicion/{comp}/grupo/{grupo}/jornadas"
+    datos = get_json(url, referer=referer)
+    jornadas_liga = datos["listado_jornadas"][0]["jornadas"]
+    partidos = []
+    for p in datos.get("partidos", []):
+        if p.get("Retirado_local") == "1" or p.get("Retirado_visitante") == "1":
+            continue
+        if not p.get("CodEquipo_local") or not p.get("CodEquipo_visitante"):
+            continue
+        fecha = datetime.strptime(p["fecha"], "%d/%m/%Y").date()
+        hora = p.get("hora") or None
+        goles_l, goles_v = p.get("Goles_casa"), p.get("Goles_visitante")
+        resultado = (int(goles_l), int(goles_v)) if goles_l not in (None, "") and goles_v not in (None, "") else None
+        acta = (f"{BASE}/acta/{p['codacta']}?temporada=22&competicion={comp}&grupo={grupo}"
+                if p.get("codacta") else None)
+        partidos.append({
+            "fecha": fecha, "jornada": int(datos["jornada"]), "hora": hora,
+            "equipos": [(p["CodEquipo_local"], p["Nombre_equipo_local"].strip()),
+                        (p["CodEquipo_visitante"], p["Nombre_equipo_visitante"].strip())],
+            "resultado": resultado, "campo": p.get("campojuego") or "", "acta": acta,
+            "escudo_local": urllib.parse.urljoin("https://appweb.rffm.es/", p["url_img_local"]) if p.get("url_img_local") else None,
+            "escudo_visitante": urllib.parse.urljoin("https://appweb.rffm.es/", p["url_img_visitante"]) if p.get("url_img_visitante") else None,
+        })
+    return {"jornada": int(datos["jornada"]), "total_jornadas": len(jornadas_liga), "partidos": partidos}
+
+
 def grupos_a_consultar(errores):
     """Devuelve ({url_jornadas: (nombre o None, {ids de equipos del club})},
     {id de equipo: (nombre, categoría)} tal como figuran en la ficha del club)."""
@@ -690,6 +750,8 @@ def actualizar_estado(estado, p, titulo, url, posiciones=None):
         "resultado": resultado,
         "pos": pos,
         "acta": p["acta"] or anterior.get("acta"),
+        "escudo_local": p.get("escudo_local") or anterior.get("escudo_local"),
+        "escudo_visitante": p.get("escudo_visitante") or anterior.get("escudo_visitante"),
     }
 
 
@@ -1027,67 +1089,58 @@ def rellenar_jornadas(url, ids, titulo, actual, actas_actuales, equipos_grupo, e
     return gastadas
 
 
-VENTANA = 4  # cuántas jornadas por delante de la actual se miran
-
-
 def explorar_proximas(url, ids, titulo, actual, actas_actuales, equipos_grupo, estado, meta, cupo):
-    """Lee las actas de las jornadas siguientes a la actual para conocer cuándo juega cada
-    equipo, aunque el día y la hora aún no estén confirmados. Se repite cada 6 días para
-    recoger cambios. Devuelve cuántas actas ha leído."""
+    """Lee, vía la API de resultados de la RFFM (leer_resultados_api), TODAS las jornadas
+    siguientes a la actual hasta la última de la competición, para conocer cuándo juega cada
+    equipo con antelación, aunque el día y la hora aún no estén confirmados. A diferencia del
+    método anterior (adivinar por número de acta correlativo, que necesitaba ver 2+ actas de
+    la jornada actual y solo miraba unas pocas jornadas por delante), esto pide directamente
+    "dame la jornada N" a una API que responde igual de bien aunque N sea la última de la
+    temporada -- así que no hace falta adivinar nada ni hay límite de jornadas por delante.
+    Avanza una jornada por petición y se reparte entre ejecuciones si el cupo no llega para
+    toda la temporada de una vez (se retoma donde se dejó). Una vez completada toda la
+    competición, se repite entera cada 6 días para recoger horas/campos que se confirmen más
+    tarde. Devuelve cuántas jornadas ha leído."""
     seguimiento = meta.setdefault("proximas", {})
     est = seguimiento.get(url)
+    if est is not None and "total" not in est:
+        est = None  # estado del algoritmo anterior (por número de acta): se descarta y se
+                    # explora de nuevo entera con la API, en vez de darla por buena o por
+                    # terminada sin haberlo comprobado con el método nuevo
     hoy = ahora().date()
-    base, n = _bloque_correlativo(actas_actuales)
     m = re.search(r"/competicion/(\d+)/grupo/(\d+)", url)
-    if n < 2 or not m or cupo <= 0:
+    if not m or cupo <= 0 or not actual:
         return 0
-    if est and est["actual"] == actual and est.get("cursor") is None \
+    if est and est.get("actual") == actual and est.get("cursor") is None \
             and (hoy - date.fromisoformat(est["fecha"])).days < 6:
-        return 0  # ya explorado hace poco
-    if est and est["actual"] == actual and est.get("cursor"):
-        numero = est["cursor"]  # continuar donde se dejó
+        return 0  # ya se ha mirado la competición entera hace poco
+    if est and est.get("actual") == actual and est.get("cursor"):
+        jornada = est["cursor"]  # continuar donde se dejó
     else:
-        numero = base + n       # empezar justo después de la jornada actual
+        jornada = actual + 1    # empezar justo después de la jornada actual
     comp, grupo = m.groups()
-    tope = base + n * (VENTANA + 1) + 3
-    gastadas, seguidos_mal, jornadas, terminado, inexistentes, avisos = 0, 0, set(), False, 0, 0
-    while numero < tope and gastadas < cupo:
+    total = est.get("total") if est else None
+    gastadas, fallo = 0, False
+    while gastadas < cupo and not fallo and (total is None or jornada <= total):
         gastadas += 1
-        info, motivo, no_existe = _leer(numero, comp, grupo)
-        if info:
-            if info["jornada"] <= actual:
-                motivo = f"es de la jornada {info['jornada']}"
-            elif not all(e[0] in equipos_grupo for e in info["equipos"]):
-                motivo = "sus equipos no son de este grupo"
-            elif info["jornada"] > actual + VENTANA:
-                terminado = True
-                break
-        if motivo:
-            seguidos_mal += 1
-            if no_existe:
-                inexistentes += 1
-            elif avisos < 5:
-                avisos += 1
-                print(f"Aviso: próximas jornadas de {titulo}: acta {numero}: {motivo}.", file=sys.stderr)
-            if seguidos_mal >= MAX_SEGUIDOS:
-                terminado = True
-                break
-        else:
-            seguidos_mal = 0
-            jornadas.add(info["jornada"])
-            if any(e[0] in ids for e in info["equipos"]):
-                actualizar_estado(estado, {
-                    "fecha": info["fecha"], "jornada": info["jornada"], "hora": info["hora"],
-                    "resultado": None, "equipos": info["equipos"],
-                    "campo": info["campo"], "acta": info["acta"]}, titulo, url, None)
-        numero += 1
-    if numero >= tope:
-        terminado = True
-    seguimiento[url] = {"actual": actual, "fecha": hoy.isoformat(),
-                        "cursor": None if terminado else numero}
+        try:
+            datos = leer_resultados_api(comp, grupo, jornada)
+        except Exception as e:
+            print(f"Aviso: próximas jornadas de {titulo}: jornada {jornada}: no se pudo leer "
+                  f"({e}).", file=sys.stderr)
+            fallo = True
+            break
+        total = datos["total_jornadas"]
+        for p in datos["partidos"]:
+            if any(e[0] in ids for e in p["equipos"]):
+                actualizar_estado(estado, p, titulo, url, None)
+        jornada += 1
+    terminado = not fallo and total is not None and jornada > total
+    seguimiento[url] = {"actual": actual, "fecha": hoy.isoformat(), "total": total,
+                        "cursor": None if terminado else jornada}
     if gastadas:
-        print(f"Próximas jornadas de {titulo}: leídas {gastadas} actas ({inexistentes} no existen), "
-              f"jornadas vistas: {sorted(jornadas)}.", file=sys.stderr)
+        print(f"Próximas jornadas de {titulo}: leídas {gastadas} jornadas (hasta la "
+              f"{jornada - 1}{f' de {total}' if total else ''}).", file=sys.stderr)
     return gastadas
 
 

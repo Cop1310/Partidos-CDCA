@@ -600,7 +600,7 @@
     tabP.setAttribute("aria-selected", activa === "partidos");
     tabR.setAttribute("aria-selected", activa === "resultados");
     tabC.setAttribute("aria-selected", activa === "clasificacion");
-    document.body.classList.toggle("sin-barra", activa !== "partidos");   // solo el partido en sí es lo que interesa enviar
+    document.body.classList.toggle("sin-barra", activa === "clasificacion");   // la clasificación no es un mensaje que enviar; partidos y resultados sí
     elChips.hidden = activa !== "clasificacion";
     // El día concreto ya se ve en el selector de semana de abajo: aquí, debajo del título, va
     // solo un rótulo fijo (antes salía la misma fecha dos veces).
