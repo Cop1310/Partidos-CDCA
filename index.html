@@ -122,6 +122,7 @@
   .gol-linea, .tarjeta-linea { display: block; color: var(--suave); font-weight: 400; }
   .gol-linea.nuestro, .tarjeta-linea.nuestro { color: var(--tinta); font-weight: 800; }
   .gol-linea.propia { color: var(--roja); }
+  .tarjeta-linea { font-size: 0.88em; }
   .tarjeta-icono { display: inline-block; width: 9px; height: 12px; border-radius: 1px; margin-right: 4px; vertical-align: -1px; }
   .tarjeta-icono.amarilla { background: #f4c430; }
   .tarjeta-icono.roja { background: var(--roja); }
@@ -414,35 +415,31 @@
 
   function golesHtml(detalle) {
     if (!detalle || (!detalle.goles.length && !detalle.tarjetas.length)) return "";
-    // Goles y tarjetas se muestran cada uno en su propio bloque, ordenados por minuto de
-    // partido (no agrupados primero-local-luego-visitante), con el nombre del equipo en cada
-    // línea para saber de quién es cada evento -igual que se ve en la app oficial (matchapp).
-    function golesOrdenados() {
-      if (!detalle.goles.length) return "";
-      var lineas = detalle.goles.slice().sort(function (a, b) { return a.minuto - b.minuto; }).map(function (x) {
-        // el gol en propia puerta ya viene acreditado al equipo que se beneficia (ver backend),
-        // así que "nuestro" sigue reflejando quién suma el gol; el rojo + "(p.p.)" es solo para
-        // que se note a simple vista que el marcador no es "3 goles + 1 en propia = 4", que si
-        // no parece un error de conteo.
-        var clase = "gol-linea" + (esNuestro(x.equipo) ? " nuestro" : "") + (x.propia ? " propia" : "");
-        var sufijo = x.penalti ? " (penalti)" : (x.propia ? " (p.p.)" : "");
-        return '<span class="' + clase + '">⚽ ' + x.minuto + "' " + escapar(x.jugador) +
-          sufijo + "</span>";
-      }).join("");
-      return '<div class="goles-lado">' + lineas + "</div>";
+    // Goles y tarjetas se muestran intercalados por minuto de partido (no un bloque con todos
+    // los goles y luego otro con todas las tarjetas), con el nombre del equipo en cada línea
+    // para saber de quién es cada evento -igual que se ve en la app oficial (matchapp).
+    function golLinea(x) {
+      // el gol en propia puerta ya viene acreditado al equipo que se beneficia (ver backend),
+      // así que "nuestro" sigue reflejando quién suma el gol; el rojo + "(p.p.)" es solo para
+      // que se note a simple vista que el marcador no es "3 goles + 1 en propia = 4", que si
+      // no parece un error de conteo.
+      var clase = "gol-linea" + (esNuestro(x.equipo) ? " nuestro" : "") + (x.propia ? " propia" : "");
+      var sufijo = x.penalti ? " (penalti)" : (x.propia ? " (p.p.)" : "");
+      return '<span class="' + clase + '">⚽ ' + x.minuto + "' " + escapar(x.jugador) +
+        sufijo + "</span>";
     }
-    function tarjetasHtml() {
-      if (!detalle.tarjetas.length) return "";
-      var lineas = detalle.tarjetas.slice().sort(function (a, b) { return a.minuto - b.minuto; }).map(function (x) {
-        var equipoLimpio = x.equipo.replace(/^C\.D\.\s*/, "");
-        var clase = "tarjeta-linea" + (esNuestro(equipoLimpio) ? " nuestro" : "");
-        return '<span class="' + clase + '"><span class="tarjeta-icono ' + x.tipo + '"></span>' +
-          x.minuto + "' " + escapar(x.jugador) + "</span>";
-      }).join("");
-      return '<div class="goles-lado">' + lineas + "</div>";
+    function tarjetaLinea(x) {
+      var equipoLimpio = x.equipo.replace(/^C\.D\.\s*/, "");
+      var clase = "tarjeta-linea" + (esNuestro(equipoLimpio) ? " nuestro" : "");
+      return '<span class="' + clase + '"><span class="tarjeta-icono ' + x.tipo + '"></span>' +
+        x.minuto + "' " + escapar(x.jugador) + "</span>";
     }
-    var cont = golesOrdenados() + tarjetasHtml();
-    return cont ? '<div class="goles-caja">' + cont + "</div>" : "";
+    var eventos = detalle.goles.map(function (x) { return { minuto: x.minuto, html: golLinea(x) }; })
+      .concat(detalle.tarjetas.map(function (x) { return { minuto: x.minuto, html: tarjetaLinea(x) }; }))
+      .sort(function (a, b) { return a.minuto - b.minuto; });
+    if (!eventos.length) return "";
+    var lineas = eventos.map(function (e) { return e.html; }).join("");
+    return '<div class="goles-caja"><div class="goles-lado">' + lineas + "</div></div>";
   }
 
   function partirEquipos(linea) {
