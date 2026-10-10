@@ -513,6 +513,21 @@
      "pts": 14
     },
     {
+     "dg": 8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
+     "g": 4,
+     "gc": 10,
+     "gf": 18,
+     "id": "2158",
+     "nombre": "San Fermin A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 6,
+     "pos": 5,
+     "pts": 13
+    },
+    {
      "dg": 5,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png",
@@ -524,7 +539,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 6,
-     "pos": 5,
+     "pos": 6,
      "pts": 12
     },
     {
@@ -539,22 +554,22 @@
      "nuestro": false,
      "p": 2,
      "pj": 6,
-     "pos": 6,
+     "pos": 7,
      "pts": 12
     },
     {
-     "dg": 1,
+     "dg": -2,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014191144_escudo.jfif",
      "g": 4,
-     "gc": 11,
-     "gf": 12,
+     "gc": 16,
+     "gf": 14,
      "id": "10816181",
      "nombre": "Club de Atletismo los Olmos",
      "nuestro": false,
-     "p": 2,
-     "pj": 6,
-     "pos": 7,
+     "p": 3,
+     "pj": 7,
+     "pos": 8,
      "pts": 12
     },
     {
@@ -569,7 +584,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 6,
-     "pos": 8,
+     "pos": 9,
      "pts": 11
     },
     {
@@ -584,7 +599,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 6,
-     "pos": 9,
+     "pos": 10,
      "pts": 11
     },
     {
@@ -599,21 +614,6 @@
      "nuestro": false,
      "p": 2,
      "pj": 6,
-     "pos": 10,
-     "pts": 10
-    },
-    {
-     "dg": 5,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
-     "g": 3,
-     "gc": 8,
-     "gf": 13,
-     "id": "2158",
-     "nombre": "San Fermin A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 5,
      "pos": 11,
      "pts": 10
     },
@@ -633,6 +633,21 @@
      "pts": 10
     },
     {
+     "dg": -8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011195225_WhatsApp_Image_2022_07_21_at_07.43.24.jpeg",
+     "g": 3,
+     "gc": 22,
+     "gf": 14,
+     "id": "1495",
+     "nombre": "Escuela de Futbol de Carabanchel B",
+     "nuestro": false,
+     "p": 3,
+     "pj": 7,
+     "pos": 13,
+     "pts": 10
+    },
+    {
      "dg": 5,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258150_ESC_C.D._DOSA__1_.png",
@@ -644,22 +659,22 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 13,
+     "pos": 14,
      "pts": 9
     },
     {
-     "dg": 0,
+     "dg": -1,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
      "g": 3,
-     "gc": 8,
-     "gf": 8,
+     "gc": 11,
+     "gf": 10,
      "id": "680068",
      "nombre": "Sport Villa de Vallecas",
      "nuestro": false,
-     "p": 3,
-     "pj": 6,
-     "pos": 14,
+     "p": 4,
+     "pj": 7,
+     "pos": 15,
      "pts": 9
     },
     {
@@ -674,23 +689,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 6,
-     "pos": 15,
-     "pts": 8
-    },
-    {
-     "dg": -9,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011195225_WhatsApp_Image_2022_07_21_at_07.43.24.jpeg",
-     "g": 2,
-     "gc": 20,
-     "gf": 11,
-     "id": "1495",
-     "nombre": "Escuela de Futbol de Carabanchel B",
-     "nuestro": false,
-     "p": 3,
-     "pj": 6,
      "pos": 16,
-     "pts": 7
+     "pts": 8
     },
     {
      "dg": 2,
@@ -744,17 +744,17 @@
      "pts": 12
     },
     {
-     "dg": 6,
+     "dg": 4,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000039676_LogoNuevoEFUsera.jpg",
      "g": 4,
-     "gc": 6,
+     "gc": 8,
      "gf": 12,
      "id": "466548",
      "nombre": "Escuela de Futbol Usera A",
      "nuestro": false,
-     "p": 0,
-     "pj": 4,
+     "p": 1,
+     "pj": 5,
      "pos": 3,
      "pts": 12
     },
@@ -806,16 +806,46 @@
     {
      "dg": 7,
      "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
+     "g": 2,
+     "gc": 9,
+     "gf": 16,
+     "id": "2712737",
+     "nombre": "Villaverde Bajo B",
+     "nuestro": false,
+     "p": 2,
+     "pj": 5,
+     "pos": 7,
+     "pts": 7
+    },
+    {
+     "dg": 3,
+     "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
      "g": 2,
-     "gc": 7,
-     "gf": 14,
+     "gc": 12,
+     "gf": 15,
      "id": "15283750",
      "nombre": "Colonia Moscardo C",
      "nuestro": false,
-     "p": 1,
-     "pj": 4,
-     "pos": 7,
+     "p": 2,
+     "pj": 5,
+     "pos": 8,
+     "pts": 7
+    },
+    {
+     "dg": 1,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
+     "g": 2,
+     "gc": 11,
+     "gf": 12,
+     "id": "948",
+     "nombre": "Orcasitas A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 5,
+     "pos": 9,
      "pts": 7
     },
     {
@@ -830,7 +860,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
-     "pos": 8,
+     "pos": 10,
      "pts": 6
     },
     {
@@ -845,38 +875,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 9,
-     "pts": 5
-    },
-    {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 1,
-     "gc": 8,
-     "gf": 11,
-     "id": "2712737",
-     "nombre": "Villaverde Bajo B",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
-     "pos": 10,
-     "pts": 4
-    },
-    {
-     "dg": -1,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 1,
-     "gc": 11,
-     "gf": 10,
-     "id": "948",
-     "nombre": "Orcasitas A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
      "pos": 11,
-     "pts": 4
+     "pts": 5
     },
     {
      "dg": -1,
@@ -894,18 +894,33 @@
      "pts": 4
     },
     {
-     "dg": 1,
+     "dg": -1,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000047865_3583%20EMF%20ALUCHE.jpg",
      "g": 1,
-     "gc": 8,
-     "gf": 9,
+     "gc": 12,
+     "gf": 11,
      "id": "2269821",
      "nombre": "Aluche C",
      "nuestro": false,
-     "p": 3,
-     "pj": 4,
+     "p": 4,
+     "pj": 5,
      "pos": 13,
+     "pts": 3
+    },
+    {
+     "dg": -8,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
+     "g": 1,
+     "gc": 16,
+     "gf": 8,
+     "id": "13526197",
+     "nombre": "Santiago Apóstol Villaverde A",
+     "nuestro": false,
+     "p": 4,
+     "pj": 5,
+     "pos": 14,
      "pts": 3
     },
     {
@@ -920,7 +935,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 4,
-     "pos": 14,
+     "pos": 15,
      "pts": 3
     },
     {
@@ -935,7 +950,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 4,
-     "pos": 15,
+     "pos": 16,
      "pts": 3
     },
     {
@@ -947,21 +962,6 @@
      "gf": 6,
      "id": "24235804",
      "nombre": "Union Deportiva Arganzuela B",
-     "nuestro": false,
-     "p": 4,
-     "pj": 4,
-     "pos": 16,
-     "pts": 0
-    },
-    {
-     "dg": -10,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
-     "g": 0,
-     "gc": 14,
-     "gf": 4,
-     "id": "13526197",
-     "nombre": "Santiago Apóstol Villaverde A",
      "nuestro": false,
      "p": 4,
      "pj": 4,
@@ -1005,6 +1005,21 @@
      "pts": 9
     },
     {
+     "dg": 6,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
+     "g": 2,
+     "gc": 3,
+     "gf": 9,
+     "id": "2785",
+     "nombre": "Udmelidaolimpia-Madrid City Vallecas A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 2,
+     "pts": 7
+    },
+    {
      "dg": 5,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000098133_escudo-rivas-fc.png",
@@ -1016,7 +1031,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 2,
+     "pos": 3,
      "pts": 6
     },
     {
@@ -1031,7 +1046,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 3,
+     "pos": 4,
      "pts": 6
     },
     {
@@ -1046,23 +1061,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 4,
-     "pts": 6
-    },
-    {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
-     "g": 1,
-     "gc": 3,
-     "gf": 6,
-     "id": "2785",
-     "nombre": "Udmelidaolimpia-Madrid City Vallecas A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
      "pos": 5,
-     "pts": 4
+     "pts": 6
     },
     {
      "dg": 1,
@@ -1097,21 +1097,6 @@
     {
      "dg": 0,
      "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 1,
-     "gc": 3,
-     "gf": 3,
-     "id": "10652335",
-     "nombre": "Racing de Villaverde B",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
-     "pos": 8,
-     "pts": 3
-    },
-    {
-     "dg": 0,
-     "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
      "g": 1,
      "gc": 3,
@@ -1121,7 +1106,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 9,
+     "pos": 8,
      "pts": 3
     },
     {
@@ -1136,7 +1121,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
-     "pos": 10,
+     "pos": 9,
      "pts": 3
     },
     {
@@ -1148,6 +1133,21 @@
      "gf": 3,
      "id": "1689",
      "nombre": "Adepo Palomeras A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 3,
+     "pos": 10,
+     "pts": 3
+    },
+    {
+     "dg": -3,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 1,
+     "gc": 6,
+     "gf": 3,
+     "id": "10652335",
+     "nombre": "Racing de Villaverde B",
      "nuestro": false,
      "p": 2,
      "pj": 3,
@@ -1452,6 +1452,36 @@
   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
    "filas": [
     {
+     "dg": 13,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258054_adepo.png",
+     "g": 3,
+     "gc": 2,
+     "gf": 15,
+     "id": "1692",
+     "nombre": "Adepo Palomeras A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 1,
+     "pts": 9
+    },
+    {
+     "dg": 11,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011583701_6A3C328C_DFD7_4844_9D17_14ACE9D1611A.jpeg",
+     "g": 3,
+     "gc": 1,
+     "gf": 12,
+     "id": "17202267",
+     "nombre": "Velilla A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 2,
+     "pts": 9
+    },
+    {
      "dg": 8,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
@@ -1463,23 +1493,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 3,
-     "pos": 1,
+     "pos": 3,
      "pts": 7
-    },
-    {
-     "dg": 10,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258054_adepo.png",
-     "g": 2,
-     "gc": 1,
-     "gf": 11,
-     "id": "1692",
-     "nombre": "Adepo Palomeras A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
-     "pos": 2,
-     "pts": 6
     },
     {
      "dg": 7,
@@ -1493,7 +1508,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 3,
+     "pos": 4,
      "pts": 6
     },
     {
@@ -1508,7 +1523,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 4,
+     "pos": 5,
      "pts": 6
     },
     {
@@ -1523,21 +1538,6 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 5,
-     "pts": 6
-    },
-    {
-     "dg": 4,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011583701_6A3C328C_DFD7_4844_9D17_14ACE9D1611A.jpeg",
-     "g": 2,
-     "gc": 1,
-     "gf": 5,
-     "id": "17202267",
-     "nombre": "Velilla A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
      "pos": 6,
      "pts": 6
     },
@@ -1557,21 +1557,6 @@
      "pts": 6
     },
     {
-     "dg": 5,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
-     "g": 1,
-     "gc": 2,
-     "gf": 7,
-     "id": "1031681",
-     "nombre": "Santiago Apóstol Villaverde A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
-     "pos": 8,
-     "pts": 4
-    },
-    {
      "dg": 3,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
@@ -1583,6 +1568,21 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
+     "pos": 8,
+     "pts": 4
+    },
+    {
+     "dg": 2,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
+     "g": 1,
+     "gc": 6,
+     "gf": 8,
+     "id": "1031681",
+     "nombre": "Santiago Apóstol Villaverde A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 3,
      "pos": 9,
      "pts": 4
     },
@@ -1632,21 +1632,6 @@
      "pts": 1
     },
     {
-     "dg": -5,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012153463_ESCUDO_ADA_TOLEDO__2_.jpg",
-     "g": 0,
-     "gc": 7,
-     "gf": 2,
-     "id": "1094",
-     "nombre": "Ad A.Toledo Olivos A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 2,
-     "pos": 13,
-     "pts": 0
-    },
-    {
      "dg": -8,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
@@ -1658,6 +1643,21 @@
      "nuestro": false,
      "p": 2,
      "pj": 2,
+     "pos": 13,
+     "pts": 0
+    },
+    {
+     "dg": -12,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012153463_ESCUDO_ADA_TOLEDO__2_.jpg",
+     "g": 0,
+     "gc": 14,
+     "gf": 2,
+     "id": "1094",
+     "nombre": "Ad A.Toledo Olivos A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 3,
      "pos": 14,
      "pts": 0
     },
@@ -2502,34 +2502,34 @@
   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
    "filas": [
     {
-     "dg": 10,
+     "dg": 12,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012175523_IMG_3302.png",
-     "g": 2,
-     "gc": 2,
-     "gf": 12,
+     "g": 3,
+     "gc": 3,
+     "gf": 15,
      "id": "26719936",
      "nombre": "Sad Spain Football Academy Fc",
      "nuestro": false,
      "p": 0,
-     "pj": 2,
+     "pj": 3,
      "pos": 1,
-     "pts": 6
+     "pts": 9
     },
     {
-     "dg": 10,
+     "dg": 11,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 2,
+     "g": 3,
      "gc": 2,
-     "gf": 12,
+     "gf": 13,
      "id": "25049794",
      "nombre": "Inter Promesas D",
      "nuestro": false,
      "p": 0,
-     "pj": 2,
+     "pj": 3,
      "pos": 2,
-     "pts": 6
+     "pts": 9
     },
     {
      "dg": 4,
@@ -2577,17 +2577,17 @@
      "pts": 4
     },
     {
-     "dg": 1,
+     "dg": 0,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
      "g": 1,
-     "gc": 3,
+     "gc": 4,
      "gf": 4,
      "id": "680085",
      "nombre": "Alzola-Halcones D",
      "nuestro": false,
-     "p": 0,
-     "pj": 2,
+     "p": 1,
+     "pj": 3,
      "pos": 6,
      "pts": 4
     },
@@ -2667,17 +2667,17 @@
      "pts": 1
     },
     {
-     "dg": -5,
+     "dg": -7,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
      "g": 0,
-     "gc": 8,
-     "gf": 3,
+     "gc": 11,
+     "gf": 4,
      "id": "15292622",
      "nombre": "Ciudad de los Ángeles C",
      "nuestro": true,
-     "p": 2,
-     "pj": 2,
+     "p": 3,
+     "pj": 3,
      "pos": 12,
      "pts": 0
     },
@@ -2727,7 +2727,7 @@
      "pts": 0
     }
    ],
-   "jornada": 2,
+   "jornada": 3,
    "titulo": "Segunda Juvenil Grupo 13"
   },
   "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas": {
@@ -2778,34 +2778,19 @@
      "pts": 3
     },
     {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011036902_Escudo_alhondiga.jpg",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1031212",
-     "nombre": "Alhondiga D",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 4,
-     "pts": 0
-    },
-    {
-     "dg": 0,
+     "dg": 2,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
+     "g": 1,
+     "gc": 1,
+     "gf": 3,
      "id": "15344438",
      "nombre": "Orcasitas C",
      "nuestro": false,
      "p": 0,
-     "pj": 0,
-     "pos": 5,
-     "pts": 0
+     "pj": 1,
+     "pos": 4,
+     "pts": 3
     },
     {
      "dg": 0,
@@ -2819,7 +2804,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 6,
+     "pos": 5,
      "pts": 0
     },
     {
@@ -2834,7 +2819,7 @@
      "nuestro": true,
      "p": 0,
      "pj": 0,
-     "pos": 7,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -2849,7 +2834,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 8,
+     "pos": 7,
      "pts": 0
     },
     {
@@ -2864,7 +2849,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 9,
+     "pos": 8,
      "pts": 0
     },
     {
@@ -2879,6 +2864,21 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 9,
+     "pts": 0
+    },
+    {
+     "dg": -2,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011036902_Escudo_alhondiga.jpg",
+     "g": 0,
+     "gc": 3,
+     "gf": 1,
+     "id": "1031212",
+     "nombre": "Alhondiga D",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 10,
      "pts": 0
     },
@@ -8489,7 +8489,10 @@
     1,
     12
    ],
-   "resultado": null,
+   "resultado": [
+    3,
+    1
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
     "15292622",
