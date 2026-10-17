@@ -1698,6 +1698,51 @@
   "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas": {
    "filas": [
     {
+     "dg": 1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
+     "g": 1,
+     "gc": 0,
+     "gf": 1,
+     "id": "1847",
+     "nombre": "Villaverde Bajo C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 1,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 1,
+     "gc": 0,
+     "gf": 1,
+     "id": "17146707",
+     "nombre": "Ciudad de los Ángeles",
+     "nuestro": true,
+     "p": 0,
+     "pj": 1,
+     "pos": 2,
+     "pts": 3
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
+     "g": 1,
+     "gc": 0,
+     "gf": 1,
+     "id": "1276",
+     "nombre": "San Cristobal de los Angeles A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 1,
+     "pos": 3,
+     "pts": 3
+    },
+    {
      "dg": 0,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
@@ -1709,7 +1754,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 1,
+     "pos": 4,
      "pts": 0
     },
     {
@@ -1724,37 +1769,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 2,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1847",
-     "nombre": "Villaverde Bajo C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 3,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "21428585",
-     "nombre": "Villaverde Bajo D",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 4,
+     "pos": 5,
      "pts": 0
     },
     {
@@ -1769,7 +1784,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 5,
+     "pos": 6,
      "pts": 0
     },
     {
@@ -1784,52 +1799,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
-     "pos": 6,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "17146707",
-     "nombre": "Ciudad de los Ángeles",
-     "nuestro": true,
-     "p": 0,
-     "pj": 0,
      "pos": 7,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "1276",
-     "nombre": "San Cristobal de los Angeles A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 8,
-     "pts": 0
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
-     "g": 0,
-     "gc": 0,
-     "gf": 0,
-     "id": "334113",
-     "nombre": "San Cristobal de los Angeles B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 0,
-     "pos": 9,
      "pts": 0
     },
     {
@@ -1844,21 +1814,51 @@
      "nuestro": false,
      "p": 0,
      "pj": 0,
+     "pos": 8,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
+     "g": 0,
+     "gc": 1,
+     "gf": 0,
+     "id": "21428585",
+     "nombre": "Villaverde Bajo D",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
+     "pos": 9,
+     "pts": 0
+    },
+    {
+     "dg": -1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
+     "g": 0,
+     "gc": 1,
+     "gf": 0,
+     "id": "334113",
+     "nombre": "San Cristobal de los Angeles B",
+     "nuestro": false,
+     "p": 1,
+     "pj": 1,
      "pos": 10,
      "pts": 0
     },
     {
-     "dg": 0,
+     "dg": -1,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
      "g": 0,
-     "gc": 0,
+     "gc": 1,
      "gf": 0,
      "id": "24025636",
      "nombre": "San Cristobal de los Angeles D",
      "nuestro": false,
-     "p": 0,
-     "pj": 0,
+     "p": 1,
+     "pj": 1,
      "pos": 11,
      "pts": 0
     }
@@ -2040,6 +2040,21 @@
   "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
    "filas": [
     {
+     "dg": 2,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 1,
+     "gc": 4,
+     "gf": 6,
+     "id": "10652341",
+     "nombre": "Racing de Villaverde A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 2,
+     "pos": 1,
+     "pts": 4
+    },
+    {
      "dg": 7,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
@@ -2051,7 +2066,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 1,
-     "pos": 1,
+     "pos": 2,
      "pts": 3
     },
     {
@@ -2063,21 +2078,6 @@
      "gf": 5,
      "id": "15287967",
      "nombre": "Sport Villa de Vallecas A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 1,
-     "pos": 2,
-     "pts": 3
-    },
-    {
-     "dg": 2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 1,
-     "gc": 2,
-     "gf": 4,
-     "id": "10652341",
-     "nombre": "Racing de Villaverde A",
      "nuestro": false,
      "p": 0,
      "pj": 1,
@@ -2131,18 +2131,18 @@
     },
     {
      "dg": 0,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258054_adepo.png",
      "g": 0,
-     "gc": 0,
-     "gf": 0,
+     "gc": 2,
+     "gf": 2,
      "id": "15290321",
      "nombre": "Adepo Palomeras A",
      "nuestro": false,
      "p": 0,
-     "pj": 1,
+     "pj": 2,
      "pos": 7,
-     "pts": 1
+     "pts": 2
     },
     {
      "dg": 0,
@@ -11912,7 +11912,10 @@
     "C.D. CIUDAD LOS ANGELES"
    ],
    "pos": null,
-   "resultado": null,
+   "resultado": [
+    1,
+    0
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
    "visitante": [
     "24025636",
