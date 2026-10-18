@@ -453,34 +453,34 @@
   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
    "filas": [
     {
-     "dg": 21,
+     "dg": 23,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010995681_escudo_conce.jpg",
-     "g": 7,
+     "g": 8,
      "gc": 5,
-     "gf": 26,
+     "gf": 28,
      "id": "371",
      "nombre": "Club Escuela de Futbol Concepcion A",
      "nuestro": false,
      "p": 0,
-     "pj": 7,
+     "pj": 8,
      "pos": 1,
-     "pts": 21
+     "pts": 24
     },
     {
-     "dg": 20,
+     "dg": 21,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 7,
+     "g": 8,
      "gc": 4,
-     "gf": 24,
+     "gf": 25,
      "id": "6815292",
      "nombre": "Ciudad de los Ángeles A",
      "nuestro": true,
      "p": 0,
-     "pj": 7,
+     "pj": 8,
      "pos": 2,
-     "pts": 21
+     "pts": 24
     },
     {
      "dg": 11,
@@ -618,17 +618,17 @@
      "pts": 12
     },
     {
-     "dg": 6,
+     "dg": 4,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
      "g": 3,
-     "gc": 8,
+     "gc": 10,
      "gf": 14,
      "id": "6817156",
      "nombre": "Union Valdebernardo B",
      "nuestro": false,
-     "p": 2,
-     "pj": 6,
+     "p": 3,
+     "pj": 7,
      "pos": 12,
      "pts": 10
     },
@@ -678,17 +678,17 @@
      "pts": 9
     },
     {
-     "dg": 0,
+     "dg": -1,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011122324_FONDO_BLANCO.png",
      "g": 2,
-     "gc": 13,
+     "gc": 14,
      "gf": 13,
      "id": "680074",
      "nombre": "Vicalvaro C",
      "nuestro": false,
-     "p": 3,
-     "pj": 7,
+     "p": 4,
+     "pj": 8,
      "pos": 16,
      "pts": 8
     },
@@ -834,19 +834,19 @@
      "pts": 8
     },
     {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
+     "dg": 6,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
      "g": 2,
-     "gc": 12,
-     "gf": 15,
-     "id": "15283750",
-     "nombre": "Colonia Moscardo C",
+     "gc": 14,
+     "gf": 20,
+     "id": "22461402",
+     "nombre": "Inter Promesas C",
      "nuestro": false,
      "p": 2,
-     "pj": 5,
+     "pj": 6,
      "pos": 9,
-     "pts": 7
+     "pts": 8
     },
     {
      "dg": 0,
@@ -864,6 +864,21 @@
      "pts": 7
     },
     {
+     "dg": -1,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
+     "g": 2,
+     "gc": 16,
+     "gf": 15,
+     "id": "15283750",
+     "nombre": "Colonia Moscardo C",
+     "nuestro": false,
+     "p": 3,
+     "pj": 6,
+     "pos": 11,
+     "pts": 7
+    },
+    {
      "dg": -9,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
@@ -875,7 +890,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 11,
+     "pos": 12,
      "pts": 7
     },
     {
@@ -890,7 +905,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 6,
-     "pos": 12,
+     "pos": 13,
      "pts": 6
     },
     {
@@ -905,7 +920,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 6,
-     "pos": 13,
+     "pos": 14,
      "pts": 6
     },
     {
@@ -920,23 +935,8 @@
      "nuestro": false,
      "p": 4,
      "pj": 6,
-     "pos": 14,
-     "pts": 6
-    },
-    {
-     "dg": 2,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 1,
-     "gc": 14,
-     "gf": 16,
-     "id": "22461402",
-     "nombre": "Inter Promesas C",
-     "nuestro": false,
-     "p": 2,
-     "pj": 5,
      "pos": 15,
-     "pts": 5
+     "pts": 6
     },
     {
      "dg": -17,
@@ -2316,6 +2316,21 @@
      "pts": 8
     },
     {
+     "dg": 10,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
+     "g": 2,
+     "gc": 4,
+     "gf": 14,
+     "id": "2157",
+     "nombre": "San Fermin A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 4,
+     "pos": 5,
+     "pts": 7
+    },
+    {
      "dg": 9,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
@@ -2327,7 +2342,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 5,
+     "pos": 6,
      "pts": 7
     },
     {
@@ -2342,38 +2357,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
-     "pos": 6,
-     "pts": 6
-    },
-    {
-     "dg": 4,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
-     "g": 1,
-     "gc": 4,
-     "gf": 8,
-     "id": "2157",
-     "nombre": "San Fermin A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 3,
      "pos": 7,
-     "pts": 4
-    },
-    {
-     "dg": -2,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
-     "g": 1,
-     "gc": 7,
-     "gf": 5,
-     "id": "15273163",
-     "nombre": "Rocio Leganes B",
-     "nuestro": false,
-     "p": 1,
-     "pj": 3,
-     "pos": 8,
-     "pts": 4
+     "pts": 6
     },
     {
      "dg": -1,
@@ -2387,7 +2372,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
-     "pos": 9,
+     "pos": 8,
      "pts": 4
     },
     {
@@ -2399,6 +2384,21 @@
      "gf": 6,
      "id": "24026726",
      "nombre": "Santiago Apóstol Villaverde",
+     "nuestro": false,
+     "p": 2,
+     "pj": 4,
+     "pos": 9,
+     "pts": 4
+    },
+    {
+     "dg": -8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
+     "g": 1,
+     "gc": 13,
+     "gf": 5,
+     "id": "15273163",
+     "nombre": "Rocio Leganes B",
      "nuestro": false,
      "p": 2,
      "pj": 4,
@@ -3492,7 +3492,10 @@
     2,
     16
    ],
-   "resultado": null,
+   "resultado": [
+    1,
+    0
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
     "680074",
