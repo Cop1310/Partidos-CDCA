@@ -453,6 +453,21 @@
   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
    "filas": [
     {
+     "dg": 28,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 9,
+     "gc": 4,
+     "gf": 32,
+     "id": "6815292",
+     "nombre": "Ciudad de los Ángeles A",
+     "nuestro": true,
+     "p": 0,
+     "pj": 9,
+     "pos": 1,
+     "pts": 27
+    },
+    {
      "dg": 26,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010995681_escudo_conce.jpg",
@@ -464,23 +479,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 9,
-     "pos": 1,
-     "pts": 27
-    },
-    {
-     "dg": 24,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 8,
-     "gc": 4,
-     "gf": 28,
-     "id": "6815292",
-     "nombre": "Ciudad de los Ángeles A",
-     "nuestro": true,
-     "p": 0,
-     "pj": 8,
      "pos": 2,
-     "pts": 24
+     "pts": 27
     },
     {
      "dg": 13,
@@ -498,6 +498,21 @@
      "pts": 21
     },
     {
+     "dg": 5,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png",
+     "g": 6,
+     "gc": 14,
+     "gf": 19,
+     "id": "8972472",
+     "nombre": "Torrejón D",
+     "nuestro": false,
+     "p": 3,
+     "pj": 9,
+     "pos": 4,
+     "pts": 18
+    },
+    {
      "dg": 11,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
@@ -509,7 +524,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 8,
-     "pos": 4,
+     "pos": 5,
      "pts": 17
     },
     {
@@ -524,23 +539,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 8,
-     "pos": 5,
-     "pts": 17
-    },
-    {
-     "dg": 9,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
-     "g": 5,
-     "gc": 8,
-     "gf": 17,
-     "id": "1546",
-     "nombre": "Escuela de Futbol Arganda B",
-     "nuestro": false,
-     "p": 2,
-     "pj": 8,
      "pos": 6,
-     "pts": 16
+     "pts": 17
     },
     {
      "dg": 8,
@@ -558,18 +558,33 @@
      "pts": 16
     },
     {
-     "dg": 4,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png",
+     "dg": 8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
      "g": 5,
-     "gc": 13,
-     "gf": 17,
-     "id": "8972472",
-     "nombre": "Torrejón D",
+     "gc": 10,
+     "gf": 18,
+     "id": "1546",
+     "nombre": "Escuela de Futbol Arganda B",
      "nuestro": false,
      "p": 3,
-     "pj": 8,
+     "pj": 9,
      "pos": 8,
+     "pts": 16
+    },
+    {
+     "dg": 8,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
+     "g": 4,
+     "gc": 9,
+     "gf": 17,
+     "id": "1759",
+     "nombre": "E.D.M. San Blas A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 8,
+     "pos": 9,
      "pts": 15
     },
     {
@@ -583,21 +598,6 @@
      "nombre": "Fundacion Rayo Vallecano C",
      "nuestro": false,
      "p": 3,
-     "pj": 8,
-     "pos": 9,
-     "pts": 15
-    },
-    {
-     "dg": 8,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
-     "g": 4,
-     "gc": 9,
-     "gf": 17,
-     "id": "1759",
-     "nombre": "E.D.M. San Blas A",
-     "nuestro": false,
-     "p": 1,
      "pj": 8,
      "pos": 10,
      "pts": 15
@@ -618,21 +618,6 @@
      "pts": 12
     },
     {
-     "dg": 4,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
-     "g": 3,
-     "gc": 10,
-     "gf": 14,
-     "id": "6817156",
-     "nombre": "Union Valdebernardo B",
-     "nuestro": false,
-     "p": 3,
-     "pj": 7,
-     "pos": 12,
-     "pts": 10
-    },
-    {
      "dg": 0,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258150_ESC_C.D._DOSA__1_.png",
@@ -644,6 +629,21 @@
      "nuestro": false,
      "p": 5,
      "pj": 9,
+     "pos": 12,
+     "pts": 10
+    },
+    {
+     "dg": 0,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
+     "g": 3,
+     "gc": 14,
+     "gf": 14,
+     "id": "6817156",
+     "nombre": "Union Valdebernardo B",
+     "nuestro": false,
+     "p": 4,
+     "pj": 8,
      "pos": 13,
      "pts": 10
     },
@@ -834,6 +834,21 @@
      "pts": 10
     },
     {
+     "dg": 19,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000047865_3583%20EMF%20ALUCHE.jpg",
+     "g": 3,
+     "gc": 12,
+     "gf": 31,
+     "id": "2269821",
+     "nombre": "Aluche C",
+     "nuestro": false,
+     "p": 4,
+     "pj": 7,
+     "pos": 9,
+     "pts": 9
+    },
+    {
      "dg": 1,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
@@ -845,7 +860,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 9,
+     "pos": 10,
      "pts": 9
     },
     {
@@ -860,7 +875,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 6,
-     "pos": 10,
+     "pos": 11,
      "pts": 8
     },
     {
@@ -875,7 +890,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 11,
+     "pos": 12,
      "pts": 7
     },
     {
@@ -890,7 +905,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 7,
-     "pos": 12,
+     "pos": 13,
      "pts": 7
     },
     {
@@ -905,23 +920,8 @@
      "nuestro": false,
      "p": 4,
      "pj": 7,
-     "pos": 13,
-     "pts": 7
-    },
-    {
-     "dg": 8,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000047865_3583%20EMF%20ALUCHE.jpg",
-     "g": 2,
-     "gc": 12,
-     "gf": 20,
-     "id": "2269821",
-     "nombre": "Aluche C",
-     "nuestro": false,
-     "p": 4,
-     "pj": 6,
      "pos": 14,
-     "pts": 6
+     "pts": 7
     },
     {
      "dg": -4,
@@ -939,17 +939,17 @@
      "pts": 6
     },
     {
-     "dg": -17,
+     "dg": -28,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014265980_nuevo_boadilla.png",
      "g": 1,
-     "gc": 29,
+     "gc": 40,
      "gf": 12,
      "id": "8931590",
      "nombre": "Nuevo Boadilla F",
      "nuestro": false,
-     "p": 4,
-     "pj": 6,
+     "p": 5,
+     "pj": 7,
      "pos": 16,
      "pts": 4
     },
@@ -1281,6 +1281,21 @@
      "pts": 7
     },
     {
+     "dg": 6,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011703422_LOGO_fondotransp.png",
+     "g": 2,
+     "gc": 4,
+     "gf": 10,
+     "id": "15520618",
+     "nombre": "Dragones de Lavapies A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 4,
+     "pts": 7
+    },
+    {
      "dg": 5,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
@@ -1292,7 +1307,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 3,
-     "pos": 4,
+     "pos": 5,
      "pts": 7
     },
     {
@@ -1307,38 +1322,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 3,
-     "pos": 5,
-     "pts": 6
-    },
-    {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011703422_LOGO_fondotransp.png",
-     "g": 1,
-     "gc": 3,
-     "gf": 6,
-     "id": "15520618",
-     "nombre": "Dragones de Lavapies A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
      "pos": 6,
-     "pts": 4
-    },
-    {
-     "dg": 1,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011910375_logo_orcasur_estampado.png",
-     "g": 1,
-     "gc": 4,
-     "gf": 5,
-     "id": "3161",
-     "nombre": "Orcasur Sin Fronteras A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
-     "pos": 7,
-     "pts": 3
+     "pts": 6
     },
     {
      "dg": -1,
@@ -1349,6 +1334,21 @@
      "gf": 8,
      "id": "15315841",
      "nombre": "Villaverde Bajo C",
+     "nuestro": false,
+     "p": 2,
+     "pj": 3,
+     "pos": 7,
+     "pts": 3
+    },
+    {
+     "dg": -2,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011910375_logo_orcasur_estampado.png",
+     "g": 1,
+     "gc": 8,
+     "gf": 6,
+     "id": "3161",
+     "nombre": "Orcasur Sin Fronteras A",
      "nuestro": false,
      "p": 2,
      "pj": 3,
@@ -2116,18 +2116,18 @@
     },
     {
      "dg": 2,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
      "g": 1,
-     "gc": 4,
-     "gf": 6,
+     "gc": 6,
+     "gf": 8,
      "id": "10652341",
      "nombre": "Racing de Villaverde A",
      "nuestro": false,
      "p": 0,
-     "pj": 2,
+     "pj": 3,
      "pos": 6,
-     "pts": 4
+     "pts": 5
     },
     {
      "dg": 0,
@@ -2206,18 +2206,18 @@
     },
     {
      "dg": -1,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012211011_Escudo_A.D.U._Carrascal__2_.png",
      "g": 0,
-     "gc": 5,
-     "gf": 4,
+     "gc": 7,
+     "gf": 6,
      "id": "13610731",
      "nombre": "Unión Carrascal B",
      "nuestro": false,
      "p": 1,
-     "pj": 2,
+     "pj": 3,
      "pos": 12,
-     "pts": 1
+     "pts": 2
     },
     {
      "dg": -5,
@@ -2346,19 +2346,19 @@
      "pts": 8
     },
     {
-     "dg": -4,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
+     "dg": 2,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
      "g": 2,
-     "gc": 13,
-     "gf": 9,
-     "id": "6796354",
-     "nombre": "Colonia Moscardo C",
+     "gc": 5,
+     "gf": 7,
+     "id": "1139",
+     "nombre": "La Mancha",
      "nuestro": false,
      "p": 2,
-     "pj": 4,
+     "pj": 5,
      "pos": 7,
-     "pts": 6
+     "pts": 7
     },
     {
      "dg": 0,
@@ -2406,19 +2406,34 @@
      "pts": 6
     },
     {
-     "dg": -1,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
-     "g": 1,
-     "gc": 5,
-     "gf": 4,
-     "id": "1139",
-     "nombre": "La Mancha",
+     "dg": -4,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
+     "g": 2,
+     "gc": 14,
+     "gf": 10,
+     "id": "300590",
+     "nombre": "Alzola-Halcones B",
      "nuestro": false,
-     "p": 2,
-     "pj": 4,
+     "p": 3,
+     "pj": 5,
      "pos": 11,
-     "pts": 4
+     "pts": 6
+    },
+    {
+     "dg": -6,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
+     "g": 2,
+     "gc": 16,
+     "gf": 10,
+     "id": "6796354",
+     "nombre": "Colonia Moscardo C",
+     "nuestro": false,
+     "p": 3,
+     "pj": 5,
+     "pos": 12,
+     "pts": 6
     },
     {
      "dg": -5,
@@ -2432,7 +2447,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 5,
-     "pos": 12,
+     "pos": 13,
      "pts": 4
     },
     {
@@ -2447,36 +2462,21 @@
      "nuestro": false,
      "p": 3,
      "pj": 5,
-     "pos": 13,
+     "pos": 14,
      "pts": 4
     },
     {
-     "dg": -6,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
-     "g": 1,
-     "gc": 13,
-     "gf": 7,
-     "id": "300590",
-     "nombre": "Alzola-Halcones B",
-     "nuestro": false,
-     "p": 3,
-     "pj": 4,
-     "pos": 14,
-     "pts": 3
-    },
-    {
-     "dg": -9,
+     "dg": -12,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012175523_IMG_3302.png",
      "g": 1,
-     "gc": 11,
+     "gc": 14,
      "gf": 2,
      "id": "24319270",
      "nombre": "Sad Spain Football Academy Fc",
      "nuestro": false,
-     "p": 3,
-     "pj": 4,
+     "p": 4,
+     "pj": 5,
      "pos": 15,
      "pts": 3
     },
@@ -3536,6 +3536,40 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-10-25",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "RAUL MARIO NICOLAU",
+     "lado": "visitante",
+     "minuto": 56,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "YAGO CORDOBA DE DIEGO",
+     "lado": "visitante",
+     "minuto": 62,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "MARCOS MUÑOZ GARCIA",
+     "lado": "visitante",
+     "minuto": 89,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ADRIAN DE LA CRUZ OSUNA",
+     "lado": "visitante",
+     "minuto": 89,
+     "penalti": true,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "15:00",
    "jornada": 7,
@@ -3547,7 +3581,33 @@
     12,
     1
    ],
-   "resultado": null,
+   "resultado": [
+    0,
+    4
+   ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. UNION VALDEBERNARDO 'B'",
+     "jugador": "ALONSO BALLESTEROS GONZÁLEZ",
+     "lado": "local",
+     "minuto": 46,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. UNION VALDEBERNARDO 'B'",
+     "jugador": "JAIME GODOY DÍAZ",
+     "lado": "local",
+     "minuto": 61,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "RAYAN HASSOUN KORRIT YEMLAHI",
+     "lado": "visitante",
+     "minuto": 84,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
     "6815292",
