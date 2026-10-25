@@ -513,6 +513,21 @@
      "pts": 17
     },
     {
+     "dg": 10,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
+     "g": 5,
+     "gc": 9,
+     "gf": 19,
+     "id": "1555",
+     "nombre": "Tajamar",
+     "nuestro": false,
+     "p": 1,
+     "pj": 8,
+     "pos": 5,
+     "pts": 17
+    },
+    {
      "dg": 9,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
@@ -524,7 +539,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 8,
-     "pos": 5,
+     "pos": 6,
      "pts": 16
     },
     {
@@ -539,22 +554,37 @@
      "nuestro": false,
      "p": 2,
      "pj": 8,
-     "pos": 6,
+     "pos": 7,
      "pts": 16
     },
     {
-     "dg": 8,
+     "dg": 4,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png",
+     "g": 5,
+     "gc": 13,
+     "gf": 17,
+     "id": "8972472",
+     "nombre": "Torrejón D",
+     "nuestro": false,
+     "p": 3,
+     "pj": 8,
+     "pos": 8,
+     "pts": 15
+    },
+    {
+     "dg": 7,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
      "g": 5,
-     "gc": 10,
-     "gf": 18,
+     "gc": 14,
+     "gf": 21,
      "id": "6818907",
      "nombre": "Fundacion Rayo Vallecano C",
      "nuestro": false,
-     "p": 2,
-     "pj": 7,
-     "pos": 7,
+     "p": 3,
+     "pj": 8,
+     "pos": 9,
      "pts": 15
     },
     {
@@ -569,38 +599,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 8,
-     "pos": 8,
-     "pts": 15
-    },
-    {
-     "dg": 4,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011601593_ESCUDO_AD_TORREJON.png",
-     "g": 5,
-     "gc": 13,
-     "gf": 17,
-     "id": "8972472",
-     "nombre": "Torrejón D",
-     "nuestro": false,
-     "p": 3,
-     "pj": 8,
-     "pos": 9,
-     "pts": 15
-    },
-    {
-     "dg": 9,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
-     "g": 4,
-     "gc": 6,
-     "gf": 15,
-     "id": "1555",
-     "nombre": "Tajamar",
-     "nuestro": false,
-     "p": 1,
-     "pj": 7,
      "pos": 10,
-     "pts": 14
+     "pts": 15
     },
     {
      "dg": -4,
@@ -648,19 +648,34 @@
      "pts": 10
     },
     {
-     "dg": -10,
+     "dg": -13,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011195225_WhatsApp_Image_2022_07_21_at_07.43.24.jpeg",
      "g": 3,
-     "gc": 25,
-     "gf": 15,
+     "gc": 29,
+     "gf": 16,
      "id": "1495",
      "nombre": "Escuela de Futbol de Carabanchel B",
      "nuestro": false,
-     "p": 4,
-     "pj": 8,
+     "p": 5,
+     "pj": 9,
      "pos": 14,
      "pts": 10
+    },
+    {
+     "dg": 1,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
+     "g": 3,
+     "gc": 13,
+     "gf": 14,
+     "id": "19245961",
+     "nombre": "Madrid Rio-Arganzuela C",
+     "nuestro": false,
+     "p": 5,
+     "pj": 8,
+     "pos": 15,
+     "pts": 9
     },
     {
      "dg": -2,
@@ -674,7 +689,7 @@
      "nuestro": false,
      "p": 5,
      "pj": 8,
-     "pos": 15,
+     "pos": 16,
      "pts": 9
     },
     {
@@ -689,23 +704,8 @@
      "nuestro": false,
      "p": 4,
      "pj": 8,
-     "pos": 16,
-     "pts": 8
-    },
-    {
-     "dg": -2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
-     "g": 2,
-     "gc": 13,
-     "gf": 11,
-     "id": "19245961",
-     "nombre": "Madrid Rio-Arganzuela C",
-     "nuestro": false,
-     "p": 5,
-     "pj": 7,
      "pos": 17,
-     "pts": 6
+     "pts": 8
     }
    ],
    "jornada": 34,
@@ -759,6 +759,21 @@
      "pts": 14
     },
     {
+     "dg": 9,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 4,
+     "gc": 15,
+     "gf": 24,
+     "id": "15328636",
+     "nombre": "Ciudad de los Ángeles B",
+     "nuestro": true,
+     "p": 2,
+     "pj": 7,
+     "pos": 4,
+     "pts": 13
+    },
+    {
      "dg": 3,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011741131_ESCUDO_JOTA_25ANV4.jpg",
@@ -770,7 +785,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 7,
-     "pos": 4,
+     "pos": 5,
      "pts": 13
     },
     {
@@ -785,23 +800,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 7,
-     "pos": 5,
-     "pts": 13
-    },
-    {
-     "dg": 9,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 4,
-     "gc": 12,
-     "gf": 21,
-     "id": "15328636",
-     "nombre": "Ciudad de los Ángeles B",
-     "nuestro": true,
-     "p": 2,
-     "pj": 6,
      "pos": 6,
-     "pts": 12
+     "pts": 13
     },
     {
      "dg": 11,
@@ -879,18 +879,33 @@
      "pts": 7
     },
     {
-     "dg": -9,
+     "dg": -2,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268810_arganzuela.png",
+     "g": 2,
+     "gc": 19,
+     "gf": 17,
+     "id": "24235804",
+     "nombre": "Union Deportiva Arganzuela B",
+     "nuestro": false,
+     "p": 4,
+     "pj": 7,
+     "pos": 12,
+     "pts": 7
+    },
+    {
+     "dg": -11,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
      "g": 2,
-     "gc": 23,
+     "gc": 25,
      "gf": 14,
      "id": "3359622",
      "nombre": "Fundacion Rayo Vallecano F",
      "nuestro": false,
-     "p": 3,
-     "pj": 6,
-     "pos": 12,
+     "p": 4,
+     "pj": 7,
+     "pos": 13,
      "pts": 7
     },
     {
@@ -902,21 +917,6 @@
      "gf": 20,
      "id": "2269821",
      "nombre": "Aluche C",
-     "nuestro": false,
-     "p": 4,
-     "pj": 6,
-     "pos": 13,
-     "pts": 6
-    },
-    {
-     "dg": -2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268810_arganzuela.png",
-     "g": 2,
-     "gc": 16,
-     "gf": 14,
-     "id": "24235804",
-     "nombre": "Union Deportiva Arganzuela B",
      "nuestro": false,
      "p": 4,
      "pj": 6,
@@ -969,19 +969,19 @@
      "pts": 3
     },
     {
-     "dg": -33,
+     "dg": -31,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000044359_ESCUDO%20UNION%202000.JPG",
-     "g": 0,
+     "g": 1,
      "gc": 38,
-     "gf": 5,
+     "gf": 7,
      "id": "4928739",
      "nombre": "Unión 2000 B",
      "nuestro": false,
      "p": 6,
-     "pj": 6,
+     "pj": 7,
      "pos": 18,
-     "pts": 0
+     "pts": 3
     }
    ],
    "jornada": 7,
@@ -1035,6 +1035,21 @@
      "pts": 13
     },
     {
+     "dg": 2,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
+     "g": 3,
+     "gc": 9,
+     "gf": 11,
+     "id": "1764",
+     "nombre": "E.D.M. San Blas B",
+     "nuestro": false,
+     "p": 2,
+     "pj": 5,
+     "pos": 4,
+     "pts": 9
+    },
+    {
      "dg": 3,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
@@ -1046,7 +1061,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 4,
-     "pos": 4,
+     "pos": 5,
      "pts": 8
     },
     {
@@ -1061,22 +1076,22 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 5,
+     "pos": 6,
      "pts": 7
     },
     {
-     "dg": 2,
+     "dg": 0,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
      "g": 2,
-     "gc": 9,
-     "gf": 11,
+     "gc": 12,
+     "gf": 12,
      "id": "8961562",
      "nombre": "Ciudad de los Ángeles A",
      "nuestro": true,
-     "p": 1,
-     "pj": 4,
-     "pos": 6,
+     "p": 2,
+     "pj": 5,
+     "pos": 7,
      "pts": 7
     },
     {
@@ -1091,7 +1106,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 7,
+     "pos": 8,
      "pts": 7
     },
     {
@@ -1106,21 +1121,6 @@
      "nuestro": false,
      "p": 3,
      "pj": 5,
-     "pos": 8,
-     "pts": 6
-    },
-    {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
-     "g": 2,
-     "gc": 8,
-     "gf": 8,
-     "id": "1764",
-     "nombre": "E.D.M. San Blas B",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
      "pos": 9,
      "pts": 6
     },
@@ -1266,6 +1266,21 @@
      "pts": 7
     },
     {
+     "dg": 5,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
+     "g": 2,
+     "gc": 5,
+     "gf": 10,
+     "id": "6826485",
+     "nombre": "Villaverde San Andres B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 3,
+     "pts": 7
+    },
+    {
      "dg": 3,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
@@ -1274,21 +1289,6 @@
      "gf": 6,
      "id": "10655688",
      "nombre": "Madrid Rio-Arganzuela C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 2,
-     "pos": 3,
-     "pts": 4
-    },
-    {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
-     "g": 1,
-     "gc": 3,
-     "gf": 6,
-     "id": "6826485",
-     "nombre": "Villaverde San Andres B",
      "nuestro": false,
      "p": 0,
      "pj": 2,
@@ -1358,21 +1358,6 @@
     {
      "dg": -2,
      "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 1,
-     "gc": 5,
-     "gf": 3,
-     "id": "13538232",
-     "nombre": "Ciudad de los Ángeles B",
-     "nuestro": true,
-     "p": 1,
-     "pj": 2,
-     "pos": 9,
-     "pts": 3
-    },
-    {
-     "dg": -2,
-     "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
      "g": 1,
      "gc": 3,
@@ -1382,6 +1367,21 @@
      "nuestro": false,
      "p": 1,
      "pj": 2,
+     "pos": 9,
+     "pts": 3
+    },
+    {
+     "dg": -3,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 1,
+     "gc": 6,
+     "gf": 3,
+     "id": "13538232",
+     "nombre": "Ciudad de los Ángeles B",
+     "nuestro": true,
+     "p": 2,
+     "pj": 3,
      "pos": 10,
      "pts": 3
     },
@@ -1401,32 +1401,32 @@
      "pts": 3
     },
     {
-     "dg": -2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268810_arganzuela.png",
-     "g": 0,
-     "gc": 4,
-     "gf": 2,
-     "id": "24235768",
-     "nombre": "Union Deportiva Arganzuela F",
-     "nuestro": false,
-     "p": 2,
-     "pj": 2,
-     "pos": 12,
-     "pts": 0
-    },
-    {
-     "dg": -7,
+     "dg": -6,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 0,
+     "g": 1,
      "gc": 8,
-     "gf": 1,
+     "gf": 2,
      "id": "24791952",
      "nombre": "Inter Promesas F",
      "nuestro": false,
      "p": 2,
-     "pj": 2,
+     "pj": 3,
+     "pos": 12,
+     "pts": 3
+    },
+    {
+     "dg": -4,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268810_arganzuela.png",
+     "g": 0,
+     "gc": 8,
+     "gf": 4,
+     "id": "24235768",
+     "nombre": "Union Deportiva Arganzuela F",
+     "nuestro": false,
+     "p": 3,
+     "pj": 3,
      "pos": 13,
      "pts": 0
     },
@@ -2256,21 +2256,6 @@
   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
    "filas": [
     {
-     "dg": 7,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 4,
-     "gc": 9,
-     "gf": 16,
-     "id": "12858097",
-     "nombre": "Inter Promesas",
-     "nuestro": false,
-     "p": 0,
-     "pj": 4,
-     "pos": 1,
-     "pts": 12
-    },
-    {
      "dg": 6,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
@@ -2282,23 +2267,23 @@
      "nuestro": false,
      "p": 0,
      "pj": 4,
-     "pos": 2,
+     "pos": 1,
      "pts": 12
     },
     {
-     "dg": 6,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000039101_4308-rosales.jpg",
-     "g": 2,
-     "gc": 6,
-     "gf": 12,
-     "id": "2733",
-     "nombre": "Los Rosales de Villaverde",
+     "dg": 7,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
+     "g": 4,
+     "gc": 9,
+     "gf": 16,
+     "id": "12858097",
+     "nombre": "Inter Promesas",
      "nuestro": false,
      "p": 0,
-     "pj": 4,
-     "pos": 3,
-     "pts": 8
+     "pj": 5,
+     "pos": 2,
+     "pts": 13
     },
     {
      "dg": 4,
@@ -2312,8 +2297,23 @@
      "nuestro": false,
      "p": 0,
      "pj": 4,
-     "pos": 4,
+     "pos": 3,
      "pts": 8
+    },
+    {
+     "dg": 6,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000039101_4308-rosales.jpg",
+     "g": 2,
+     "gc": 6,
+     "gf": 12,
+     "id": "2733",
+     "nombre": "Los Rosales de Villaverde",
+     "nuestro": false,
+     "p": 0,
+     "pj": 5,
+     "pos": 4,
+     "pts": 9
     },
     {
      "dg": 10,
@@ -2348,21 +2348,6 @@
     {
      "dg": -4,
      "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000096878_EQUIPO_LEGASUR.jpg",
-     "g": 2,
-     "gc": 15,
-     "gf": 11,
-     "id": "21430705",
-     "nombre": "Legasur-Rayo B",
-     "nuestro": false,
-     "p": 3,
-     "pj": 5,
-     "pos": 7,
-     "pts": 6
-    },
-    {
-     "dg": -4,
-     "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
      "g": 2,
      "gc": 13,
@@ -2372,6 +2357,21 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
+     "pos": 7,
+     "pts": 6
+    },
+    {
+     "dg": -4,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000096878_EQUIPO_LEGASUR.jpg",
+     "g": 2,
+     "gc": 15,
+     "gf": 11,
+     "id": "21430705",
+     "nombre": "Legasur-Rayo B",
+     "nuestro": false,
+     "p": 3,
+     "pj": 5,
      "pos": 8,
      "pts": 6
     },
@@ -2391,21 +2391,6 @@
      "pts": 4
     },
     {
-     "dg": -5,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
-     "g": 1,
-     "gc": 12,
-     "gf": 7,
-     "id": "24026726",
-     "nombre": "Santiago Apóstol Villaverde",
-     "nuestro": false,
-     "p": 3,
-     "pj": 5,
-     "pos": 10,
-     "pts": 4
-    },
-    {
      "dg": -8,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
@@ -2417,6 +2402,21 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
+     "pos": 10,
+     "pts": 4
+    },
+    {
+     "dg": -5,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
+     "g": 1,
+     "gc": 12,
+     "gf": 7,
+     "id": "24026726",
+     "nombre": "Santiago Apóstol Villaverde",
+     "nuestro": false,
+     "p": 3,
+     "pj": 5,
      "pos": 11,
      "pts": 4
     },
@@ -2496,7 +2496,7 @@
      "pts": 2
     }
    ],
-   "jornada": 4,
+   "jornada": 5,
    "titulo": "Segunda Aficionado Grupo 20"
   },
   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
@@ -2994,18 +2994,18 @@
    "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas": {
     "actual": 2,
     "cursor": null,
-    "fecha": "2026-10-19",
+    "fecha": "2026-10-25",
     "total": 11
    },
    "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas": {
     "actual": 2,
     "cursor": null,
-    "fecha": "2026-10-19",
+    "fecha": "2026-10-25",
     "total": 11
    },
    "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
     "actual": 3,
-    "cursor": 8,
+    "cursor": null,
     "fecha": "2026-10-25",
     "total": 26
    },
@@ -4560,6 +4560,40 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-10-25",
+   "goles": [
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "MARCOS VICENTE RODRIGUEZ",
+     "lado": "local",
+     "minuto": 9,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "BRUNO REGIDOR GARCIA",
+     "lado": "local",
+     "minuto": 34,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "BRUNO REGIDOR GARCIA",
+     "lado": "local",
+     "minuto": 79,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "GUILLERMO GARCIA LOPEZ",
+     "lado": "visitante",
+     "minuto": 36,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "10:00",
    "jornada": 5,
@@ -4571,7 +4605,47 @@
     9,
     6
    ],
-   "resultado": null,
+   "resultado": [
+    3,
+    1
+   ],
+   "tarjetas": [
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "ROMAN ALONSO PUERTAS",
+     "lado": "local",
+     "minuto": 17,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "ALEJANDRO ABAD GARCIA",
+     "lado": "local",
+     "minuto": 35,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "E.D.M. SAN BLAS 'B'",
+     "jugador": "MARCOS BARRANTES GRANDIA",
+     "lado": "local",
+     "minuto": 56,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "MARIO MENCHERO VILLANUEVA",
+     "lado": "visitante",
+     "minuto": 21,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "DANIEL GUTIÉRREZ PIZARRO",
+     "lado": "visitante",
+     "minuto": 30,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
    "visitante": [
     "8961562",
@@ -5379,7 +5453,7 @@
   },
   "5599702": {
    "acta": "https://www.elbalondemadrid.es/acta/5599702?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "BARRIO GOYA (HA)CALLE DE PABLO SARASATE 1 · Madrid",
+   "campo": "BARRIO GOYA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258198_C.D._GOYA.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -5421,7 +5495,7 @@
   },
   "5599715": {
    "acta": "https://www.elbalondemadrid.es/acta/5599715?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "campo": "PUERTO RICO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010857942_1330_ALZOLA.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -5526,7 +5600,7 @@
   },
   "5599761": {
    "acta": "https://www.elbalondemadrid.es/acta/5599761?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIACALLE DE FUENTIDUEÑA 6 · Madrid",
+   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIA",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-27",
@@ -5568,7 +5642,7 @@
   },
   "5599774": {
    "acta": "https://www.elbalondemadrid.es/acta/5599774?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "campo": "MADRID RIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266052_MR.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-13",
@@ -5610,7 +5684,7 @@
   },
   "5599787": {
    "acta": "https://www.elbalondemadrid.es/acta/5599787?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "campo": "PVO. PALOMERAS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-03",
@@ -5652,7 +5726,7 @@
   },
   "5599800": {
    "acta": "https://www.elbalondemadrid.es/acta/5599800?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "LEGANES - CANTERA F7 - 1CALLE ARQUITECTURA 4 · Leganés",
+   "campo": "LEGANES - CANTERA F7 - 1",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -5694,7 +5768,7 @@
   },
   "5599813": {
    "acta": "https://www.elbalondemadrid.es/acta/5599813?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "campo": "ROMAN VALERO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011589039_MOSCARDO.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
@@ -11419,7 +11493,10 @@
     14,
     9
    ],
-   "resultado": null,
+   "resultado": [
+    1,
+    0
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
    "visitante": [
     "13538232",
@@ -12743,7 +12820,7 @@
   },
   "5680140": {
    "acta": "https://www.elbalondemadrid.es/acta/5680140?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "fecha": "2026-11-07",
@@ -12764,7 +12841,7 @@
   },
   "5680147": {
    "acta": "https://www.elbalondemadrid.es/acta/5680147?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-14",
@@ -12785,7 +12862,7 @@
   },
   "5680153": {
    "acta": "https://www.elbalondemadrid.es/acta/5680153?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "fecha": "2026-11-21",
@@ -12806,7 +12883,7 @@
   },
   "5680160": {
    "acta": "https://www.elbalondemadrid.es/acta/5680160?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -12827,7 +12904,7 @@
   },
   "5680166": {
    "acta": "https://www.elbalondemadrid.es/acta/5680166?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -12869,7 +12946,7 @@
   },
   "5680177": {
    "acta": "https://www.elbalondemadrid.es/acta/5680177?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -12890,7 +12967,7 @@
   },
   "5680183": {
    "acta": "https://www.elbalondemadrid.es/acta/5680183?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2027-01-23",
@@ -12911,7 +12988,7 @@
   },
   "5680188": {
    "acta": "https://www.elbalondemadrid.es/acta/5680188?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-30",
@@ -13021,7 +13098,7 @@
   },
   "5695049": {
    "acta": "https://www.elbalondemadrid.es/acta/5695049?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-07",
@@ -13042,7 +13119,7 @@
   },
   "5695051": {
    "acta": "https://www.elbalondemadrid.es/acta/5695051?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "fecha": "2026-11-07",
@@ -13063,7 +13140,7 @@
   },
   "5695055": {
    "acta": "https://www.elbalondemadrid.es/acta/5695055?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "fecha": "2026-11-14",
@@ -13084,7 +13161,7 @@
   },
   "5695058": {
    "acta": "https://www.elbalondemadrid.es/acta/5695058?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-14",
@@ -13105,7 +13182,7 @@
   },
   "5695064": {
    "acta": "https://www.elbalondemadrid.es/acta/5695064?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-21",
@@ -13126,7 +13203,7 @@
   },
   "5695066": {
    "acta": "https://www.elbalondemadrid.es/acta/5695066?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-28",
@@ -13147,7 +13224,7 @@
   },
   "5695071": {
    "acta": "https://www.elbalondemadrid.es/acta/5695071?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -13168,7 +13245,7 @@
   },
   "5695072": {
    "acta": "https://www.elbalondemadrid.es/acta/5695072?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "fecha": "2026-12-12",
@@ -13189,7 +13266,7 @@
   },
   "5695077": {
    "acta": "https://www.elbalondemadrid.es/acta/5695077?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -13210,7 +13287,7 @@
   },
   "5695079": {
    "acta": "https://www.elbalondemadrid.es/acta/5695079?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-19",
@@ -13231,7 +13308,7 @@
   },
   "5695083": {
    "acta": "https://www.elbalondemadrid.es/acta/5695083?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
    "fecha": "2026-12-19",
@@ -13252,7 +13329,7 @@
   },
   "5695085": {
    "acta": "https://www.elbalondemadrid.es/acta/5695085?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2027-01-16",
@@ -13273,7 +13350,7 @@
   },
   "5695088": {
    "acta": "https://www.elbalondemadrid.es/acta/5695088?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -13294,7 +13371,7 @@
   },
   "5695092": {
    "acta": "https://www.elbalondemadrid.es/acta/5695092?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-23",
@@ -13315,7 +13392,7 @@
   },
   "5695094": {
    "acta": "https://www.elbalondemadrid.es/acta/5695094?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "fecha": "2027-01-23",
@@ -13336,7 +13413,7 @@
   },
   "5695098": {
    "acta": "https://www.elbalondemadrid.es/acta/5695098?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "fecha": "2027-01-30",
