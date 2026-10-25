@@ -177,49 +177,49 @@
   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": {
    "filas": [
     {
-     "dg": 9,
+     "dg": 14,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000098133_escudo-rivas-fc.png",
-     "g": 4,
+     "g": 5,
      "gc": 6,
-     "gf": 15,
+     "gf": 20,
      "id": "4928629",
      "nombre": "Rivas Futbol Club",
      "nuestro": false,
      "p": 0,
-     "pj": 6,
+     "pj": 7,
      "pos": 1,
-     "pts": 14
+     "pts": 17
     },
     {
-     "dg": 16,
+     "dg": 18,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268594_ciudad_pinto.png",
-     "g": 4,
+     "g": 5,
      "gc": 4,
-     "gf": 20,
+     "gf": 22,
      "id": "8944219",
      "nombre": "Ciudad de Pinto A",
      "nuestro": false,
      "p": 1,
-     "pj": 6,
+     "pj": 7,
      "pos": 2,
-     "pts": 13
+     "pts": 16
     },
     {
-     "dg": 4,
+     "dg": 7,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
-     "g": 4,
-     "gc": 5,
-     "gf": 9,
+     "g": 5,
+     "gc": 6,
+     "gf": 13,
      "id": "2022",
      "nombre": "E.F. Ciudad de Getafe A",
      "nuestro": false,
      "p": 1,
-     "pj": 6,
+     "pj": 7,
      "pos": 3,
-     "pts": 13
+     "pts": 16
     },
     {
      "dg": 7,
@@ -238,7 +238,7 @@
     },
     {
      "dg": 6,
-     "e": 2,
+     "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
      "g": 3,
      "gc": 6,
@@ -247,13 +247,13 @@
      "nombre": "Arganda",
      "nuestro": false,
      "p": 1,
-     "pj": 6,
+     "pj": 7,
      "pos": 5,
-     "pts": 11
+     "pts": 12
     },
     {
      "dg": 5,
-     "e": 2,
+     "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
      "g": 3,
      "gc": 8,
@@ -262,69 +262,84 @@
      "nombre": "Colonia Moscardo B",
      "nuestro": false,
      "p": 1,
-     "pj": 6,
+     "pj": 7,
      "pos": 6,
-     "pts": 11
+     "pts": 12
     },
     {
      "dg": 2,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012211011_Escudo_A.D.U._Carrascal__2_.png",
-     "g": 3,
-     "gc": 14,
-     "gf": 16,
-     "id": "2346",
-     "nombre": "Unión Carrascal A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 6,
-     "pos": 7,
-     "pts": 10
-    },
-    {
-     "dg": -1,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 3,
-     "gc": 12,
-     "gf": 11,
-     "id": "475",
-     "nombre": "Racing de Villaverde A",
-     "nuestro": false,
-     "p": 3,
-     "pj": 6,
-     "pos": 8,
-     "pts": 9
-    },
-    {
-     "dg": -1,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 2,
-     "gc": 11,
-     "gf": 10,
-     "id": "680159",
-     "nombre": "Villaverde Bajo A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 6,
-     "pos": 9,
-     "pts": 9
-    },
-    {
-     "dg": 0,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 2,
+     "g": 3,
      "gc": 9,
-     "gf": 9,
+     "gf": 11,
      "id": "947",
      "nombre": "Orcasitas A",
      "nuestro": false,
      "p": 2,
-     "pj": 6,
+     "pj": 7,
+     "pos": 7,
+     "pts": 11
+    },
+    {
+     "dg": -1,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 3,
+     "gc": 14,
+     "gf": 13,
+     "id": "475",
+     "nombre": "Racing de Villaverde A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 7,
+     "pos": 8,
+     "pts": 10
+    },
+    {
+     "dg": -3,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012211011_Escudo_A.D.U._Carrascal__2_.png",
+     "g": 3,
+     "gc": 19,
+     "gf": 16,
+     "id": "2346",
+     "nombre": "Unión Carrascal A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 7,
+     "pos": 9,
+     "pts": 10
+    },
+    {
+     "dg": 0,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011725872_Escudo_NPCF.png",
+     "g": 2,
+     "gc": 12,
+     "gf": 12,
+     "id": "732",
+     "nombre": "Nuevo Pinto A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 7,
      "pos": 10,
-     "pts": 8
+     "pts": 9
+    },
+    {
+     "dg": -2,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
+     "g": 2,
+     "gc": 12,
+     "gf": 10,
+     "id": "680159",
+     "nombre": "Villaverde Bajo A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 7,
+     "pos": 11,
+     "pts": 9
     },
     {
      "dg": 0,
@@ -338,116 +353,101 @@
      "nuestro": true,
      "p": 1,
      "pj": 6,
-     "pos": 11,
+     "pos": 12,
      "pts": 7
     },
     {
-     "dg": -1,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011725872_Escudo_NPCF.png",
-     "g": 1,
-     "gc": 12,
-     "gf": 11,
-     "id": "732",
-     "nombre": "Nuevo Pinto A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 6,
-     "pos": 12,
-     "pts": 6
-    },
-    {
      "dg": -5,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010884819_escudo_definitivo_fepe_escudo_21_JULIO.jpg",
-     "g": 1,
-     "gc": 15,
-     "gf": 10,
-     "id": "1006",
-     "nombre": "Fepe Getafe III A",
-     "nuestro": false,
-     "p": 3,
-     "pj": 6,
-     "pos": 13,
-     "pts": 5
-    },
-    {
-     "dg": -6,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
-     "g": 1,
+     "g": 2,
      "gc": 12,
-     "gf": 6,
+     "gf": 7,
      "id": "352985",
      "nombre": "Udmelidaolimpia-Madrid City Vallecas",
      "nuestro": false,
      "p": 4,
-     "pj": 6,
+     "pj": 7,
+     "pos": 13,
+     "pts": 7
+    },
+    {
+     "dg": -7,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010884819_escudo_definitivo_fepe_escudo_21_JULIO.jpg",
+     "g": 1,
+     "gc": 17,
+     "gf": 10,
+     "id": "1006",
+     "nombre": "Fepe Getafe III A",
+     "nuestro": false,
+     "p": 4,
+     "pj": 7,
      "pos": 14,
-     "pts": 4
+     "pts": 5
     },
     {
      "dg": -9,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011039719_escudo_aguilas___calidad.jpg",
      "g": 1,
-     "gc": 17,
-     "gf": 8,
+     "gc": 19,
+     "gf": 10,
      "id": "523",
      "nombre": "Esc. Mpal. de Fut. Aguilas de Moratalaz A",
      "nuestro": false,
      "p": 4,
-     "pj": 6,
+     "pj": 7,
      "pos": 15,
-     "pts": 4
+     "pts": 5
     },
     {
-     "dg": -12,
+     "dg": -15,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
      "g": 1,
-     "gc": 20,
-     "gf": 8,
+     "gc": 24,
+     "gf": 9,
      "id": "1041",
      "nombre": "Club Seccion Deportiva del Pozo A",
      "nuestro": false,
-     "p": 4,
-     "pj": 6,
+     "p": 5,
+     "pj": 7,
      "pos": 16,
      "pts": 4
     },
     {
-     "dg": -4,
+     "dg": -5,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012140781_1_C.D._Villaconejos.png",
      "g": 0,
-     "gc": 9,
+     "gc": 10,
      "gf": 5,
      "id": "1036",
      "nombre": "Villaconejos A",
      "nuestro": false,
-     "p": 3,
-     "pj": 6,
+     "p": 4,
+     "pj": 7,
      "pos": 17,
      "pts": 3
     },
     {
-     "dg": -10,
+     "dg": -12,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
      "g": 0,
-     "gc": 16,
+     "gc": 18,
      "gf": 6,
      "id": "623",
      "nombre": "E.D. Moratalaz B",
      "nuestro": false,
-     "p": 4,
-     "pj": 6,
+     "p": 5,
+     "pj": 7,
      "pos": 18,
      "pts": 2
     }
    ],
-   "jornada": 6,
+   "jornada": 7,
    "titulo": "Preferente Aficionado Grupo 3"
   },
   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
@@ -990,21 +990,6 @@
   "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": {
    "filas": [
     {
-     "dg": 11,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
-     "g": 5,
-     "gc": 7,
-     "gf": 18,
-     "id": "4920195",
-     "nombre": "Arganda A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 5,
-     "pos": 1,
-     "pts": 15
-    },
-    {
      "dg": 13,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000098133_escudo-rivas-fc.png",
@@ -1016,7 +1001,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 5,
-     "pos": 2,
+     "pos": 1,
      "pts": 13
     },
     {
@@ -1031,8 +1016,38 @@
      "nuestro": false,
      "p": 0,
      "pj": 5,
-     "pos": 3,
+     "pos": 2,
      "pts": 13
+    },
+    {
+     "dg": 9,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
+     "g": 4,
+     "gc": 5,
+     "gf": 14,
+     "id": "4920195",
+     "nombre": "Arganda A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 4,
+     "pos": 3,
+     "pts": 12
+    },
+    {
+     "dg": 8,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
+     "g": 3,
+     "gc": 6,
+     "gf": 14,
+     "id": "2274952",
+     "nombre": "E.D. Moratalaz C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 5,
+     "pos": 4,
+     "pts": 11
     },
     {
      "dg": 2,
@@ -1046,36 +1061,21 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 4,
+     "pos": 5,
      "pts": 9
     },
     {
-     "dg": 3,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
-     "g": 2,
-     "gc": 6,
-     "gf": 9,
-     "id": "2274952",
-     "nombre": "E.D. Moratalaz C",
-     "nuestro": false,
-     "p": 0,
-     "pj": 4,
-     "pos": 5,
-     "pts": 8
-    },
-    {
-     "dg": 3,
+     "dg": 5,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
      "g": 2,
-     "gc": 13,
-     "gf": 16,
+     "gc": 9,
+     "gf": 14,
      "id": "877423",
      "nombre": "Sport Villa de Vallecas A",
      "nuestro": false,
-     "p": 2,
-     "pj": 5,
+     "p": 1,
+     "pj": 4,
      "pos": 6,
      "pts": 7
     },
@@ -1170,21 +1170,6 @@
      "pts": 6
     },
     {
-     "dg": 0,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
-     "g": 1,
-     "gc": 9,
-     "gf": 9,
-     "id": "690",
-     "nombre": "Coslada B",
-     "nuestro": false,
-     "p": 3,
-     "pj": 4,
-     "pos": 13,
-     "pts": 3
-    },
-    {
      "dg": -4,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
@@ -1195,6 +1180,21 @@
      "nombre": "Parque Sureste A",
      "nuestro": false,
      "p": 2,
+     "pj": 5,
+     "pos": 13,
+     "pts": 3
+    },
+    {
+     "dg": -5,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
+     "g": 1,
+     "gc": 14,
+     "gf": 9,
+     "id": "690",
+     "nombre": "Coslada B",
+     "nuestro": false,
+     "p": 4,
      "pj": 5,
      "pos": 14,
      "pts": 3
@@ -1253,6 +1253,21 @@
     {
      "dg": 7,
      "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
+     "g": 2,
+     "gc": 4,
+     "gf": 11,
+     "id": "10655688",
+     "nombre": "Madrid Rio-Arganzuela C",
+     "nuestro": false,
+     "p": 0,
+     "pj": 3,
+     "pos": 2,
+     "pts": 7
+    },
+    {
+     "dg": 7,
+     "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
      "g": 2,
      "gc": 4,
@@ -1262,7 +1277,7 @@
      "nuestro": false,
      "p": 0,
      "pj": 3,
-     "pos": 2,
+     "pos": 3,
      "pts": 7
     },
     {
@@ -1277,23 +1292,23 @@
      "nuestro": false,
      "p": 0,
      "pj": 3,
-     "pos": 3,
+     "pos": 4,
      "pts": 7
     },
     {
      "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
-     "g": 1,
-     "gc": 3,
-     "gf": 6,
-     "id": "10655688",
-     "nombre": "Madrid Rio-Arganzuela C",
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
+     "g": 2,
+     "gc": 4,
+     "gf": 7,
+     "id": "466651",
+     "nombre": "San Cristobal de los Angeles A",
      "nuestro": false,
-     "p": 0,
-     "pj": 2,
-     "pos": 4,
-     "pts": 4
+     "p": 1,
+     "pj": 3,
+     "pos": 5,
+     "pts": 6
     },
     {
      "dg": 3,
@@ -1307,23 +1322,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 2,
-     "pos": 5,
-     "pts": 4
-    },
-    {
-     "dg": 3,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 1,
-     "gc": 4,
-     "gf": 7,
-     "id": "15315841",
-     "nombre": "Villaverde Bajo C",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
      "pos": 6,
-     "pts": 3
+     "pts": 4
     },
     {
      "dg": 1,
@@ -1341,33 +1341,18 @@
      "pts": 3
     },
     {
-     "dg": 0,
+     "dg": -1,
      "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
      "g": 1,
-     "gc": 3,
-     "gf": 3,
-     "id": "466651",
-     "nombre": "San Cristobal de los Angeles A",
+     "gc": 9,
+     "gf": 8,
+     "id": "15315841",
+     "nombre": "Villaverde Bajo C",
      "nuestro": false,
-     "p": 1,
-     "pj": 2,
+     "p": 2,
+     "pj": 3,
      "pos": 8,
-     "pts": 3
-    },
-    {
-     "dg": -2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 1,
-     "gc": 3,
-     "gf": 1,
-     "id": "15292008",
-     "nombre": "Racing de Villaverde D",
-     "nuestro": false,
-     "p": 1,
-     "pj": 2,
-     "pos": 9,
      "pts": 3
     },
     {
@@ -1380,6 +1365,21 @@
      "id": "13538232",
      "nombre": "Ciudad de los Ángeles B",
      "nuestro": true,
+     "p": 2,
+     "pj": 3,
+     "pos": 9,
+     "pts": 3
+    },
+    {
+     "dg": -5,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 1,
+     "gc": 7,
+     "gf": 2,
+     "id": "15292008",
+     "nombre": "Racing de Villaverde D",
+     "nuestro": false,
      "p": 2,
      "pj": 3,
      "pos": 10,
@@ -1512,19 +1512,34 @@
      "pts": 12
     },
     {
-     "dg": 5,
+     "dg": 6,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
-     "g": 3,
+     "g": 4,
      "gc": 4,
-     "gf": 9,
+     "gf": 10,
      "id": "1031993",
      "nombre": "Fundacion Rayo Vallecano C",
      "nuestro": false,
      "p": 1,
-     "pj": 4,
+     "pj": 5,
      "pos": 5,
-     "pts": 9
+     "pts": 12
+    },
+    {
+     "dg": 10,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
+     "g": 3,
+     "gc": 9,
+     "gf": 19,
+     "id": "846631",
+     "nombre": "Club Seccion Deportiva del Pozo A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 5,
+     "pos": 6,
+     "pts": 10
     },
     {
      "dg": 4,
@@ -1538,7 +1553,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 6,
+     "pos": 7,
      "pts": 9
     },
     {
@@ -1553,23 +1568,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 7,
-     "pts": 9
-    },
-    {
-     "dg": 7,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
-     "g": 2,
-     "gc": 7,
-     "gf": 14,
-     "id": "846631",
-     "nombre": "Club Seccion Deportiva del Pozo A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 4,
      "pos": 8,
-     "pts": 7
+     "pts": 9
     },
     {
      "dg": 5,
@@ -1587,17 +1587,17 @@
      "pts": 7
     },
     {
-     "dg": 4,
+     "dg": 3,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
      "g": 2,
-     "gc": 2,
+     "gc": 3,
      "gf": 6,
      "id": "13613759",
      "nombre": "Fundacion Leganes C",
      "nuestro": false,
-     "p": 1,
-     "pj": 4,
+     "p": 2,
+     "pj": 5,
      "pos": 10,
      "pts": 7
     },
@@ -1647,17 +1647,17 @@
      "pts": 3
     },
     {
-     "dg": -10,
+     "dg": -13,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
      "g": 0,
-     "gc": 17,
-     "gf": 7,
+     "gc": 22,
+     "gf": 9,
      "id": "6238195",
      "nombre": "Inter Promesas B",
      "nuestro": false,
-     "p": 4,
-     "pj": 4,
+     "p": 5,
+     "pj": 5,
      "pos": 14,
      "pts": 0
     },
@@ -2256,34 +2256,34 @@
   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
    "filas": [
     {
-     "dg": 6,
+     "dg": 8,
      "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 4,
-     "gc": 6,
-     "gf": 12,
-     "id": "946",
-     "nombre": "Orcasitas B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 4,
-     "pos": 1,
-     "pts": 12
-    },
-    {
-     "dg": 7,
-     "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 4,
-     "gc": 9,
-     "gf": 16,
+     "g": 5,
+     "gc": 10,
+     "gf": 18,
      "id": "12858097",
      "nombre": "Inter Promesas",
      "nuestro": false,
      "p": 0,
      "pj": 5,
+     "pos": 1,
+     "pts": 15
+    },
+    {
+     "dg": 5,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
+     "g": 4,
+     "gc": 9,
+     "gf": 14,
+     "id": "946",
+     "nombre": "Orcasitas B",
+     "nuestro": false,
+     "p": 1,
+     "pj": 5,
      "pos": 2,
-     "pts": 13
+     "pts": 12
     },
     {
      "dg": 4,
@@ -2301,21 +2301,6 @@
      "pts": 8
     },
     {
-     "dg": 6,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000039101_4308-rosales.jpg",
-     "g": 2,
-     "gc": 6,
-     "gf": 12,
-     "id": "2733",
-     "nombre": "Los Rosales de Villaverde",
-     "nuestro": false,
-     "p": 0,
-     "pj": 5,
-     "pos": 4,
-     "pts": 9
-    },
-    {
      "dg": 10,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
@@ -2327,7 +2312,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 5,
+     "pos": 4,
      "pts": 7
     },
     {
@@ -2342,8 +2327,23 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 6,
+     "pos": 5,
      "pts": 7
+    },
+    {
+     "dg": 5,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000039101_4308-rosales.jpg",
+     "g": 2,
+     "gc": 8,
+     "gf": 13,
+     "id": "2733",
+     "nombre": "Los Rosales de Villaverde",
+     "nuestro": false,
+     "p": 1,
+     "pj": 5,
+     "pos": 6,
+     "pts": 8
     },
     {
      "dg": -4,
@@ -2361,6 +2361,36 @@
      "pts": 6
     },
     {
+     "dg": 0,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 1,
+     "gc": 14,
+     "gf": 14,
+     "id": "6818931",
+     "nombre": "Ciudad de los Ángeles B",
+     "nuestro": true,
+     "p": 1,
+     "pj": 5,
+     "pos": 8,
+     "pts": 6
+    },
+    {
+     "dg": 0,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000086011_1966_EF_AV_LA_CHIMENEA.JPG",
+     "g": 2,
+     "gc": 13,
+     "gf": 13,
+     "id": "1098",
+     "nombre": "Esc. Fut. A.V. la Chimenea",
+     "nuestro": false,
+     "p": 3,
+     "pj": 5,
+     "pos": 9,
+     "pts": 6
+    },
+    {
      "dg": -4,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000096878_EQUIPO_LEGASUR.jpg",
@@ -2372,7 +2402,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 5,
-     "pos": 8,
+     "pos": 10,
      "pts": 6
     },
     {
@@ -2387,22 +2417,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 4,
-     "pos": 9,
-     "pts": 4
-    },
-    {
-     "dg": -8,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
-     "g": 1,
-     "gc": 13,
-     "gf": 5,
-     "id": "15273163",
-     "nombre": "Rocio Leganes B",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
-     "pos": 10,
+     "pos": 11,
      "pts": 4
     },
     {
@@ -2417,38 +2432,23 @@
      "nuestro": false,
      "p": 3,
      "pj": 5,
-     "pos": 11,
+     "pos": 12,
      "pts": 4
     },
     {
-     "dg": -1,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 0,
-     "gc": 12,
-     "gf": 11,
-     "id": "6818931",
-     "nombre": "Ciudad de los Ángeles B",
-     "nuestro": true,
-     "p": 1,
-     "pj": 4,
-     "pos": 12,
-     "pts": 3
-    },
-    {
-     "dg": -2,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000086011_1966_EF_AV_LA_CHIMENEA.JPG",
+     "dg": -10,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
      "g": 1,
-     "gc": 12,
-     "gf": 10,
-     "id": "1098",
-     "nombre": "Esc. Fut. A.V. la Chimenea",
+     "gc": 16,
+     "gf": 6,
+     "id": "15273163",
+     "nombre": "Rocio Leganes B",
      "nuestro": false,
      "p": 3,
-     "pj": 4,
+     "pj": 5,
      "pos": 13,
-     "pts": 3
+     "pts": 4
     },
     {
      "dg": -6,
@@ -2502,6 +2502,21 @@
   "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas": {
    "filas": [
     {
+     "dg": 10,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
+     "g": 4,
+     "gc": 8,
+     "gf": 18,
+     "id": "15277458",
+     "nombre": "San Fermin B",
+     "nuestro": false,
+     "p": 0,
+     "pj": 5,
+     "pos": 1,
+     "pts": 13
+    },
+    {
      "dg": 13,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
@@ -2513,7 +2528,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 5,
-     "pos": 1,
+     "pos": 2,
      "pts": 12
     },
     {
@@ -2528,23 +2543,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 5,
-     "pos": 2,
-     "pts": 12
-    },
-    {
-     "dg": 9,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
-     "g": 3,
-     "gc": 5,
-     "gf": 14,
-     "id": "15277458",
-     "nombre": "San Fermin B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 4,
      "pos": 3,
-     "pts": 10
+     "pts": 12
     },
     {
      "dg": 8,
@@ -2607,17 +2607,17 @@
      "pts": 7
     },
     {
-     "dg": 9,
+     "dg": 8,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
      "g": 2,
-     "gc": 7,
-     "gf": 16,
+     "gc": 11,
+     "gf": 19,
      "id": "24026704",
      "nombre": "Racing de Villaverde D",
      "nuestro": false,
-     "p": 1,
-     "pj": 3,
+     "p": 2,
+     "pj": 4,
      "pos": 8,
      "pts": 6
     },
@@ -7455,6 +7455,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-10-25",
+   "goles": [
+    {
+     "equipo": "CDB UNION DEPORTIVA ARGANZUELA 'B'",
+     "jugador": "ALEJANDRO PATO FERRI",
+     "lado": "local",
+     "minuto": 13,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "CDB UNION DEPORTIVA ARGANZUELA 'B'",
+     "jugador": "VICTOR HERRAIZ VILLANUEVA",
+     "lado": "local",
+     "minuto": 52,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JORGE MARTIN TORRES",
+     "lado": "visitante",
+     "minuto": 18,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "PEDRO CONTRERAS MADUEÑO",
+     "lado": "visitante",
+     "minuto": 32,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JORGE MARTIN TORRES",
+     "lado": "visitante",
+     "minuto": 75,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "CDB UNION DEPORTIVA ARGANZUELA 'B'",
+     "jugador": "CARLOS ADRIAN SANCHEZ ANAMPA",
+     "lado": "local",
+     "minuto": 89,
+     "penalti": false,
+     "propia": true
+    }
+   ],
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "11:00",
    "jornada": 7,
@@ -7466,7 +7516,75 @@
     14,
     6
    ],
-   "resultado": null,
+   "resultado": [
+    3,
+    3
+   ],
+   "tarjetas": [
+    {
+     "equipo": "CDB UNION DEPORTIVA ARGANZUELA 'B'",
+     "jugador": "ROBERTO LASO OTERO",
+     "lado": "local",
+     "minuto": 66,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "CDB UNION DEPORTIVA ARGANZUELA 'B'",
+     "jugador": "ARIEL KRUKOWSKI FERNANDEZ",
+     "lado": "local",
+     "minuto": 70,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DANIEL RAMOS DIAZ",
+     "lado": "visitante",
+     "minuto": 18,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ALBERTO MORENO TORRADO",
+     "lado": "visitante",
+     "minuto": 47,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DIEGO ANDRES CEDEÑO FERNÁNDEZ",
+     "lado": "visitante",
+     "minuto": 60,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JESUS FRAILE RUMI",
+     "lado": "visitante",
+     "minuto": 70,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JUAN JOSE RODRIGUEZ CORREA",
+     "lado": "visitante",
+     "minuto": 75,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "OLIVER SANCHEZ MAGAÑA",
+     "lado": "visitante",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MANUEL FRAILE RUMI",
+     "lado": "visitante",
+     "minuto": 90,
+     "tipo": "roja"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
    "visitante": [
     "15328636",
