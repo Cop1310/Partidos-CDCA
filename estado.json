@@ -222,17 +222,17 @@
      "pts": 16
     },
     {
-     "dg": 7,
+     "dg": 6,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012141605_Escudo_EFAC_2022.png",
      "g": 3,
-     "gc": 8,
-     "gf": 15,
+     "gc": 11,
+     "gf": 17,
      "id": "13519993",
      "nombre": "Esc.Fut.At. Casarrubuelos",
      "nuestro": false,
-     "p": 0,
-     "pj": 6,
+     "p": 1,
+     "pj": 7,
      "pos": 4,
      "pts": 12
     },
@@ -282,6 +282,21 @@
      "pts": 11
     },
     {
+     "dg": 1,
+     "e": 4,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 2,
+     "gc": 10,
+     "gf": 11,
+     "id": "2856",
+     "nombre": "Ciudad de los Ángeles A",
+     "nuestro": true,
+     "p": 1,
+     "pj": 7,
+     "pos": 8,
+     "pts": 10
+    },
+    {
      "dg": -1,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
@@ -293,7 +308,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 7,
-     "pos": 8,
+     "pos": 9,
      "pts": 10
     },
     {
@@ -308,7 +323,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 7,
-     "pos": 9,
+     "pos": 10,
      "pts": 10
     },
     {
@@ -323,7 +338,7 @@
      "nuestro": false,
      "p": 2,
      "pj": 7,
-     "pos": 10,
+     "pos": 11,
      "pts": 9
     },
     {
@@ -338,23 +353,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 7,
-     "pos": 11,
-     "pts": 9
-    },
-    {
-     "dg": 0,
-     "e": 4,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 1,
-     "gc": 8,
-     "gf": 8,
-     "id": "2856",
-     "nombre": "Ciudad de los Ángeles A",
-     "nuestro": true,
-     "p": 1,
-     "pj": 6,
      "pos": 12,
-     "pts": 7
+     "pts": 9
     },
     {
      "dg": -5,
@@ -10586,7 +10586,7 @@
     "C.D. CIUDAD LOS ANGELES 'A'"
    ],
    "pos": [
-    12,
+    8,
     2
    ],
    "resultado": null,
