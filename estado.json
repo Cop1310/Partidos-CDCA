@@ -558,21 +558,6 @@
      "pts": 17
     },
     {
-     "dg": 8,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
-     "g": 5,
-     "gc": 11,
-     "gf": 19,
-     "id": "2158",
-     "nombre": "San Fermin A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 8,
-     "pos": 8,
-     "pts": 16
-    },
-    {
      "dg": 7,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
@@ -584,7 +569,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 10,
-     "pos": 9,
+     "pos": 8,
      "pts": 16
     },
     {
@@ -599,7 +584,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 8,
-     "pos": 10,
+     "pos": 9,
      "pts": 15
     },
     {
@@ -614,8 +599,23 @@
      "nuestro": false,
      "p": 5,
      "pj": 10,
-     "pos": 11,
+     "pos": 10,
      "pts": 15
+    },
+    {
+     "dg": 2,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
+     "g": 4,
+     "gc": 15,
+     "gf": 17,
+     "id": "2158",
+     "nombre": "San Fermin A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 8,
+     "pos": 11,
+     "pts": 13
     },
     {
      "dg": 2,
@@ -759,6 +759,21 @@
      "pts": 16
     },
     {
+     "dg": 7,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 4,
+     "gc": 13,
+     "gf": 20,
+     "id": "8935617",
+     "nombre": "Racing de Villaverde B",
+     "nuestro": false,
+     "p": 1,
+     "pj": 8,
+     "pos": 4,
+     "pts": 15
+    },
+    {
      "dg": 14,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
@@ -770,38 +785,23 @@
      "nuestro": false,
      "p": 2,
      "pj": 8,
-     "pos": 4,
-     "pts": 14
-    },
-    {
-     "dg": 7,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 4,
-     "gc": 11,
-     "gf": 18,
-     "id": "8935617",
-     "nombre": "Racing de Villaverde B",
-     "nuestro": false,
-     "p": 1,
-     "pj": 7,
      "pos": 5,
      "pts": 14
     },
     {
      "dg": 9,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
      "g": 4,
-     "gc": 15,
-     "gf": 24,
+     "gc": 17,
+     "gf": 26,
      "id": "15328636",
      "nombre": "Ciudad de los Ángeles B",
      "nuestro": true,
      "p": 2,
-     "pj": 7,
+     "pj": 8,
      "pos": 6,
-     "pts": 13
+     "pts": 14
     },
     {
      "dg": 1,
@@ -834,6 +834,21 @@
      "pts": 12
     },
     {
+     "dg": 4,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
+     "g": 3,
+     "gc": 16,
+     "gf": 20,
+     "id": "948",
+     "nombre": "Orcasitas A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 8,
+     "pos": 9,
+     "pts": 11
+    },
+    {
      "dg": 19,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000047865_3583%20EMF%20ALUCHE.jpg",
@@ -845,21 +860,6 @@
      "nuestro": false,
      "p": 4,
      "pj": 8,
-     "pos": 9,
-     "pts": 10
-    },
-    {
-     "dg": 4,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 3,
-     "gc": 14,
-     "gf": 18,
-     "id": "948",
-     "nombre": "Orcasitas A",
-     "nuestro": false,
-     "p": 3,
-     "pj": 7,
      "pos": 10,
      "pts": 10
     },
@@ -895,18 +895,18 @@
     },
     {
      "dg": -2,
-     "e": 1,
+     "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
      "g": 2,
-     "gc": 19,
-     "gf": 17,
+     "gc": 21,
+     "gf": 19,
      "id": "15283750",
      "nombre": "Colonia Moscardo C",
      "nuestro": false,
      "p": 4,
-     "pj": 7,
+     "pj": 8,
      "pos": 13,
-     "pts": 7
+     "pts": 8
     },
     {
      "dg": -11,
@@ -2070,6 +2070,21 @@
      "pts": 10
     },
     {
+     "dg": 3,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 2,
+     "gc": 7,
+     "gf": 10,
+     "id": "10652341",
+     "nombre": "Racing de Villaverde A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 4,
+     "pos": 3,
+     "pts": 8
+    },
+    {
      "dg": 8,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
@@ -2081,7 +2096,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 3,
+     "pos": 4,
      "pts": 7
     },
     {
@@ -2096,7 +2111,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 4,
+     "pos": 5,
      "pts": 7
     },
     {
@@ -2111,7 +2126,7 @@
      "nuestro": true,
      "p": 1,
      "pj": 4,
-     "pos": 5,
+     "pos": 6,
      "pts": 7
     },
     {
@@ -2126,7 +2141,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 4,
-     "pos": 6,
+     "pos": 7,
      "pts": 7
     },
     {
@@ -2141,23 +2156,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 4,
-     "pos": 7,
-     "pts": 6
-    },
-    {
-     "dg": 2,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 1,
-     "gc": 6,
-     "gf": 8,
-     "id": "10652341",
-     "nombre": "Racing de Villaverde A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 3,
      "pos": 8,
-     "pts": 5
+     "pts": 6
     },
     {
      "dg": -4,
@@ -2220,17 +2220,17 @@
      "pts": 3
     },
     {
-     "dg": -5,
+     "dg": -6,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258198_C.D._GOYA.png",
      "g": 0,
-     "gc": 12,
-     "gf": 7,
+     "gc": 14,
+     "gf": 8,
      "id": "15292320",
      "nombre": "Goya B",
      "nuestro": false,
-     "p": 3,
-     "pj": 3,
+     "p": 4,
+     "pj": 4,
      "pos": 13,
      "pts": 0
     },
@@ -2347,6 +2347,21 @@
     },
     {
      "dg": 1,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
+     "g": 2,
+     "gc": 16,
+     "gf": 17,
+     "id": "6818931",
+     "nombre": "Ciudad de los Ángeles B",
+     "nuestro": true,
+     "p": 1,
+     "pj": 6,
+     "pos": 7,
+     "pts": 9
+    },
+    {
+     "dg": 1,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000086011_1966_EF_AV_LA_CHIMENEA.JPG",
      "g": 3,
@@ -2357,38 +2372,8 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 7,
-     "pts": 9
-    },
-    {
-     "dg": 0,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
-     "g": 1,
-     "gc": 14,
-     "gf": 14,
-     "id": "6818931",
-     "nombre": "Ciudad de los Ángeles B",
-     "nuestro": true,
-     "p": 1,
-     "pj": 5,
      "pos": 8,
-     "pts": 6
-    },
-    {
-     "dg": -6,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
-     "g": 2,
-     "gc": 16,
-     "gf": 10,
-     "id": "6796354",
-     "nombre": "Colonia Moscardo C",
-     "nuestro": false,
-     "p": 3,
-     "pj": 5,
-     "pos": 9,
-     "pts": 6
+     "pts": 9
     },
     {
      "dg": 7,
@@ -2402,7 +2387,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 10,
+     "pos": 9,
      "pts": 7
     },
     {
@@ -2417,7 +2402,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 11,
+     "pos": 10,
      "pts": 7
     },
     {
@@ -2432,7 +2417,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 6,
-     "pos": 12,
+     "pos": 11,
      "pts": 6
     },
     {
@@ -2444,6 +2429,21 @@
      "gf": 13,
      "id": "21430705",
      "nombre": "Legasur-Rayo B",
+     "nuestro": false,
+     "p": 4,
+     "pj": 6,
+     "pos": 12,
+     "pts": 6
+    },
+    {
+     "dg": -7,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
+     "g": 2,
+     "gc": 19,
+     "gf": 12,
+     "id": "6796354",
+     "nombre": "Colonia Moscardo C",
      "nuestro": false,
      "p": 4,
      "pj": 6,
@@ -2577,6 +2577,21 @@
      "pts": 12
     },
     {
+     "dg": 9,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 3,
+     "gc": 15,
+     "gf": 24,
+     "id": "24026704",
+     "nombre": "Racing de Villaverde D",
+     "nuestro": false,
+     "p": 2,
+     "pj": 5,
+     "pos": 6,
+     "pts": 9
+    },
+    {
      "dg": 3,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012175523_IMG_3302.png",
@@ -2588,23 +2603,8 @@
      "nuestro": false,
      "p": 3,
      "pj": 6,
-     "pos": 6,
-     "pts": 9
-    },
-    {
-     "dg": -2,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
-     "g": 2,
-     "gc": 8,
-     "gf": 6,
-     "id": "680085",
-     "nombre": "Alzola-Halcones D",
-     "nuestro": false,
-     "p": 2,
-     "pj": 5,
      "pos": 7,
-     "pts": 7
+     "pts": 9
     },
     {
      "dg": -3,
@@ -2622,6 +2622,21 @@
      "pts": 7
     },
     {
+     "dg": -3,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
+     "g": 2,
+     "gc": 13,
+     "gf": 10,
+     "id": "680085",
+     "nombre": "Alzola-Halcones D",
+     "nuestro": false,
+     "p": 3,
+     "pj": 6,
+     "pos": 9,
+     "pts": 7
+    },
+    {
      "dg": -6,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
@@ -2633,23 +2648,8 @@
      "nuestro": false,
      "p": 2,
      "pj": 5,
-     "pos": 9,
-     "pts": 7
-    },
-    {
-     "dg": 8,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 2,
-     "gc": 11,
-     "gf": 19,
-     "id": "24026704",
-     "nombre": "Racing de Villaverde D",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
      "pos": 10,
-     "pts": 6
+     "pts": 7
     },
     {
      "dg": 1,
@@ -7681,6 +7681,40 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "fecha": "2026-11-01",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 67,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "AARON ZAPATA GARCIA",
+     "lado": "local",
+     "minuto": 87,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "JEAN PIERRE SALTOS MARMOLEJOS",
+     "lado": "visitante",
+     "minuto": 28,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "JEREMY BRITO MORAN",
+     "lado": "visitante",
+     "minuto": 90,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "13:30",
    "jornada": 8,
@@ -7692,7 +7726,82 @@
     4,
     9
    ],
-   "resultado": null,
+   "resultado": [
+    2,
+    2
+   ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 45,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JUAN JOSE RODRIGUEZ CORREA",
+     "lado": "local",
+     "minuto": 51,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "SALVATORE BASSO",
+     "lado": "local",
+     "minuto": 52,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ANGEL GABRIEL RODRÍGUEZ RIVERA",
+     "lado": "local",
+     "minuto": 60,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "AHMED EL BAROUDI",
+     "lado": "local",
+     "minuto": 69,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 74,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DIEGO ANDRES CEDEÑO FERNÁNDEZ",
+     "lado": "local",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ADRIAN DE LA PEÑA DURANGO",
+     "lado": "visitante",
+     "minuto": 35,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ADRIAN DE LA PEÑA DURANGO",
+     "lado": "visitante",
+     "minuto": 42,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "SOHOU BOCESSEA NIWAN MONPOHO",
+     "lado": "visitante",
+     "minuto": 54,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
    "visitante": [
     "948",
@@ -10944,6 +11053,16 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268594_ciudad_pinto.png",
    "fecha": "2026-11-01",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "CESAR MUÑOZ CASTILLO",
+     "lado": "local",
+     "minuto": 89,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:30",
    "jornada": 8,
@@ -10958,6 +11077,57 @@
    "resultado": [
     1,
     0
+   ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "HUGO GOMEZ RODRIGUEZ",
+     "lado": "local",
+     "minuto": 27,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FERNANDO MORENO ACOSTA",
+     "lado": "local",
+     "minuto": 62,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ADRIAN LOPEZ LOPEZ",
+     "lado": "local",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FERNANDO PEREZ SANCHEZ",
+     "lado": "local",
+     "minuto": 80,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "CESAR MUÑOZ CASTILLO",
+     "lado": "local",
+     "minuto": 89,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D.E. CIUDAD DE PINTO 'A'",
+     "jugador": "JONATHAN LAIRADO DEL SAZ",
+     "lado": "visitante",
+     "minuto": 44,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D.E. CIUDAD DE PINTO 'A'",
+     "jugador": "MIGUEL GOMEZ PORRINAS",
+     "lado": "visitante",
+     "minuto": 71,
+     "tipo": "amarilla"
+    }
    ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
