@@ -3562,7 +3562,7 @@
   },
   "5583142": {
    "acta": "https://www.elbalondemadrid.es/acta/5583142?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-07",
@@ -4596,7 +4596,7 @@
   },
   "5594914": {
    "acta": "https://www.elbalondemadrid.es/acta/5594914?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)PASEO IMPERIAL 20 · Madrid",
+   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-07",
@@ -5374,7 +5374,7 @@
   },
   "5599676": {
    "acta": "https://www.elbalondemadrid.es/acta/5599676?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PRADOLONGO - DAVID GLEZ. RUBIO (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "campo": "PRADOLONGO - DAVID GLEZ. RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-07",
@@ -6275,7 +6275,7 @@
   },
   "5606393": {
    "acta": "https://www.elbalondemadrid.es/acta/5606393?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "LA PERLA (HA)CALLE DEL CORINDÓN 3 · Madrid",
+   "campo": "LA PERLA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-08",
@@ -7273,6 +7273,40 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "fecha": "2026-11-01",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 67,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "AARON ZAPATA GARCIA",
+     "lado": "local",
+     "minuto": 87,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "JEAN PIERRE SALTOS MARMOLEJOS",
+     "lado": "visitante",
+     "minuto": 28,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "JEREMY BRITO MORAN",
+     "lado": "visitante",
+     "minuto": 90,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "13:30",
    "jornada": 8,
@@ -7288,6 +7322,78 @@
     2,
     2
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 45,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JUAN JOSE RODRIGUEZ CORREA",
+     "lado": "local",
+     "minuto": 51,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "SALVATORE BASSO",
+     "lado": "local",
+     "minuto": 52,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ANGEL GABRIEL RODRÍGUEZ RIVERA",
+     "lado": "local",
+     "minuto": 60,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "AHMED EL BAROUDI",
+     "lado": "local",
+     "minuto": 69,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MOUAD EL MALIKI MALKI",
+     "lado": "local",
+     "minuto": 74,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DIEGO ANDRES CEDEÑO FERNÁNDEZ",
+     "lado": "local",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ADRIAN DE LA PEÑA DURANGO",
+     "lado": "visitante",
+     "minuto": 35,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ADRIAN DE LA PEÑA DURANGO",
+     "lado": "visitante",
+     "minuto": 42,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "SOHOU BOCESSEA NIWAN MONPOHO",
+     "lado": "visitante",
+     "minuto": 54,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
    "visitante": [
     "948",
@@ -7296,7 +7402,7 @@
   },
   "5614571": {
    "acta": "https://www.elbalondemadrid.es/acta/5614571?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "CAMPO VALDEBERNARDO 2 (HA)AVDA. DE LA AURORA BOREAL 4 · Madrid",
+   "campo": "CAMPO VALDEBERNARDO 2 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-08",
@@ -8448,6 +8554,48 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011589039_MOSCARDO.png",
    "fecha": "2026-11-01",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JESUS FRAILE RUMI",
+     "lado": "local",
+     "minuto": 12,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MANUEL FRAILE RUMI",
+     "lado": "local",
+     "minuto": 69,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "PABLO RODRIGUEZ GONZALEZ",
+     "lado": "local",
+     "minuto": 77,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. COLONIA MOSCARDO 'C'",
+     "jugador": "CARLOS JAVIER ACEDO LAZARO",
+     "lado": "visitante",
+     "minuto": 56,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. COLONIA MOSCARDO 'C'",
+     "jugador": "FERNANDO VARGAS FERNANDEZ",
+     "lado": "visitante",
+     "minuto": 81,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "17:00",
    "jornada": 6,
@@ -8463,6 +8611,78 @@
     3,
     2
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "TIRSO RUMI GARCIA",
+     "lado": "local",
+     "minuto": 10,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "FERNANDO PEREZ SANCHEZ",
+     "lado": "local",
+     "minuto": 16,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "GABRIEL MARTIN LAFUENTE",
+     "lado": "local",
+     "minuto": 33,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "TIRSO RUMI GARCIA",
+     "lado": "local",
+     "minuto": 63,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ALVARO GALLARDO AMORES",
+     "lado": "local",
+     "minuto": 74,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "FRANCISCO JAVIER MADRIGAL LOPEZ",
+     "lado": "local",
+     "minuto": 84,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MANUEL FRAILE RUMI",
+     "lado": "local",
+     "minuto": 90,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. COLONIA MOSCARDO 'C'",
+     "jugador": "ROGER PAUL ENDARA BALLESTEROS",
+     "lado": "visitante",
+     "minuto": 51,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. COLONIA MOSCARDO 'C'",
+     "jugador": "AITOR CAMPAÑA ZURITA",
+     "lado": "visitante",
+     "minuto": 68,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. COLONIA MOSCARDO 'C'",
+     "jugador": "JUAN ORLANDO CHAMANA BRAVO",
+     "lado": "visitante",
+     "minuto": 76,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
    "visitante": [
     "6796354",
@@ -8471,7 +8691,7 @@
   },
   "5628273": {
    "acta": "https://www.elbalondemadrid.es/acta/5628273?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "LEGANES - PVO. LA CANTERA 1 (HA)CALLE ARQUITECTURA 4 · Leganés",
+   "campo": "LEGANES - PVO. LA CANTERA 1 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012202365_Captura_de_pantalla_2026_08_03_132547.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-08",
@@ -9381,7 +9601,7 @@
   },
   "5642683": {
    "acta": "https://www.elbalondemadrid.es/acta/5642683?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "COLONIA ZOFIO (HA)CALLE RICARDO BELTRAN Y ROZPIDE 12 · Madrid",
+   "campo": "COLONIA ZOFIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000039676_LogoNuevoEFUsera.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-08",
@@ -10322,6 +10542,16 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268594_ciudad_pinto.png",
    "fecha": "2026-11-01",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "CESAR MUÑOZ CASTILLO",
+     "lado": "local",
+     "minuto": 89,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:30",
    "jornada": 8,
@@ -10337,6 +10567,57 @@
     1,
     0
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "HUGO GOMEZ RODRIGUEZ",
+     "lado": "local",
+     "minuto": 27,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FERNANDO MORENO ACOSTA",
+     "lado": "local",
+     "minuto": 62,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ADRIAN LOPEZ LOPEZ",
+     "lado": "local",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FERNANDO PEREZ SANCHEZ",
+     "lado": "local",
+     "minuto": 80,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "CESAR MUÑOZ CASTILLO",
+     "lado": "local",
+     "minuto": 89,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D.E. CIUDAD DE PINTO 'A'",
+     "jugador": "JONATHAN LAIRADO DEL SAZ",
+     "lado": "visitante",
+     "minuto": 44,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D.E. CIUDAD DE PINTO 'A'",
+     "jugador": "MIGUEL GOMEZ PORRINAS",
+     "lado": "visitante",
+     "minuto": 71,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
     "8944219",
@@ -10345,7 +10626,7 @@
   },
   "5646073": {
    "acta": "https://www.elbalondemadrid.es/acta/5646073?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-08",
@@ -11280,7 +11561,7 @@
   },
   "5659205": {
    "acta": "https://www.elbalondemadrid.es/acta/5659205?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266052_MR.png",
    "fecha": "2026-11-08",
@@ -12005,6 +12286,40 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-10-31",
+   "goles": [
+    {
+     "equipo": "CLUB SECCION DEPORTIVA DEL POZO 'C'",
+     "jugador": "AKRAM AMLAH OUAZANI",
+     "lado": "local",
+     "minuto": 40,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DAVID GUTIÉRREZ GALOCHA",
+     "lado": "visitante",
+     "minuto": 25,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ARTURO PLAZA ESPINOSA",
+     "lado": "visitante",
+     "minuto": 34,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "BOGDAN ALEXANDRU ILASCU",
+     "lado": "visitante",
+     "minuto": 69,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Infantil Grupo 34",
    "hora": "16:30",
    "jornada": 4,
@@ -12020,6 +12335,15 @@
     1,
     3
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ANDREI RAUL BECHEANU",
+     "lado": "visitante",
+     "minuto": 53,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
    "visitante": [
     "8961563",
@@ -12028,7 +12352,7 @@
   },
   "5663224": {
    "acta": "https://www.elbalondemadrid.es/acta/5663224?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011741396_escudo_pique__as_con_coloresDEFINITIVO_2.jpg",
    "fecha": "2026-11-07",
@@ -12589,7 +12913,7 @@
   },
   "5680140": {
    "acta": "https://www.elbalondemadrid.es/acta/5680140?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "fecha": "2026-11-07",
@@ -12870,7 +13194,7 @@
   },
   "5695049": {
    "acta": "https://www.elbalondemadrid.es/acta/5695049?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-07",
@@ -12894,7 +13218,7 @@
   },
   "5695051": {
    "acta": "https://www.elbalondemadrid.es/acta/5695051?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "fecha": "2026-11-07",
