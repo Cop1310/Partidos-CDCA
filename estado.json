@@ -2256,19 +2256,19 @@
   "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
    "filas": [
     {
-     "dg": 8,
+     "dg": 11,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 5,
-     "gc": 10,
-     "gf": 18,
+     "g": 6,
+     "gc": 12,
+     "gf": 23,
      "id": "12858097",
      "nombre": "Inter Promesas",
      "nuestro": false,
      "p": 0,
-     "pj": 5,
+     "pj": 6,
      "pos": 1,
-     "pts": 15
+     "pts": 18
     },
     {
      "dg": 7,
@@ -2286,21 +2286,6 @@
      "pts": 15
     },
     {
-     "dg": 10,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 3,
-     "gc": 8,
-     "gf": 18,
-     "id": "6785429",
-     "nombre": "Racing de Villaverde B",
-     "nuestro": false,
-     "p": 0,
-     "pj": 5,
-     "pos": 3,
-     "pts": 11
-    },
-    {
      "dg": 15,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
@@ -2312,7 +2297,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 6,
-     "pos": 4,
+     "pos": 3,
      "pts": 13
     },
     {
@@ -2324,6 +2309,21 @@
      "gf": 18,
      "id": "2733",
      "nombre": "Los Rosales de Villaverde",
+     "nuestro": false,
+     "p": 1,
+     "pj": 6,
+     "pos": 4,
+     "pts": 11
+    },
+    {
+     "dg": 7,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 3,
+     "gc": 13,
+     "gf": 20,
+     "id": "6785429",
+     "nombre": "Racing de Villaverde B",
      "nuestro": false,
      "p": 1,
      "pj": 6,
