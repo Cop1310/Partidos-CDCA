@@ -618,6 +618,21 @@
      "pts": 15
     },
     {
+     "dg": -2,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011122324_FONDO_BLANCO.png",
+     "g": 4,
+     "gc": 23,
+     "gf": 21,
+     "id": "680074",
+     "nombre": "Vicalvaro C",
+     "nuestro": false,
+     "p": 5,
+     "pj": 11,
+     "pos": 12,
+     "pts": 14
+    },
+    {
      "dg": 0,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010931511_Escudo_ValdeBernardo_Union.png",
@@ -629,7 +644,7 @@
      "nuestro": false,
      "p": 5,
      "pj": 10,
-     "pos": 12,
+     "pos": 13,
      "pts": 13
     },
     {
@@ -644,7 +659,7 @@
      "nuestro": false,
      "p": 5,
      "pj": 9,
-     "pos": 13,
+     "pos": 14,
      "pts": 12
     },
     {
@@ -659,7 +674,7 @@
      "nuestro": false,
      "p": 6,
      "pj": 10,
-     "pos": 14,
+     "pos": 15,
      "pts": 12
     },
     {
@@ -674,36 +689,21 @@
      "nuestro": false,
      "p": 6,
      "pj": 11,
-     "pos": 15,
-     "pts": 11
-    },
-    {
-     "dg": -4,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011122324_FONDO_BLANCO.png",
-     "g": 3,
-     "gc": 21,
-     "gf": 17,
-     "id": "680074",
-     "nombre": "Vicalvaro C",
-     "nuestro": false,
-     "p": 5,
-     "pj": 10,
      "pos": 16,
      "pts": 11
     },
     {
-     "dg": -15,
+     "dg": -17,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011195225_WhatsApp_Image_2022_07_21_at_07.43.24.jpeg",
      "g": 3,
-     "gc": 31,
-     "gf": 16,
+     "gc": 35,
+     "gf": 18,
      "id": "1495",
      "nombre": "Escuela de Futbol de Carabanchel B",
      "nuestro": false,
-     "p": 6,
-     "pj": 10,
+     "p": 7,
+     "pj": 11,
      "pos": 17,
      "pts": 10
     }
@@ -1557,19 +1557,34 @@
      "pts": 13
     },
     {
-     "dg": 11,
+     "dg": 10,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
      "g": 4,
-     "gc": 9,
-     "gf": 20,
+     "gc": 12,
+     "gf": 22,
      "id": "846631",
      "nombre": "Club Seccion Deportiva del Pozo A",
      "nuestro": false,
-     "p": 1,
-     "pj": 6,
+     "p": 2,
+     "pj": 7,
      "pos": 8,
      "pts": 13
+    },
+    {
+     "dg": 4,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
+     "g": 3,
+     "gc": 8,
+     "gf": 12,
+     "id": "13613759",
+     "nombre": "Fundacion Leganes C",
+     "nuestro": false,
+     "p": 2,
+     "pj": 7,
+     "pos": 9,
+     "pts": 11
     },
     {
      "dg": 3,
@@ -1583,23 +1598,8 @@
      "nuestro": false,
      "p": 3,
      "pj": 7,
-     "pos": 9,
-     "pts": 10
-    },
-    {
-     "dg": 3,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
-     "g": 2,
-     "gc": 6,
-     "gf": 9,
-     "id": "13613759",
-     "nombre": "Fundacion Leganes C",
-     "nuestro": false,
-     "p": 2,
-     "pj": 6,
      "pos": 10,
-     "pts": 8
+     "pts": 10
     },
     {
      "dg": -5,
@@ -2071,6 +2071,21 @@
     },
     {
      "dg": 7,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 3,
+     "gc": 8,
+     "gf": 15,
+     "id": "10652341",
+     "nombre": "Racing de Villaverde A",
+     "nuestro": false,
+     "p": 0,
+     "pj": 5,
+     "pos": 3,
+     "pts": 11
+    },
+    {
+     "dg": 7,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010963772_5146_asoc.retiro_sur.jpg",
      "g": 3,
@@ -2081,7 +2096,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 5,
-     "pos": 3,
+     "pos": 4,
      "pts": 10
     },
     {
@@ -2096,7 +2111,7 @@
      "nuestro": true,
      "p": 1,
      "pj": 5,
-     "pos": 4,
+     "pos": 5,
      "pts": 10
     },
     {
@@ -2111,23 +2126,8 @@
      "nuestro": false,
      "p": 0,
      "pj": 5,
-     "pos": 5,
-     "pts": 9
-    },
-    {
-     "dg": 3,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 2,
-     "gc": 7,
-     "gf": 10,
-     "id": "10652341",
-     "nombre": "Racing de Villaverde A",
-     "nuestro": false,
-     "p": 0,
-     "pj": 4,
      "pos": 6,
-     "pts": 8
+     "pts": 9
     },
     {
      "dg": 5,
@@ -2175,21 +2175,6 @@
      "pts": 4
     },
     {
-     "dg": -4,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010956278_Escudo_Nuevo_-_copia.jpg",
-     "g": 1,
-     "gc": 12,
-     "gf": 8,
-     "id": "15294340",
-     "nombre": "Villa Rosa A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 4,
-     "pos": 10,
-     "pts": 4
-    },
-    {
      "dg": -5,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
@@ -2198,6 +2183,21 @@
      "gf": 11,
      "id": "15287967",
      "nombre": "Sport Villa de Vallecas A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 5,
+     "pos": 10,
+     "pts": 4
+    },
+    {
+     "dg": -8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010956278_Escudo_Nuevo_-_copia.jpg",
+     "g": 1,
+     "gc": 17,
+     "gf": 9,
+     "id": "15294340",
+     "nombre": "Villa Rosa A",
      "nuestro": false,
      "p": 3,
      "pj": 5,
@@ -3005,7 +3005,7 @@
    },
    "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
     "actual": 5,
-    "cursor": 18,
+    "cursor": null,
     "fecha": "2026-11-08",
     "total": 26
    },
@@ -5785,7 +5785,7 @@
   },
   "5599774": {
    "acta": "https://www.elbalondemadrid.es/acta/5599774?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "campo": "MADRID RIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266052_MR.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-13",
@@ -5827,7 +5827,7 @@
   },
   "5599787": {
    "acta": "https://www.elbalondemadrid.es/acta/5599787?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "campo": "PVO. PALOMERAS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-03",
@@ -5869,7 +5869,7 @@
   },
   "5599800": {
    "acta": "https://www.elbalondemadrid.es/acta/5599800?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "LEGANES - CANTERA F7 - 1CALLE ARQUITECTURA 4 · Leganés",
+   "campo": "LEGANES - CANTERA F7 - 1",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -5911,7 +5911,7 @@
   },
   "5599813": {
    "acta": "https://www.elbalondemadrid.es/acta/5599813?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "campo": "ROMAN VALERO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011589039_MOSCARDO.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
