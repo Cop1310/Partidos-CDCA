@@ -192,6 +192,21 @@
      "pts": 22
     },
     {
+     "dg": 8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
+     "g": 7,
+     "gc": 11,
+     "gf": 19,
+     "id": "2022",
+     "nombre": "E.F. Ciudad de Getafe A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 10,
+     "pos": 2,
+     "pts": 22
+    },
+    {
      "dg": 17,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268594_ciudad_pinto.png",
@@ -203,21 +218,6 @@
      "nuestro": false,
      "p": 3,
      "pj": 10,
-     "pos": 2,
-     "pts": 19
-    },
-    {
-     "dg": 7,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
-     "g": 6,
-     "gc": 10,
-     "gf": 17,
-     "id": "2022",
-     "nombre": "E.F. Ciudad de Getafe A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 9,
      "pos": 3,
      "pts": 19
     },
@@ -342,19 +342,34 @@
      "pts": 12
     },
     {
-     "dg": -1,
+     "dg": -2,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011725872_Escudo_NPCF.png",
      "g": 2,
-     "gc": 14,
-     "gf": 13,
+     "gc": 16,
+     "gf": 14,
      "id": "732",
      "nombre": "Nuevo Pinto A",
      "nuestro": false,
-     "p": 3,
-     "pj": 9,
+     "p": 4,
+     "pj": 10,
      "pos": 12,
      "pts": 10
+    },
+    {
+     "dg": -10,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
+     "g": 2,
+     "gc": 21,
+     "gf": 11,
+     "id": "623",
+     "nombre": "E.D. Moratalaz B",
+     "nuestro": false,
+     "p": 5,
+     "pj": 10,
+     "pos": 13,
+     "pts": 9
     },
     {
      "dg": -13,
@@ -368,7 +383,7 @@
      "nuestro": false,
      "p": 5,
      "pj": 10,
-     "pos": 13,
+     "pos": 14,
      "pts": 9
     },
     {
@@ -383,22 +398,22 @@
      "nuestro": false,
      "p": 4,
      "pj": 10,
-     "pos": 14,
+     "pos": 15,
      "pts": 8
     },
     {
-     "dg": -7,
+     "dg": -8,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
      "g": 2,
-     "gc": 15,
+     "gc": 16,
      "gf": 8,
      "id": "352985",
      "nombre": "Udmelidaolimpia-Madrid City Vallecas",
      "nuestro": false,
-     "p": 5,
-     "pj": 9,
-     "pos": 15,
+     "p": 6,
+     "pj": 10,
+     "pos": 16,
      "pts": 8
     },
     {
@@ -413,23 +428,8 @@
      "nuestro": false,
      "p": 5,
      "pj": 10,
-     "pos": 16,
-     "pts": 7
-    },
-    {
-     "dg": -11,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
-     "g": 1,
-     "gc": 21,
-     "gf": 10,
-     "id": "623",
-     "nombre": "E.D. Moratalaz B",
-     "nuestro": false,
-     "p": 5,
-     "pj": 9,
      "pos": 17,
-     "pts": 6
+     "pts": 7
     },
     {
      "dg": -12,
@@ -1020,21 +1020,6 @@
      "pts": 17
     },
     {
-     "dg": 9,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
-     "g": 5,
-     "gc": 10,
-     "gf": 19,
-     "id": "4920195",
-     "nombre": "Arganda A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 7,
-     "pos": 3,
-     "pts": 16
-    },
-    {
      "dg": 12,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
@@ -1046,7 +1031,7 @@
      "nuestro": false,
      "p": 1,
      "pj": 8,
-     "pos": 4,
+     "pos": 3,
      "pts": 15
     },
     {
@@ -1061,8 +1046,23 @@
      "nuestro": false,
      "p": 3,
      "pj": 8,
-     "pos": 5,
+     "pos": 4,
      "pts": 15
+    },
+    {
+     "dg": 6,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
+     "g": 4,
+     "gc": 10,
+     "gf": 16,
+     "id": "4920195",
+     "nombre": "Arganda A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 7,
+     "pos": 5,
+     "pts": 13
     },
     {
      "dg": 5,
@@ -1095,6 +1095,21 @@
      "pts": 13
     },
     {
+     "dg": 1,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
+     "g": 3,
+     "gc": 15,
+     "gf": 16,
+     "id": "2806",
+     "nombre": "Parque Sureste A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 8,
+     "pos": 8,
+     "pts": 12
+    },
+    {
      "dg": 7,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
@@ -1106,7 +1121,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 8,
-     "pos": 8,
+     "pos": 9,
      "pts": 11
     },
     {
@@ -1121,23 +1136,8 @@
      "nuestro": true,
      "p": 3,
      "pj": 8,
-     "pos": 9,
-     "pts": 11
-    },
-    {
-     "dg": 0,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
-     "g": 2,
-     "gc": 14,
-     "gf": 14,
-     "id": "2806",
-     "nombre": "Parque Sureste A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 7,
      "pos": 10,
-     "pts": 9
+     "pts": 11
     },
     {
      "dg": -7,

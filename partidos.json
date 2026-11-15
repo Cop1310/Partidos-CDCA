@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-15 17:04",
+  "generado": "2026-11-15 22:28",
   "desde": "2026-11-14",
   "hasta": "2026-11-15",
   "texto": "Información sacada de la web El Balón de Madrid\n\n━━━━━━━━━━━━━━━━\n📅 *SÁBADO 14/11/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *09:00h* - Preferente Infantil Grupo 5\n📌 _Jornada 8_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(16º)* *_Ciudad de los Ángeles A_* - *(15º)* Ad A.Toledo Olivos A\n\n⏰ *10:00h* - Primera Benjamín F-7 Grupo 36- SAN CRISTOBAL\n📌 _Jornada 4_\n📍 Campo: San Cristobal\n⚽ *(10º)* Orcasitas C - *(3º)* *_Ciudad de los Ángeles_*\n\n⏰ *12:00h* - Preferente Alevín F-7 Grupo 6\n📌 _Jornada 6_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(5º)* *_Ciudad de los Ángeles A_* - *(8º)* Madrid Rio-Arganzuela A\n\n⏰ *12:00h* - Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL\n📌 _Jornada 4_\n📍 Campo: San Cristobal\n⚽ *(4º)* *_Ciudad de los Ángeles B_* - *(7º)* Villaverde Bajo C\n\n⏰ *12:00h* - Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL\n📌 _Jornada 4_\n📍 Campo: San Cristobal\n⚽ *(8º)* San Cristobal de los Angeles A - *(10º)* *_Ciudad de los Ángeles C_*\n\n⏰ *12:30h* - Segunda Infantil Grupo 34\n📌 _Jornada 6_\n📍 Campo: Parla - Estadio de los Prados)\n⚽ *(4º)* Parla E - *(3º)* *_Ciudad de los Ángeles B_*\n\n⏰ *13:30h* - Preferente Cadete Grupo 5\n📌 _Jornada 8_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(7º)* *_Ciudad de los Ángeles A_* - *(9º)* Esc. Mun. Fut. Villarejo A\n\n⏰ *16:30h* - Primera Juvenil Grupo 11\n📌 _Jornada 10_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(4º)* *_Ciudad de los Ángeles B_* - *(6º)* Inter Promesas C\n\n⏰ *18:30h* - Segunda Cadete Grupo 27\n📌 _Jornada 6_\n📍 Campo: Asoc. Vec. Orcasitas\n⚽ *(14º)* Orcasitas C - *(11º)* *_Ciudad de los Ángeles B_*\n\n⏰ *18:30h* - Segunda Juvenil Grupo 13\n📌 _Jornada 8_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(12º)* *_Ciudad de los Ángeles C_* - *(3º)* Villaverde Bajo C\n\n━━━━━━━━━━━━━━━━\n📅 *DOMINGO 15/11/2026*\n━━━━━━━━━━━━━━━━\n\n⏰ *11:30h* - Preferente Aficionado Grupo 3\n📌 _Jornada 10_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(9º)* *_Ciudad de los Ángeles A_* - *(11º)* Racing de Villaverde A\n\n⏰ *13:30h* - Segunda Aficionado Grupo 20\n📌 _Jornada 8_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *(6º)* *_Ciudad de los Ángeles B_* - *(9º)* Villaverde Bajo B\n\n🏆 Preferente Juvenil Grupo 5\n📌 _Jornada 10_\n📍 Campo: PVO. Oroquieta - Felix Rubio\n⚽ *_Ciudad de los Ángeles A_* - Mar Abierto A",
@@ -8078,6 +8078,21 @@
         },
         {
           "pos": 2,
+          "id": "2022",
+          "nombre": "E.F. Ciudad de Getafe A",
+          "nuestro": false,
+          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
+          "pj": 10,
+          "g": 7,
+          "e": 1,
+          "p": 2,
+          "gf": 19,
+          "gc": 11,
+          "dg": 8,
+          "pts": 22
+        },
+        {
+          "pos": 3,
           "id": "8944219",
           "nombre": "Ciudad de Pinto A",
           "nuestro": false,
@@ -8089,21 +8104,6 @@
           "gf": 25,
           "gc": 8,
           "dg": 17,
-          "pts": 19
-        },
-        {
-          "pos": 3,
-          "id": "2022",
-          "nombre": "E.F. Ciudad de Getafe A",
-          "nuestro": false,
-          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
-          "pj": 9,
-          "g": 6,
-          "e": 1,
-          "p": 2,
-          "gf": 17,
-          "gc": 10,
-          "dg": 7,
           "pts": 19
         },
         {
@@ -8232,17 +8232,32 @@
           "nombre": "Nuevo Pinto A",
           "nuestro": false,
           "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011725872_Escudo_NPCF.png",
-          "pj": 9,
+          "pj": 10,
           "g": 2,
           "e": 4,
-          "p": 3,
-          "gf": 13,
-          "gc": 14,
-          "dg": -1,
+          "p": 4,
+          "gf": 14,
+          "gc": 16,
+          "dg": -2,
           "pts": 10
         },
         {
           "pos": 13,
+          "id": "623",
+          "nombre": "E.D. Moratalaz B",
+          "nuestro": false,
+          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
+          "pj": 10,
+          "g": 2,
+          "e": 3,
+          "p": 5,
+          "gf": 11,
+          "gc": 21,
+          "dg": -10,
+          "pts": 9
+        },
+        {
+          "pos": 14,
           "id": "1041",
           "nombre": "Club Seccion Deportiva del Pozo A",
           "nuestro": false,
@@ -8257,7 +8272,7 @@
           "pts": 9
         },
         {
-          "pos": 14,
+          "pos": 15,
           "id": "1006",
           "nombre": "Fepe Getafe III A",
           "nuestro": false,
@@ -8272,22 +8287,22 @@
           "pts": 8
         },
         {
-          "pos": 15,
+          "pos": 16,
           "id": "352985",
           "nombre": "Udmelidaolimpia-Madrid City Vallecas",
           "nuestro": false,
           "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
-          "pj": 9,
+          "pj": 10,
           "g": 2,
           "e": 2,
-          "p": 5,
+          "p": 6,
           "gf": 8,
-          "gc": 15,
-          "dg": -7,
+          "gc": 16,
+          "dg": -8,
           "pts": 8
         },
         {
-          "pos": 16,
+          "pos": 17,
           "id": "523",
           "nombre": "Esc. Mpal. de Fut. Aguilas de Moratalaz A",
           "nuestro": false,
@@ -8300,21 +8315,6 @@
           "gc": 22,
           "dg": -10,
           "pts": 7
-        },
-        {
-          "pos": 17,
-          "id": "623",
-          "nombre": "E.D. Moratalaz B",
-          "nuestro": false,
-          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
-          "pj": 9,
-          "g": 1,
-          "e": 3,
-          "p": 5,
-          "gf": 10,
-          "gc": 21,
-          "dg": -11,
-          "pts": 6
         },
         {
           "pos": 18,
@@ -9388,21 +9388,6 @@
         },
         {
           "pos": 3,
-          "id": "4920195",
-          "nombre": "Arganda A",
-          "nuestro": false,
-          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
-          "pj": 7,
-          "g": 5,
-          "e": 1,
-          "p": 1,
-          "gf": 19,
-          "gc": 10,
-          "dg": 9,
-          "pts": 16
-        },
-        {
-          "pos": 4,
           "id": "2274952",
           "nombre": "E.D. Moratalaz C",
           "nuestro": false,
@@ -9417,7 +9402,7 @@
           "pts": 15
         },
         {
-          "pos": 5,
+          "pos": 4,
           "id": "1764",
           "nombre": "E.D.M. San Blas B",
           "nuestro": false,
@@ -9430,6 +9415,21 @@
           "gc": 13,
           "dg": 8,
           "pts": 15
+        },
+        {
+          "pos": 5,
+          "id": "4920195",
+          "nombre": "Arganda A",
+          "nuestro": false,
+          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 16,
+          "gc": 10,
+          "dg": 6,
+          "pts": 13
         },
         {
           "pos": 6,
@@ -9463,6 +9463,21 @@
         },
         {
           "pos": 8,
+          "id": "2806",
+          "nombre": "Parque Sureste A",
+          "nuestro": false,
+          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
+          "pj": 8,
+          "g": 3,
+          "e": 3,
+          "p": 2,
+          "gf": 16,
+          "gc": 15,
+          "dg": 1,
+          "pts": 12
+        },
+        {
+          "pos": 9,
           "id": "877423",
           "nombre": "Sport Villa de Vallecas A",
           "nuestro": false,
@@ -9477,7 +9492,7 @@
           "pts": 11
         },
         {
-          "pos": 9,
+          "pos": 10,
           "id": "8961562",
           "nombre": "Ciudad de los Ángeles A",
           "nuestro": true,
@@ -9490,21 +9505,6 @@
           "gc": 20,
           "dg": -3,
           "pts": 11
-        },
-        {
-          "pos": 10,
-          "id": "2806",
-          "nombre": "Parque Sureste A",
-          "nuestro": false,
-          "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
-          "pj": 7,
-          "g": 2,
-          "e": 3,
-          "p": 2,
-          "gf": 14,
-          "gc": 14,
-          "dg": 0,
-          "pts": 9
         },
         {
           "pos": 11,
