@@ -177,6 +177,21 @@
   "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas": {
    "filas": [
     {
+     "dg": 18,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268594_ciudad_pinto.png",
+     "g": 7,
+     "gc": 9,
+     "gf": 27,
+     "id": "8944219",
+     "nombre": "Ciudad de Pinto A",
+     "nuestro": false,
+     "p": 3,
+     "pj": 11,
+     "pos": 1,
+     "pts": 22
+    },
+    {
      "dg": 16,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000098133_escudo-rivas-fc.png",
@@ -188,52 +203,52 @@
      "nuestro": false,
      "p": 0,
      "pj": 10,
-     "pos": 1,
-     "pts": 22
-    },
-    {
-     "dg": 8,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
-     "g": 7,
-     "gc": 11,
-     "gf": 19,
-     "id": "2022",
-     "nombre": "E.F. Ciudad de Getafe A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 10,
      "pos": 2,
      "pts": 22
     },
     {
-     "dg": 17,
+     "dg": 5,
      "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268594_ciudad_pinto.png",
-     "g": 6,
-     "gc": 8,
-     "gf": 25,
-     "id": "8944219",
-     "nombre": "Ciudad de Pinto A",
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
+     "g": 7,
+     "gc": 14,
+     "gf": 19,
+     "id": "2022",
+     "nombre": "E.F. Ciudad de Getafe A",
      "nuestro": false,
      "p": 3,
-     "pj": 10,
+     "pj": 11,
      "pos": 3,
+     "pts": 22
+    },
+    {
+     "dg": 9,
+     "e": 4,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
+     "g": 5,
+     "gc": 10,
+     "gf": 19,
+     "id": "947",
+     "nombre": "Orcasitas A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 11,
+     "pos": 4,
      "pts": 19
     },
     {
-     "dg": 3,
+     "dg": 2,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012211011_Escudo_A.D.U._Carrascal__2_.png",
      "g": 6,
-     "gc": 23,
-     "gf": 26,
+     "gc": 25,
+     "gf": 27,
      "id": "2346",
      "nombre": "Unión Carrascal A",
      "nuestro": false,
-     "p": 3,
-     "pj": 10,
-     "pos": 4,
+     "p": 4,
+     "pj": 11,
+     "pos": 5,
      "pts": 19
     },
     {
@@ -248,112 +263,127 @@
      "nuestro": false,
      "p": 2,
      "pj": 10,
-     "pos": 5,
+     "pos": 6,
      "pts": 18
     },
     {
-     "dg": 3,
-     "e": 4,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 4,
-     "gc": 10,
-     "gf": 13,
-     "id": "947",
-     "nombre": "Orcasitas A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 10,
-     "pos": 6,
-     "pts": 16
-    },
-    {
-     "dg": 5,
+     "dg": 6,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
-     "g": 4,
+     "g": 5,
      "gc": 13,
-     "gf": 18,
+     "gf": 19,
      "id": "466796",
      "nombre": "Colonia Moscardo B",
      "nuestro": false,
      "p": 3,
-     "pj": 10,
+     "pj": 11,
      "pos": 7,
-     "pts": 15
+     "pts": 18
     },
     {
-     "dg": 2,
+     "dg": 3,
      "e": 3,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010849385_arganda66px.jpg",
-     "g": 4,
+     "g": 5,
      "gc": 11,
-     "gf": 13,
+     "gf": 14,
      "id": "788",
      "nombre": "Arganda",
      "nuestro": false,
      "p": 3,
-     "pj": 10,
+     "pj": 11,
      "pos": 8,
-     "pts": 15
+     "pts": 18
     },
     {
-     "dg": 0,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
-     "g": 4,
-     "gc": 18,
-     "gf": 18,
-     "id": "475",
-     "nombre": "Racing de Villaverde A",
-     "nuestro": false,
-     "p": 3,
-     "pj": 10,
-     "pos": 9,
-     "pts": 15
-    },
-    {
-     "dg": 0,
+     "dg": 1,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040310_3703_VILLAVERDE%20BAJO.jpg",
-     "g": 3,
-     "gc": 14,
-     "gf": 14,
+     "g": 4,
+     "gc": 15,
+     "gf": 16,
      "id": "680159",
      "nombre": "Villaverde Bajo A",
      "nuestro": false,
      "p": 3,
-     "pj": 10,
-     "pos": 10,
-     "pts": 13
+     "pj": 11,
+     "pos": 9,
+     "pts": 16
     },
     {
-     "dg": -2,
+     "dg": -1,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000054928_Racing_Villaverde.jpg",
+     "g": 4,
+     "gc": 19,
+     "gf": 18,
+     "id": "475",
+     "nombre": "Racing de Villaverde A",
+     "nuestro": false,
+     "p": 4,
+     "pj": 11,
+     "pos": 10,
+     "pts": 15
+    },
+    {
+     "dg": -8,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
      "g": 3,
-     "gc": 15,
+     "gc": 21,
      "gf": 13,
      "id": "2856",
      "nombre": "Ciudad de los Ángeles A",
      "nuestro": true,
-     "p": 3,
-     "pj": 10,
+     "p": 4,
+     "pj": 11,
      "pos": 11,
      "pts": 13
     },
     {
-     "dg": -2,
+     "dg": -12,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
+     "g": 3,
+     "gc": 27,
+     "gf": 15,
+     "id": "1041",
+     "nombre": "Club Seccion Deportiva del Pozo A",
+     "nuestro": false,
+     "p": 5,
+     "pj": 11,
+     "pos": 12,
+     "pts": 12
+    },
+    {
+     "dg": -4,
+     "e": 5,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010884819_escudo_definitivo_fepe_escudo_21_JULIO.jpg",
+     "g": 2,
+     "gc": 21,
+     "gf": 17,
+     "id": "1006",
+     "nombre": "Fepe Getafe III A",
+     "nuestro": false,
+     "p": 4,
+     "pj": 11,
+     "pos": 13,
+     "pts": 11
+    },
+    {
+     "dg": -3,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011725872_Escudo_NPCF.png",
      "g": 2,
-     "gc": 16,
+     "gc": 17,
      "gf": 14,
      "id": "732",
      "nombre": "Nuevo Pinto A",
      "nuestro": false,
-     "p": 4,
-     "pj": 10,
-     "pos": 12,
+     "p": 5,
+     "pj": 11,
+     "pos": 14,
      "pts": 10
     },
     {
@@ -368,51 +398,21 @@
      "nuestro": false,
      "p": 5,
      "pj": 10,
-     "pos": 13,
-     "pts": 9
-    },
-    {
-     "dg": -13,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
-     "g": 2,
-     "gc": 27,
-     "gf": 14,
-     "id": "1041",
-     "nombre": "Club Seccion Deportiva del Pozo A",
-     "nuestro": false,
-     "p": 5,
-     "pj": 10,
-     "pos": 14,
-     "pts": 9
-    },
-    {
-     "dg": -7,
-     "e": 5,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010884819_escudo_definitivo_fepe_escudo_21_JULIO.jpg",
-     "g": 1,
-     "gc": 21,
-     "gf": 14,
-     "id": "1006",
-     "nombre": "Fepe Getafe III A",
-     "nuestro": false,
-     "p": 4,
-     "pj": 10,
      "pos": 15,
-     "pts": 8
+     "pts": 9
     },
     {
-     "dg": -8,
+     "dg": -9,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012219483_navbarApp.png",
      "g": 2,
-     "gc": 16,
+     "gc": 17,
      "gf": 8,
      "id": "352985",
      "nombre": "Udmelidaolimpia-Madrid City Vallecas",
      "nuestro": false,
-     "p": 6,
-     "pj": 10,
+     "p": 7,
+     "pj": 11,
      "pos": 16,
      "pts": 8
     },
@@ -432,22 +432,22 @@
      "pts": 7
     },
     {
-     "dg": -12,
+     "dg": -13,
      "e": 4,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012140781_1_C.D._Villaconejos.png",
      "g": 0,
-     "gc": 19,
-     "gf": 7,
+     "gc": 21,
+     "gf": 8,
      "id": "1036",
      "nombre": "Villaconejos A",
      "nuestro": false,
-     "p": 6,
-     "pj": 10,
+     "p": 7,
+     "pj": 11,
      "pos": 18,
      "pts": 4
     }
    ],
-   "jornada": 10,
+   "jornada": 11,
    "titulo": "Preferente Aficionado Grupo 3"
   },
   "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas": {
@@ -468,34 +468,34 @@
      "pts": 36
     },
     {
-     "dg": 29,
+     "dg": 31,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010995681_escudo_conce.jpg",
-     "g": 10,
-     "gc": 8,
-     "gf": 37,
+     "g": 11,
+     "gc": 10,
+     "gf": 41,
      "id": "371",
      "nombre": "Club Escuela de Futbol Concepcion A",
      "nuestro": false,
      "p": 0,
-     "pj": 11,
+     "pj": 12,
      "pos": 2,
-     "pts": 31
+     "pts": 34
     },
     {
-     "dg": 21,
+     "dg": 26,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
-     "g": 8,
+     "g": 9,
      "gc": 8,
-     "gf": 29,
+     "gf": 34,
      "id": "625",
      "nombre": "E.D. Moratalaz A",
      "nuestro": false,
      "p": 1,
-     "pj": 11,
+     "pj": 12,
      "pos": 3,
-     "pts": 26
+     "pts": 29
     },
     {
      "dg": 8,
@@ -528,64 +528,94 @@
      "pts": 22
     },
     {
-     "dg": 12,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
-     "g": 7,
-     "gc": 18,
-     "gf": 30,
-     "id": "6818907",
-     "nombre": "Fundacion Rayo Vallecano C",
-     "nuestro": false,
-     "p": 4,
-     "pj": 11,
-     "pos": 6,
-     "pts": 21
-    },
-    {
      "dg": 7,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
-     "g": 6,
-     "gc": 16,
-     "gf": 23,
-     "id": "1555",
-     "nombre": "Tajamar",
-     "nuestro": false,
-     "p": 3,
-     "pj": 11,
-     "pos": 7,
-     "pts": 20
-    },
-    {
-     "dg": 7,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
-     "g": 6,
-     "gc": 14,
-     "gf": 21,
-     "id": "1546",
-     "nombre": "Escuela de Futbol Arganda B",
-     "nuestro": false,
-     "p": 5,
-     "pj": 12,
-     "pos": 8,
-     "pts": 19
-    },
-    {
-     "dg": 6,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
-     "g": 6,
-     "gc": 22,
-     "gf": 28,
+     "g": 7,
+     "gc": 23,
+     "gf": 30,
      "id": "2158",
      "nombre": "San Fermin A",
      "nuestro": false,
      "p": 4,
-     "pj": 11,
+     "pj": 12,
+     "pos": 6,
+     "pts": 22
+    },
+    {
+     "dg": 10,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
+     "g": 7,
+     "gc": 22,
+     "gf": 32,
+     "id": "6818907",
+     "nombre": "Fundacion Rayo Vallecano C",
+     "nuestro": false,
+     "p": 5,
+     "pj": 12,
+     "pos": 7,
+     "pts": 21
+    },
+    {
+     "dg": 5,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010921189_3528_TAJAMAR.jpg",
+     "g": 6,
+     "gc": 19,
+     "gf": 24,
+     "id": "1555",
+     "nombre": "Tajamar",
+     "nuestro": false,
+     "p": 4,
+     "pj": 12,
+     "pos": 8,
+     "pts": 20
+    },
+    {
+     "dg": 6,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
+     "g": 6,
+     "gc": 16,
+     "gf": 22,
+     "id": "1546",
+     "nombre": "Escuela de Futbol Arganda B",
+     "nuestro": false,
+     "p": 6,
+     "pj": 13,
      "pos": 9,
      "pts": 19
+    },
+    {
+     "dg": 8,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
+     "g": 6,
+     "gc": 15,
+     "gf": 23,
+     "id": "19245961",
+     "nombre": "Madrid Rio-Arganzuela C",
+     "nuestro": false,
+     "p": 5,
+     "pj": 12,
+     "pos": 10,
+     "pts": 19
+    },
+    {
+     "dg": 7,
+     "e": 3,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
+     "g": 5,
+     "gc": 13,
+     "gf": 20,
+     "id": "1759",
+     "nombre": "E.D.M. San Blas A",
+     "nuestro": false,
+     "p": 2,
+     "pj": 10,
+     "pos": 11,
+     "pts": 18
     },
     {
      "dg": -2,
@@ -599,22 +629,7 @@
      "nuestro": false,
      "p": 6,
      "pj": 12,
-     "pos": 10,
-     "pts": 16
-    },
-    {
-     "dg": 3,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266052_MR.png",
-     "g": 5,
-     "gc": 14,
-     "gf": 17,
-     "id": "19245961",
-     "nombre": "Madrid Rio-Arganzuela C",
-     "nuestro": false,
-     "p": 5,
-     "pj": 11,
-     "pos": 11,
+     "pos": 12,
      "pts": 16
     },
     {
@@ -629,81 +644,66 @@
      "nuestro": false,
      "p": 5,
      "pj": 11,
-     "pos": 12,
+     "pos": 13,
      "pts": 16
     },
     {
-     "dg": 5,
-     "e": 3,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
-     "g": 4,
-     "gc": 12,
-     "gf": 17,
-     "id": "1759",
-     "nombre": "E.D.M. San Blas A",
-     "nuestro": false,
-     "p": 2,
-     "pj": 9,
-     "pos": 13,
-     "pts": 15
-    },
-    {
-     "dg": -3,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011122324_FONDO_BLANCO.png",
-     "g": 4,
-     "gc": 26,
-     "gf": 23,
-     "id": "680074",
-     "nombre": "Vicalvaro C",
-     "nuestro": false,
-     "p": 6,
-     "pj": 12,
-     "pos": 14,
-     "pts": 14
-    },
-    {
-     "dg": -12,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014191144_escudo.jfif",
-     "g": 4,
-     "gc": 32,
-     "gf": 20,
-     "id": "10816181",
-     "nombre": "Club de Atletismo los Olmos",
-     "nuestro": false,
-     "p": 7,
-     "pj": 11,
-     "pos": 15,
-     "pts": 12
-    },
-    {
-     "dg": -4,
+     "dg": 1,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258150_ESC_C.D._DOSA__1_.png",
-     "g": 3,
+     "g": 4,
      "gc": 23,
-     "gf": 19,
+     "gf": 24,
      "id": "657",
      "nombre": "Dosa A",
      "nuestro": false,
      "p": 7,
-     "pj": 12,
-     "pos": 16,
-     "pts": 11
+     "pj": 13,
+     "pos": 14,
+     "pts": 14
     },
     {
-     "dg": -19,
+     "dg": -8,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011122324_FONDO_BLANCO.png",
+     "g": 4,
+     "gc": 32,
+     "gf": 24,
+     "id": "680074",
+     "nombre": "Vicalvaro C",
+     "nuestro": false,
+     "p": 7,
+     "pj": 13,
+     "pos": 15,
+     "pts": 14
+    },
+    {
+     "dg": -17,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014191144_escudo.jfif",
+     "g": 4,
+     "gc": 37,
+     "gf": 20,
+     "id": "10816181",
+     "nombre": "Club de Atletismo los Olmos",
+     "nuestro": false,
+     "p": 8,
+     "pj": 12,
+     "pos": 16,
+     "pts": 12
+    },
+    {
+     "dg": -24,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011195225_WhatsApp_Image_2022_07_21_at_07.43.24.jpeg",
      "g": 3,
-     "gc": 38,
+     "gc": 43,
      "gf": 19,
      "id": "1495",
      "nombre": "Escuela de Futbol de Carabanchel B",
      "nuestro": false,
-     "p": 8,
-     "pj": 12,
+     "p": 9,
+     "pj": 13,
      "pos": 17,
      "pts": 10
     }
@@ -774,6 +774,21 @@
      "pts": 18
     },
     {
+     "dg": 14,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
+     "g": 5,
+     "gc": 19,
+     "gf": 33,
+     "id": "948",
+     "nombre": "Orcasitas A",
+     "nuestro": false,
+     "p": 4,
+     "pj": 11,
+     "pos": 5,
+     "pts": 17
+    },
+    {
      "dg": 6,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
@@ -785,7 +800,7 @@
      "nuestro": true,
      "p": 3,
      "pj": 10,
-     "pos": 5,
+     "pos": 6,
      "pts": 17
     },
     {
@@ -800,7 +815,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 10,
-     "pos": 6,
+     "pos": 7,
      "pts": 16
     },
     {
@@ -815,7 +830,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 10,
-     "pos": 7,
+     "pos": 8,
      "pts": 16
     },
     {
@@ -830,7 +845,7 @@
      "nuestro": false,
      "p": 4,
      "pj": 11,
-     "pos": 8,
+     "pos": 9,
      "pts": 15
     },
     {
@@ -842,21 +857,6 @@
      "gf": 30,
      "id": "2712737",
      "nombre": "Villaverde Bajo B",
-     "nuestro": false,
-     "p": 4,
-     "pj": 10,
-     "pos": 9,
-     "pts": 14
-    },
-    {
-     "dg": 10,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
-     "g": 4,
-     "gc": 19,
-     "gf": 29,
-     "id": "948",
-     "nombre": "Orcasitas A",
      "nuestro": false,
      "p": 4,
      "pj": 10,
@@ -894,21 +894,6 @@
      "pts": 12
     },
     {
-     "dg": -2,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
-     "g": 3,
-     "gc": 25,
-     "gf": 23,
-     "id": "13526197",
-     "nombre": "Santiago Apóstol Villaverde A",
-     "nuestro": false,
-     "p": 5,
-     "pj": 10,
-     "pos": 13,
-     "pts": 11
-    },
-    {
      "dg": -6,
      "e": 2,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011206462_fundacion_esc.jpg",
@@ -917,6 +902,21 @@
      "gf": 30,
      "id": "3359622",
      "nombre": "Fundacion Rayo Vallecano F",
+     "nuestro": false,
+     "p": 6,
+     "pj": 11,
+     "pos": 13,
+     "pts": 11
+    },
+    {
+     "dg": -6,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
+     "g": 3,
+     "gc": 29,
+     "gf": 23,
+     "id": "13526197",
+     "nombre": "Santiago Apóstol Villaverde A",
      "nuestro": false,
      "p": 6,
      "pj": 11,
@@ -1251,6 +1251,21 @@
      "pts": 16
     },
     {
+     "dg": 24,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
+     "g": 5,
+     "gc": 4,
+     "gf": 28,
+     "id": "466651",
+     "nombre": "San Cristobal de los Angeles A",
+     "nuestro": false,
+     "p": 1,
+     "pj": 7,
+     "pos": 2,
+     "pts": 16
+    },
+    {
      "dg": 9,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
@@ -1262,23 +1277,8 @@
      "nuestro": false,
      "p": 1,
      "pj": 6,
-     "pos": 2,
-     "pts": 15
-    },
-    {
-     "dg": 13,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0000000580_3275-san%20cristobal.jpg",
-     "g": 4,
-     "gc": 4,
-     "gf": 17,
-     "id": "466651",
-     "nombre": "San Cristobal de los Angeles A",
-     "nuestro": false,
-     "p": 1,
-     "pj": 6,
      "pos": 3,
-     "pts": 13
+     "pts": 15
     },
     {
      "dg": 8,
@@ -1341,19 +1341,19 @@
      "pts": 11
     },
     {
-     "dg": -5,
+     "dg": -2,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 2,
-     "gc": 14,
-     "gf": 9,
+     "g": 3,
+     "gc": 16,
+     "gf": 14,
      "id": "24791952",
      "nombre": "Inter Promesas F",
      "nuestro": false,
      "p": 3,
-     "pj": 6,
+     "pj": 7,
      "pos": 8,
-     "pts": 7
+     "pts": 10
     },
     {
      "dg": -7,
@@ -1401,17 +1401,17 @@
      "pts": 4
     },
     {
-     "dg": -17,
+     "dg": -20,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
      "g": 1,
-     "gc": 21,
-     "gf": 4,
+     "gc": 26,
+     "gf": 6,
      "id": "2161",
      "nombre": "San Fermin B",
      "nuestro": false,
-     "p": 5,
-     "pj": 6,
+     "p": 6,
+     "pj": 7,
      "pos": 12,
      "pts": 3
     },
@@ -1431,22 +1431,22 @@
      "pts": 1
     },
     {
-     "dg": -12,
+     "dg": -23,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014268810_arganzuela.png",
      "g": 0,
-     "gc": 21,
+     "gc": 32,
      "gf": 9,
      "id": "24235768",
      "nombre": "Union Deportiva Arganzuela F",
      "nuestro": false,
-     "p": 6,
-     "pj": 6,
+     "p": 7,
+     "pj": 7,
      "pos": 14,
      "pts": 0
     }
    ],
-   "jornada": 6,
+   "jornada": 7,
    "titulo": "Segunda Cadete Grupo 27"
   },
   "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
@@ -1527,6 +1527,21 @@
      "pts": 19
     },
     {
+     "dg": 9,
+     "e": 2,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
+     "g": 5,
+     "gc": 10,
+     "gf": 19,
+     "id": "13613759",
+     "nombre": "Fundacion Leganes C",
+     "nuestro": false,
+     "p": 2,
+     "pj": 9,
+     "pos": 6,
+     "pts": 17
+    },
+    {
      "dg": 12,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
@@ -1538,7 +1553,7 @@
      "nuestro": false,
      "p": 3,
      "pj": 9,
-     "pos": 6,
+     "pos": 7,
      "pts": 16
     },
     {
@@ -1553,21 +1568,6 @@
      "nuestro": false,
      "p": 3,
      "pj": 9,
-     "pos": 7,
-     "pts": 14
-    },
-    {
-     "dg": 5,
-     "e": 2,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
-     "g": 4,
-     "gc": 9,
-     "gf": 14,
-     "id": "13613759",
-     "nombre": "Fundacion Leganes C",
-     "nuestro": false,
-     "p": 2,
-     "pj": 8,
      "pos": 8,
      "pts": 14
     },
@@ -1677,17 +1677,17 @@
      "pts": 3
     },
     {
-     "dg": -38,
+     "dg": -42,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
      "g": 0,
-     "gc": 49,
-     "gf": 11,
+     "gc": 54,
+     "gf": 12,
      "id": "13538235",
      "nombre": "Ciudad de los Ángeles A",
      "nuestro": true,
-     "p": 8,
-     "pj": 8,
+     "p": 9,
+     "pj": 9,
      "pos": 16,
      "pts": 0
     }
@@ -2517,21 +2517,6 @@
      "pts": 22
     },
     {
-     "dg": 23,
-     "e": 0,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
-     "g": 7,
-     "gc": 11,
-     "gf": 34,
-     "id": "25049794",
-     "nombre": "Inter Promesas D",
-     "nuestro": false,
-     "p": 1,
-     "pj": 8,
-     "pos": 2,
-     "pts": 21
-    },
-    {
      "dg": 16,
      "e": 0,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0011589039_MOSCARDO.png",
@@ -2540,6 +2525,21 @@
      "gf": 30,
      "id": "1031556",
      "nombre": "Colonia Moscardo D",
+     "nuestro": false,
+     "p": 1,
+     "pj": 8,
+     "pos": 2,
+     "pts": 21
+    },
+    {
+     "dg": 23,
+     "e": 0,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012187655_ESCUDO_modified.png",
+     "g": 7,
+     "gc": 11,
+     "gf": 34,
+     "id": "25049794",
+     "nombre": "Inter Promesas D",
      "nuestro": false,
      "p": 1,
      "pj": 8,
@@ -2607,18 +2607,33 @@
      "pts": 12
     },
     {
-     "dg": -14,
+     "dg": -4,
+     "e": 1,
+     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
+     "g": 3,
+     "gc": 20,
+     "gf": 16,
+     "id": "680085",
+     "nombre": "Alzola-Halcones D",
+     "nuestro": false,
+     "p": 5,
+     "pj": 9,
+     "pos": 8,
+     "pts": 10
+    },
+    {
+     "dg": -15,
      "e": 1,
      "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0012178178_Escudo_LA_MANCHA_Borde_negroRecurso_1.png",
      "g": 3,
-     "gc": 28,
-     "gf": 14,
+     "gc": 31,
+     "gf": 16,
      "id": "24009831",
      "nombre": "La Mancha B",
      "nuestro": false,
-     "p": 4,
-     "pj": 8,
-     "pos": 8,
+     "p": 5,
+     "pj": 9,
+     "pos": 9,
      "pts": 10
     },
     {
@@ -2633,23 +2648,8 @@
      "nuestro": false,
      "p": 4,
      "pj": 7,
-     "pos": 9,
-     "pts": 9
-    },
-    {
-     "dg": -5,
-     "e": 1,
-     "escudo": "https://www.elbalondemadrid.es/escudo/Clubes/00100_0010857942_1330_ALZOLA.jpg",
-     "g": 2,
-     "gc": 18,
-     "gf": 13,
-     "id": "680085",
-     "nombre": "Alzola-Halcones D",
-     "nuestro": false,
-     "p": 5,
-     "pj": 8,
      "pos": 10,
-     "pts": 7
+     "pts": 9
     },
     {
      "dg": -13,
@@ -2727,7 +2727,7 @@
      "pts": 1
     }
    ],
-   "jornada": 8,
+   "jornada": 9,
    "titulo": "Segunda Juvenil Grupo 13"
   },
   "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas": {
@@ -2976,19 +2976,19 @@
    "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas": {
     "actual": 9,
     "cursor": null,
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-22",
     "total": 30
    },
    "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas": {
     "actual": 7,
     "cursor": null,
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-22",
     "total": 26
    },
    "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas": {
     "actual": 9,
     "cursor": null,
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-22",
     "total": 30
    },
    "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas": {
@@ -2999,14 +2999,14 @@
    },
    "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas": {
     "actual": 5,
-    "cursor": null,
-    "fecha": "2026-11-16",
+    "cursor": 7,
+    "fecha": "2026-11-22",
     "total": 11
    },
    "https://www.elbalondemadrid.es/competicion/26738132/grupo/26738138/jornadas": {
     "actual": 7,
     "cursor": null,
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-22",
     "total": 26
    },
    "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas": {
@@ -3024,7 +3024,7 @@
    "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas": {
     "actual": 7,
     "cursor": null,
-    "fecha": "2026-11-16",
+    "fecha": "2026-11-22",
     "total": 26
    }
   },
@@ -3642,6 +3642,80 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-21",
+   "goles": [
+    {
+     "equipo": "CDE INTER PROMESAS 'B'",
+     "jugador": "AMIR ENEIJDER TENORIO CORTEZ",
+     "lado": "local",
+     "minuto": 14,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "CDE INTER PROMESAS 'B'",
+     "jugador": "DJUNY JUNIOR THEODOR",
+     "lado": "local",
+     "minuto": 18,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "CDE INTER PROMESAS 'B'",
+     "jugador": "DJUNY JUNIOR THEODOR",
+     "lado": "local",
+     "minuto": 86,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "CDE INTER PROMESAS 'B'",
+     "jugador": "DJUNY JUNIOR THEODOR",
+     "lado": "local",
+     "minuto": 89,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ANDRES MARQUEZ MONTERO",
+     "lado": "visitante",
+     "minuto": 1,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "YAGO CORDOBA DE DIEGO",
+     "lado": "visitante",
+     "minuto": 12,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ANDRES MARQUEZ MONTERO",
+     "lado": "visitante",
+     "minuto": 46,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "KARIM HADID CHTIBA",
+     "lado": "visitante",
+     "minuto": 55,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "YAGO CORDOBA DE DIEGO",
+     "lado": "visitante",
+     "minuto": 60,
+     "penalti": true,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Juvenil Grupo 5",
    "hora": "14:15",
    "jornada": 11,
@@ -3653,7 +3727,54 @@
     5,
     1
    ],
-   "resultado": null,
+   "resultado": [
+    4,
+    5
+   ],
+   "tarjetas": [
+    {
+     "equipo": "CDE INTER PROMESAS 'B'",
+     "jugador": "AMIR ENEIJDER TENORIO CORTEZ",
+     "lado": "local",
+     "minuto": 60,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FERNANDO PEREZ SANCHEZ",
+     "lado": "visitante",
+     "minuto": 19,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "JORGE TENA GARCÍA",
+     "lado": "visitante",
+     "minuto": 20,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ALVARO DIOSDADO DE CASO PRIETO",
+     "lado": "visitante",
+     "minuto": 85,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "MARCOS MUÑOZ GARCIA",
+     "lado": "visitante",
+     "minuto": 89,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "FELIX CONSTANTIN ARCANU",
+     "lado": "visitante",
+     "minuto": 89,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737718/grupo/26737723/jornadas",
    "visitante": [
     "6815292",
@@ -4698,6 +4819,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-21",
+   "goles": [
+    {
+     "equipo": "ADEPO PALOMERAS 'A'",
+     "jugador": "SHAFWAN MORSHED ABDUL",
+     "lado": "local",
+     "minuto": 18,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "ADEPO PALOMERAS 'A'",
+     "jugador": "DANIEL LOPEZ LAMPARERO",
+     "lado": "local",
+     "minuto": 45,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "ADEPO PALOMERAS 'A'",
+     "jugador": "SHAFWAN MORSHED ABDUL",
+     "lado": "local",
+     "minuto": 78,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ALONSO GONZALEZ LEDESMA",
+     "lado": "visitante",
+     "minuto": 9,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "TOMAS TALAVERA VICHERAT",
+     "lado": "visitante",
+     "minuto": 42,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "NICOLAS SANCHEZ DOMINGUEZ",
+     "lado": "visitante",
+     "minuto": 67,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Cadete Grupo 5",
    "hora": "09:30",
    "jornada": 9,
@@ -4713,6 +4884,22 @@
     3,
     3
    ],
+   "tarjetas": [
+    {
+     "equipo": "ADEPO PALOMERAS 'A'",
+     "jugador": "GUILLERMO AQUINO MONTERO",
+     "lado": "local",
+     "minuto": 70,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "NICOLAS SANCHEZ DOMINGUEZ",
+     "lado": "visitante",
+     "minuto": 43,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737742/grupo/26737747/jornadas",
    "visitante": [
     "8961562",
@@ -4721,12 +4908,12 @@
   },
   "5594937": {
    "acta": "https://www.elbalondemadrid.es/acta/5594937?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010849385_arganda66px.jpg",
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "grupo": "Preferente Cadete Grupo 5",
-   "hora": null,
+   "hora": "16:00",
    "jornada": 10,
    "local": [
     "8961562",
@@ -4742,7 +4929,7 @@
   },
   "5594944": {
    "acta": "https://www.elbalondemadrid.es/acta/5594944?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -4763,7 +4950,7 @@
   },
   "5594952": {
    "acta": "https://www.elbalondemadrid.es/acta/5594952?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg",
    "fecha": "2026-12-19",
@@ -4784,7 +4971,7 @@
   },
   "5594959": {
    "acta": "https://www.elbalondemadrid.es/acta/5594959?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)AVENIDA DE LA TÉCNICA S/N · Rivas-Vaciamadrid",
+   "campo": "RIVAS - POLÍGONO SANTA ANA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000098133_escudo-rivas-fc.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -4805,7 +4992,7 @@
   },
   "5594967": {
    "acta": "https://www.elbalondemadrid.es/acta/5594967?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
    "fecha": "2027-01-23",
@@ -4826,7 +5013,7 @@
   },
   "5594974": {
    "acta": "https://www.elbalondemadrid.es/acta/5594974?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "COSLADA - ESTADIO EL OLIVO (HA)CALLE DEL MAR CANTÁBRICO S/N · Coslada",
+   "campo": "COSLADA - ESTADIO EL OLIVO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-30",
@@ -4847,7 +5034,7 @@
   },
   "5594989": {
    "acta": "https://www.elbalondemadrid.es/acta/5594989?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "fecha": "2027-02-06",
@@ -4868,7 +5055,7 @@
   },
   "5594997": {
    "acta": "https://www.elbalondemadrid.es/acta/5594997?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "LA UNION - VALLECAS VILLA (HA)CALLE DE ENRIQUE GARCÍA ÁLVAREZ 65 · Madrid",
+   "campo": "LA UNION - VALLECAS VILLA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012219483_navbarApp.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-14",
@@ -4889,7 +5076,7 @@
   },
   "5595004": {
    "acta": "https://www.elbalondemadrid.es/acta/5595004?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000039452_Nuevo_Baztan.jpg",
    "fecha": "2027-02-20",
@@ -4910,7 +5097,7 @@
   },
   "5595012": {
    "acta": "https://www.elbalondemadrid.es/acta/5595012?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "ARGANDA - LA POVEDA (HA)CALLE MALLORCA S/N · Arganda Del Rey",
+   "campo": "ARGANDA - LA POVEDA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010913564_logo_poveda.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-27",
@@ -4931,7 +5118,7 @@
   },
   "5595019": {
    "acta": "https://www.elbalondemadrid.es/acta/5595019?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010898623_EDM-escudo_57x66_(1).jpg",
    "fecha": "2027-03-06",
@@ -4952,7 +5139,7 @@
   },
   "5595027": {
    "acta": "https://www.elbalondemadrid.es/acta/5595027?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "DEHESA MORATALAZ (HA)AVDA. DOCTOR GARCIA TAPIA 117 · Madrid",
+   "campo": "DEHESA MORATALAZ (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258142_Escudo_Escuela_Deportiva_Moratalaz_b_300x300.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-13",
@@ -4973,7 +5160,7 @@
   },
   "5595034": {
    "acta": "https://www.elbalondemadrid.es/acta/5595034?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "fecha": "2027-03-20",
@@ -4994,7 +5181,7 @@
   },
   "5595042": {
    "acta": "https://www.elbalondemadrid.es/acta/5595042?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)AVDA. MARIANO DÍAZ S/N · Villarejo De Salvanés",
+   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000038321_GetAttachment.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-03",
@@ -5015,7 +5202,7 @@
   },
   "5595049": {
    "acta": "https://www.elbalondemadrid.es/acta/5595049?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "fecha": "2027-04-10",
@@ -5036,7 +5223,7 @@
   },
   "5595057": {
    "acta": "https://www.elbalondemadrid.es/acta/5595057?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "ARGANDA - CIUDAD DPTVA. PRINCIPE FELIPE (HA)CALLE SAN SEBASTIÁN 6 · Arganda Del Rey",
+   "campo": "ARGANDA - CIUDAD DPTVA. PRINCIPE FELIPE (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010849385_arganda66px.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -5057,7 +5244,7 @@
   },
   "5595064": {
    "acta": "https://www.elbalondemadrid.es/acta/5595064?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
    "fecha": "2027-04-24",
@@ -5078,7 +5265,7 @@
   },
   "5595072": {
    "acta": "https://www.elbalondemadrid.es/acta/5595072?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
@@ -5099,7 +5286,7 @@
   },
   "5595079": {
    "acta": "https://www.elbalondemadrid.es/acta/5595079?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000098133_escudo-rivas-fc.png",
    "fecha": "2027-05-08",
@@ -5120,7 +5307,7 @@
   },
   "5595087": {
    "acta": "https://www.elbalondemadrid.es/acta/5595087?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "RIVAS - CASA GRANDE (HA)AVDA. DE FRANCIA S/N · Rivas-Vaciamadrid",
+   "campo": "RIVAS - CASA GRANDE (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000659_4390_Parque_Sureste2.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-15",
@@ -5141,7 +5328,7 @@
   },
   "5595094": {
    "acta": "https://www.elbalondemadrid.es/acta/5595094?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011098262_Logo_Premium_C.D.Coslada___COLOR_2.0.jpg",
    "fecha": "2027-05-22",
@@ -5482,12 +5669,12 @@
   },
   "5599696": {
    "acta": "https://www.elbalondemadrid.es/acta/5599696?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "fecha": "2026-11-28",
    "grupo": "Preferente Alevín F-7 Grupo 6",
-   "hora": null,
+   "hora": "13:30",
    "jornada": 8,
    "local": [
     "15328645",
@@ -5503,7 +5690,7 @@
   },
   "5599702": {
    "acta": "https://www.elbalondemadrid.es/acta/5599702?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "BARRIO GOYA (HA)CALLE DE PABLO SARASATE 1 · Madrid",
+   "campo": "BARRIO GOYA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258198_C.D._GOYA.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -5545,7 +5732,7 @@
   },
   "5599715": {
    "acta": "https://www.elbalondemadrid.es/acta/5599715?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "campo": "PUERTO RICO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010857942_1330_ALZOLA.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -5650,7 +5837,7 @@
   },
   "5599761": {
    "acta": "https://www.elbalondemadrid.es/acta/5599761?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIACALLE DE FUENTIDUEÑA 6 · Madrid",
+   "campo": "PVO. MUN. MIGUEL GUILLEN PRIM (HA) LA GAVIA",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011746248_ESCUDO_FONDO_BLANCO_removebg_preview__1_.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-27",
@@ -5692,7 +5879,7 @@
   },
   "5599774": {
    "acta": "https://www.elbalondemadrid.es/acta/5599774?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "campo": "MADRID RIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266052_MR.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-13",
@@ -5734,7 +5921,7 @@
   },
   "5599787": {
    "acta": "https://www.elbalondemadrid.es/acta/5599787?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "campo": "PVO. PALOMERAS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-03",
@@ -5776,7 +5963,7 @@
   },
   "5599800": {
    "acta": "https://www.elbalondemadrid.es/acta/5599800?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "LEGANES - CANTERA F7 - 1CALLE ARQUITECTURA 4 · Leganés",
+   "campo": "LEGANES - CANTERA F7 - 1",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -5818,7 +6005,7 @@
   },
   "5599813": {
    "acta": "https://www.elbalondemadrid.es/acta/5599813?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "ROMAN VALERO (HA)CALLE DE ANDRES ARTEAGA 1 · Madrid",
+   "campo": "ROMAN VALERO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011589039_MOSCARDO.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
@@ -6402,7 +6589,10 @@
     8,
     16
    ],
-   "resultado": null,
+   "resultado": [
+    5,
+    1
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
    "visitante": [
     "13538235",
@@ -6411,12 +6601,12 @@
   },
   "5606416": {
    "acta": "https://www.elbalondemadrid.es/acta/5606416?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
    "fecha": "2026-11-28",
    "grupo": "Preferente Infantil Grupo 5",
-   "hora": null,
+   "hora": "10:30",
    "jornada": 10,
    "local": [
     "13538235",
@@ -6432,7 +6622,7 @@
   },
   "5606423": {
    "acta": "https://www.elbalondemadrid.es/acta/5606423?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "VELILLA DE SAN ANTONIO - PVO. MUNICIPAL (HA)CALLE OLIVAR 2 · Velilla De San Antonio",
+   "campo": "VELILLA DE SAN ANTONIO - PVO. MUNICIPAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011583701_6A3C328C_DFD7_4844_9D17_14ACE9D1611A.jpeg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -6453,7 +6643,7 @@
   },
   "5606431": {
    "acta": "https://www.elbalondemadrid.es/acta/5606431?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg",
    "fecha": "2026-12-19",
@@ -6474,7 +6664,7 @@
   },
   "5606438": {
    "acta": "https://www.elbalondemadrid.es/acta/5606438?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "ARGANDA - LA POVEDA (HA)CALLE MALLORCA S/N · Arganda Del Rey",
+   "campo": "ARGANDA - LA POVEDA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010913564_logo_poveda.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -6495,7 +6685,7 @@
   },
   "5606446": {
    "acta": "https://www.elbalondemadrid.es/acta/5606446?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
    "fecha": "2027-01-23",
@@ -6516,7 +6706,7 @@
   },
   "5606453": {
    "acta": "https://www.elbalondemadrid.es/acta/5606453?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-30",
@@ -6537,7 +6727,7 @@
   },
   "5606468": {
    "acta": "https://www.elbalondemadrid.es/acta/5606468?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "fecha": "2027-02-06",
@@ -6558,7 +6748,7 @@
   },
   "5606476": {
    "acta": "https://www.elbalondemadrid.es/acta/5606476?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. PALOMERAS (HA) CALLE DEL TRANVÍA DE ARGANDA 4 · Madrid",
+   "campo": "PVO. PALOMERAS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-13",
@@ -6579,7 +6769,7 @@
   },
   "5606483": {
    "acta": "https://www.elbalondemadrid.es/acta/5606483?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000098133_escudo-rivas-fc.png",
    "fecha": "2027-02-20",
@@ -6600,7 +6790,7 @@
   },
   "5606491": {
    "acta": "https://www.elbalondemadrid.es/acta/5606491?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "JOSE DURAN (HA)AVENIDA DEL PARQUE DE PALOMERAS BAJAS 10 · Madrid",
+   "campo": "JOSE DURAN (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014277134_LOGO_SMLG___OK__1_.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-27",
@@ -6621,7 +6811,7 @@
   },
   "5606498": {
    "acta": "https://www.elbalondemadrid.es/acta/5606498?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012219483_navbarApp.png",
    "fecha": "2027-03-06",
@@ -6642,7 +6832,7 @@
   },
   "5606506": {
    "acta": "https://www.elbalondemadrid.es/acta/5606506?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)AVDA. MARIANO DÍAZ S/N · Villarejo De Salvanés",
+   "campo": "VILLAREJO DE SALVANES - JUSTO DÍAZ (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000038321_GetAttachment.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-13",
@@ -6663,7 +6853,7 @@
   },
   "5606513": {
    "acta": "https://www.elbalondemadrid.es/acta/5606513?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "fecha": "2027-03-20",
@@ -6684,7 +6874,7 @@
   },
   "5606521": {
    "acta": "https://www.elbalondemadrid.es/acta/5606521?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "MEJORADA - PVO. MPAL. LA DEHESA (HA)CALLE DE JOAN MIRÓ 22 · Mejorada Del Campo",
+   "campo": "MEJORADA - PVO. MPAL. LA DEHESA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012153463_ESCUDO_ADA_TOLEDO__2_.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-03",
@@ -6705,7 +6895,7 @@
   },
   "5606528": {
    "acta": "https://www.elbalondemadrid.es/acta/5606528?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
    "fecha": "2027-04-10",
@@ -6726,7 +6916,7 @@
   },
   "5606536": {
    "acta": "https://www.elbalondemadrid.es/acta/5606536?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)CALLE MAR CANTÁBRICO 21 B · Arganda Del Rey",
+   "campo": "ARGANDA - CIUDAD DEL FUTBOL 1 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -6747,7 +6937,7 @@
   },
   "5606543": {
    "acta": "https://www.elbalondemadrid.es/acta/5606543?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011583701_6A3C328C_DFD7_4844_9D17_14ACE9D1611A.jpeg",
    "fecha": "2027-04-24",
@@ -6768,7 +6958,7 @@
   },
   "5606551": {
    "acta": "https://www.elbalondemadrid.es/acta/5606551?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)CALLE DEL RAYO VALLECANO DE MADRID 2 · Madrid",
+   "campo": "CIUDAD DPTVA. FUND. RAYO VALLECANO 2 (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
@@ -6789,7 +6979,7 @@
   },
   "5606558": {
    "acta": "https://www.elbalondemadrid.es/acta/5606558?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010913564_logo_poveda.jpg",
    "fecha": "2027-05-08",
@@ -6810,7 +7000,7 @@
   },
   "5606566": {
    "acta": "https://www.elbalondemadrid.es/acta/5606566?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "ASOC. VEC. DEL POZO (HA)CALLE REGUERA DE TOMATEROS S/N · Madrid",
+   "campo": "ASOC. VEC. DEL POZO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-15",
@@ -6831,7 +7021,7 @@
   },
   "5606573": {
    "acta": "https://www.elbalondemadrid.es/acta/5606573?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "fecha": "2027-05-22",
@@ -10747,7 +10937,10 @@
     6,
     11
    ],
-   "resultado": null,
+   "resultado": [
+    6,
+    0
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
     "2856",
@@ -11618,7 +11811,7 @@
   },
   "5659228": {
    "acta": "https://www.elbalondemadrid.es/acta/5659228?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -11639,7 +11832,7 @@
   },
   "5659235": {
    "acta": "https://www.elbalondemadrid.es/acta/5659235?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
    "fecha": "2026-12-12",
@@ -11660,7 +11853,7 @@
   },
   "5659243": {
    "acta": "https://www.elbalondemadrid.es/acta/5659243?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "MARIS STELLA (HA)CALLE DEL DR. TOLOSA LATOUR S/N · Madrid",
+   "campo": "MARIS STELLA (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011910375_logo_orcasur_estampado.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-19",
@@ -11681,7 +11874,7 @@
   },
   "5659250": {
    "acta": "https://www.elbalondemadrid.es/acta/5659250?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "fecha": "2027-01-16",
@@ -11702,7 +11895,7 @@
   },
   "5659258": {
    "acta": "https://www.elbalondemadrid.es/acta/5659258?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PUERTO RICO (HA)CALLE DE GAINZA S/N · Madrid",
+   "campo": "PUERTO RICO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010857942_1330_ALZOLA.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-23",
@@ -11723,7 +11916,7 @@
   },
   "5659265": {
    "acta": "https://www.elbalondemadrid.es/acta/5659265?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2027-01-30",
@@ -11744,7 +11937,7 @@
   },
   "5659269": {
    "acta": "https://www.elbalondemadrid.es/acta/5659269?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "fecha": "2027-02-06",
@@ -11765,7 +11958,7 @@
   },
   "5659276": {
    "acta": "https://www.elbalondemadrid.es/acta/5659276?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-13",
@@ -11786,7 +11979,7 @@
   },
   "5659282": {
    "acta": "https://www.elbalondemadrid.es/acta/5659282?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "fecha": "2027-02-20",
@@ -11807,7 +12000,7 @@
   },
   "5659289": {
    "acta": "https://www.elbalondemadrid.es/acta/5659289?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "CENTRO DEPORTIVO MUNICIPAL ORCASURCalle de Moreja 11 · Madrid",
+   "campo": "CENTRO DEPORTIVO MUNICIPAL ORCASUR",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011703422_LOGO_fondotransp.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-28",
@@ -11828,7 +12021,7 @@
   },
   "5659296": {
    "acta": "https://www.elbalondemadrid.es/acta/5659296?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "MADRID RIO (HA)PASEO DE YESERIAS 51 · Madrid",
+   "campo": "MADRID RIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266052_MR.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-06",
@@ -11849,7 +12042,7 @@
   },
   "5659304": {
    "acta": "https://www.elbalondemadrid.es/acta/5659304?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "fecha": "2027-03-13",
@@ -11870,7 +12063,7 @@
   },
   "5659311": {
    "acta": "https://www.elbalondemadrid.es/acta/5659311?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-20",
@@ -11891,7 +12084,7 @@
   },
   "5659319": {
    "acta": "https://www.elbalondemadrid.es/acta/5659319?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "fecha": "2027-04-03",
@@ -11912,7 +12105,7 @@
   },
   "5659326": {
    "acta": "https://www.elbalondemadrid.es/acta/5659326?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "campo": "BOETTICHER (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-10",
@@ -11933,7 +12126,7 @@
   },
   "5659334": {
    "acta": "https://www.elbalondemadrid.es/acta/5659334?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011910375_logo_orcasur_estampado.png",
    "fecha": "2027-04-17",
@@ -11954,7 +12147,7 @@
   },
   "5659341": {
    "acta": "https://www.elbalondemadrid.es/acta/5659341?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)PASEO IMPERIAL 20 · Madrid",
+   "campo": "C.D.M. MARQUES DE SAMARANCH (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014268810_arganzuela.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-24",
@@ -11975,7 +12168,7 @@
   },
   "5659349": {
    "acta": "https://www.elbalondemadrid.es/acta/5659349?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010857942_1330_ALZOLA.jpg",
    "fecha": "2027-05-01",
@@ -11996,7 +12189,7 @@
   },
   "5659356": {
    "acta": "https://www.elbalondemadrid.es/acta/5659356?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-08",
@@ -12351,6 +12544,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011036902_Escudo_alhondiga.jpg",
    "fecha": "2026-11-21",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "SERGIO PEREZ ABAD",
+     "lado": "local",
+     "minuto": 10,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "HECTOR LUCAS CASADO",
+     "lado": "local",
+     "minuto": 15,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "HECTOR LUCAS CASADO",
+     "lado": "local",
+     "minuto": 27,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DAVID IONUT SMOCHINA",
+     "lado": "local",
+     "minuto": 63,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ALHONDIGA 'D'",
+     "jugador": "JUAN JOSE SANZ LIU",
+     "lado": "visitante",
+     "minuto": 58,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ALHONDIGA 'D'",
+     "jugador": "JUAN JOSE SANZ LIU",
+     "lado": "visitante",
+     "minuto": 65,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Infantil Grupo 34",
    "hora": "09:00",
    "jornada": 7,
@@ -12366,6 +12609,15 @@
     4,
     2
    ],
+   "tarjetas": [
+    {
+     "equipo": "A.D. ALHONDIGA 'D'",
+     "jugador": "EDUARDO SOLANA DÍAZ DE MENDÍVIL",
+     "lado": "visitante",
+     "minuto": 66,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738324/grupo/26738357/jornadas",
    "visitante": [
     "1031212",
@@ -12374,7 +12626,7 @@
   },
   "5663247": {
    "acta": "https://www.elbalondemadrid.es/acta/5663247?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -12395,7 +12647,7 @@
   },
   "5663254": {
    "acta": "https://www.elbalondemadrid.es/acta/5663254?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "GETAFE - PTE. DETERMINAR POR AYUNTAMIENTOGETAFE · Getafe",
+   "campo": "GETAFE - PTE. DETERMINAR POR AYUNTAMIENTO",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014265964_BERCIAL.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-12-12",
@@ -12416,7 +12668,7 @@
   },
   "5663261": {
    "acta": "https://www.elbalondemadrid.es/acta/5663261?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000035074_4615_Caserio_Perales.jpg",
    "fecha": "2026-12-19",
@@ -12437,7 +12689,7 @@
   },
   "5663267": {
    "acta": "https://www.elbalondemadrid.es/acta/5663267?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "BOETTICHER (HA)PASEO TALLERES 1 · Madrid",
+   "campo": "BOETTICHER (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-16",
@@ -12458,7 +12710,7 @@
   },
   "5663274": {
    "acta": "https://www.elbalondemadrid.es/acta/5663274?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg//",
    "fecha": "2027-01-23",
@@ -12479,7 +12731,7 @@
   },
   "5663280": {
    "acta": "https://www.elbalondemadrid.es/acta/5663280?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) CALLE DEL MAESTRO 6 · Leganés",
+   "campo": "LEGANES - MERCACENTRO PVO. JULIAN MONTERO 2 (HA) ",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010962150_candil_escudo_color.bmp",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-01-30",
@@ -12500,7 +12752,7 @@
   },
   "5663285": {
    "acta": "https://www.elbalondemadrid.es/acta/5663285?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-06",
@@ -12521,7 +12773,7 @@
   },
   "5663293": {
    "acta": "https://www.elbalondemadrid.es/acta/5663293?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "fecha": "2027-02-13",
@@ -12542,7 +12794,7 @@
   },
   "5663300": {
    "acta": "https://www.elbalondemadrid.es/acta/5663300?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "ASOC. VEC. ORCASITAS (H.A.)CAMINO VIEJO DE VILLAVERDE S/N · Madrid",
+   "campo": "ASOC. VEC. ORCASITAS (H.A.)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-02-20",
@@ -12563,7 +12815,7 @@
   },
   "5663308": {
    "acta": "https://www.elbalondemadrid.es/acta/5663308?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011685159_IMG_20190913_WA0008.jpg",
    "fecha": "2027-02-27",
@@ -12584,7 +12836,7 @@
   },
   "5663315": {
    "acta": "https://www.elbalondemadrid.es/acta/5663315?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PIQUEÑAS (HA)CALLE PINAR DE SAN JOSE 72 · Madrid",
+   "campo": "PIQUEÑAS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011741396_escudo_pique__as_con_coloresDEFINITIVO_2.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-06",
@@ -12605,7 +12857,7 @@
   },
   "5663323": {
    "acta": "https://www.elbalondemadrid.es/acta/5663323?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011615023_ESCUDO_ADP.png",
    "fecha": "2027-03-13",
@@ -12626,7 +12878,7 @@
   },
   "5663330": {
    "acta": "https://www.elbalondemadrid.es/acta/5663330?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "GETAFE - PVO. GINER DE LOS RIOS (HA)CTRA. DE GETAFE A LEGANÉS S/N · Getafe",
+   "campo": "GETAFE - PVO. GINER DE LOS RIOS (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011036902_Escudo_alhondiga.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-03-20",
@@ -12647,7 +12899,7 @@
   },
   "5663338": {
    "acta": "https://www.elbalondemadrid.es/acta/5663338?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "fecha": "2027-04-03",
@@ -12668,7 +12920,7 @@
   },
   "5663345": {
    "acta": "https://www.elbalondemadrid.es/acta/5663345?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014265964_BERCIAL.png",
    "fecha": "2027-04-10",
@@ -12689,7 +12941,7 @@
   },
   "5663352": {
    "acta": "https://www.elbalondemadrid.es/acta/5663352?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "GETAFE - JAVIER CORREDOR (PERALES DEL RIO HA)CALLE SIERRA DE GREDOS 1 · Getafe",
+   "campo": "GETAFE - JAVIER CORREDOR (PERALES DEL RIO HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000035074_4615_Caserio_Perales.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-04-17",
@@ -12710,7 +12962,7 @@
   },
   "5663358": {
    "acta": "https://www.elbalondemadrid.es/acta/5663358?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014267240_VILLAVERDE_SAN_ANDRES.png",
    "fecha": "2027-04-24",
@@ -12731,7 +12983,7 @@
   },
   "5663365": {
    "acta": "https://www.elbalondemadrid.es/acta/5663365?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)",
    "escudo_local": "https://appweb.rffm.es/pnfg//",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2027-05-01",
@@ -12752,7 +13004,7 @@
   },
   "5663371": {
    "acta": "https://www.elbalondemadrid.es/acta/5663371?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010962150_candil_escudo_color.bmp",
    "fecha": "2027-05-08",
@@ -12938,7 +13190,10 @@
     2,
     1
    ],
-   "resultado": null,
+   "resultado": [
+    1,
+    0
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737943/grupo/27601481/jornadas",
    "visitante": [
     "334110",
@@ -13263,6 +13518,7 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-21",
+   "goles": [],
    "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
    "hora": "13:00",
    "jornada": 5,
@@ -13278,6 +13534,15 @@
     0,
     1
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "IZAN PROVINCIO LOPEZ",
+     "lado": "local",
+     "minuto": 15,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
    "visitante": [
     "15842097",
@@ -13286,7 +13551,7 @@
   },
   "5695066": {
    "acta": "https://www.elbalondemadrid.es/acta/5695066?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-28",
@@ -13307,7 +13572,7 @@
   },
   "5695071": {
    "acta": "https://www.elbalondemadrid.es/acta/5695071?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
