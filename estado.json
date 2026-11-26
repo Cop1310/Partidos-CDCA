@@ -3726,7 +3726,7 @@
   },
   "5583168": {
    "acta": "https://www.elbalondemadrid.es/acta/5583168?temporada=22&competicion=26737718&grupo=26737723",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011206462_fundacion_esc.jpg",
    "fecha": "2026-11-28",
@@ -4783,7 +4783,7 @@
   },
   "5594937": {
    "acta": "https://www.elbalondemadrid.es/acta/5594937?temporada=22&competicion=26737742&grupo=26737747",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0010849385_arganda66px.jpg",
    "fecha": "2026-11-29",
@@ -5606,7 +5606,7 @@
   },
   "5599696": {
    "acta": "https://www.elbalondemadrid.es/acta/5599696?temporada=22&competicion=26738132&grupo=26738138",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258054_adepo.png",
    "fecha": "2026-11-28",
@@ -6446,6 +6446,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011114701_00100_0011100932_Fundaci_n_1.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "NATHAN JOEL SEGURA SANCHEZ",
+     "lado": "local",
+     "minuto": 23,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "LUIS HERNANDEZ GOMEZ",
+     "lado": "local",
+     "minuto": 30,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "OLIVER DEL OLMO CASAS",
+     "lado": "local",
+     "minuto": 35,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "LUIS HERNANDEZ GOMEZ",
+     "lado": "local",
+     "minuto": 53,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "LUIS HERNANDEZ GOMEZ",
+     "lado": "local",
+     "minuto": 57,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "MIGUEL MARTÍN JIMÉNEZ",
+     "lado": "visitante",
+     "minuto": 15,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Infantil Grupo 5",
    "hora": "13:00",
    "jornada": 9,
@@ -6461,6 +6511,22 @@
     5,
     1
    ],
+   "tarjetas": [
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "MARTIN OVIASUYI DONAIRE",
+     "lado": "local",
+     "minuto": 16,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "S.A.D. FUNDACION C.D. LEGANES 'C'",
+     "jugador": "DIEGO ESCOLAR ARENAS",
+     "lado": "local",
+     "minuto": 59,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737819/grupo/26737824/jornadas",
    "visitante": [
     "13538235",
@@ -6469,7 +6535,7 @@
   },
   "5606416": {
    "acta": "https://www.elbalondemadrid.es/acta/5606416?temporada=22&competicion=26737819&grupo=26737824",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040925_EF_Arganda_3526.jpg",
    "fecha": "2026-11-28",
@@ -7461,6 +7527,64 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011006784_Logo.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "A.D. NUEVO VERSALLES-LORANCA 'C'",
+     "jugador": "DIEGO DE LA FUENTE CARRERA",
+     "lado": "local",
+     "minuto": 8,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. NUEVO VERSALLES-LORANCA 'C'",
+     "jugador": "DIEGO DE LA FUENTE CARRERA",
+     "lado": "local",
+     "minuto": 10,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. NUEVO VERSALLES-LORANCA 'C'",
+     "jugador": "IBRAHIM HARRAK LOUMOUR",
+     "lado": "local",
+     "minuto": 63,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "FERNANDO ANTONIO CANAL RODRIGUEZ",
+     "lado": "visitante",
+     "minuto": 13,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "FERNANDO ANTONIO CANAL RODRIGUEZ",
+     "lado": "visitante",
+     "minuto": 28,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ALBERTO MORENO TORRADO",
+     "lado": "visitante",
+     "minuto": 65,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "JOHAN TIHAGO APARCANA SANTOS",
+     "lado": "visitante",
+     "minuto": 85,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Primera Juvenil Grupo 11",
    "hora": "19:00",
    "jornada": 11,
@@ -7476,6 +7600,22 @@
     3,
     4
    ],
+   "tarjetas": [
+    {
+     "equipo": "A.D. NUEVO VERSALLES-LORANCA 'C'",
+     "jugador": "IKER CASTAÑO PARRA",
+     "lado": "local",
+     "minuto": 87,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "AYMANE EL KOUBBI",
+     "lado": "visitante",
+     "minuto": 88,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737724/grupo/26737735/jornadas",
    "visitante": [
     "15328636",
@@ -7484,7 +7624,7 @@
   },
   "5614597": {
    "acta": "https://www.elbalondemadrid.es/acta/5614597?temporada=22&competicion=26737724&grupo=26737735",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "fecha": "2026-11-28",
@@ -8547,6 +8687,24 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012175523_IMG_3302.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "MARCOS ONRUBIA PECO",
+     "lado": "visitante",
+     "minuto": 10,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "DIEGO SÁNCHEZ REVILLA",
+     "lado": "visitante",
+     "minuto": 63,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Aficionado Grupo 20",
    "hora": "18:00",
    "jornada": 9,
@@ -8562,6 +8720,43 @@
     0,
     2
    ],
+   "tarjetas": [
+    {
+     "equipo": "SAD SPAIN FOOTBALL ACADEMY FC",
+     "jugador": "JOSE LUIS RIVAS LOPEZ",
+     "lado": "local",
+     "minuto": 28,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "SAD SPAIN FOOTBALL ACADEMY FC",
+     "jugador": "DANIIL ABDULIN",
+     "lado": "local",
+     "minuto": 64,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "GABRIEL MARTIN LAFUENTE",
+     "lado": "visitante",
+     "minuto": 71,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "VICTOR HERNANDEZ ESPINOSA",
+     "lado": "visitante",
+     "minuto": 72,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "GABRIEL MARTIN LAFUENTE",
+     "lado": "visitante",
+     "minuto": 88,
+     "tipo": "roja"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738300/grupo/26738319/jornadas",
    "visitante": [
     "6818931",
@@ -8570,7 +8765,7 @@
   },
   "5628296": {
    "acta": "https://www.elbalondemadrid.es/acta/5628296?temporada=22&competicion=26738300&grupo=26738319",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000096878_EQUIPO_LEGASUR.jpg",
    "fecha": "2026-11-29",
@@ -9347,6 +9542,48 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "GIAN MARCO MONTESINO",
+     "lado": "local",
+     "minuto": 8,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "HUGO TEBAR MAZOTERAS",
+     "lado": "local",
+     "minuto": 44,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "ADRIAN BARTOLOME UTRILLA",
+     "lado": "local",
+     "minuto": 47,
+     "penalti": true,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "GIAN MARCO MONTESINO",
+     "lado": "local",
+     "minuto": 62,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "IVAN FERNANDEZ OVEJERO",
+     "lado": "visitante",
+     "minuto": 17,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Juvenil Grupo 13",
    "hora": "20:30",
    "jornada": 9,
@@ -9362,6 +9599,71 @@
     4,
     1
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "SERGIO ZANCUDO CARAPETO",
+     "lado": "local",
+     "minuto": 39,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "SERGIO HERNANDEZ DE ANDRES",
+     "lado": "local",
+     "minuto": 41,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. SANTIAGO APOSTOL VILLAVERDE 'B'",
+     "jugador": "LORENZO ALBARRAN JIMENEZ",
+     "lado": "local",
+     "minuto": 78,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "IVAN FERNANDEZ OVEJERO",
+     "lado": "visitante",
+     "minuto": 46,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "JOSÉ GALÁN MOYANO",
+     "lado": "visitante",
+     "minuto": 53,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "FERNANDO POLO BARCO",
+     "lado": "visitante",
+     "minuto": 68,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "ADRIAN GUTIERREZ PEREZ",
+     "lado": "visitante",
+     "minuto": 73,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "JOSÉ GALÁN MOYANO",
+     "lado": "visitante",
+     "minuto": 90,
+     "tipo": "roja"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "PABLO SEBASTIAN LORENZO",
+     "lado": "visitante",
+     "minuto": 999,
+     "tipo": "roja"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738323/grupo/27131269/jornadas",
    "visitante": [
     "15292622",
@@ -9370,7 +9672,7 @@
   },
   "5642706": {
    "acta": "https://www.elbalondemadrid.es/acta/5642706?temporada=22&competicion=26738323&grupo=27131269",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "fecha": "2026-11-28",
@@ -10290,6 +10592,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011884056_Logotipo_Escudo_Futbol_A.D._Orcasitas.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "KEVIN ANDRES CARDENAS CORREA",
+     "lado": "local",
+     "minuto": 3,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "NAIM ACHTOUT RAHAL",
+     "lado": "local",
+     "minuto": 42,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "GABRIEL JOAQUIN ACOSTA",
+     "lado": "local",
+     "minuto": 46,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ALVARO GARCIA MORENO",
+     "lado": "local",
+     "minuto": 64,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "IZAN MORENO GUERRERO",
+     "lado": "local",
+     "minuto": 78,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "JOHAN SEBASTIAN RINCON ZEA",
+     "lado": "local",
+     "minuto": 82,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Preferente Aficionado Grupo 3",
    "hora": "11:30",
    "jornada": 11,
@@ -10305,6 +10657,43 @@
     6,
     0
    ],
+   "tarjetas": [
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "ALEJANDRO ABUIN GONZALEZ",
+     "lado": "local",
+     "minuto": 45,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "A.D. ORCASITAS 'A'",
+     "jugador": "GABRIEL JOAQUIN ACOSTA",
+     "lado": "local",
+     "minuto": 45,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "RUBEN SANCHEZ GONZALEZ",
+     "lado": "visitante",
+     "minuto": 30,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ALEJANDRO FIGUEROA ARROYO",
+     "lado": "visitante",
+     "minuto": 40,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'A'",
+     "jugador": "ALEJANDRO FIGUEROA ARROYO",
+     "lado": "visitante",
+     "minuto": 45,
+     "tipo": "roja"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737701/grupo/26737704/jornadas",
    "visitante": [
     "2856",
@@ -10313,7 +10702,7 @@
   },
   "5646099": {
    "acta": "https://www.elbalondemadrid.es/acta/5646099?temporada=22&competicion=26737701&grupo=26737704",
-   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)CALLE DE LA ALIANZA 4 · Madrid",
+   "campo": "PVO. OROQUIETA - FELIX RUBIO (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0011874799_CDG_ESCUDO_RGB_02.png",
    "fecha": "2026-11-29",
@@ -11118,6 +11507,56 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000054928_Racing_Villaverde.jpg",
    "fecha": "2026-11-22",
+   "goles": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "RAOUL MENDES MENDY",
+     "lado": "local",
+     "minuto": 45,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "ALVARO FERNANDO SIMBAÑA JAYO",
+     "lado": "local",
+     "minuto": 53,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "SANTIAGO JOSE RAMIREZ PAJUELO",
+     "lado": "local",
+     "minuto": 61,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "RAOUL MENDES MENDY",
+     "lado": "local",
+     "minuto": 74,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "RAOUL MENDES MENDY",
+     "lado": "local",
+     "minuto": 78,
+     "penalti": false,
+     "propia": false
+    },
+    {
+     "equipo": "RACING VILLAVERDE C.F. 'D'",
+     "jugador": "LORENZO MAIETTA",
+     "lado": "visitante",
+     "minuto": 49,
+     "penalti": false,
+     "propia": false
+    }
+   ],
    "grupo": "Segunda Cadete Grupo 27",
    "hora": "19:00",
    "jornada": 7,
@@ -11133,6 +11572,36 @@
     5,
     1
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'B'",
+     "jugador": "SANTIAGO JOSE RAMIREZ PAJUELO",
+     "lado": "local",
+     "minuto": 67,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "RACING VILLAVERDE C.F. 'D'",
+     "jugador": "SAMUEL LIONEL VELLON CHACON",
+     "lado": "visitante",
+     "minuto": 35,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "RACING VILLAVERDE C.F. 'D'",
+     "jugador": "VICTOR MANUEL VICIOSO NAVA",
+     "lado": "visitante",
+     "minuto": 67,
+     "tipo": "amarilla"
+    },
+    {
+     "equipo": "RACING VILLAVERDE C.F. 'D'",
+     "jugador": "DIEGO LOPEZ JARAMILLO",
+     "lado": "visitante",
+     "minuto": 68,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26737768/grupo/26737795/jornadas",
    "visitante": [
     "15292008",
@@ -11141,7 +11610,7 @@
   },
   "5659228": {
    "acta": "https://www.elbalondemadrid.es/acta/5659228?temporada=22&competicion=26737768&grupo=26737795",
-   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)CALLE DE EMBAJADORES 340 (CAJA MÁGICA) · Madrid",
+   "campo": "IDB PARQUE LINEAL DEL MANZANARES - VICTORIANO GONZALEZ (H.A.)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012104587_LOGO_ADC_SAN_FEMRIN_04.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -11886,7 +12355,7 @@
   },
   "5663247": {
    "acta": "https://www.elbalondemadrid.es/acta/5663247?temporada=22&competicion=26738324&grupo=26738357",
-   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)AVDA. DE LOS ROSALES 133 · Madrid",
+   "campo": "IDB DAVID DIEZ DE LA CRUZ (ANTES CC LOS ROSALES - HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014266013_cd_santiago_apostol.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -12465,7 +12934,7 @@
   },
   "5680160": {
    "acta": "https://www.elbalondemadrid.es/acta/5680160?temporada=22&competicion=26737943&grupo=27601481",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000040310_3703_VILLAVERDE BAJO.jpg",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
@@ -12784,6 +13253,7 @@
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-21",
+   "goles": [],
    "grupo": "Segunda Alevín F-7 Grupo 34- SAN CRISTOBAL",
    "hora": "13:00",
    "jornada": 5,
@@ -12799,6 +13269,15 @@
     0,
     1
    ],
+   "tarjetas": [
+    {
+     "equipo": "C.D. CIUDAD LOS ANGELES 'C'",
+     "jugador": "IZAN PROVINCIO LOPEZ",
+     "lado": "local",
+     "minuto": 15,
+     "tipo": "amarilla"
+    }
+   ],
    "url_grupo": "https://www.elbalondemadrid.es/competicion/26738071/grupo/26738095/jornadas",
    "visitante": [
     "15842097",
@@ -12807,7 +13286,7 @@
   },
   "5695066": {
    "acta": "https://www.elbalondemadrid.es/acta/5695066?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0000000580_3275-san cristobal.jpg",
    "fecha": "2026-11-28",
@@ -12831,7 +13310,7 @@
   },
   "5695071": {
    "acta": "https://www.elbalondemadrid.es/acta/5695071?temporada=22&competicion=26738071&grupo=26738095",
-   "campo": "SAN CRISTOBAL (HA)CALLE DE ROCAFORT S/N · Madrid",
+   "campo": "SAN CRISTOBAL (HA)",
    "escudo_local": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0012187655_ESCUDO_modified.png",
    "escudo_visitante": "https://appweb.rffm.es/pnfg/pimg/Clubes/00100_0014258269_ESC_C.D._CIUDAD_DE_LOS__NGELES.png",
    "fecha": "2026-11-28",
